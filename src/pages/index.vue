@@ -335,47 +335,10 @@
 
     <div class="gallery">
       <h1 class="core-values-text mt-4">Gallery</h1>
-      <div id="example">
-        <carousel-3d
-          :controls-visible="true"
-          :controls-prev-html="'&#10092; '"
-          :controls-next-html="'&#10093;'"
-          :controls-width="300"
-          :controls-height="60"
-          :clickable="true"
-        >
-          <slide :index="1">
-            <figure>
-              <img src="@/assets/img/image1.jpg" />
-            </figure>
-          </slide>
-          <slide :index="2">
-            <figure>
-              <img src="@/assets/img/image1.jpg" />
-            </figure>
-          </slide>
-          <slide :index="3">
-            <figure>
-              <img src="@/assets/img/image1.jpg" />
-            </figure>
-          </slide>
-          <slide :index="4">
-            <figure>
-              <img src="@/assets/img/image1.jpg" />
-            </figure>
-          </slide>
-          <slide :index="5">
-            <figure>
-              <img src="@/assets/img/image1.jpg" />
-            </figure>
-          </slide>
-          <slide :index="6">
-            <figure>
-              <img src="@/assets/img/image1.jpg" />
-            </figure>
-          </slide>
-        </carousel-3d>
+      <div class="gallery">
+        <carousel-area/>
       </div>
+      
     </div>
   </div>
 </template>
@@ -385,19 +348,21 @@
   import aboutus from "../components/about_us.vue";
   import coreValues from "../components/core.vue";
   import VueRssFeed from "vue-rss-feed"
+  import carouselArea from '../components/carousel.vue'
   export default {
     components: {
       paystack,
       aboutus,
       coreValues,
-      VueRssFeed
+      VueRssFeed,
+      carouselArea
     },
     data() {
       return {
-        slides: 7,
-        feedUrl: "https://politics.einnews.com/rss/wq9dSKowGxT4pU9N.xml",
+        slides: 5,
+        feedUrl: "https://rss.app/feeds/Qb5AfPKhd7PRQhE4.xml",
         name: "",
-        limit: 5,
+        limit: 4,
         full_name: " ",
         email: "donor@email.com",
         PUBLIC_KEY: "pk_live_6c2684fe83cd844c750932b184a1bbe26f380912",
@@ -442,6 +407,13 @@
 </script>
 
 <style scoped>
+.gallery {
+  height: 500px;
+}
+.feed .articles-container {
+  display: flex !important;
+  /* grid-template-columns: 1fr 1fr; */
+}
   .carousel img {
     /* height: 800px; */
 
@@ -450,7 +422,6 @@
   }
   .carousel-item {
     max-height: 100vh;
-    /* width: 100vw; */
     background: black;
     overflow: hidden;
   }
