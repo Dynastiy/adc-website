@@ -430,7 +430,7 @@
     opacity: 0.3;
   }
   .carousel-item {
-    height: 640px;
+    max-height: 100vh;
     /* width: 100vw; */
     background: black;
     overflow: hidden;
