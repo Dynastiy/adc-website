@@ -256,7 +256,7 @@
 
     <div class="news-category">
       <h1 class="core-values-text">News</h1>
-     <VueRssFeed :feedUrl="feedUrl" :name="name" :limit="limit"/>
+     <!-- <VueRssFeed :feedUrl="feedUrl" :name="name" :limit="limit"/> -->
       <!-- <div class="news-div">
         <div>
           <img
@@ -415,8 +415,6 @@
   /* grid-template-columns: 1fr 1fr; */
 }
   .carousel img {
-    /* height: 800px; */
-
     object-fit: cover;
     opacity: 0.3;
   }
