@@ -347,14 +347,14 @@
   import paystack from "vue-paystack";
   import aboutus from "../components/about_us.vue";
   import coreValues from "../components/core.vue";
-  import VueRssFeed from "vue-rss-feed"
+  // import VueRssFeed from "vue-rss-feed"
   import carouselArea from '../components/carousel.vue'
   export default {
     components: {
       paystack,
       aboutus,
       coreValues,
-      VueRssFeed,
+      // VueRssFeed,
       carouselArea
     },
     data() {
