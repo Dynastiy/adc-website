@@ -1,3 +1,189 @@
-const states = [{ "name": "Abia", "capital": "Umuahia" }, { "name": "Adamawa", "capital": "Yola" }, { "name": "Akwa Ibom", "capital": "Uyo" }, { "name": "Anambra", "capital": "Awka" }, { "name": "Bauchi", "capital": "Bauchi" }, { "name": "Benue", "capital": "Makurdi" }, { "name": "Borno", "capital": "Maiduguri" }, { "name": "Bayelsa", "capital": "Yenagoa" }, { "name": "Cross River", "capital": "Calabar" }, { "name": "Delta", "capital": "Asaba" }, { "name": "Ebonyi", "capital": "Abakaliki" }, { "name": "Edo", "capital": "Benin" }, { "name": "Ekiti", "capital": "Ado-Ekiti" }, { "name": "Enugu", "capital": "Enugu" }, { "name": "Federal Capital Territory", "capital": "Abuja" }, { "name": "Gombe", "capital": "Gombe" }, { "name": "Jigawa", "capital": "Dutse" }, { "name": "Imo", "capital": "Owerri" }, { "name": "Kaduna", "capital": "Kaduna" }, { "name": "Kebbi", "capital": "Birnin Kebbi" }, { "name": "Kano", "capital": "Kano" }, { "name": "Kogi", "capital": "Lokoja" }, { "name": "Lagos", "capital": "Ikeja" }, { "name": "Katsina", "capital": "Katsina" }, { "name": "Kwara", "capital": "Ilorin" }, { "name": "Nasarawa", "capital": "Lafia" }, { "name": "Niger", "capital": "Minna" }, { "name": "Ogun", "capital": "Abeokuta" }, { "name": "Ondo", "capital": "Akure" }, { "name": "Rivers", "capital": "Port Harcourt" }, { "name": "Oyo", "capital": "Ibadan" }, { "name": "Osun", "capital": "Osogbo" }, { "name": "Sokoto", "capital": "Sokoto" }, { "name": "Plateau", "capital": "Jos" }, { "name": "Taraba", "capital": "Jalingo" }, { "name": "Yobe", "capital": "Damaturu" }, { "name": "Zamfara", "capital": "Gusau" }];
+const states = [{
+        "name": "Abia",
+        "capital": "Umuahia",
+        "chairman": "BARR. KELENNA OBONNA"
+    },
+    {
+        "name": "Adamawa",
+        "capital": "Yola",
+        "chairman": "YAHAYA H. YULDE"
+    },
+    {
+        "name": "Akwa Ibom",
+        "capital": "Uyo",
+        "chairman": "HON UTIP ETIEBET"
+    },
+    {
+        "name": "Anambra",
+        "capital": "Awka",
+        "chairman": "PATRICK OBIANYO"
+    },
+    {
+        "name": "Bauchi",
+        "capital": "Bauchi",
+        "chairman": "HASSAN HARUN"
+    },
+    {
+        "name": "Bayelsa",
+        "capital": "Yenagoa",
+        "chairman": "DR. ALEX KOINYAN"
+    },
+    {
+        "name": "Benue",
+        "capital": "Makurdi",
+        "chairman": "HON. ROBERT F. AMEH"
+    },
+    {
+        "name": "Borno",
+        "capital": "Maiduguri",
+        "chairman": "MUHAMMAD KHALA JIDDA "
+    },
+
+    {
+        "name": "Cross River",
+        "capital": "Calabar",
+        "chairman": "AGBOR ELVIS AGBOR "
+    },
+    {
+        "name": "Delta",
+        "capital": "Asaba",
+        "chairman": "PRINCE JOE CHUKWU "
+    },
+    {
+        "name": "Ebonyi",
+        "capital": "Abakaliki",
+        "chairman": "COMR. NWOGBA MORGAN NNAEMEKA"
+    },
+    {
+        "name": "Edo",
+        "capital": "Benin",
+        "chairman": "MR KENNEDY"
+    },
+    {
+        "name": "Ekiti",
+        "capital": "Ado-Ekiti",
+        "chairman": "HON. ILESANMI JOEL OMOLAYO"
+    },
+    {
+        "name": "Enugu",
+        "capital": "Enugu",
+        "chairman": "STELLA NNEAMAKA  CHUKWUMA"
+    },
+    {
+        "name": "Federal Capital Territory",
+        "capital": "Abuja",
+        "chairman": "HON. CLEMENT"
+    },
+    {
+        "name": "Gombe",
+        "capital": "Gombe",
+        "chairman": "AUWAL ABBA BARDE"
+    },
+    {
+        "name": "Imo",
+        "capital": "Owerri",
+        "chairman": "BARR. NLEM IGNATIUS"
+    },
+    {
+        "name": "Jigawa",
+        "capital": "Dutse",
+        "chairman": "ALH. LAWAN ABDULLAHI"
+    },
+    {
+        "name": "Kaduna",
+        "capital": "Kaduna",
+        "chairman": "COMR. PHILIMON KURE"
+    },
+    {
+        "name": "Kebbi",
+        "capital": "Birnin Kebbi",
+        "chairman": "HAJIYA HAUWA’U MUHAMMED"
+    },
+    {
+        "name": "Kano",
+        "capital": "Kano",
+        "chairman": "HARUNA KABIRU"
+    },
+    {
+        "name": "Kogi",
+        "capital": "Lokoja",
+        "chairman": "KINGSLEY TEMITOPE"
+    },
+    {
+        "name": "Lagos",
+        "capital": "Ikeja",
+        "chairman": ""
+    },
+    {
+        "name": "Katsina",
+        "capital": "Katsina",
+        "chairman": "MUSA USMAN WAMBA FUNTUA"
+    },
+    {
+        "name": "Kwara",
+        "capital": "Ilorin",
+        "chairman": "ADEBAYO AKADI"
+    },
+    {
+        "name": "Nasarawa",
+        "capital": "Lafia",
+        "chairman": "HON. GODWIN A. WILLIAM"
+    },
+    {
+        "name": "Niger",
+        "capital": "Minna",
+        "chairman": "ALH. MUSA HASSAN "
+    },
+    {
+        "name": "Ogun",
+        "capital": "Abeokuta",
+        "chairman": "Odunlami Salami"
+    },
+    {
+        "name": "Ondo",
+        "capital": "Akure",
+        "chairman": "HON.IBRAHIM OLAIDE RASHEED "
+    },
+    {
+        "name": "Rivers",
+        "capital": "Port Harcourt",
+        "chairman": "HON. LEADER SAMPSON"
+    },
+    {
+        "name": "Oyo",
+        "capital": "Ibadan",
+        "chairman": "REV. ADENIRAN ADEGOKE EZEKIEL"
+    },
+    {
+        "name": "Osun",
+        "capital": "Osogbo",
+        "chairman": "DR. CHARLES IDOWU OMIDIJI"
+    },
+    {
+        "name": "Sokoto",
+        "capital": "Sokoto",
+        "chairman": "ARC. MALAMI S. GALMA"
+    },
+    {
+        "name": "Plateau",
+        "capital": "Jos",
+        "chairman": "H.E. SABIU IBRAHIM MUSA"
+    },
+    {
+        "name": "Taraba",
+        "capital": "Jalingo",
+        "chairman": ""
+    },
+    {
+        "name": "Yobe",
+        "capital": "Damaturu",
+        "chairman": "HON. ABUBAKAR ABDULLAHI"
+    },
+    {
+        "name": "Zamfara",
+        "capital": "Gusau",
+        "chairman": "BADAMAS BELLO "
+    }
+];
 
 export default states;

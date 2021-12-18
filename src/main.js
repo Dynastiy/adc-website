@@ -7,6 +7,8 @@ import VueHtmlToPaper from 'vue-html-to-paper';
 
 import Carousel3d from 'vue-carousel-3d';
 
+import VueRssFeed from "vue-rss-feed";
+
 import VueTyper from 'vue-typer'
 
 Vue.use(VueTyper)
@@ -14,6 +16,8 @@ Vue.use(VueTyper)
 Vue.use(Carousel3d);
 
 Vue.use(VueHtmlToPaper);
+
+Vue.use(VueRssFeed)
 
 Vue.config.productionTip = false
 

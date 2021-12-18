@@ -13,8 +13,8 @@
             <router-link to="/donate">DONATE</router-link>
           </div>
         </div>
-<!-- overlay -->
-     <div class="take-action-overlay bg-darker" id="take-action-overlay">
+        <!-- overlay -->
+        <div class="take-action-overlay bg-darker" id="take-action-overlay">
           <div class="close" @click="closeDialog">
             <ion-icon name="close"></ion-icon>
             <!-- <p class="text-white dialog-close"  >X</p> -->
@@ -70,7 +70,6 @@
         </div>
       </div>
       <div class="welcome-text">
-        
         <div
           id="carouselExampleCaptions"
           class="carousel slide carousel-fade"
@@ -96,17 +95,24 @@
                 alt="Image Here"
               />
               <div class="carousel-caption d-none d-md-flex">
-               <h1>Welcome to a  <br>new Nigeria </h1>
+                <h1>
+                  Welcome to a <br />
+                  new <span class="nigeria">Nigeria</span>
+                </h1>
               </div>
             </div>
             <div class="carousel-item" data-interval="2000">
               <img
-                src="@/assets/img/image1.jpg"
+                src="@/assets/img/image13.jpg"
                 class="d-block w-100"
                 alt="Image Here"
               />
               <div class="carousel-caption d-none d-md-flex">
-               <h1>A Nigeria <br> of Limitless <br> Possibilities</h1>
+                <h1>
+                  A <span class="nigeria">Nigeria</span> <br />
+                  of Limitless <br />
+                  <span class="nigeria">Possibilities</span>
+                </h1>
               </div>
             </div>
             <div class="carousel-item" data-interval="2000">
@@ -116,7 +122,10 @@
                 alt="Image Here"
               />
               <div class="carousel-caption d-none d-md-flex">
-               <h1>Welcome to a  <br>new Nigeria </h1>
+                <h1>
+                  Welcome to a <br />
+                  new <span class="nigeria">Nigeria</span>
+                </h1>
               </div>
             </div>
             <div class="carousel-item" data-interval="2000">
@@ -126,7 +135,11 @@
                 alt="Image Here"
               />
               <div class="carousel-caption d-none d-md-flex">
-               <h1>A Nigeria <br> of Limitless <br> Possibilities</h1>
+                <h1>
+                  A <span class="nigeria">Nigeria</span> <br />
+                  of Limitless <br />
+                  <span class="nigeria">Possibilities</span>
+                </h1>
               </div>
             </div>
             <div class="carousel-item" data-interval="2000">
@@ -136,7 +149,10 @@
                 alt="Image Here"
               />
               <div class="carousel-caption d-none d-md-flex">
-               <h1>Welcome to a  <br>new Nigeria </h1>
+                <h1>
+                  Welcome to a <br />
+                  new <span class="nigeria">Nigeria</span>
+                </h1>
               </div>
             </div>
             <div class="carousel-item" data-interval="2000">
@@ -146,7 +162,11 @@
                 alt="Image Here"
               />
               <div class="carousel-caption d-none d-md-flex">
-               <h1>A Nigeria <br> of Limitless <br> Possibilities</h1>
+                <h1>
+                  A <span class="nigeria">Nigeria</span> <br />
+                  of Limitless <br />
+                  <span class="nigeria">Possibilities</span>
+                </h1>
               </div>
             </div>
           </div>
@@ -175,7 +195,7 @@
       <div class="support">
         <i class="fa fa-angle-down" aria-hidden="true" id="angle-icon"></i>
         <div class="support-campaign bg-main">
-          <p>Support Our Campaign</p>
+          <h5 class="font-weight-bold">Support Our Campaign</h5>
           <div class="price-buttons">
             <paystack
               :amount="500 * 100"
@@ -228,8 +248,6 @@
 
     <!-- <hero-text/> -->
 
-     
-
     <div class="content">
       <aboutus />
 
@@ -237,9 +255,9 @@
     </div>
 
     <div class="news-category">
-      <h1 class="news-text">News</h1>
-
-      <div class="news-div">
+      <h1 class="core-values-text">News</h1>
+     <VueRssFeed :feedUrl="feedUrl" :name="name" :limit="limit"/>
+      <!-- <div class="news-div">
         <div>
           <img
             src="@/assets/img/adc17.png"
@@ -312,10 +330,8 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
-
- 
 
     <div class="gallery">
       <h1 class="core-values-text mt-4">Gallery</h1>
@@ -368,23 +384,26 @@
   import paystack from "vue-paystack";
   import aboutus from "../components/about_us.vue";
   import coreValues from "../components/core.vue";
+  import VueRssFeed from "vue-rss-feed"
   export default {
     components: {
       paystack,
       aboutus,
       coreValues,
-      // carousel3d
+      VueRssFeed
     },
     data() {
       return {
         slides: 7,
-        // amount: "",
+        feedUrl: "https://politics.einnews.com/rss/wq9dSKowGxT4pU9N.xml",
+        name: "",
+        limit: 5,
         full_name: " ",
         email: "donor@email.com",
         PUBLIC_KEY: "pk_live_6c2684fe83cd844c750932b184a1bbe26f380912",
       };
     },
-    
+
     methods: {
       processPayment: () => {
         window.alert("Payment recieved");
@@ -439,8 +458,8 @@
     position: absolute;
     top: 30%;
   }
-  h1{
-    font-size: 6rem;
+  .carousel-caption h1 {
+    font-size: 5rem;
     text-align: left;
     line-height: 5.3rem;
     text-shadow: 2px 2px #000;

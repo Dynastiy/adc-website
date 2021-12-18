@@ -6,24 +6,23 @@
           <div class="col-md-3 ml-auto">
             <h3>quicklinks</h3>
             <ul class="list-unstyled links">
-              <li><a href="#">About</a></li>
               <li><a href="#">ADC in Diaspora</a></li>
-              <li><a href="#">Our Priorities</a></li>
-              <li><a href="#">Our Manifesto</a></li>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">State Chapters</a></li>
-              <li><a href="#">Our Candidates</a></li>
+              <li><router-link to="/our_priorities">Our Priorities</router-link></li>
+              <li><router-link to="/our_manifesto">Our Manifesto</router-link></li>
+              <li><router-link to="/shop">Shop</router-link></li>
+              <li><router-link to="/news">News</router-link></li>
+              <li><router-link to="/about">State Chapters</router-link></li>
+              <li><router-link to="/about">Our Candidates</router-link></li>
             </ul>
           </div>
           <div class="col-md-2 ml-auto">
             <h3>actions</h3>
             <ul class="list-unstyled links">
-              <li><a href="#">Join ADC</a></li>
-              <li><a href="#">Donate</a></li>
-              <li><a href="#">Resources</a></li>
-              <li><a href="#">Brand Assets</a></li>
-              <li><a href="#">Login</a></li>
+              <li><router-link to="/join_adc">Join ADC</router-link></li>
+              <li><router-link to="/donate">Donate</router-link></li>
+              <li><router-link to="/resources">Resources</router-link></li>
+              <li><router-link to="/brand_assets">Brand Assets</router-link></li>
+              <li><router-link to="/login">Login</router-link></li>
             </ul>
           </div>
           <div class="col-md-5 ml-auto">
