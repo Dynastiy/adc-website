@@ -108,10 +108,9 @@
                 alt="Image Here"
               />
               <div class="carousel-caption d-none d-md-flex">
-                <h1>
-                  A <span class="nigeria">Nigeria</span> <br />
-                  of Limitless <br />
-                  <span class="nigeria">Possibilities</span>
+                 <h1>
+                  Welcome to a <br />
+                  new <span class="nigeria">Nigeria</span>
                 </h1>
               </div>
             </div>
@@ -150,8 +149,9 @@
               />
               <div class="carousel-caption d-none d-md-flex">
                 <h1>
-                  Welcome to a <br />
-                  new <span class="nigeria">Nigeria</span>
+                  A <span class="nigeria">Nigeria</span> <br />
+                  of Limitless <br />
+                  <span class="nigeria">Possibilities</span>
                 </h1>
               </div>
             </div>
