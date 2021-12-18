@@ -88,7 +88,7 @@
             <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
           </ol>
           <div class="carousel-inner">
-            <div class="carousel-item active" data-interval="2000">
+            <div class="carousel-item active" data-interval="3000">
               <img
                 src="@/assets/img/image4.jpg"
                 class="d-block w-100"
@@ -101,7 +101,7 @@
                 </h1>
               </div>
             </div>
-            <div class="carousel-item" data-interval="2000">
+            <div class="carousel-item" data-interval="3000">
               <img
                 src="@/assets/img/image13.jpg"
                 class="d-block w-100"
@@ -115,7 +115,7 @@
                 </h1>
               </div>
             </div>
-            <div class="carousel-item" data-interval="2000">
+            <div class="carousel-item" data-interval="3000">
               <img
                 src="@/assets/img/image3.jpg"
                 class="d-block w-100"
@@ -128,7 +128,7 @@
                 </h1>
               </div>
             </div>
-            <div class="carousel-item" data-interval="2000">
+            <div class="carousel-item" data-interval="3000">
               <img
                 src="@/assets/img/image5.jpg"
                 class="d-block w-100"
@@ -142,7 +142,7 @@
                 </h1>
               </div>
             </div>
-            <div class="carousel-item" data-interval="2000">
+            <div class="carousel-item" data-interval="3000">
               <img
                 src="@/assets/img/image7.jpg"
                 class="d-block w-100"
@@ -155,7 +155,7 @@
                 </h1>
               </div>
             </div>
-            <div class="carousel-item" data-interval="2000">
+            <div class="carousel-item" data-interval="3000">
               <img
                 src="@/assets/img/image10.jpg"
                 class="d-block w-100"
