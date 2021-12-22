@@ -19,14 +19,6 @@
           <router-link to="/"><img src="@/assets/img/logo.png" alt="logo" width="180"/></router-link>
         </div>
 
-        <input type="checkbox" id="check" />
-        <label for="check">
-          <!-- <i class="fa fa-bars text-white" id="bars" aria-hidden="true"></i> -->
-          <div id="bars">
-            <ion-icon name="list"></ion-icon>
-          </div>
-        </label>
-
         <div class="navigations">
           <li>
             <router-link to="/about">About</router-link>
@@ -60,11 +52,18 @@
       </div>
     </div>
 
+
+<!-- Mobile Navigation Component -->
+<mobile-nav/>
   </div>
 </template>
 
 <script>
+import mobileNav from './mobile_nav.vue'
   export default {
+    components: {
+      mobileNav
+    },
     data() {
       return {
         overlay: false,
@@ -129,5 +128,10 @@
   .close ion-icon {
   font-size: 64px;
   color: #fff;
+}
+@media (max-width: 990px){
+  .logo-navs {
+    display: none !important;
+  }
 }
 </style>

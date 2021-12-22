@@ -2,6 +2,7 @@
   <div id="appRoot">
     <div class="">
       <div class="header-area">
+        <mobile-nav/>
         <div class="request-links">
           <div class="top-links bg-main">
             <router-link to="/join_adc">JOIN ADC</router-link>
@@ -43,18 +44,18 @@
                 ><img src="@/assets/img/logo.png" alt="logo" width="180"
               /></router-link>
             </div>
-
-            <input type="checkbox" id="check" />
-            <label for="check">
-              <i class="fa fa-bars text-white" id="bars" aria-hidden="true"></i>
-            </label>
-
             <div class="navigations">
               <li>
                 <router-link to="/about">About</router-link>
               </li>
               <li>
-                <a href="#">Where we Stand</a>
+                <a href="javascript:void(0)" id="where_we_stand_trigger">Where we Stand</a>
+                <!-- <div class="where-we-stand" id="where_we_stand">
+                  <ul>
+                    <li> <router-link to="/">Our Manifesto</router-link> </li>
+                    <li> <router-link to="/">Our Priorities</router-link> </li>
+                  </ul>
+                </div> -->
               </li>
               <li>
                 <a href="https://adc-dn.org/">ADC Diaspora</a>
@@ -67,6 +68,8 @@
               </li>
             </div>
           </div>
+
+          
         </div>
       </div>
       <div class="welcome-text">
@@ -94,10 +97,10 @@
                 class="d-block w-100"
                 alt="Image Here"
               />
-              <div class="carousel-caption d-none d-md-flex">
+              <div class="carousel-caption d-md-flex">
                 <h1>
-                  Welcome to a <br />
-                  new <span class="nigeria">Nigeria</span>
+                  Welcome to  <br />
+                 a new <span class="nigeria">Nigeria</span>
                 </h1>
               </div>
             </div>
@@ -107,10 +110,10 @@
                 class="d-block w-100"
                 alt="Image Here"
               />
-              <div class="carousel-caption d-none d-md-flex">
+              <div class="carousel-caption d-md-flex">
                  <h1>
-                  Welcome to a <br />
-                  new <span class="nigeria">Nigeria</span>
+                  Welcome to <br />
+                  a new <span class="nigeria">Nigeria</span>
                 </h1>
               </div>
             </div>
@@ -120,10 +123,10 @@
                 class="d-block w-100"
                 alt="Image Here"
               />
-              <div class="carousel-caption d-none d-md-flex">
+              <div class="carousel-caption d-md-flex">
                 <h1>
-                  Welcome to a <br />
-                  new <span class="nigeria">Nigeria</span>
+                  Welcome to  <br />
+                  a new <span class="nigeria">Nigeria</span>
                 </h1>
               </div>
             </div>
@@ -133,7 +136,7 @@
                 class="d-block w-100"
                 alt="Image Here"
               />
-              <div class="carousel-caption d-none d-md-flex">
+              <div class="carousel-caption d-md-flex">
                 <h1>
                   A <span class="nigeria">Nigeria</span> <br />
                   of Limitless <br />
@@ -147,7 +150,7 @@
                 class="d-block w-100"
                 alt="Image Here"
               />
-              <div class="carousel-caption d-none d-md-flex">
+              <div class="carousel-caption d-md-flex">
                 <h1>
                   A <span class="nigeria">Nigeria</span> <br />
                   of Limitless <br />
@@ -161,7 +164,7 @@
                 class="d-block w-100"
                 alt="Image Here"
               />
-              <div class="carousel-caption d-none d-md-flex">
+              <div class="carousel-caption d-md-flex">
                 <h1>
                   A <span class="nigeria">Nigeria</span> <br />
                   of Limitless <br />
@@ -235,7 +238,7 @@
             type="text"
             class="form-control"
             aria-label="State Chairperson"
-            placeholder="Search Chairperson"
+            placeholder="Search State"
           />
           <div class="input-group-append">
             <span class="input-group-text" id="arrow-icon">
@@ -254,41 +257,30 @@
       <core-values />
     </div>
 
-    <div class="news-category">
+    <div class="news-category content">
       <h1 class="core-values-text">News</h1>
-     <!-- <VueRssFeed :feedUrl="feedUrl" :name="name" :limit="limit"/> -->
-      <!-- <div class="news-div">
-        <div>
-          <img
-            src="@/assets/img/adc17.png"
-            alt="img"
-            class="flag-img"
-            width="100%"
-          />
+      <div class="news-container">
+          <!-- <div class="shadow-sm ">
+            <img src="@/assets/img/1.png" width="100%" height="30%" alt="img" class="handshake-img" />
 
-          <div class="news-content shadow-sm">
-            <p class="news-date p-1">November 2 2021</p>
-            <div class="p-3">
-              <h5 class="font-weight-bold">
-                IMPACT OF EXTRISINCT MOTIVATION ON INTRISINCT MOVE FORWARD
-              </h5>
-              <p class="small">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam od tempor incididunt ut lab. Lorem ipsum
-                dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam od tempor incididunt ut lab.
-              </p>
-              <a href="#" class="font-weight-bold small text-orange"
-                >View More</a
-              >
+            <div class="news-content">
+              <p class="news-date p-1">November 2 2021</p>
+              <div class="p-3">
+                <h5 class="font-weight-bold">
+                  IMPACT OF EXTRISINCT MOTIVATION ON INTRISINCT MOVE FORWARD
+                </h5>
+                <p>
+                  Lorem ipsum dolor sit amet, sed do Lorem ipsum
+                  doloradipisicing elit, do eiusmod et dolore magna aliqua. Ut
+                  enim ad minim veniam od tempor incididunt ut lab.
+                </p>
+                <a href="#" class="text-orange small font-weight-bold"
+                  >View More</a
+                >
+              </div>
             </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="second-news-content shadow-sm">
+          </div> -->
+          <div class="shadow-sm d-lg-flex">
             <img src="@/assets/img/1.png" alt="img" class="handshake-img" />
 
             <div class="news-content">
@@ -308,8 +300,7 @@
               </div>
             </div>
           </div>
-
-          <div class="second-news-content shadow-sm">
+          <div class="shadow-sm d-lg-flex">
             <img src="@/assets/img/1.png" alt="img" class="handshake-img" />
 
             <div class="news-content">
@@ -329,8 +320,50 @@
               </div>
             </div>
           </div>
-        </div>
-      </div> -->
+           <div class="shadow-sm d-lg-flex">
+            <img src="@/assets/img/1.png" alt="img" class="handshake-img" />
+
+            <div class="news-content">
+              <p class="news-date p-1">November 2 2021</p>
+              <div class="p-3">
+                <h5 class="font-weight-bold">
+                  IMPACT OF EXTRISINCT MOTIVATION ON INTRISINCT MOVE FORWARD
+                </h5>
+                <p>
+                  Lorem ipsum dolor sit amet, sed do Lorem ipsum
+                  doloradipisicing elit, do eiusmod et dolore magna aliqua. Ut
+                  enim ad minim veniam od tempor incididunt ut lab.
+                </p>
+                <a href="#" class="text-orange small font-weight-bold"
+                  >View More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="shadow-sm d-lg-flex">
+            <img src="@/assets/img/1.png" alt="img" class="handshake-img" />
+
+            <div class="news-content">
+              <p class="news-date p-1">November 2 2021</p>
+              <div class="p-3">
+                <h5 class="font-weight-bold">
+                  IMPACT OF EXTRISINCT MOTIVATION ON INTRISINCT MOVE FORWARD
+                </h5>
+                <p>
+                  Lorem ipsum dolor sit amet, sed do Lorem ipsum
+                  doloradipisicing elit, do eiusmod et dolore magna aliqua. Ut
+                  enim ad minim veniam od tempor incididunt ut lab.
+                </p>
+                <a href="#" class="text-orange small font-weight-bold"
+                  >View More</a
+                >
+              </div>
+            </div>
+          </div>
+      </div> 
+      <router-link to="/news" class="text-orange  mt-3 d-block text-right font-weight-bold"
+                  >See All</router-link
+                >
     </div>
 
     <div class="gallery">
@@ -344,6 +377,7 @@
 </template>
 
 <script>
+import mobileNav from '../components/mobile_nav.vue'
   import paystack from "vue-paystack";
   import aboutus from "../components/about_us.vue";
   import coreValues from "../components/core.vue";
@@ -351,6 +385,7 @@
   import carouselArea from '../components/carousel.vue'
   export default {
     components: {
+      mobileNav,
       paystack,
       aboutus,
       coreValues,
@@ -406,7 +441,26 @@
   };
 </script>
 
-<style scoped>
+<style>
+.where-we-stand {
+  background: #fff;
+}
+.where-we-stand a {
+  color: #000 !important;
+  padding: 1rem;
+}
+.navigations .where-we-stand li {
+  line-height: normal !important;
+}
+.news-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+grid-gap: 5px;
+}
+/* .news-container div:nth-child(1){
+  grid-row-start: 1;
+  grid-row-end: 3;
+} */
 .gallery {
   height: 500px;
 }
@@ -425,13 +479,17 @@
   }
   .carousel-caption {
     position: absolute;
-    top: 30%;
+    top: 20%;
+    left: 0;
+    padding-left: 3rem;
+    padding-top: 3rem;
   }
   .carousel-caption h1 {
     font-size: 5rem;
     text-align: left;
     line-height: 5.3rem;
     text-shadow: 2px 2px #000;
+    font-weight: 900;
   }
   .carousel {
     position: relative;
@@ -456,7 +514,7 @@
     top: 0;
     z-index: 999;
     width: 100%;
-    text-align: right;
+    /* text-align: right; */
   }
   .navigations a {
     color: #fff;
@@ -509,9 +567,30 @@
     color: #fff;
   }
 
-  @media screen and (max-width: 764px) {
+  @media  (max-width: 990px) {
     .carousel img {
       height: 400px;
     }
+    .news-container  {
+      display: unset;
+    }
+    .news-container div {
+      margin-bottom: 0.8rem;
+      /* display: unset !important; */
+    }
+    .carousel-indicators {
+      bottom: 20%;
+    }
+    .logo-navs {
+      display: none !important;
+    }
+    .carousel-caption h1 {
+      line-height: 2.5rem;
+      font-size: 3rem;
+    }
+    .nigeria {
+      font-size: 3rem !important;
+    }
   }
+
 </style>

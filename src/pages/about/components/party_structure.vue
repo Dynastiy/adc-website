@@ -6,11 +6,13 @@
           <div class="card_body text-center">
             <img
               :src="exec.avatar"
-              class="rounded-circle"
               alt=""
-              width="80"
+              width="auto"
               height="80"
             />
+            <!-- <div class="bg-image" :style="{ 'background-image': 'url(' + exec.avatar + ')' }">
+              A
+            </div> -->
             <h6 class="font-weight-bold card-title mt-3"> {{ exec.name }} </h6>
             <p class="small text-muted"> {{ exec.position }}  </p>
             <!-- <p class="">
@@ -42,6 +44,11 @@ import items from '@/assets/js/party_execs.js'
 </script>
 
 <style scoped>
+/* .bg-image {
+  backgroun
+  height: 200px;
+  width: 100%;
+} */
 .party__structure {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;

@@ -44,18 +44,6 @@
           <li class="nav-item" role="presentation">
             <a
               class="nav-link"
-              id="pills-contact-tab"
-              data-toggle="pill"
-              href="#pills-contact"
-              role="tab"
-              aria-controls="pills-contact"
-              aria-selected="true"
-              >CONTACT US</a
-            >
-          </li>
-          <li class="nav-item" role="presentation">
-            <a
-              class="nav-link"
               id="pills-candidates-tab"
               data-toggle="pill"
               href="#pills-candidates"
@@ -75,6 +63,18 @@
               aria-controls="pills-state"
               aria-selected="false"
               >STATE CHAPTERS</a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link"
+              id="pills-contact-tab"
+              data-toggle="pill"
+              href="#pills-contact"
+              role="tab"
+              aria-controls="pills-contact"
+              aria-selected="true"
+              >CONTACT US</a
             >
           </li>
         </ul>
@@ -107,13 +107,6 @@
         </div>
         <div
           class="tab-pane fade"
-          id="pills-contact"
-          role="tabpanel"
-          aria-labelledby="pills-contact-tab">
-          <contact-us/>
-        </div>
-        <div
-          class="tab-pane fade"
           id="pills-candidates"
           role="tabpanel"
           aria-labelledby="pills-candidates-tab"
@@ -127,6 +120,13 @@
           aria-labelledby="pills-state-tab"
         >
           <state-chapters/>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-contact"
+          role="tabpanel"
+          aria-labelledby="pills-contact-tab">
+          <contact-us/>
         </div>
       </div>
     </div>

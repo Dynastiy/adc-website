@@ -6,8 +6,6 @@
       </div>
       <div class="col-md-7">
         <h2 class="font-weight-bold">Chairman's Message</h2>
-        <p class="small font-weight-bold">Ralphs Okey
-          Nwosu, <span class="text-orange">National Chairman</span> </p>
         <hr>
         <p style="height: 32rem; font-size: 0.9rem; overflow-y: scroll">
           Dear Friends, <pre></pre> <b> It takes a warm handshake to become part of a deeply
@@ -82,6 +80,8 @@
           but to enable it. Antoine de Saint-Exupery
               </em> 
         </p>
+         <p class="small font-weight-bold">Ralphs Okey
+          Nwosu, </p>
       </div>
     </div>
   </div>

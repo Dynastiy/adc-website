@@ -37,6 +37,8 @@ My points are borne out of my experience, learning, knowledge and interaction wi
 <pre></pre>
 Once again, I congratulate all members of Coalition for Nigeria Movement, all the political parties and civil society organisations that have adopted ADC as a political party platform to move Nigeria up and forward and I wish them success for now and the future. The eyes of the nation and the world are on you to show that with people and organisation of like mind, a real difference is possible and you will make it. I wish you well. But always remember that Nigeria belongs to you as it belongs to those in power. If you fail to use the potent weapon democracy offers you and that is your vote, then you have yourselves to blame. You can move on to the next stage in the democratic advance for change, unity, security, stability, good governance, prosperity and progress. So may it be for Nigeria.
         </p>
+         <p class="small font-weight-bold">President Olusegun Obasanjo
+ <span class="text-orange small">May 10, 2018</span> </p>
       </div>
     </div>
   </div>
