@@ -2,7 +2,7 @@
   <div>
     <div class="row">
       <div class="col-md-5">
-        <img src="@/assets/img/party_officials/Chief Ralphs Okey Nwosu National Chairman.jpg" alt="" width="100%" />
+        <img src="@/assets/img/party_officials/Chief_Ralphs_Okey_Nwosu.jpg" alt="" width="100%" />
       </div>
       <div class="col-md-7">
         <h2 class="font-weight-bold">Chairman's Message</h2>

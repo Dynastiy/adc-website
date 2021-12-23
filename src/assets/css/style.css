@@ -45,6 +45,10 @@
     background: #3ee987 !important;
 }
 
+.bg-light-accent {
+    background: #effff6 !important;
+}
+
 .bg-dark-accent {
     background: #00bd9a !important;
 }
