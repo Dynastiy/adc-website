@@ -24,8 +24,17 @@
             <router-link to="/about">About</router-link>
           </li>
           <li>
-            <a href="#">Where we Stand</a>
-          </li>
+                <a href="javascript:void(0)" id="where_we_stand_trigger"
+                  >Where we Stand <ion-icon name="arrow-dropdown"></ion-icon> </a
+                >
+                <div class="where-we-stand" id="where_we_stand">
+                  <ul>
+                    <li><router-link to="/our_manifesto">Our Manifesto</router-link></li>
+                    <hr />
+                    <li><router-link to="/our_priorities">Our Priorities</router-link></li>
+                  </ul>
+                </div>
+              </li>
           <li>
             <a href="https://adc-dn.org/">ADC Diaspora</a>
           </li>
@@ -79,10 +88,56 @@ import mobileNav from './mobile_nav.vue'
         overlay.classList.remove("active");
       },
     },
+    mounted() {
+      const drop_toggle = document.getElementById("where_we_stand_trigger");
+      const drop_drawer = document.getElementById("where_we_stand");
+      document.onclick = function (e) {
+        if (
+          e.target.id !== "where_we_stand_trigger" &&
+          e.target.id !== "where_we_stand"
+        ) {
+          // drop_drawer.classList.remove("active");
+          drop_drawer.style.transition = "0.3s";
+          drop_drawer.style.opacity = "0";
+        }
+      };
+      drop_toggle.onclick = function () {
+        // drop_drawer.classList.toggle("active");
+        if (drop_drawer.style.opacity === "1") {
+          drop_drawer.style.transition = "0.3s";
+          drop_drawer.style.opacity = "0";
+        }
+        else{
+          drop_drawer.style.transition= '0.3s';
+        drop_drawer.style.opacity = '1'
+        }
+      };
+    },
   };
 </script>
 
 <style>
+.where-we-stand {
+    background: #224f5a;
+    margin-top: -1rem;
+    opacity: 0;
+  }
+  .where-we-stand a {
+    color: #fff !important;
+    /* pa
+  dding: 1rem; */
+  }
+  .where-we-stand a:hover {
+    color: #00a54f !important;
+    transition: 1s ease-in-out;
+  }
+  hr {
+    margin: 0;
+  }
+  .navigations .where-we-stand li {
+    line-height: normal !important;
+    padding: 1rem;
+  }
   .take-action-overlay {
     min-height: 100vh;
     position: fixed;

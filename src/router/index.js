@@ -64,6 +64,24 @@ const routes = [{
             import ( /* webpackChunkName: "about" */ '../pages/join_adc/registration_form.vue')
     },
     {
+        path: '/our_priorities',
+        name: 'Our Priorities',
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () =>
+            import ( /* webpackChunkName: "about" */ '../pages/our_priorities/index.vue')
+    },
+    {
+        path: '/our_manifesto',
+        name: 'Our manifesto',
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () =>
+            import ( /* webpackChunkName: "about" */ '../pages/our_manifesto/index.vue')
+    },
+    {
         path: '/dashboard',
         name: 'Dashboard',
         // route level code-splitting

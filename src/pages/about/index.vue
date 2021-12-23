@@ -3,7 +3,7 @@
     <div class="header">
       <app-header />
       <div class="content">
-        <h2 class="font-weight-bold text-white text-center pb-5">About Us</h2>
+        <h2 class="font-weight-bold headerss text-white text-center pb-5">About Us</h2>
         <ul class="nav nav-pills" id="pills-tab" role="tablist">
           <li class="nav-item" role="presentation">
             <a

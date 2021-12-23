@@ -2,7 +2,7 @@
   <div id="appRoot">
     <div class="">
       <div class="header-area">
-        <mobile-nav/>
+        <mobile-nav />
         <div class="request-links">
           <div class="top-links bg-main">
             <router-link to="/join_adc">JOIN ADC</router-link>
@@ -49,13 +49,16 @@
                 <router-link to="/about">About</router-link>
               </li>
               <li>
-                <a href="javascript:void(0)" id="where_we_stand_trigger">Where we Stand</a>
-                <!-- <div class="where-we-stand" id="where_we_stand">
+                <a href="javascript:void(0)" id="where_we_stand_trigger"
+                  >Where we Stand  <ion-icon name="arrow-dropdown"></ion-icon></a
+                >
+                <div class="where-we-stand" id="where_we_stand">
                   <ul>
-                    <li> <router-link to="/">Our Manifesto</router-link> </li>
-                    <li> <router-link to="/">Our Priorities</router-link> </li>
+                    <li><router-link to="/our_manifesto">Our Manifesto</router-link></li>
+                    <hr />
+                    <li><router-link to="/our_priorities">Our Priorities</router-link></li>
                   </ul>
-                </div> -->
+                </div>
               </li>
               <li>
                 <a href="https://adc-dn.org/">ADC Diaspora</a>
@@ -68,8 +71,6 @@
               </li>
             </div>
           </div>
-
-          
         </div>
       </div>
       <div class="welcome-text">
@@ -99,8 +100,8 @@
               />
               <div class="carousel-caption d-md-flex">
                 <h1>
-                  Welcome to  <br />
-                 a new <span class="nigeria">Nigeria</span>
+                  Welcome to <br />
+                  a new <span class="nigeria">Nigeria</span>
                 </h1>
               </div>
             </div>
@@ -111,7 +112,7 @@
                 alt="Image Here"
               />
               <div class="carousel-caption d-md-flex">
-                 <h1>
+                <h1>
                   Welcome to <br />
                   a new <span class="nigeria">Nigeria</span>
                 </h1>
@@ -125,7 +126,7 @@
               />
               <div class="carousel-caption d-md-flex">
                 <h1>
-                  Welcome to  <br />
+                  Welcome to <br />
                   a new <span class="nigeria">Nigeria</span>
                 </h1>
               </div>
@@ -260,7 +261,7 @@
     <div class="news-category content">
       <h1 class="core-values-text">News</h1>
       <div class="news-container">
-          <!-- <div class="shadow-sm ">
+        <!-- <div class="shadow-sm ">
             <img src="@/assets/img/1.png" width="100%" height="30%" alt="img" class="handshake-img" />
 
             <div class="news-content">
@@ -280,109 +281,110 @@
               </div>
             </div>
           </div> -->
-          <div class="shadow-sm d-lg-flex">
-            <img src="@/assets/img/1.png" alt="img" class="handshake-img" />
+        <div class="shadow-sm d-lg-flex">
+          <img src="@/assets/img/1.png" alt="img" class="handshake-img" />
 
-            <div class="news-content">
-              <p class="news-date p-1">November 2 2021</p>
-              <div class="p-3">
-                <h5 class="font-weight-bold">
-                  IMPACT OF EXTRISINCT MOTIVATION ON INTRISINCT MOVE FORWARD
-                </h5>
-                <p>
-                  Lorem ipsum dolor sit amet, sed do Lorem ipsum
-                  doloradipisicing elit, do eiusmod et dolore magna aliqua. Ut
-                  enim ad minim veniam od tempor incididunt ut lab.
-                </p>
-                <a href="#" class="text-orange small font-weight-bold"
-                  >View More</a
-                >
-              </div>
+          <div class="news-content">
+            <p class="news-date p-1">November 2 2021</p>
+            <div class="p-3">
+              <h5 class="font-weight-bold">
+                IMPACT OF EXTRISINCT MOTIVATION ON INTRISINCT MOVE FORWARD
+              </h5>
+              <p>
+                Lorem ipsum dolor sit amet, sed do Lorem ipsum doloradipisicing
+                elit, do eiusmod et dolore magna aliqua. Ut enim ad minim veniam
+                od tempor incididunt ut lab.
+              </p>
+              <a href="#" class="text-orange small font-weight-bold"
+                >View More</a
+              >
             </div>
           </div>
-          <div class="shadow-sm d-lg-flex">
-            <img src="@/assets/img/1.png" alt="img" class="handshake-img" />
+        </div>
+        <div class="shadow-sm d-lg-flex">
+          <img src="@/assets/img/1.png" alt="img" class="handshake-img" />
 
-            <div class="news-content">
-              <p class="news-date p-1">November 2 2021</p>
-              <div class="p-3">
-                <h5 class="font-weight-bold">
-                  IMPACT OF EXTRISINCT MOTIVATION ON INTRISINCT MOVE FORWARD
-                </h5>
-                <p>
-                  Lorem ipsum dolor sit amet, sed do Lorem ipsum
-                  doloradipisicing elit, do eiusmod et dolore magna aliqua. Ut
-                  enim ad minim veniam od tempor incididunt ut lab.
-                </p>
-                <a href="#" class="text-orange small font-weight-bold"
-                  >View More</a
-                >
-              </div>
+          <div class="news-content">
+            <p class="news-date p-1">November 2 2021</p>
+            <div class="p-3">
+              <h5 class="font-weight-bold">
+                IMPACT OF EXTRISINCT MOTIVATION ON INTRISINCT MOVE FORWARD
+              </h5>
+              <p>
+                Lorem ipsum dolor sit amet, sed do Lorem ipsum doloradipisicing
+                elit, do eiusmod et dolore magna aliqua. Ut enim ad minim veniam
+                od tempor incididunt ut lab.
+              </p>
+              <a href="#" class="text-orange small font-weight-bold"
+                >View More</a
+              >
             </div>
           </div>
-           <div class="shadow-sm d-lg-flex">
-            <img src="@/assets/img/1.png" alt="img" class="handshake-img" />
+        </div>
+        <div class="shadow-sm d-lg-flex">
+          <img src="@/assets/img/1.png" alt="img" class="handshake-img" />
 
-            <div class="news-content">
-              <p class="news-date p-1">November 2 2021</p>
-              <div class="p-3">
-                <h5 class="font-weight-bold">
-                  IMPACT OF EXTRISINCT MOTIVATION ON INTRISINCT MOVE FORWARD
-                </h5>
-                <p>
-                  Lorem ipsum dolor sit amet, sed do Lorem ipsum
-                  doloradipisicing elit, do eiusmod et dolore magna aliqua. Ut
-                  enim ad minim veniam od tempor incididunt ut lab.
-                </p>
-                <a href="#" class="text-orange small font-weight-bold"
-                  >View More</a
-                >
-              </div>
+          <div class="news-content">
+            <p class="news-date p-1">November 2 2021</p>
+            <div class="p-3">
+              <h5 class="font-weight-bold">
+                IMPACT OF EXTRISINCT MOTIVATION ON INTRISINCT MOVE FORWARD
+              </h5>
+              <p>
+                Lorem ipsum dolor sit amet, sed do Lorem ipsum doloradipisicing
+                elit, do eiusmod et dolore magna aliqua. Ut enim ad minim veniam
+                od tempor incididunt ut lab.
+              </p>
+              <a href="#" class="text-orange small font-weight-bold"
+                >View More</a
+              >
             </div>
           </div>
-          <div class="shadow-sm d-lg-flex">
-            <img src="@/assets/img/1.png" alt="img" class="handshake-img" />
+        </div>
+        <div class="shadow-sm d-lg-flex">
+          <img src="@/assets/img/1.png" alt="img" class="handshake-img" />
 
-            <div class="news-content">
-              <p class="news-date p-1">November 2 2021</p>
-              <div class="p-3">
-                <h5 class="font-weight-bold">
-                  IMPACT OF EXTRISINCT MOTIVATION ON INTRISINCT MOVE FORWARD
-                </h5>
-                <p>
-                  Lorem ipsum dolor sit amet, sed do Lorem ipsum
-                  doloradipisicing elit, do eiusmod et dolore magna aliqua. Ut
-                  enim ad minim veniam od tempor incididunt ut lab.
-                </p>
-                <a href="#" class="text-orange small font-weight-bold"
-                  >View More</a
-                >
-              </div>
+          <div class="news-content">
+            <p class="news-date p-1">November 2 2021</p>
+            <div class="p-3">
+              <h5 class="font-weight-bold">
+                IMPACT OF EXTRISINCT MOTIVATION ON INTRISINCT MOVE FORWARD
+              </h5>
+              <p>
+                Lorem ipsum dolor sit amet, sed do Lorem ipsum doloradipisicing
+                elit, do eiusmod et dolore magna aliqua. Ut enim ad minim veniam
+                od tempor incididunt ut lab.
+              </p>
+              <a href="#" class="text-orange small font-weight-bold"
+                >View More</a
+              >
             </div>
           </div>
-      </div> 
-      <router-link to="/news" class="text-orange  mt-3 d-block text-right font-weight-bold"
-                  >See All</router-link
-                >
+        </div>
+      </div>
+      <router-link
+        to="/news"
+        class="text-orange mt-3 d-block text-right font-weight-bold"
+        >See All</router-link
+      >
     </div>
 
     <div class="gallery">
       <h1 class="core-values-text mt-4">Gallery</h1>
       <div class="gallery">
-        <carousel-area/>
+        <carousel-area />
       </div>
-      
     </div>
   </div>
 </template>
 
 <script>
-import mobileNav from '../components/mobile_nav.vue'
+  import mobileNav from "../components/mobile_nav.vue";
   import paystack from "vue-paystack";
   import aboutus from "../components/about_us.vue";
   import coreValues from "../components/core.vue";
   // import VueRssFeed from "vue-rss-feed"
-  import carouselArea from '../components/carousel.vue'
+  import carouselArea from "../components/carousel.vue";
   export default {
     components: {
       mobileNav,
@@ -390,7 +392,7 @@ import mobileNav from '../components/mobile_nav.vue'
       aboutus,
       coreValues,
       // VueRssFeed,
-      carouselArea
+      carouselArea,
     },
     data() {
       return {
@@ -420,6 +422,31 @@ import mobileNav from '../components/mobile_nav.vue'
         overlay.classList.remove("active");
       },
     },
+    mounted() {
+      const drop_toggle = document.getElementById("where_we_stand_trigger");
+      const drop_drawer = document.getElementById("where_we_stand");
+      document.onclick = function (e) {
+        if (
+          e.target.id !== "where_we_stand_trigger" &&
+          e.target.id !== "where_we_stand"
+        ) {
+          // drop_drawer.classList.remove("active");
+          drop_drawer.style.transition = "0.3s";
+          drop_drawer.style.opacity = "0";
+        }
+      };
+      drop_toggle.onclick = function () {
+        // drop_drawer.classList.toggle("active");
+        if (drop_drawer.style.opacity === "1") {
+          drop_drawer.style.transition = "0.3s";
+          drop_drawer.style.opacity = "0";
+        }
+        else{
+          drop_drawer.style.transition= '0.3s';
+        drop_drawer.style.opacity = '1'
+        }
+      };
+    },
     computed: {
       reference() {
         let text = "";
@@ -442,32 +469,43 @@ import mobileNav from '../components/mobile_nav.vue'
 </script>
 
 <style>
-.where-we-stand {
-  background: #fff;
-}
-.where-we-stand a {
-  color: #000 !important;
-  padding: 1rem;
-}
-.navigations .where-we-stand li {
-  line-height: normal !important;
-}
-.news-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-grid-gap: 5px;
-}
-/* .news-container div:nth-child(1){
+  .where-we-stand {
+    background: #224f5a;
+    margin-top: -1rem;
+    opacity: 0;
+  }
+  .where-we-stand a {
+    color: #fff !important;
+    /* pa
+  dding: 1rem; */
+  }
+  .where-we-stand a:hover {
+    color: #00a54f !important;
+    transition: 1s ease-in-out;
+  }
+  hr {
+    margin: 0;
+  }
+  .navigations .where-we-stand li {
+    line-height: normal !important;
+    padding: 1rem;
+  }
+  .news-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+  }
+  /* .news-container div:nth-child(1){
   grid-row-start: 1;
   grid-row-end: 3;
 } */
-.gallery {
-  height: 500px;
-}
-.feed .articles-container {
-  display: flex !important;
-  /* grid-template-columns: 1fr 1fr; */
-}
+  .gallery {
+    height: 500px;
+  }
+  .feed .articles-container {
+    display: flex !important;
+    /* grid-template-columns: 1fr 1fr; */
+  }
   .carousel img {
     object-fit: cover;
     opacity: 0.3;
@@ -567,11 +605,11 @@ grid-gap: 5px;
     color: #fff;
   }
 
-  @media  (max-width: 990px) {
+  @media (max-width: 990px) {
     .carousel img {
       height: 400px;
     }
-    .news-container  {
+    .news-container {
       display: unset;
     }
     .news-container div {
@@ -592,5 +630,4 @@ grid-gap: 5px;
       font-size: 3rem !important;
     }
   }
-
 </style>
