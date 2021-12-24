@@ -208,8 +208,10 @@ return{
   transform: rotateY(180deg);
   z-index: 1;
   /* box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.2); */
-  background: url(../assets/img/image4.jpg);
-  background-size: 100%;
+  background: url(../assets/img/core.jpg);
+  background-repeat: no-repeat;
+  
+  background-size: cover;
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: overlay;
 }
