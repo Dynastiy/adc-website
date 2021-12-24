@@ -111,7 +111,7 @@
           role="tabpanel"
           aria-labelledby="pills-candidates-tab"
         >
-          Page 5
+          <our-candidates/>
         </div>
         <div
           class="tab-pane fade"
@@ -138,10 +138,11 @@
 import chairmansmessage from './components/chairmans_message.vue';
 import ContactUs from './components/contact_us.vue';
 import ObasanjosMessage from './components/obasanjos_message.vue';
+import OurCandidates from './components/our_candidates.vue';
 import partystructure from './components/party_structure.vue';
 import StateChapters from './components/state_chapters.vue';
   export default {
-    components: { AppHeader, chairmansmessage, ObasanjosMessage, ContactUs, partystructure, StateChapters },
+    components: { AppHeader, OurCandidates, chairmansmessage, ObasanjosMessage, ContactUs, partystructure, StateChapters },
     data() {
       return {
         };
@@ -150,6 +151,15 @@ import StateChapters from './components/state_chapters.vue';
 </script>
 
 <style scoped>
+.header{
+  background: url(../../assets/img/image5.jpg);
+       background-position:bottom;
+       background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000c7;
+    background-blend-mode: overlay;
+}
   .header .content h2 {
     text-shadow: 0px 2px rgba(0, 0, 0, 0.8);
   }

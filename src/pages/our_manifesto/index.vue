@@ -525,6 +525,15 @@
 </script>
 
 <style scoped>
+.header{
+  background: url(../../assets/img/handshake.jpg);
+       background-position:bottom;
+       background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000c7;
+    background-blend-mode: overlay;
+}
 .quotes{
     font-size: 5rem;
 }

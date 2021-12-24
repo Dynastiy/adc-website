@@ -53,6 +53,15 @@
 </script>
 
 <style scoped>
+.header{
+  background: url(../../assets/img/priorities.jpg);
+       background-position:bottom;
+       background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000c7;
+    background-blend-mode: overlay;
+}
   .priorities__content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

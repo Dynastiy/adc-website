@@ -6,8 +6,6 @@
       </div>
       <div class="col-md-7">
         <h2 class="font-weight-bold">My Treatise For Future Of Democracy And Development In Nigeria</h2>
-        <p class="small font-weight-bold">President Olusegun Obasanjo
- <span class="text-orange">May 10, 2018</span> </p>
         <hr>
         <p style="height: 30rem; font-size: 0.9rem; overflow-y: scroll">
          Let me start by welcoming and commending the emergence of a renewed and reinvigorated African Democratic Congress, ADC, as a political party. Since the inception of Coalition for Nigeria Movement, CNM, many of the sixty-eight registered political parties had contacted and consulted with the Movement on coming together and working together. The leadership of the Movement, after detailed examination, wide consultation and bearing in mind the orientation, policies and direction of the Movement, have agreed to adopt ADC as its platform to work with others for bringing about desirable change in the Nigeria polity and governance. I congratulate the leadership of the Movement for their decision and their choice. The emergence of ADC is the beginning of hard work to continue to consolidate our democracy and to make development in all its ramifications real, relevant, accessible, popular and reaching out to all Nigerians wherever they may be.

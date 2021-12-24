@@ -10,7 +10,7 @@
     </div>
 
     <div class="content">
-      
+      <p>No activities here yet</p>
     </div>
   </div>
 </template>
