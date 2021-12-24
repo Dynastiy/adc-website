@@ -17,7 +17,7 @@
 
         <div class="our-vision-div rounded animate__animated animate__backInUp">
           <i class="fa fa-eye fa-4x" aria-hidden="true"></i>
-          <h4 class="font-weight-bold mb-3 mt-3">
+          <h4 class="font-weight-bold mb-3">
             OUR VISION
           </h4>
           <p>
