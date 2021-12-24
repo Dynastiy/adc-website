@@ -56,7 +56,7 @@
       <div>
         <ul class="list-unstyled">
           <li class="mb-3"><router-link to="/login">LOGIN <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> </router-link></li>
-          <li><a href="">RESOURCES  <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a></li>
+          <li><router-link to="/resources">RESOURCES  <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></router-link></li>
         </ul>
       </div>
     </div>

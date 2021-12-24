@@ -573,7 +573,7 @@ cursor: pointer;
     margin: 0;
 }
 .Co-operation_And_Partnerships{
-    background: linear-gradient(0deg, #3ee9883f 50%, #fff 50%);
+    background: linear-gradient(0deg, #effff6 50%, #fff 50%);
     display: flex;
     gap: 20px;
 }

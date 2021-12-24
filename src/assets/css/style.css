@@ -569,6 +569,9 @@
 }
 
 @media (max-width: 990px) {
+    .headerss {
+        font-size: 3rem;
+    }
     .request-links {
         display: none !important;
     }

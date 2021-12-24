@@ -21,7 +21,8 @@
               <li><router-link to="/join_adc">Join ADC</router-link></li>
               <li><router-link to="/donate">Donate</router-link></li>
               <li><router-link to="/resources">Resources</router-link></li>
-              <li><router-link to="/brand_assets">Brand Assets</router-link></li>
+              <li><router-link to="/resources/brand_assets">Brand Assets</router-link></li>
+              <li><router-link to="/resources/our_activities">Activities</router-link></li>
               <li><router-link to="/login">Login</router-link></li>
             </ul>
           </div>

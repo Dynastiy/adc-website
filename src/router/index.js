@@ -82,6 +82,33 @@ const routes = [{
             import ( /* webpackChunkName: "about" */ '../pages/our_manifesto/index.vue')
     },
     {
+        path: '/resources',
+        name: 'resources',
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () =>
+            import ( /* webpackChunkName: "about" */ '../pages/resources/index.vue')
+    },
+    {
+        path: '/resources/our_activities',
+        name: 'Our activities',
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () =>
+            import ( /* webpackChunkName: "about" */ '../pages/resources/activities.vue')
+    },
+    {
+        path: '/resources/brand_assets',
+        name: 'Brand Assets',
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () =>
+            import ( /* webpackChunkName: "about" */ '../pages/resources/brand_assets.vue')
+    },
+    {
         path: '/dashboard',
         name: 'Dashboard',
         // route level code-splitting

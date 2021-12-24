@@ -29,10 +29,10 @@
                 </router-link>
               </li>
               <li>
-                <a href=""
+                <router-link to="/resources"
                   >RESOURCES
                   <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i
-                ></a>
+                ></router-link>
               </li>
             </ul>
           </div>
