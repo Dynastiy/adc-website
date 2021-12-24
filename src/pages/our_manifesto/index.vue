@@ -9,10 +9,9 @@
       </div>
     </div>
     <div class="content">
-        <div class="manifesto">
-          <p>
-            <!-- <div><img src="/images/“.png" alt="" class="opening_quote"></div> -->
-
+        <div class="manifesto d-flex justify-content-center mb-3">
+            <div><img src="@/assets/img/open__quote.svg" alt="" srcset=""></div>
+          <p class="text-center small font-weight-bold mx-3">
             At ADC, it is about Intense and Intentional Leadership – an activity
             that identifies challenges, <br />
             gets the people to see the realities in these challenges,
@@ -33,236 +32,233 @@
             the old way but nobody should be afraid as every body will be
             groomed and taught the new <br />
             way of doing things. The better way.
-
-            <!-- <div><img src="/images/” (1).png" alt="" class="closing_quote"></div> -->
           </p>
+          <div class="align-self-end"><img src="@/assets/img/close__quote.svg" alt="" srcset=""></div>
+          
         </div>
+    </div>
         <!-- ADC Objectives -->
-        <div class="Adc_objectives">
-          <h1>ADC Objectives</h1>
+        <div class="Adc_objectives bg-darker">
+          <div class="content">
+              <h1 class="font-weight-bold text-white text-center mb-5">ADC Objectives</h1>
 
           <div class="sub_Adc_objectives">
             <!-- objective one -->
-            <div class="objective_one_to_ten">
-              <i
-                class="fa fa-check fa-2x big_circle_tick_Right"
+            <div class="objective_one_to_ten  ">
+              <!-- <i
+                class="fa fa-check big_circle_tick_Right"
                 aria-hidden="true"
-              ></i>
+              ></i> -->
               <p>
-                Maintain and preserve the integrity, <br />
-                unity and sovereignty of the Federal <br />
-                Republic of Nigeria as one indivisible <br />
+                Maintain and preserve the integrity, 
+                unity and sovereignty of the Federal 
+                Republic of Nigeria as one indivisible 
                 political entity
               </p>
             </div>
             <!-- objective two -->
-            <div class="objective_one_to_ten">
-              <i
-                class="fa fa-check fa-2x big_circle_tick_Right"
+            <div class="objective_one_to_ten ">
+              <!-- <i
+                class="fa fa-check big_circle_tick_Right"
                 aria-hidden="true"
-              ></i>
+              ></i> -->
               <p>
-                Promote national integration and <br />
-                harmonious co-existence of the <br />
+                Promote national integration and 
+                harmonious co-existence of the 
                 diverse communities of our society.
               </p>
             </div>
             <!-- objective three -->
-            <div class="objective_one_to_ten">
-              <i
-                class="fa fa-check fa-2x big_circle_tick_Right"
+            <div class="objective_one_to_ten ">
+              <!-- <i
+                class="fa fa-check big_circle_tick_Right"
                 aria-hidden="true"
-              ></i>
+              ></i> -->
               <p>
-                Ensure genuine restoration, <br />
-                permanent entrenchment and <br />
-                practice of democracy, the rule of law, <br />
+                Ensure genuine restoration, 
+                permanent entrenchment and 
+                practice of democracy, the rule of law, 
                 equity and social justice.
               </p>
             </div>
             <!-- objective four -->
-            <div class="objective_one_to_ten">
-              <i
-                class="fa fa-check fa-2x big_circle_tick_Right"
+            <div class="objective_one_to_ten ">
+              <!-- <i
+                class="fa fa-check big_circle_tick_Right"
                 aria-hidden="true"
-              ></i>
+              ></i> -->
               <p>
-                Ensure meritocracy, where only <br />
-                competent, dedicated, patriotic and <br />
-                credible candidates are sponsored for <br />
-                elective offices at all levels of <br />
+                Ensure meritocracy, where only 
+                competent, dedicated, patriotic and 
+                credible candidates are sponsored for 
+                elective offices at all levels of 
                 governance.
               </p>
             </div>
             <!-- objective five -->
-            <div class="objective_one_to_ten">
-              <i
-                class="fa fa-check fa-2x big_circle_tick_Right"
+            <div class="objective_one_to_ten ">
+              <!-- <i
+                class="fa fa-check big_circle_tick_Right"
                 aria-hidden="true"
-              ></i>
+              ></i> -->
               <p>
-                Uphold the independence of the <br />
-                judiciary, promote free press, as well <br />
-                as uphold the freedom of speech and <br />
+                Uphold the independence of the 
+                judiciary, promote free press, as well 
+                as uphold the freedom of speech and 
                 of association.
               </p>
             </div>
             <!-- objective six -->
-            <div class="objective_one_to_ten">
-              <i
-                class="fa fa-check fa-2x big_circle_tick_Right"
+            <div class="objective_one_to_ten ">
+              <!-- <i
+                class="fa fa-check big_circle_tick_Right"
                 aria-hidden="true"
-              ></i>
+              ></i> -->
               <p>
-                Build an egalitarian society founded <br />
-                on the principles of freedom, equality <br />
+                Build an egalitarian society founded 
+                on the principles of freedom, equality 
                 and justice.
               </p>
             </div>
             <!-- objective seven -->
-            <div class="objective_one_to_ten">
-              <i
-                class="fa fa-check fa-2x big_circle_tick_Right"
+            <div class="objective_one_to_ten ">
+              <!-- <i
+                class="fa fa-check big_circle_tick_Right"
                 aria-hidden="true"
-              ></i>
+              ></i> -->
               <p>
-                Ensure that the programs of the Party <br />
-                at all levels conform at all times with <br />
-                the fundamental objectives, and <br />
-                directive principles of state policy, as <br />
-                contained in the Constitution of the <br />
-                Federal Republic of Nigeria, as well as <br />
-                conform at all times with the Ethic, <br />
-                Aims and Objectives of the <br />
+                Ensure that the programs of the Party 
+                at all levels conform at all times with 
+                the fundamental objectives, and 
+                directive principles of state policy, as 
+                contained in the Constitution of the 
+                Federal Republic of Nigeria, as well as 
+                conform at all times with the Ethic, 
+                Aims and Objectives of the 
                 Constitution of the Party.
               </p>
             </div>
             <!-- objective eight -->
-            <div class="objective_one_to_ten">
-              <i
-                class="fa fa-check fa-2x big_circle_tick_Right"
+            <div class="objective_one_to_ten ">
+              <!-- <i
+                class="fa fa-check big_circle_tick_Right"
                 aria-hidden="true"
-              ></i>
+              ></i> -->
               <p>
-                Promote mutual respect for and <br />
-                understanding of the religious, <br />
-                traditional and cultural heritage of the <br />
+                Promote mutual respect for and 
+                understanding of the religious, 
+                traditional and cultural heritage of the 
                 various communities of our nation.
               </p>
             </div>
             <!-- objective nine -->
-            <div class="objective_one_to_ten">
-              <i
-                class="fa fa-check fa-2x big_circle_tick_Right"
+            <div class="objective_one_to_ten ">
+              <!-- <i
+                class="fa fa-check big_circle_tick_Right"
                 aria-hidden="true"
-              ></i>
+              ></i> -->
               <p>
-                Build, promote, sustain and <br />
-                consolidate political, economic and <br />
-                social dignity, independence and self- <br />respect for all
+                Build, promote, sustain and 
+                consolidate political, economic and 
+                social dignity, independence and self- respect for all
                 Nigerians.
               </p>
             </div>
             <!-- objective ten -->
-            <div class="objective_one_to_ten" id="objective_ten">
-              <i
-                class="fa fa-check fa-2x big_circle_tick_Right"
+            <div class="objective_one_to_ten " id="objective_ten">
+              <!-- <i
+                class="fa fa-check big_circle_tick_Right"
                 aria-hidden="true"
-              ></i>
+              ></i> -->
               <p>
-                Eradicate illiteracy and celebration of <br />
-                mediocrity in our society and promote <br />
-                learning and research, science and <br />
+                Eradicate illiteracy and celebration of 
+                mediocrity in our society and promote 
+                learning and research, science and 
                 technology, creativity and innovation.
               </p>
             </div>
           </div>
+          </div>
         </div>
         <!-- Co-operation And Partnerships -->
-        <div class="Co-operation_And_Partnerships">
-          <div class="Co-operate_with_Africans">
-            <div>
-              <img src="/images/Shape.png" alt="" />
-              <img src="/images/Path.png" alt="" class="tick_Right" />
-            </div>
-            <p>
-              Co-operate with Africans and other <br />
-              Nationalist movements and <br />
-              organizations <br />
-              working for the eradication of <br />
-              imperialism, <br />
-              <br />
-              neo-colonialism, racism and to <br />
-              strive relentlessly towards African <br />
-              Unity, as <br />
-              well as greater understanding and <br />
-              cohesion amongall peoples of <br />
+        <div class="">
+          <div class="content Co-operation_And_Partnerships">
+              <div class="Co-operate_with_Africans bg-orange text-center shadow">
+                <ion-icon name="star"></ion-icon>
+            <p class="mt-3">
+              Co-operate with Africans and other 
+              Nationalist movements and 
+              organizations 
+              working for the eradication of 
+              imperialism, 
+              
+              neo-colonialism, racism and to 
+              strive relentlessly towards African 
+              Unity, as 
+              well as greater understanding and 
+              cohesion amongall peoples of 
               African descent.
             </p>
           </div>
 
-          <div class="Co-operate_with_member_nations">
-            <div>
-              <img src="/images/Shape.png" alt="" />
-              <img src="/images/Path.png" alt="" class="tick_Right" />
-            </div>
-            <p>
-              Co-operate with all member nations <br />
-              in promoting the course of <br />
-              Economic Community of West <br />
-              African States (ECOWAS) the <br />
-              Organization of African Unity (OAU), <br /><br />
-              The Common-wealth, and United <br />
-              Nations Organization (UNO) and <br />
-              other International and regional <br />
-              groupings that shall be in the best <br />
-              interest of Nigeria and Africa; and <br />
-              help to find just and peaceful <br />
+          <div class="Co-operate_with_member_nations bg-main text-center shadow">
+              <ion-icon name="star"></ion-icon>
+            <p class="mt-3">
+              Co-operate with all member nations 
+              in promoting the course of 
+              Economic Community of West 
+              African States (ECOWAS) the 
+              Organization of African Unity (OAU), 
+              The Common-wealth, and United 
+              Nations Organization (UNO) and 
+              other International and regional 
+              groupings that shall be in the best 
+              interest of Nigeria and Africa; and 
+              help to find just and peaceful 
               solutions for international disputes.
             </p>
           </div>
 
-          <div class="Build_socio-political_culture">
-            <div>
-              <img src="/images/Shape.png" alt="" />
-              <img src="/images/Path.png" alt="" class="tick_Right" />
-            </div>
-            <p>
-              Build a new socio-political culture <br />
-              in which all Nigerians are equal <br />
-              members, <br /><br />
-              where each contributes according <br />
-              to his ability and resource, where no <br />
-              one person dominates and where no <br />
-              political party belongs to one <br />
+          <div class="Build_socio-political_culture bg-darker text-center shadow">
+              <ion-icon name="star"></ion-icon>
+            <p class="mt-3">
+              Build a new socio-political culture 
+              in which all Nigerians are equal 
+              members, 
+              where each contributes according 
+              to his ability and resource, where no 
+              one person dominates and where no 
+              political party belongs to one 
               individual.
             </p>
           </div>
+          </div>
         </div>
         <!-- Cardinal Commitments Section -->
-        <div class="cardinal_commitments">
-          <div>
-            <h3>AFRICAN DEMOCRATIC CONGRESS</h3>
-            <h1>Our Cardinal <br />Commitments</h1>
+        <div class="cardinal_commitments ">
+          <div class="content row">
+              <div class="col-md-6 mr-auto">
+            <h5 class="font-weight-bold text-white animate__animated animate__backInUp">AFRICAN DEMOCRATIC CONGRESS</h5>
+            <h1 class="larger-text w-75 text-orange font-weight-bold animate__animated animate__backInUp">Our Cardinal Commitments</h1>
           </div>
           <!-- Lists of Commitments -->
-          <div>
+          <div class="col-md-6">
             <!-- commitment one -->
             <div class="commitment_one_to_seven">
               <i
-                class="fa fa-check-square-o square_tick_Right"
+                class="fa fa-check-square-o"
                 aria-hidden="true"
               ></i>
               <p>
-                Building a New Nigeria where the Dignity of every <br />
-                Nigerian, home and abroad will be <br />
+                Building a New Nigeria where the Dignity of every 
+                Nigerian, home and abroad will be 
                 restored and defended.
               </p>
             </div>
             <!-- commitment two -->
             <div class="commitment_one_to_seven">
               <i
-                class="fa fa-check-square-o square_tick_Right"
+                class="fa fa-check-square-o"
                 aria-hidden="true"
               ></i>
               <p>
@@ -273,7 +269,7 @@
             <!-- commitment three -->
             <div class="commitment_one_to_seven">
               <i
-                class="fa fa-check-square-o square_tick_Right"
+                class="fa fa-check-square-o"
                 aria-hidden="true"
               ></i>
               <p>
@@ -283,7 +279,7 @@
             <!-- commitment four -->
             <div class="commitment_one_to_seven">
               <i
-                class="fa fa-check-square-o square_tick_Right"
+                class="fa fa-check-square-o"
                 aria-hidden="true"
               ></i>
               <p>
@@ -293,7 +289,7 @@
             <!-- commitment five -->
             <div class="commitment_one_to_seven">
               <i
-                class="fa fa-check-square-o square_tick_Right"
+                class="fa fa-check-square-o"
                 aria-hidden="true"
               ></i>
               <p>
@@ -303,46 +299,48 @@
             <!-- commitment six -->
             <div class="commitment_one_to_seven">
               <i
-                class="fa fa-check-square-o square_tick_Right"
+                class="fa fa-check-square-o"
                 aria-hidden="true"
               ></i>
               <p>
-                Justice and Security of all lives and <br />
+                Justice and Security of all lives and
                 property.
               </p>
             </div>
             <!-- commitment seven -->
             <div class="commitment_one_to_seven">
               <i
-                class="fa fa-check-square-o square_tick_Right"
+                class="fa fa-check-square-o"
                 aria-hidden="true"
               ></i>
               <p>
-                Social and physical development of the <br />
+                Social and physical development of the
                 country.
               </p>
             </div>
           </div>
+          </div>
         </div>
+        <div class="content">
         <!-- Aims of the party section -->
         <div class="aims_of_party">
-          <h2>Aims of the Party</h2>
+          <h2 class="larger-text font-weight-bold text-center text-darker my-4">Aims of the Party</h2>
 
-          <div class="sub_aims_of_party d-flex">
+          <div class="sub_aims_of_party d-flex justify-content-around">
             <!-- column one of sub_aims_of_party -->
             <div>
               <!-- sub_aims_of_party one -->
-              <div class="aim_one_to_sixteen">
+              <div class="aim_one_to_sixteen d-flex">
                 <i
-                  class="fa fa-check-circle-o small_circle_tick_Right"
+                  class="fa fa-check-circle-o text-orange"
                   aria-hidden="true"
                 ></i>
                 <p>To promote the unity of Nigeria</p>
               </div>
               <!-- sub_aims_of_party two -->
-              <div class="aim_one_to_sixteen">
+              <div class="aim_one_to_sixteen d-flex">
                 <i
-                  class="fa fa-check-circle-o small_circle_tick_Right"
+                  class="fa fa-check-circle-o text-orange"
                   aria-hidden="true"
                 ></i>
                 <p>
@@ -351,9 +349,9 @@
                 </p>
               </div>
               <!-- sub_aims_of_party three -->
-              <div class="aim_one_to_sixteen">
+              <div class="aim_one_to_sixteen d-flex">
                 <i
-                  class="fa fa-check-circle-o small_circle_tick_Right"
+                  class="fa fa-check-circle-o text-orange"
                   aria-hidden="true"
                 ></i>
                 <p>
@@ -363,9 +361,9 @@
                 </p>
               </div>
               <!-- sub_aims_of_party four -->
-              <div class="aim_one_to_sixteen">
+              <div class="aim_one_to_sixteen d-flex">
                 <i
-                  class="fa fa-check-circle-o small_circle_tick_Right"
+                  class="fa fa-check-circle-o text-orange"
                   aria-hidden="true"
                 ></i>
                 <p>
@@ -374,9 +372,9 @@
                 </p>
               </div>
               <!-- sub_aims_of_party five -->
-              <div class="aim_one_to_sixteen">
+              <div class="aim_one_to_sixteen d-flex">
                 <i
-                  class="fa fa-check-circle-o small_circle_tick_Right"
+                  class="fa fa-check-circle-o text-orange"
                   aria-hidden="true"
                 ></i>
                 <p>
@@ -385,9 +383,9 @@
                 </p>
               </div>
               <!-- sub_aims_of_party six -->
-              <div class="aim_one_to_sixteen">
+              <div class="aim_one_to_sixteen d-flex">
                 <i
-                  class="fa fa-check-circle-o small_circle_tick_Right"
+                  class="fa fa-check-circle-o text-orange"
                   aria-hidden="true"
                 ></i>
                 <p>
@@ -397,17 +395,17 @@
                 </p>
               </div>
               <!-- sub_aims_of_party seven -->
-              <div class="aim_one_to_sixteen">
+              <div class="aim_one_to_sixteen d-flex">
                 <i
-                  class="fa fa-check-circle-o small_circle_tick_Right"
+                  class="fa fa-check-circle-o text-orange"
                   aria-hidden="true"
                 ></i>
                 <p>To promote the rapid industrial development of Nigeria.</p>
               </div>
               <!-- sub_aims_of_party eight -->
-              <div class="aim_one_to_sixteen">
+              <div class="aim_one_to_sixteen d-flex">
                 <i
-                  class="fa fa-check-circle-o small_circle_tick_Right"
+                  class="fa fa-check-circle-o text-orange"
                   aria-hidden="true"
                 ></i>
                 <p>To promote world peace.</p>
@@ -417,17 +415,17 @@
             <!-- column two of sub_aims_of_party -->
             <div>
               <!-- sub_aims_of_party nine -->
-              <div class="aim_one_to_sixteen">
+              <div class="aim_one_to_sixteen d-flex">
                 <i
-                  class="fa fa-check-circle-o small_circle_tick_Right"
+                  class="fa fa-check-circle-o text-orange"
                   aria-hidden="true"
                 ></i>
                 <p>To make the state operate as the servant of the people.</p>
               </div>
               <!-- sub_aims_of_party ten -->
-              <div class="aim_one_to_sixteen">
+              <div class="aim_one_to_sixteen d-flex">
                 <i
-                  class="fa fa-check-circle-o small_circle_tick_Right"
+                  class="fa fa-check-circle-o text-orange"
                   aria-hidden="true"
                 ></i>
                 <p>
@@ -436,9 +434,9 @@
                 </p>
               </div>
               <!-- sub_aims_of_party eleven -->
-              <div class="aim_one_to_sixteen">
+              <div class="aim_one_to_sixteen d-flex">
                 <i
-                  class="fa fa-check-circle-o small_circle_tick_Right"
+                  class="fa fa-check-circle-o text-orange"
                   aria-hidden="true"
                 ></i>
                 <p>
@@ -449,9 +447,9 @@
               </div>
 
               <!-- sub_aims_of_party twelve -->
-              <div class="aim_one_to_sixteen">
+              <div class="aim_one_to_sixteen d-flex">
                 <i
-                  class="fa fa-check-circle-o small_circle_tick_Right"
+                  class="fa fa-check-circle-o text-orange"
                   aria-hidden="true"
                 ></i>
                 <p>
@@ -461,9 +459,9 @@
                 </p>
               </div>
               <!-- sub_aims_of_party thirteen -->
-              <div class="aim_one_to_sixteen">
+              <div class="aim_one_to_sixteen d-flex">
                 <i
-                  class="fa fa-check-circle-o small_circle_tick_Right"
+                  class="fa fa-check-circle-o text-orange"
                   aria-hidden="true"
                 ></i>
                 <p>
@@ -471,9 +469,9 @@
                 </p>
               </div>
               <!-- sub_aims_of_party fourteen -->
-              <div class="aim_one_to_sixteen">
+              <div class="aim_one_to_sixteen d-flex">
                 <i
-                  class="fa fa-check-circle-o small_circle_tick_Right"
+                  class="fa fa-check-circle-o text-orange"
                   aria-hidden="true"
                 ></i>
                 <p>
@@ -483,9 +481,9 @@
                 </p>
               </div>
               <!-- sub_aims_of_party fifteen -->
-              <div class="aim_one_to_sixteen">
+              <div class="aim_one_to_sixteen d-flex">
                 <i
-                  class="fa fa-check-circle-o small_circle_tick_Right"
+                  class="fa fa-check-circle-o text-orange"
                   aria-hidden="true"
                 ></i>
                 <p>
@@ -497,9 +495,9 @@
                 </p>
               </div>
               <!-- sub_aims_of_party sixteen -->
-              <div class="aim_one_to_sixteen">
+              <div class="aim_one_to_sixteen d-flex">
                 <i
-                  class="fa fa-check-circle-o small_circle_tick_Right"
+                  class="fa fa-check-circle-o text-orange"
                   aria-hidden="true"
                 ></i>
                 <p>
@@ -526,4 +524,77 @@
   };
 </script>
 
-<style scoped></style>
+<style scoped>
+.quotes{
+    font-size: 5rem;
+}
+.sub_Adc_objectives{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    text-align: center;
+}
+.objective_one_to_ten{
+    padding: 1rem;
+    background-color: #fff;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.objective_one_to_ten:hover {
+background-color: #224f5a;
+box-shadow: 0px 0px 5px 8px rgba(255, 255, 255, 0.225);
+color: #fff;
+transition: 0.3s;
+cursor: pointer;
+}
+.cardinal_commitments {
+    background-image: url(../../assets/img/cardinal-bg.svg);
+    background-position: center;
+    background-attachment: fixed;
+    padding: 2rem 2rem;
+}
+.commitment_one_to_seven {
+    color: #fff;
+    display: flex;
+    align-items: flex-start;
+}
+.commitment_one_to_seven .fa, .aim_one_to_sixteen .fa {
+    margin-top: 5px;
+    margin-right: 1rem;
+}
+.commitment_one_to_seven p{
+    width: 60%;
+}
+.larger-text{
+    font-size: 3.2rem;
+}
+.row{
+    padding: 0;
+    margin: 0;
+}
+.Co-operation_And_Partnerships{
+    background: linear-gradient(0deg, #3ee9883f 50%, #fff 50%);
+    display: flex;
+    gap: 20px;
+}
+.Co-operation_And_Partnerships div {
+    padding: 1.5rem;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 0.8rem;
+}
+.Co-operation_And_Partnerships div ion-icon {
+    font-size: 32px;
+}
+
+@media (max-width: 990px){
+    .Co-operation_And_Partnerships{
+        display: unset;
+    }
+    .Co-operation_And_Partnerships div{
+        margin-bottom: 20px;
+    }
+}
+</style>
