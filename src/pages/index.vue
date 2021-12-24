@@ -281,7 +281,7 @@
               </div>
             </div>
           </div> -->
-        <div class="shadow-sm d-lg-flex">
+        <!-- <div class="shadow-sm d-lg-flex">
           <img src="@/assets/img/1.png" alt="img" class="handshake-img" />
 
           <div class="news-content">
@@ -366,7 +366,9 @@
         to="/news"
         class="text-orange mt-3 d-block text-right font-weight-bold"
         >See All</router-link
-      >
+      > -->
+        <!-- <VueRssFeed :feedUrl="feedUrl" :name="name" :limit="limit"/> -->
+    </div>
     </div>
 
     <div class="gallery">
@@ -397,7 +399,7 @@
     data() {
       return {
         slides: 5,
-        feedUrl: "https://rss.app/feeds/Qb5AfPKhd7PRQhE4.xml",
+        feedUrl: "https://rss.app/feeds/t9BumKhsA1cD9Lbv.xml",
         name: "",
         limit: 4,
         full_name: " ",

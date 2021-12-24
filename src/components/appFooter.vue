@@ -6,7 +6,7 @@
           <div class="col-md-3 ml-auto">
             <h3>quicklinks</h3>
             <ul class="list-unstyled links">
-              <li><a href="#">ADC in Diaspora</a></li>
+              <li><a href="https://adc-dn.org/">ADC in Diaspora</a></li>
               <li><router-link to="/our_priorities">Our Priorities</router-link></li>
               <li><router-link to="/our_manifesto">Our Manifesto</router-link></li>
               <li><router-link to="/shop">Shop</router-link></li>
