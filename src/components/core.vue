@@ -8,14 +8,13 @@
           <div class="card-front font-weight-bold bg-main">
               <h4 class="font-weight-bold">Handshake</h4>
               <div class="text-right">
-                <img src="@/assets/img/icons/Handshake.svg" width="180" alt="">
+                <img src="@/assets/img/icons/Handshake.svg" width="80" alt="">
               </div>
           </div>
           <div class="card-back">
-            <h6 class="text-white font-weight-bold">
+            <h3 class="text-white font-weight-bold">
               Handshake
-            </h6>
-            <hr class="small-line">
+            </h3>
               <p class="w-50">
                   Warm acceptance and affinity of people
               </p>
@@ -27,14 +26,13 @@
           <div class="card-front font-weight-bold bg-darker">
               <h4 class="font-weight-bold">Patriotism</h4> 
               <div class="text-right">
-                <img src="@/assets/img/icons/Patriotism.svg" width="180" alt="">
+                <img src="@/assets/img/icons/Patriotism.svg" width="80" alt="">
               </div>
           </div>
           <div class="card-back">
-            <h6 class="text-white font-weight-bold">
+            <h3 class="text-white font-weight-bold">
               Patriotism
-            </h6>
-            <hr class="small-line">
+            </h3>
               <p class="w-50">
                   Belief in country remains our#1.
               </p>
@@ -46,14 +44,13 @@
           <div class="card-front bg-main">
                <h4 class="font-weight-bold">Leadership</h4> 
                <div class="text-right">
-                 <img src="@/assets/img/icons/Leadership.svg" width="180" alt="">
+                 <img src="@/assets/img/icons/Leadership.svg" width="80" alt="">
                </div>
           </div>
           <div class="card-back">
-            <h6 class="text-white font-weight-bold">
+            <h3 class="text-white font-weight-bold">
               Leadership
-            </h6>
-            <hr class="small-line">
+            </h3>
               <p class="w-70">
                   Leadership gives direction. We believe that effective transformational leadership with knowledge-driven protocols is the elixir to our nation-building enterprise.
               </p>
@@ -65,14 +62,13 @@
           <div class="font-weight-bold card-front bg-darker">
               <h4 class="font-weight-bold">Equity</h4> 
               <div class="text-right">
-                <img src="@/assets/img/icons/Equity.svg" width="180" alt="">
+                <img src="@/assets/img/icons/Equity.svg" width="80" alt="">
               </div>
           </div>
           <div class="card-back">
-            <h6 class="text-white font-weight-bold">
+            <h3 class="text-white font-weight-bold">
               Equity
-            </h6>
-            <hr class="small-line">
+            </h3>
               <p class="w-50">
                   To be fair and just in dealing with people and each other; this enriches our diversity and fosters unity.
               </p>
@@ -84,13 +80,12 @@
           <div class="card-front font-weight-bold bg-main">
               <h4 class="font-weight-bold">Inclusion</h4> 
               <div class="text-right">
-                <img src="@/assets/img/icons/Inclusion.svg" width="180" alt=""> </div>         
+                <img src="@/assets/img/icons/Inclusion.svg" width="80" alt=""> </div>         
               </div>
           <div class="card-back">
-              <h6 class="text-white font-weight-bold">
+              <h3 class="text-white font-weight-bold">
               Inclusion
-            </h6>
-            <hr class="small-line">
+            </h3>
               <p class="w-50">
                   Bringing everyone onboard gives us more strength, viability and stability.
               </p>
@@ -103,10 +98,9 @@
              <h4 class="font-weight-bold"> Knowledge</h4>
           </div>
           <div class="card-back">
-              <h6 class="text-white font-weight-bold">
+              <h3 class="text-white font-weight-bold">
               Knowledge
-            </h6>
-            <hr class="small-line">
+            </h3>
               <p class="w-50">
                   Knowledge and its proper application powers the modern organization and society.
               </p>
@@ -119,10 +113,9 @@
              <h4 class="font-weight-bold"> Transparency</h4>
           </div>
           <div class="card-back">
-              <h6 class="text-white font-weight-bold">
+              <h3 class="text-white font-weight-bold">
               Transparency
-            </h6>
-            <hr class="small-line">
+            </h3>
               <p class="w-100">
                   Ours is Radical Transparency; this creates a convivial atmosphere for teamwork, cooperation, and collaboration; persons to devote time and efforts to constructive work.
               </p>
@@ -135,10 +128,9 @@
               <h4 class="font-weight-bold">Accountability</h4>
           </div>
           <div class="card-back">
-              <h6 class="text-white font-weight-bold">
+              <h3 class="text-white font-weight-bold">
               Accountability
-            </h6>
-            <hr class="small-line">
+            </h3>
               <p class="w-50">
                   We believe that leaders owe the people a good audit of their stewardship to qualify as true leader.
               </p>
@@ -151,10 +143,9 @@
               <h4 class="font-weight-bold">Diversity</h4>
           </div>
           <div class="card-back">
-              <h6 class="text-white font-weight-bold">
+              <h3 class="text-white font-weight-bold">
               Diversity
-            </h6>
-            <hr class="small-line">
+            </h3>
               <p class="w-75">
                   Drawing from variety and multiple sources enhance decision making, quality of leadership and endurance.
               </p>
@@ -208,12 +199,12 @@ return{
   transform: rotateY(180deg);
   z-index: 1;
   /* box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.2); */
-  background: url(../assets/img/core.jpg);
+  /* background: url(../assets/img/core.jpg); */
   background-repeat: no-repeat;
   
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.6);
-  background-blend-mode: overlay;
+  /* background-size: cover; */
+  background-color: #224f5a;
+  /* background-blend-mode: overlay; */
 }
 .small-line {
   width: 30%;

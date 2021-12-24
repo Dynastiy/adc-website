@@ -58,11 +58,11 @@ return{
 </script>
 
 <style>
-.our-mission-div:hover {
+/* .our-mission-div:hover {
   background: #ff7300;
   color: #fff !important;
   transition: 1s;
-}
+} */
 .our-mission-div .fa {
   color: #ff7300
 }
@@ -72,15 +72,15 @@ return{
 .our-manifesto-div .fa {
   color: #224f5a;
 }
-.our-vision-div:hover {
+/* .our-vision-div:hover {
   background: #00a54f;
   color: #fff !important;
   transition: 1s;
-}
-.our-manifesto-div:hover {
+} */
+/* .our-manifesto-div:hover {
   background: #224f5a;
   color: #fff !important;
   transition: 1s;
-}
+} */
 
 </style>
