@@ -11,7 +11,7 @@
     <div class="content">
         <div class="manifesto d-flex justify-content-center mb-3">
             <div><img src="@/assets/img/open__quote.svg" alt="" srcset=""></div>
-          <p class="text-center small font-weight-bold mx-3">
+          <p class="text-center font-weight-bold mx-3">
             At ADC, it is about Intense and Intentional Leadership – an activity
             that identifies challenges, <br />
             gets the people to see the realities in these challenges,
@@ -530,7 +530,7 @@
        background-position:bottom;
        background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     background-color: #000000c7;
     background-blend-mode: overlay;
 }
