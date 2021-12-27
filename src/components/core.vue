@@ -96,6 +96,9 @@
         <div class="flip-card">
           <div class="card-front font-weight-bold bg-darker">
              <h4 class="font-weight-bold"> Knowledge</h4>
+             <div class="text-right">
+                <img src="@/assets/img/icons/Knowledge.svg" width="80" alt="">
+              </div>
           </div>
           <div class="card-back">
               <h3 class="text-white font-weight-bold">
@@ -111,6 +114,9 @@
         <div class="flip-card">
           <div class="card-front font-weight-bold bg-main">
              <h4 class="font-weight-bold"> Transparency</h4>
+             <div class="text-right">
+                <img src="@/assets/img/icons/Transparency.svg" width="80" alt="">
+              </div>
           </div>
           <div class="card-back">
               <h3 class="text-white font-weight-bold">
@@ -126,6 +132,9 @@
         <div class="flip-card">
           <div class="card-front bg-darker">
               <h4 class="font-weight-bold">Accountability</h4>
+              <div class="text-right">
+                <img src="@/assets/img/icons/Accountability.svg" width="80" alt="">
+              </div>
           </div>
           <div class="card-back">
               <h3 class="text-white font-weight-bold">
@@ -141,6 +150,9 @@
         <div class="flip-card">
           <div class="card-front font-weight-bold bg-main">
               <h4 class="font-weight-bold">Diversity</h4>
+              <div class="text-right">
+                <img src="@/assets/img/icons/Diversity.svg" width="80" alt="">
+              </div>
           </div>
           <div class="card-back">
               <h3 class="text-white font-weight-bold">

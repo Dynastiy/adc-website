@@ -90,6 +90,8 @@
             <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="7"></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active" data-interval="3000">
@@ -100,21 +102,7 @@
               />
               <div class="carousel-caption d-md-flex">
                 <h1>
-                  Welcome to <br />
-                  a new <span class="nigeria">Nigeria</span>
-                </h1>
-              </div>
-            </div>
-            <div class="carousel-item" data-interval="3000">
-              <img
-                src="@/assets/img/image13.jpg"
-                class="d-block w-100"
-                alt="Image Here"
-              />
-              <div class="carousel-caption d-md-flex">
-                <h1>
-                  Welcome to <br />
-                  a new <span class="nigeria">Nigeria</span>
+                  Agriculture is our <br /><span class="nigeria">National</span> Asset 
                 </h1>
               </div>
             </div>
@@ -126,36 +114,73 @@
               />
               <div class="carousel-caption d-md-flex">
                 <h1>
-                  Welcome to <br />
-                  a new <span class="nigeria">Nigeria</span>
+                 Solar power electricity <br />
+                  is <span class="nigeria">an option</span>
                 </h1>
               </div>
             </div>
             <div class="carousel-item" data-interval="3000">
               <img
-                src="@/assets/img/image5.jpg"
+                src="@/assets/img/image8.jpg"
                 class="d-block w-100"
                 alt="Image Here"
               />
               <div class="carousel-caption d-md-flex">
                 <h1>
-                  A <span class="nigeria">Nigeria</span> <br />
-                  of Limitless <br />
-                  <span class="nigeria">Possibilities</span>
+                  Children formal education<br />
+                  is a <span class="nigeria">priority </span>
                 </h1>
               </div>
             </div>
             <div class="carousel-item" data-interval="3000">
               <img
-                src="@/assets/img/image7.jpg"
+                src="@/assets/img/image1.jpg"
                 class="d-block w-100"
                 alt="Image Here"
               />
               <div class="carousel-caption d-md-flex">
                 <h1>
-                  A <span class="nigeria">Nigeria</span> <br />
-                  of Limitless <br />
-                  <span class="nigeria">Possibilities</span>
+                  Agriculture development<br />
+                  is a <span class="nigeria">major initiative </span>
+                </h1>
+              </div>
+            </div>
+            <div class="carousel-item" data-interval="3000">
+              <img
+                src="@/assets/img/image2.jpg"
+                class="d-block w-100"
+                alt="Image Here"
+              />
+              <div class="carousel-caption d-md-flex">
+                <h1>
+                  Technology advancement 
+                  throughout<span class="nigeria"> our Nation</span>
+                </h1>
+              </div>
+            </div>
+            <div class="carousel-item" data-interval="3000">
+              <img
+                src="@/assets/img/image6.jpg"
+                class="d-block w-100"
+                alt="Image Here"
+              />
+              <div class="carousel-caption d-md-flex">
+                <h1>
+                  Youths - the current <br />
+                  and future <span class="nigeria">generation</span>
+                </h1>
+              </div>
+            </div>
+             <div class="carousel-item" data-interval="3000">
+              <img
+                src="@/assets/img/image9.jpg"
+                class="d-block w-100"
+                alt="Image Here"
+              />
+              <div class="carousel-caption d-md-flex">
+                <h1>
+                 Hope after hardship<br />
+                  for our <span class="nigeria">Nation</span>
                 </h1>
               </div>
             </div>
@@ -167,9 +192,8 @@
               />
               <div class="carousel-caption d-md-flex">
                 <h1>
-                  A <span class="nigeria">Nigeria</span> <br />
-                  of Limitless <br />
-                  <span class="nigeria">Possibilities</span>
+                  Empowering women through<br />
+                  commerce and <span class="nigeria">industry</span>
                 </h1>
               </div>
             </div>

@@ -85,10 +85,9 @@
                   zone 6, Abuja, FCT.</a
                 >
               </li>
-              <li><a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
-              <li><a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
-              <li><a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
-              <li><a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+              <li><a href="https://facebook.com/ADCnig"> <i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+              <li><a href="https://twitter.com/ADCNig"> <i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+              <li><a href="https://instagram.com/adc_nig"> <i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
             </ul>
           </div>
         </div>
