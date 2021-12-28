@@ -525,6 +525,9 @@
 </script>
 
 <style scoped>
+.content {
+  padding: 2rem 10rem;
+}
 .header{
   background: url(../../assets/img/handshake.jpg);
        background-position:bottom;
@@ -549,18 +552,18 @@
     font-weight: bold;
     vertical-align: middle;
 }
-.objective_one_to_ten:hover {
+/* .objective_one_to_ten:hover {
 background-color: #224f5a;
 box-shadow: 0px 0px 5px 8px rgba(255, 255, 255, 0.225);
 color: #fff;
 transition: 0.3s;
 cursor: pointer;
-}
+} */
 .cardinal_commitments {
     background-image: url(../../assets/img/cardinal-bg.svg);
     background-position: center;
     background-attachment: fixed;
-    padding: 2rem 2rem;
+    padding: 5rem 10rem;
 }
 .commitment_one_to_seven {
     color: #fff;
