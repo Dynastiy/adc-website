@@ -11,8 +11,8 @@
               <li><router-link to="/our_manifesto">Our Manifesto</router-link></li>
               <li><router-link to="/shop">Shop</router-link></li>
               <li><router-link to="/news">News</router-link></li>
-              <li><router-link to="/about">State Chapters</router-link></li>
-              <li><router-link to="/about">Our Candidates</router-link></li>
+              <li><router-link to="/about/state_chapters">State Chapters</router-link></li>
+              <li><router-link to="/about/our_candidates">Our Candidates</router-link></li>
             </ul>
           </div>
           <div class="col-md-2 ml-auto">

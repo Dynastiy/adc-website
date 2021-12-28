@@ -12,7 +12,7 @@
       <h2 class="font-weight-bold mt-5 text-darker mb-5 text-center" >Choose a Membership Rate</h2>
      <div class="reg__cards">
           <div class="below_30 shadow p-3">
-        <h4 class="font-weight-bold text-orange text-center mt-2">Are you between 18 and 30?</h4>
+        <h4 class="font-weight-bold text-center mt-2">Are you between 18 and 30?</h4>
         <h5 class="text-center font-weight-bold"> &#8358;200</h5>
         <p class="font-weight-bold mt-5">
           Registration link for Persons between 18-30 years &

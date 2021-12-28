@@ -552,7 +552,6 @@
     font-size: 5rem;
     text-align: left;
     line-height: 5.3rem;
-    text-shadow: 2px 2px #000;
     font-weight: 900;
   }
   .carousel {

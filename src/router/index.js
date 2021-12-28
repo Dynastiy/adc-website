@@ -28,15 +28,6 @@ const routes = [{
             import ( /* webpackChunkName: "about" */ '../pages/donate/index.vue')
     },
     {
-        path: '/about',
-        name: 'About',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
-        component: () =>
-            import ( /* webpackChunkName: "about" */ '../pages/about/index.vue')
-    },
-    {
         path: '/news',
         name: 'News',
         // route level code-splitting
@@ -145,15 +136,87 @@ const routes = [{
             },
         ]
     },
+    {
+        path: '/about',
+        name: 'About',
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () =>
+            import ( /* webpackChunkName: "about" */ '../pages/about/index.vue'),
+        children: [{
+                path: '/about',
+                name: 'About Home',
+                // route level code-splitting
+                // this generates a separate chunk (about.[hash].js) for this route
+                // which is lazy-loaded when the route is visited.
+                component: () =>
+                    import ( /* webpackChunkName: "about" */ '../pages/about/components/home.vue'),
+            }, {
+                path: '/about/chairmans_message',
+                name: 'Chairman',
+                // route level code-splitting
+                // this generates a separate chunk (about.[hash].js) for this route
+                // which is lazy-loaded when the route is visited.
+                component: () =>
+                    import ( /* webpackChunkName: "about" */ '../pages/about/components/chairmans_message.vue'),
+            },
+            {
+                path: '/about/contact_us',
+                name: 'Contact Us',
+                // route level code-splitting
+                // this generates a separate chunk (about.[hash].js) for this route
+                // which is lazy-loaded when the route is visited.
+                component: () =>
+                    import ( /* webpackChunkName: "about" */ '../pages/about/components/contact_us.vue'),
+            },
+            {
+                path: '/about/obasanjos_message',
+                name: 'Obasanjo',
+                // route level code-splitting
+                // this generates a separate chunk (about.[hash].js) for this route
+                // which is lazy-loaded when the route is visited.
+                component: () =>
+                    import ( /* webpackChunkName: "about" */ '../pages/about/components/our_candidates.vue'),
+            },
+            {
+                path: '/about/our_candidates',
+                name: 'Candidates',
+                // route level code-splitting
+                // this generates a separate chunk (about.[hash].js) for this route
+                // which is lazy-loaded when the route is visited.
+                component: () =>
+                    import ( /* webpackChunkName: "about" */ '../pages/about/components/our_candidates.vue'),
+            },
+            {
+                path: '/about/party_structure',
+                name: 'Party Structure',
+                // route level code-splitting
+                // this generates a separate chunk (about.[hash].js) for this route
+                // which is lazy-loaded when the route is visited.
+                component: () =>
+                    import ( /* webpackChunkName: "about" */ '../pages/about/components/party_structure.vue'),
+            },
+            {
+                path: '/about/state_chapters',
+                name: 'State Chapters',
+                // route level code-splitting
+                // this generates a separate chunk (about.[hash].js) for this route
+                // which is lazy-loaded when the route is visited.
+                component: () =>
+                    import ( /* webpackChunkName: "about" */ '../pages/about/components/state_chapters.vue'),
+            },
+        ]
+    },
 
 ]
 
 const router = new VueRouter({
     mode: 'history',
     base: process.env.BASE_URL,
-    scrollBehavior() {
-        return window.scrollTo({ top: 0, behavior: 'smooth' });
-    },
+    // scrollBehavior() {
+    //     return window.scrollTo({ top: 0, behavior: 'smooth' });
+    // },
     routes
 })
 
