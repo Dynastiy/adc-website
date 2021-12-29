@@ -312,7 +312,7 @@
 }
 
 .content {
-    padding: 2rem 3rem;
+    padding: 2rem 4rem;
 }
 
 
@@ -348,18 +348,14 @@
 }
 
 .about-us div p {
-    font-size: 14px;
-    word-spacing: 2px;
-    line-height: 18px
+    font-size: 12px;
+    word-spacing: 1px;
+    line-height: 15px
 }
 
 .about-us div {
     padding: 25px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 13px 2px;
-}
-
-.core-values-div {
-    margin: 2rem 0 2rem 0;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 12px 0px;
 }
 
 .core-values-text {
@@ -401,12 +397,6 @@
     /* margin: 0 0 2rem 0; */
 }
 
-.news-div {
-    /* display: grid;
-    grid-template-columns: 40% 57%;
-    grid-gap: 3%; */
-}
-
 .flag-img {
     width: 100%;
 }
@@ -436,10 +426,6 @@
 .news-title a {
     text-decoration: none;
     color: #06191d;
-}
-
-.view-more {
-    /* padding: 4.4rem 0 0 0; */
 }
 
 .view-more a {
@@ -667,9 +653,6 @@
     .about-us div {
         margin-bottom: 0.8rem;
     }
-    .our-vision-div {
-        /* margin: 1rem 0 1rem 0; */
-    }
 }
 
 @media (max-width: 425px) {
@@ -750,9 +733,6 @@
     }
     .support-campaign {
         padding: 1rem;
-    }
-    .news-category {
-        /* margin: 45% 0 0 0; */
     }
 }
 

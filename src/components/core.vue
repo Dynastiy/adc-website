@@ -8,7 +8,7 @@
           <div class="card-front font-weight-bold bg-main">
               <h4 class="font-weight-bold">Handshake</h4>
               <div class="text-right">
-                <img src="@/assets/img/icons/Handshake.svg" width="80" alt="">
+                <img src="@/assets/img/icons/Handshake.svg"  alt="">
               </div>
           </div>
           <div class="card-back">
@@ -26,7 +26,7 @@
           <div class="card-front font-weight-bold bg-darker">
               <h4 class="font-weight-bold">Patriotism</h4> 
               <div class="text-right">
-                <img src="@/assets/img/icons/Patriotism.svg" width="80" alt="">
+                <img src="@/assets/img/icons/Patriotism.svg"  alt="">
               </div>
           </div>
           <div class="card-back">
@@ -44,7 +44,7 @@
           <div class="card-front bg-main">
                <h4 class="font-weight-bold">Leadership</h4> 
                <div class="text-right">
-                 <img src="@/assets/img/icons/Leadership.svg" width="80" alt="">
+                 <img src="@/assets/img/icons/Leadership.svg"  alt="">
                </div>
           </div>
           <div class="card-back">
@@ -62,7 +62,7 @@
           <div class="font-weight-bold card-front bg-darker">
               <h4 class="font-weight-bold">Equity</h4> 
               <div class="text-right">
-                <img src="@/assets/img/icons/Equity.svg" width="80" alt="">
+                <img src="@/assets/img/icons/Equity.svg"  alt="">
               </div>
           </div>
           <div class="card-back">
@@ -80,7 +80,7 @@
           <div class="card-front font-weight-bold bg-main">
               <h4 class="font-weight-bold">Inclusion</h4> 
               <div class="text-right">
-                <img src="@/assets/img/icons/Inclusion.svg" width="80" alt=""> </div>         
+                <img src="@/assets/img/icons/Inclusion.svg"  alt=""> </div>         
               </div>
           <div class="card-back">
               <h3 class="text-white font-weight-bold">
@@ -97,7 +97,7 @@
           <div class="card-front font-weight-bold bg-darker">
              <h4 class="font-weight-bold"> Knowledge</h4>
              <div class="text-right">
-                <img src="@/assets/img/icons/Knowledge.svg" width="80" alt="">
+                <img src="@/assets/img/icons/Knowledge.svg"  alt="">
               </div>
           </div>
           <div class="card-back">
@@ -115,7 +115,7 @@
           <div class="card-front font-weight-bold bg-main">
              <h4 class="font-weight-bold"> Transparency</h4>
              <div class="text-right">
-                <img src="@/assets/img/icons/Transparency.svg" width="80" alt="">
+                <img src="@/assets/img/icons/Transparency.svg"  alt="">
               </div>
           </div>
           <div class="card-back">
@@ -133,7 +133,7 @@
           <div class="card-front bg-darker">
               <h4 class="font-weight-bold">Accountability</h4>
               <div class="text-right">
-                <img src="@/assets/img/icons/Accountability.svg" width="80" alt="">
+                <img src="@/assets/img/icons/Accountability.svg"  alt="">
               </div>
           </div>
           <div class="card-back">
@@ -151,7 +151,7 @@
           <div class="card-front font-weight-bold bg-main">
               <h4 class="font-weight-bold">Diversity</h4>
               <div class="text-right">
-                <img src="@/assets/img/icons/Diversity.svg" width="80" alt="">
+                <img src="@/assets/img/icons/Diversity.svg"  alt="">
               </div>
           </div>
           <div class="card-back">
@@ -217,6 +217,14 @@ return{
   /* background-size: cover; */
   background-color: #224f5a;
   /* background-blend-mode: overlay; */
+}
+.card-front img {
+  width: 60px;
+  width: 60px;
+}
+.card-front .text-right {
+  display: flex;
+  justify-content: end;
 }
 .small-line {
   width: 30%;

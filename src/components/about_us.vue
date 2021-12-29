@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="about-us">
-        <div class="our-mission-div rounded animate__animated animate__backInLeft">
+        <div class="our-mission-div rounded-lg animate__animated animate__backInLeft">
           <i class="fa fa-compass fa-4x" aria-hidden="true"></i>
           <h4 class="font-weight-bold mb-3">
             OUR MISSION
