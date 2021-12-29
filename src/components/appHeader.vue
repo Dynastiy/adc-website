@@ -39,7 +39,7 @@
             <a href="https://adc-dn.org/">ADC Diaspora</a>
           </li>
           <li>
-            <a href="#">Shop</a>
+            <a href="https://paystack.shop/adc-shop">Shop</a>
           </li>
           <li>
             <router-link to="/news">News</router-link>
