@@ -548,9 +548,16 @@
 }
 .objective_one_to_ten{
     padding: 1rem;
-    background-color: #fff;
+    /* background-color: #fff; */
+     background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
     font-weight: bold;
     vertical-align: middle;
+    backdrop-filter: blur(5px);
+    /* border-top: 1px solid rgba(255, 255, 255, 0.2); */
+    /* border-left: 1px solid rgba(255, 255, 255, 0.2); */
+    box-shadow: 0px 0px 3px 0px rgba(225, 225, 225, 0.2);
+
 }
 /* .objective_one_to_ten:hover {
 background-color: #224f5a;
