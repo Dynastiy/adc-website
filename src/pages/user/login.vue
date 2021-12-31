@@ -2,13 +2,13 @@
   <div class="login-page">
     <div class="login-box shadow-lg rounded pt-4">
       <div class="text-center">
-          <img src="@/assets/img/logo2.png" alt=""  srcset="" width="50" />
+          <img src="@/assets/img/brand_assets/logo_vertical_dark.png" alt=""  srcset="" width="50" />
       </div>
-      <h6 class="mt-3 font-weight-bold text-center">Enter details to Login</h6>
+      <h6 class="mt-3 font-weight-bold text-center mb-\3">Enter details to Login</h6>
       <div class="px-4">
         <form @submit.prevent="login" method="POST" novalidate="novalidate">
           <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
+            <label for="exampleInputEmail1" class="font-weight-bold">Email address</label>
             <input
             v-model="email"
               type="email"
@@ -18,7 +18,7 @@
             />
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
+            <label for="exampleInputPassword1" class="font-weight-bold">Password</label>
             <input
             v-model="password"
               type="password"
@@ -29,6 +29,9 @@
           <button type="submit" class="btn bg-darker w-100 small-btn-text">LOGIN</button>
         </form>
       </div>
+       <div class="text-center my-3 homepage">
+          <router-link class="text-dark font-weight-bold" to="/">Back to Home page</router-link>
+        </div>
     </div>
   </div>
 </template>
@@ -95,4 +98,5 @@ label{
       border: 1px solid rgba(0, 0, 0, 0.1);
       
   }
+  
 </style>>

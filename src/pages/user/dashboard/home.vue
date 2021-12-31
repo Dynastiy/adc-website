@@ -5,31 +5,80 @@
     <div>
       <div class="">
         <h3 class="font-weight-bold mt-5 mb-5">
-          Welcome <span class="text-darker">{{ user.first_name }} {{ user.last_name }}</span>
+          Welcome
+          <span class="text-darker"
+            >{{ user.first_name }} {{ user.last_name }}</span
+          >
         </h3>
       </div>
 
       <div class="mt-4 user">
         <div class="item1 bg-darker text-white p-3 rounded">
           <h6 class="font-weight-bold">Personal Details</h6>
-          <hr class="bg-accent">
-          <img :src="user.profile_picture" alt="" width="300">
-         <ul>
-              <li><span class="text-accent">Name:</span> {{ user.first_name }} {{ user.last_name }} </li>
-          <li><span class="text-accent">Email: </span>{{ user.email }} </li>
-          <li><span class="text-accent">Gender:</span> {{ user.gender }} </li>
-          <li><span class="text-accent">State:</span> {{ user.state }} </li>
-          <li><span class="text-accent">Local Government Area:</span> {{ user.lga }} </li>
-          <li><span class="text-accent">Ward: </span>{{ user.ward }} </li>
-
-         </ul>
+          <hr class="bg-accent" />
+          <img :src="user.profile_picture" alt="" width="300" />
+          <ul>
+            <li>
+              <span class="text-accent">Name:</span> {{ user.first_name }}
+              {{ user.last_name }}
+            </li>
+            <li><span class="text-accent">Email: </span>{{ user.email }}</li>
+            <li><span class="text-accent">Gender:</span> {{ user.gender }}</li>
+            <li><span class="text-accent">State:</span> {{ user.state }}</li>
+            <li>
+              <span class="text-accent">Local Government Area:</span>
+              {{ user.lga }}
+            </li>
+            <li><span class="text-accent">Ward: </span>{{ user.ward }}</li>
+          </ul>
         </div>
         <div class="bg-darker forum text-white p-3 rounded">
-          <h6 class="font-weight-bold">Forum</h6>
-          <hr class="bg-accent">
-          <ul>
-            <li v-for="(forum, i) in forums" :key="i"> {{ forum.content }}  <span></span> </li>
-          </ul>
+          <h6 class="font-weight-bold">Pay Dues</h6>
+          <hr class="bg-accent" />
+          <div>
+            <div class="d-flex justify-content-between my-3">
+              <h6>Monthly Payment</h6>
+              <paystack
+                :amount="1000 * 100"
+                class="btn bg-accent text-dark px-4 py-1 font-weight-bold"
+                :email="user.email"
+                :paystackkey="PUBLIC_KEY"
+                :reference="reference"
+                :callback="processPayment"
+                :close="close"
+              >
+                Pay
+              </paystack>
+            </div>
+            <div class="d-flex justify-content-between mb-3">
+              <h6>Quarterly Payment</h6>
+              <paystack
+                :amount="3000 * 100"
+                class="btn bg-accent text-dark px-4 py-1 font-weight-bold"
+                :email="user.email"
+                :paystackkey="PUBLIC_KEY"
+                :reference="reference0"
+                :callback="processPayment"
+                :close="close"
+              >
+                Pay
+              </paystack>
+            </div>
+            <div class="d-flex justify-content-between">
+              <h6>Yearly Payment</h6>
+              <paystack
+                :amount="12000 * 100"
+                class="btn bg-accent text-dark px-4 py-1 font-weight-bold"
+                :email="user.email"
+                :paystackkey="PUBLIC_KEY"
+                :reference="reference1"
+                :callback="processPayment"
+                :close="close"
+              >
+                Pay
+              </paystack>
+            </div>
+          </div>
         </div>
         <div class="bg-darker text-white p-3 rounded">
           <h6 class="font-weight-bold">Resources</h6>
@@ -41,13 +90,20 @@
 
 <script>
   import axios from "axios";
+  import paystack from "vue-paystack";
+  import swal from 'sweetalert';
+
   export default {
+      components:{
+          paystack
+      },
     data() {
       return {
         user: "",
         baseUrl: "https://api.adc.org.ng/api/",
-        forums: ''      
-        };
+        forums: "",
+        PUBLIC_KEY: "pk_live_6c2684fe83cd844c750932b184a1bbe26f380912",
+      };
     },
     methods: {
       async getUser() {
@@ -70,32 +126,77 @@
           headers,
         });
         console.log(res.data.data.items);
-        let forum_slice = res.data.data.items
-        this.forums = forum_slice.slice(1,5);
+        let forum_slice = res.data.data.items;
+        this.forums = forum_slice.slice(1, 5);
+      },
+       processPayment() {
+        this.form_wizard = true
+        window.alert("Payment recieved");
+        swal({
+          title: "Done!",
+          text: "Payment Received!",
+          icon: "success",
+          button: "Go Home!",
+        });
+      },
+      close() {
+        this.form_wizard = true
+        console.log("You closed checkout page");
+        swal({
+          title: "Cancelled!",
+          text: "Transaction Cancelled",
+          icon: "warning",
+          button: "Go Home!",
+        });
       },
     },
     async created() {
       this.getUser();
-      this.getForum()
+      this.getForum();
     },
+     computed:{
+         reference() {
+        let text = "";
+        let possible =
+          "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        for (let i = 0; i < 10; i++)
+          text += possible.charAt(Math.floor(Math.random() * possible.length));
+        return text;
+      },
+      reference0() {
+        let text = "";
+        let possible =
+          "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        for (let i = 0; i < 10; i++)
+          text += possible.charAt(Math.floor(Math.random() * possible.length));
+        return text;
+      },
+      reference1() {
+        let text = "";
+        let possible =
+          "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        for (let i = 0; i < 10; i++)
+          text += possible.charAt(Math.floor(Math.random() * possible.length));
+        return text;
+      },
+     }
   };
 </script>
 
 <style>
-.user {
+  .user {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-}
-.user .item1 {
-  /* grid-column: 2; */
-  grid-row: 1 / 3;
-}
-ul li {
+  }
+  .user .item1 {
+    /* grid-column: 2; */
+    grid-row: 1 / 3;
+  }
+  ul li {
     list-style: none;
     padding: 0.5rem 0;
-}
-.forum ul li {
-    
-}
+  }
+  .forum ul li {
+  }
 </style>

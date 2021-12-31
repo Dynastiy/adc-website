@@ -407,11 +407,6 @@
     padding: 2rem 3rem;
 }
 
-.news-content {
-    /* background-color: #ffffff; */
-    /* padding: 20px; */
-}
-
 .news-date {
     display: flex;
     width: max-content;
@@ -465,7 +460,7 @@
 .login-box {
     background-color: #fff;
     width: 30rem;
-    height: 20rem;
+    /* height: 20rem; */
 }
 
 
