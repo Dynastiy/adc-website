@@ -16,7 +16,16 @@ const routes = [{
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
         component: () =>
-            import ( /* webpackChunkName: "about" */ '../pages/user/login.vue')
+            import ( /* webpackChunkName: "about" */ '../pages/user/auth/login.vue')
+    },
+    {
+        path: '/reset_password',
+        name: 'Reset Password',
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () =>
+            import ( /* webpackChunkName: "about" */ '../pages/user/auth/reset_password.vue')
     },
     {
         path: '/donate',
@@ -109,7 +118,7 @@ const routes = [{
             import ( /* webpackChunkName: "about" */ '../pages/user/dashboard/index.vue'),
         children: [{
                 path: '/dashboard/home',
-                name: 'Dashboard',
+                name: 'Home',
                 // route level code-splitting
                 // this generates a separate chunk (about.[hash].js) for this route
                 // which is lazy-loaded when the route is visited.
@@ -118,21 +127,12 @@ const routes = [{
             },
             {
                 path: '/dashboard/forum',
-                name: 'Dashboard',
+                name: 'Forum',
                 // route level code-splitting
                 // this generates a separate chunk (about.[hash].js) for this route
                 // which is lazy-loaded when the route is visited.
                 component: () =>
                     import ( /* webpackChunkName: "about" */ '../pages/user/dashboard/forum.vue'),
-            },
-            {
-                path: '/dashboard/ecard',
-                name: 'Dashboard',
-                // route level code-splitting
-                // this generates a separate chunk (about.[hash].js) for this route
-                // which is lazy-loaded when the route is visited.
-                component: () =>
-                    import ( /* webpackChunkName: "about" */ '../pages/user/dashboard/ecard.vue'),
             },
         ]
     },

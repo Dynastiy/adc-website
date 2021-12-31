@@ -463,6 +463,20 @@
     /* height: 20rem; */
 }
 
+.reset-page {
+    background-color: #3ee98817;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reset-box {
+    background-color: #fff;
+    width: 30rem;
+    /* height: 20rem; */
+}
+
 
 /* Header for Smaller pages */
 

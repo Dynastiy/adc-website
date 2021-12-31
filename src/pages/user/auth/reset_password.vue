@@ -1,12 +1,13 @@
 <template>
-  <div class="login-page">
-    <div class="login-box shadow-lg rounded pt-4">
-      <div class="text-center">
+  <div>
+    <div class="login-page">
+    <div class="login-box shadow-lg rounded pt-4 pb-4">
+      <!-- <div class="text-center">
           <img src="@/assets/img/brand_assets/logo_vertical_dark.png" alt=""  srcset="" width="50" />
-      </div>
-      <h6 class="mt-3 font-weight-bold text-center mb-\3">Enter details to Login</h6>
+      </div> -->
+      <h6 class="mt-3 font-weight-bold text-center mb-3 pb-4">New Password Details</h6>
       <div class="px-4">
-        <form @submit.prevent="login" method="POST" novalidate="novalidate">
+        <form @submit.prevent="resetPassword" method="POST" novalidate="novalidate">
           <div class="form-group">
             <label for="exampleInputEmail1" class="font-weight-bold">Email address</label>
             <input
@@ -18,7 +19,7 @@
             />
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1" class="font-weight-bold">Password</label>
+            <label for="exampleInputPassword1" class="font-weight-bold">New Password</label>
             <input
             v-model="password"
               type="password"
@@ -26,39 +27,44 @@
               id="exampleInputPassword1"
             />
           </div>
-          <button type="submit" class="btn bg-darker w-100 small-btn-text">LOGIN</button>
+          <button type="submit" class="btn bg-darker w-100 small-btn-text">RESET PASSWORD</button>
         </form>
       </div>
-       <div class="text-center my-3 homepage">
-          <router-link class="text-dark font-weight-bold" to="/">Back to Home page</router-link>
-        </div>
     </div>
+    <div class="text-center my-3 homepage" >
+          <router-link class="text-dark font-weight-bold" to="/login">Back to Login page</router-link>
+        </div>
+  </div>
   </div>
 </template>
 
 <script>
-import helpers from '@/services/helper.js';
+// import helpers from '@/services/helper.js';
+import axios from 'axios';
   export default {
     data() {
       return {
+          done: true,
         email: '',
         password:'',
+        baseUrl: "https://api.adc.org.ng/api/",
       };
     },
      methods:{
-       async login() {
+       async resetPassword() {
             // this.loading = true,
             // this.errors = [];
             try {
-                const credentials = {
-                email: this.email,
-                password: this.password
-                };
-                const response = await helpers.login(credentials);
-                const token = response.data.token;
-                const user = response.data.user;
-                this.$store.dispatch('login', { token, user });
-                this.$router.push('/dashboard/home');
+                //  const token = this.$store.getters.isLoggedIn;
+          // POST request using axios with set headers
+          let payload = {
+            email: this.email,
+            password: this.password,
+
+          };
+          let res = await axios.post(this.baseUrl + "auth/password/update_password", payload
+          );
+          console.log(res);
                 } 
                 catch (error) {
                 console.log(error.response)
@@ -73,7 +79,7 @@ import helpers from '@/services/helper.js';
                 }
             }
                 finally {
-                        this.loading =  false
+                  // this.submitted = false
                     }
         },
      }
