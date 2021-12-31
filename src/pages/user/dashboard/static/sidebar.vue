@@ -30,7 +30,7 @@
           </router-link>
         </li>
         <li>
-          <a href="javascript:void(0)">
+          <a href="javascript:void(0)" @click="logout">
             <span class="mr-2"><ion-icon name="power"></ion-icon> </span>
             <span class="menu-item">
               Logout
@@ -42,6 +42,16 @@
   </div>
 </template>
 
+<script>
+export default {
+  methods: {
+    logout(){
+      this.$store.dispatch('logout');
+      this.$router.push("/login")
+    }
+  }
+}
+</script>
 
 <style scoped>
 .router-link-exact-active{
