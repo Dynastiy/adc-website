@@ -208,5 +208,17 @@
     list-style: none;
     padding: 0.5rem 0;
   }
+
+  @media (max-width: 990px) {
+.user {
+    display: unset;
+}
+.user div {
+    margin-bottom: 20px;
+}
+.user h6, .user li {
+    font-size: 0.8rem;
+}
+  }
   
 </style>

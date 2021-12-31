@@ -105,4 +105,9 @@
     font-weight: bold;
     font-size: 0.8rem;
   }
+  @media (max-width : 990px){
+    .content-tab {
+      padding: 2rem;
+    }
+  }
 </style>

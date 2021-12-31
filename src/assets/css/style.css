@@ -514,6 +514,10 @@
     color: #00a54f;
 }
 
+#mobile-nav {
+    display: none;
+}
+
 
 /* Dashboard  */
 
@@ -522,6 +526,21 @@
     background-color: #e5e5e572;
     padding: 2rem 2rem;
     min-height: 100vh;
+}
+
+
+/* Dashboard styling for smaller screens  */
+
+@media (max-width: 990px) {
+    #mobile-nav {
+        display: flex;
+    }
+    #aside {
+        display: none;
+    }
+    .dash {
+        margin-left: 0px;
+    }
 }
 
 
@@ -560,8 +579,12 @@
 }
 
 @media (max-width: 990px) {
+    .carousel-caption h1 {
+        margin-top: 2.5rem;
+    }
     .headerss {
         font-size: 3rem;
+        margin-top: 3rem;
     }
     .request-links {
         display: none !important;

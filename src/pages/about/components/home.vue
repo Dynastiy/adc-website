@@ -83,6 +83,14 @@ hr {
       background-color: rgba(0, 0, 0, 0.8);
       background-blend-mode: overlay;
   }
+  @media (max-width: 990px){
+    .cards {
+      display: unset;
+    }
+    .cards div {
+      margin-bottom: 20px;
+    }
+  }
 </style>
 
 <script>

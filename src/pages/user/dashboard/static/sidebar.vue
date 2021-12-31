@@ -39,6 +39,30 @@
         </li>
       </ul>
     </div>
+<nav class="navbar navbar-expand-sm navbar-light bg-light shadow-sm" id="mobile-nav">
+  <a class="navbar-brand" href="javascript:void(0)">
+     <span class="logo-spread">
+              <img src="@/assets/img/logo-spread.png" width="140" />
+      </span>
+  </a>
+  <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+      aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavId">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <router-link to="/dashboard/home" class="nav-link" >Dashboard </router-link>
+      </li>
+      <li class="nav-item">
+        <router-link to="/dashboard/forum" class="nav-link" href="#">Forum</router-link>
+      </li>
+      <li class="nav-item" @click="logout">
+        <a class="nav-link" href="javascript:void(0)">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
   </div>
 </template>
 

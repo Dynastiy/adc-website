@@ -2,7 +2,7 @@
   <div id="appRoot">
     <div class="">
       <div class="header-area">
-        <mobile-nav />
+        <mobile-nav  />
         <div class="request-links">
           <div class="top-links bg-main">
             <router-link to="/join_adc">JOIN ADC</router-link>
