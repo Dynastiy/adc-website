@@ -8,23 +8,54 @@
     </div>
 
     <!-- Main News Content  -->
-    <div class="content">
-        <div class="news-item">
-            <img src="" alt="">
-        </div>
-        <p>No news yet</p>
+      <div class="news-container container content">
+        <div class="shadow-sm bg-white" v-for="(news_item, index) in news" :key="index">
+            <!-- <img :src="news_item.enclosure.link" width="100%" height="30%" alt="img" class="handshake-img" /> -->
+
+            <div class="news-content">
+              <p class="news-date p-1"> {{ news_item.pubDate }} </p>
+              <div class="p-3">
+                <h5 class="font-weight-bold text-uppercase">
+                  {{ news_item.title }}
+                </h5>
+                <p>
+                  {{ news_item.contentSnippet }}
+                </p>
+                <a :href="news_item.guid" class="text-orange small font-weight-bold"
+                  >View More</a
+                >
+              </div>
+            </div>
+          </div>
     </div>
     
   </div>
 </template>
 
 <script>
+import axios from 'axios'
   import AppHeader from "../../components/appHeader.vue";
   export default {
     components: { AppHeader },
     data() {
-      return {};
+      return {
+        news:"",
+      }
     },
+    methods:{
+      async getNews(){
+        try {
+          let res = await axios.get("https://v1.nocodeapi.com/nsik/medium/qVuZIRwQxfTKcidN")
+          this.news = res.data
+          console.log(this.news)
+        } catch (error) {
+          console.log(error);
+        }
+      }
+    },
+    async created(){
+      this.getNews()
+    }
   };
 </script>
 
@@ -40,6 +71,11 @@ background: url(../../assets/img/newsbg.jpg);
 }
   .header .content h2 {
     text-shadow: 0px 2px rgba(0, 0, 0, 0.8);
+  }
+  .news-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
   }
   
 </style>

@@ -109,7 +109,7 @@ const routes = [{
             import ( /* webpackChunkName: "about" */ '../pages/user/dashboard/index.vue'),
         children: [{
                 path: '/dashboard/home',
-                name: 'Home',
+                name: 'Dashboard',
                 // route level code-splitting
                 // this generates a separate chunk (about.[hash].js) for this route
                 // which is lazy-loaded when the route is visited.
@@ -118,7 +118,7 @@ const routes = [{
             },
             {
                 path: '/dashboard/forum',
-                name: 'Forum',
+                name: 'Dashboard',
                 // route level code-splitting
                 // this generates a separate chunk (about.[hash].js) for this route
                 // which is lazy-loaded when the route is visited.
@@ -127,7 +127,7 @@ const routes = [{
             },
             {
                 path: '/dashboard/ecard',
-                name: 'eCard',
+                name: 'Dashboard',
                 // route level code-splitting
                 // this generates a separate chunk (about.[hash].js) for this route
                 // which is lazy-loaded when the route is visited.

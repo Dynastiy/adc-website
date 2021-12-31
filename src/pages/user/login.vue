@@ -6,10 +6,11 @@
       </div>
       <h6 class="mt-3 font-weight-bold text-center">Enter details to Login</h6>
       <div class="px-4">
-        <form>
+        <form @submit.prevent="login" method="POST" novalidate="novalidate">
           <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
             <input
+            v-model="email"
               type="email"
               class="form-control"
               id="exampleInputEmail1"
@@ -19,12 +20,13 @@
           <div class="form-group">
             <label for="exampleInputPassword1">Password</label>
             <input
+            v-model="password"
               type="password"
               class="form-control"
               id="exampleInputPassword1"
             />
           </div>
-          <router-link to="/dashboard"><button type="submit" class="btn bg-main w-100 small-btn-text">LOGIN</button></router-link>
+          <button type="submit" class="btn bg-darker w-100 small-btn-text">LOGIN</button>
         </form>
       </div>
     </div>
@@ -32,10 +34,46 @@
 </template>
 
 <script>
+import helpers from '@/services/helper.js';
   export default {
     data() {
-      return {};
+      return {
+        email: '',
+        password:'',
+      };
     },
+     methods:{
+       async login() {
+            // this.loading = true,
+            // this.errors = [];
+            try {
+                const credentials = {
+                email: this.email,
+                password: this.password
+                };
+                const response = await helpers.login(credentials);
+                const token = response.data.token;
+                const user = response.data.user;
+                this.$store.dispatch('login', { token, user });
+                this.$router.push('/dashboard/home');
+                } 
+                catch (error) {
+                console.log(error.response)
+                if (error.response.status == 422 || error.response.status === '' ) {
+               alert("We couldn't verify your login details.");
+                this.email = '';
+                this.password = '';
+                } else {
+                alert("Something went wrong, please refresh and try again.");
+                this.email = '';
+                this.password = '';
+                }
+            }
+                finally {
+                        this.loading =  false
+                    }
+        },
+     }
   };
 </script>
 

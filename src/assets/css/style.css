@@ -408,12 +408,13 @@
 }
 
 .news-content {
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     /* padding: 20px; */
 }
 
 .news-date {
-    display: inline;
+    display: flex;
+    width: max-content;
     color: #ffffff;
     /* padding: 10px; */
     background-color: #ff7300;
@@ -430,11 +431,6 @@
 
 .view-more a {
     color: #06191d;
-}
-
-.second-news-content {
-    display: flex;
-    margin-bottom: 2rem;
 }
 
 .handshake-img {

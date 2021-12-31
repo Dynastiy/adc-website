@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <router-view />
-    <app-footer v-if="currentRouteName !== 'Login' || currentRouteName !== 'Dashboard' || currentRouteName !== 'Forum' || currentRouteName !== 'eCard' || currentRouteName !== 'Home'   "  />
+    <app-footer v-if="currentRouteName !== 'Login' || currentRouteName != 'Dashboard' || currentRouteName != 'Forum' || currentRouteName != 'eCard' || currentRouteName !== 'Home'   "  />
   </div>
 </template>
 
@@ -11,6 +11,9 @@
     components: { appFooter },
     data() {
       return {};
+    },
+    created(){
+      console.log(this.currentRouteName);
     },
     computed: {
       currentRouteName() {

@@ -285,114 +285,29 @@
     <div class="news-category content">
       <h1 class="core-values-text">News</h1>
       <div class="news-container">
-        <!-- <div class="shadow-sm ">
-            <img src="@/assets/img/1.png" width="100%" height="30%" alt="img" class="handshake-img" />
+        <div class="shadow-sm bg-white" v-for="(news_item, index) in news" :key="index">
+            <!-- <img :src="news_item.enclosure.link" width="100%" height="30%" alt="img" class="handshake-img" /> -->
 
             <div class="news-content">
-              <p class="news-date p-1">November 2 2021</p>
+              <p class="news-date p-1"> {{ news_item.pubDate }} </p>
               <div class="p-3">
-                <h5 class="font-weight-bold">
-                  IMPACT OF EXTRISINCT MOTIVATION ON INTRISINCT MOVE FORWARD
+                <h5 class="font-weight-bold text-uppercase">
+                  {{ news_item.title }}
                 </h5>
                 <p>
-                  Lorem ipsum dolor sit amet, sed do Lorem ipsum
-                  doloradipisicing elit, do eiusmod et dolore magna aliqua. Ut
-                  enim ad minim veniam od tempor incididunt ut lab.
+                  {{ news_item.contentSnippet }}
                 </p>
-                <a href="#" class="text-orange small font-weight-bold"
+                <a :href="news_item.guid" class="text-orange small font-weight-bold"
                   >View More</a
                 >
               </div>
             </div>
-          </div> -->
-        <!-- <div class="shadow-sm d-lg-flex">
-          <img src="@/assets/img/1.png" alt="img" class="handshake-img" />
-
-          <div class="news-content">
-            <p class="news-date p-1">November 2 2021</p>
-            <div class="p-3">
-              <h5 class="font-weight-bold">
-                IMPACT OF EXTRISINCT MOTIVATION ON INTRISINCT MOVE FORWARD
-              </h5>
-              <p>
-                Lorem ipsum dolor sit amet, sed do Lorem ipsum doloradipisicing
-                elit, do eiusmod et dolore magna aliqua. Ut enim ad minim veniam
-                od tempor incididunt ut lab.
-              </p>
-              <a href="#" class="text-orange small font-weight-bold"
-                >View More</a
-              >
-            </div>
           </div>
-        </div>
-        <div class="shadow-sm d-lg-flex">
-          <img src="@/assets/img/1.png" alt="img" class="handshake-img" />
-
-          <div class="news-content">
-            <p class="news-date p-1">November 2 2021</p>
-            <div class="p-3">
-              <h5 class="font-weight-bold">
-                IMPACT OF EXTRISINCT MOTIVATION ON INTRISINCT MOVE FORWARD
-              </h5>
-              <p>
-                Lorem ipsum dolor sit amet, sed do Lorem ipsum doloradipisicing
-                elit, do eiusmod et dolore magna aliqua. Ut enim ad minim veniam
-                od tempor incididunt ut lab.
-              </p>
-              <a href="#" class="text-orange small font-weight-bold"
-                >View More</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="shadow-sm d-lg-flex">
-          <img src="@/assets/img/1.png" alt="img" class="handshake-img" />
-
-          <div class="news-content">
-            <p class="news-date p-1">November 2 2021</p>
-            <div class="p-3">
-              <h5 class="font-weight-bold">
-                IMPACT OF EXTRISINCT MOTIVATION ON INTRISINCT MOVE FORWARD
-              </h5>
-              <p>
-                Lorem ipsum dolor sit amet, sed do Lorem ipsum doloradipisicing
-                elit, do eiusmod et dolore magna aliqua. Ut enim ad minim veniam
-                od tempor incididunt ut lab.
-              </p>
-              <a href="#" class="text-orange small font-weight-bold"
-                >View More</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="shadow-sm d-lg-flex">
-          <img src="@/assets/img/1.png" alt="img" class="handshake-img" />
-
-          <div class="news-content">
-            <p class="news-date p-1">November 2 2021</p>
-            <div class="p-3">
-              <h5 class="font-weight-bold">
-                IMPACT OF EXTRISINCT MOTIVATION ON INTRISINCT MOVE FORWARD
-              </h5>
-              <p>
-                Lorem ipsum dolor sit amet, sed do Lorem ipsum doloradipisicing
-                elit, do eiusmod et dolore magna aliqua. Ut enim ad minim veniam
-                od tempor incididunt ut lab.
-              </p>
-              <a href="#" class="text-orange small font-weight-bold"
-                >View More</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-      <router-link
-        to="/news"
-        class="text-orange mt-3 d-block text-right font-weight-bold"
-        >See All</router-link
-      > -->
         <!-- <VueRssFeed :feedUrl="feedUrl" :name="name" :limit="limit"/> -->
     </div>
+    <div class="text-right font-weight-bold mt-4">
+            <router-link to="/news" class="text-orange">View All</router-link>
+          </div>
     </div>
 
     <div class="gallery">
@@ -405,6 +320,8 @@
 </template>
 
 <script>
+import axios from 'axios'
+// import news from '../assets/js/news'
   import mobileNav from "../components/mobile_nav.vue";
   import paystack from "vue-paystack";
   import aboutus from "../components/about_us.vue";
@@ -423,7 +340,8 @@
     data() {
       return {
         slides: 5,
-        feedUrl: "https://rss.app/feeds/t9BumKhsA1cD9Lbv.xml",
+        news:'',
+        // feedUrl: "https://politics.einnews.com/rss/cZWEClscooCkMFvs",
         name: "",
         limit: 4,
         full_name: " ",
@@ -433,6 +351,16 @@
     },
 
     methods: {
+      async getNews(){
+        try {
+          let res = await axios.get("https://v1.nocodeapi.com/nsik/medium/qVuZIRwQxfTKcidN")
+          console.log(res.data)
+          let newsStuffs = res.data
+          this.news = newsStuffs.slice(0,4)
+        } catch (error) {
+          console.log(error)
+        }
+      },
       processPayment: () => {
         window.alert("Payment recieved");
       },
@@ -472,6 +400,9 @@
         drop_drawer.style.opacity = '1'
         }
       };
+    },
+    async created(){
+      this.getNews()
     },
     computed: {
       reference() {
@@ -519,9 +450,9 @@
   .news-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 5px;
+    grid-gap: 15px;
   }
-  /* .news-container div:nth-child(1){
+  /* .news-container div{
   grid-row-start: 1;
   grid-row-end: 3;
 } */

@@ -1,7 +1,7 @@
 <template>
   <div>
     <simplified-nav />
-    <div class="content-tab">
+    <div class="content-tab container">
       <h1 class="font-weight-bold text-darker mb-2">Join ADC</h1>
       <p class="font-weight-bold text-darker larger-text w-75 mb-5"> 
         We’ve come a long way together. And our

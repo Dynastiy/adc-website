@@ -30,14 +30,6 @@
           </router-link>
         </li>
         <li>
-          <router-link to="/dashboard/ecard">
-            <span class="mr-2"><ion-icon name="card"></ion-icon> </span>
-            <span class="menu-item">
-              eCard
-            </span>
-          </router-link>
-        </li>
-        <li>
           <a href="javascript:void(0)">
             <span class="mr-2"><ion-icon name="power"></ion-icon> </span>
             <span class="menu-item">
