@@ -82,6 +82,17 @@
         </div>
         <div class="bg-darker text-white p-3 rounded">
           <h6 class="font-weight-bold">Resources</h6>
+          <hr class="bg-accent">
+           <div>
+            <div class="d-flex justify-content-between my-3">
+              <h6>Handbook</h6>
+                <button class="btn bg-accent py-1 font-weight-bold px-4">DOWNLOAD</button>
+            </div>
+            <div class="d-flex justify-content-between">
+              <h6>Constitution</h6>
+              <button class="btn bg-accent py-1 font-weight-bold px-4">DOWNLOAD</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -197,6 +208,5 @@
     list-style: none;
     padding: 0.5rem 0;
   }
-  .forum ul li {
-  }
+  
 </style>
