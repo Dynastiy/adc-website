@@ -2,7 +2,8 @@
   <div>
     <simplified-nav />
     <div class="content-tab container">
-      <h1 class="font-weight-bold text-darker mb-2">Join ADC</h1>
+      <h1 class="font-weight-bold text-darker mb-2 mt-5">Join ADC</h1>
+      <hr class="mb-4">
       <p class="font-weight-bold text-darker larger-text w-75 mb-5"> 
         We’ve come a long way together. And our
         supporters made everything possible. <pre></pre> Membership is the best way to
@@ -10,62 +11,96 @@
         started it, now be part of it!
       </p>
       <h2 class="font-weight-bold mt-5 text-darker mb-5 text-center" >Choose a Membership Rate</h2>
-     <div class="reg__cards">
-          <div class="below_30 shadow p-3">
-        <!-- <h4 class="font-weight-bold text-center mt-2">Are you between 18 and 30?</h4> -->
-        <!-- <h5 class="text-center font-weight-bold"> &#8358;200</h5> -->
-        <p class="font-weight-bold mt-5">
-          Registration link for Persons between 18-30 years &
-          Persons with Disabilities.
-        </p>
-        <router-link to="reg_form"
-          ><button
-            class="bg-darker mt-3 w-100 btn font-weight-bold text-white small-btn-text"
-          >
-            Choose
-          </button></router-link
-        >
-      </div>
-      <div class="below_30 shadow p-3">
-        <!-- <h4 class="font-weight-bold text-darker text-center mt-2">Are you above 30?</h4> -->
-        <!-- <h5 class="text-center font-weight-bold"> &#8358; 500</h5> -->
-        <p class="font-weight-bold mt-5">
-          Below is the Registration link for Persons above 30 years of age
-        </p>
-        <router-link to="reg_form"
-          ><button
-            class="w-100 mt-3 bg-darker btn font-weight-bold text-white small-btn-text"
-          >
-            Choose
-          </button></router-link
-        >
-      </div>
-      <!-- <div class="below_30 shadow p-3">
-        <h4 class="font-weight-bold text-orange">Registered Member</h4>
-        <p class="text-muted">
-          Already a member?
-        </p>
-        <router-link to="reg_form"
-          ><button
-            class="bg-orange mt-3 btn font-weight-bold text-white small-btn-text"
-          >
-            Renew Membership
-          </button></router-link
-        >
-      </div> -->
+     <div class="reg__cards rounded pb-5">
+         <div class="shadow-lg rounded card__item p-4 ">
+           <div class="card_item_header d-flex">
+             <div class="icon__header d-flex align-items-center justify-content-center p-2 mr-3">
+               <ion-icon name="person"></ion-icon>
+             </div>
+             <div>
+               <p class="font-weight-bold">Category 1</p>
+              <small>Ages 18 to 30</small>
+             </div>
+           </div>
+           <hr class="mt-4 mb-4">
+           <div class="card_list">
+             <div class="card_list_item d-flex mt-4">
+               <div class="mr-2">
+                 <ion-icon name="checkmark-circle"></ion-icon>
+               </div>
+               <p class="small font-weight-bold">Above 18, but below 30</p>
+             </div>
+             <div class="card_list_item d-flex mt-4">
+               <div class="mr-2">
+                 <ion-icon name="checkmark-circle"></ion-icon>
+               </div>
+               <p class="small font-weight-bold">Person with Disability</p>
+             </div>
+           </div>
+           <button class=" mt-4 btn bg-darker btn-choose">
+             Choose
+           </button>
+         </div>
+         <div class="shadow-lg rounded card__item p-4 ">
+           <div class="card_item_header d-flex">
+             <div class="icon__header d-flex align-items-center justify-content-center p-2 mr-3">
+               <ion-icon name="person"></ion-icon>
+             </div>
+             <div>
+               <p class="font-weight-bold"> Category 2</p>
+              <small>Ages 30 and Above</small>
+             </div>
+           </div>
+           <hr class="mt-4 mb-4">
+           <div class="card_list">
+             <div class="card_list_item d-flex mt-4">
+               <div class="mr-2">
+                 <ion-icon name="checkmark-circle"></ion-icon>
+               </div>
+               <p class="small font-weight-bold">Persons above 30 years</p>
+             </div>
+             <div class="card_list_item d-flex mt-4">
+               <div class="mr-2">
+                 <ion-icon name="checkmark-circle"></ion-icon>
+               </div>
+               <p class="small font-weight-bold">Persons without Disability</p>
+             </div>
+           </div>
+           <button class=" mt-4 btn bg-darker btn-choose">
+             Choose
+           </button>
+         </div>
+        <div class="shadow-lg rounded card__item p-4 ">
+           <div class="card_item_header d-flex">
+             <div class="icon__header d-flex align-items-center justify-content-center p-2 mr-3">
+               <ion-icon name="person"></ion-icon>
+             </div>
+             <div>
+               <p class="font-weight-bold"> Category 3</p>
+              <small>Already Registered</small>
+             </div>
+           </div>
+           <hr class="mt-4 mb-4">
+           <div class="card_list">
+             <div class="card_list_item d-flex mt-4">
+               <div class="mr-2">
+                 <ion-icon name="checkmark-circle"></ion-icon>
+               </div>
+               <p class="small font-weight-bold">Existing ADC registered Member</p>
+             </div>
+             <div class="card_list_item d-flex mt-4">
+               <div class="mr-2">
+                 <ion-icon name="checkmark-circle"></ion-icon>
+               </div>
+               <p class="small font-weight-bold">ADC Card Holder</p>
+             </div>
+           </div>
+           <button class=" mt-4 btn bg-darker btn-choose">
+             Choose
+           </button>
+         </div>
      </div>
-      <div class="my-5 d-flex align-items-center">
-        <div class="div__line"></div>
-        <h4 class="ml-3 mr-3 font-weight-bold">OR</h4>
-        <div class="div__line"></div>
-      </div>
-      <div>
-        <button
-          class="bg-darker w-100 btn font-weight-bold text-white small-btn-text"
-        >
-          I AM ALREADY A MEMBER, RENEW MY MEMBERSHIP
-        </button>
-      </div>
+      
     </div>
   </div>
 </template>
@@ -81,8 +116,28 @@
 </script>
 
 <style>
+.btn-choose {
+  color: #fff;
+  font-weight: bold;
+  border-radius: 20px;
+  width: 100%;
+}
+.icon__header {
+  border-radius: 1rem;
+  background: #989d9e60;
+}
+.icon__header ion-icon {
+  font-size: 32px;
+  color: #000;
+}
+.card_list_item ion-icon {
+  color: #989d9e60;
+}
+.reg__cards p{
+  margin: 0;
+}
 .content-tab {
-  padding: 2rem 8rem;
+  /* padding: 2rem 8rem; */
 }
 .below_30 {
     /* background:#effff6; */
@@ -96,7 +151,8 @@
     font-size: 1rem;
 }
 .reg__cards {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
 }
   .small-btn-text {
@@ -107,5 +163,14 @@
     height: 1px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 990px){
+    .reg__cards {
+      display: unset;
+    }
+    .reg__cards div {
+      margin-bottom: 20px;
+    }
   }
 </style>
