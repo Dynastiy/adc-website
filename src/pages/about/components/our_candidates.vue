@@ -88,4 +88,12 @@
   .small {
     font-size: 0.8rem;
   }
+  @media (max-width: 990px){
+    .aspirants{
+      display: unset;
+    }
+    .aspirants div {
+      margin-bottom: 30px;
+    }
+  }
 </style>

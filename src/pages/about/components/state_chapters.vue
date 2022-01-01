@@ -31,11 +31,14 @@ import states from '@/assets/js/states.js'
 .party__structure {
     display: grid;
     grid-template-columns: auto auto auto auto;
-     gap: 5px;
+     gap: 15px;
 }
 @media screen and (max-width: 746px) {
   .party__structure{
     display: unset;
+  }
+  .party__structure div {
+    margin-bottom: 15px;
   }
   
 }

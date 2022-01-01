@@ -546,38 +546,6 @@
 
 /* For smaller screens */
 
-@media (max-width: 1024px) {
-    .header-content {
-        padding: 0 20px 0 20px;
-    }
-    .logo {
-        margin-top: 30px;
-    }
-    .request-links {
-        justify-content: end;
-    }
-    .top-links {
-        width: 25%;
-    }
-    .about-us {
-        margin-top: 2rem;
-    }
-    .content {
-        padding: 1rem 1.1rem;
-    }
-    .about-us div {
-        padding: 20px;
-    }
-    .second-news-content {
-        display: block;
-        margin-bottom: 2rem;
-    }
-    .handshake-img {
-        height: 21.3rem;
-        width: 100%;
-    }
-}
-
 @media (max-width: 990px) {
     .carousel-caption h1 {
         margin-top: 2.5rem;
