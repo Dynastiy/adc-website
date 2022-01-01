@@ -224,7 +224,7 @@ return{
 }
 .card-front .text-right {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .small-line {
   width: 30%;

@@ -95,7 +95,7 @@
                <p class="small font-weight-bold">ADC Card Holder</p>
              </div>
            </div>
-           <button class=" mt-4 btn bg-darker btn-choose">
+           <button @click="renewMembership" class=" mt-4 btn bg-darker btn-choose">
              Choose
            </button>
          </div>

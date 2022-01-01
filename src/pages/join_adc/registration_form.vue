@@ -4,7 +4,7 @@
       <simplified-nav />
     </div>
     <div>
-      <main class="content container">
+      <main class="content">
         <h1 class="text-center text-main font-weight-bold">
           Registration Form
         </h1>
@@ -200,5 +200,11 @@
 <style scoped>
   .container {
     padding: 3rem 8rem;
+  }
+
+  @media (max-width: 990px){
+    .content {
+      padding: 2rem !important;
+    }
   }
 </style>
