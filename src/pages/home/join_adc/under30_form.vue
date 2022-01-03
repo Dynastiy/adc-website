@@ -17,7 +17,7 @@
                 type="text"
                 class="form-control"
                 placeholder="First name"
-               required />
+                 required />
             </div>
             <div class="col">
               <label for="exampleInputEmail1">Last Name</label>
@@ -26,7 +26,7 @@
                 type="text"
                 class="form-control"
                 placeholder="Last name"
-               required />
+                 required />
             </div>
           </div>
           <div class="form-group">
@@ -38,7 +38,7 @@
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
               placeholder="Email Address"
-             required />
+               required />
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Password</label>
@@ -48,7 +48,7 @@
               type="password"
               class="form-control"
               id="exampleInputPassword1"
-             required />
+               required />
           </div>
           <div class="form-group">
             <label for="exampleInputEmail1">Phone Number</label>
@@ -59,7 +59,7 @@
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
               placeholder="Phone Number"
-             required />
+               required />
           </div>
           <div class="form-group">
             <label for="exampleInputEmail1">Date of Birth</label>
@@ -70,7 +70,7 @@
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
               placeholder="Date of Birth"
-             required />
+               required />
           </div>
           <div class="form-group">
             <label for="inputState">Gender</label>
@@ -128,7 +128,7 @@
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
               placeholder="Ward"
-             required />
+               required />
           </div>
           <div class="form-group">
             <label for="exampleInputEmail1">Reffered by</label>
@@ -139,7 +139,7 @@
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
               placeholder="Name of Refferer"
-             required />
+               required />
           </div>
           <div class="text-center form-group my-5">
             <label class="small-text font-weight-bold" for=""
@@ -152,7 +152,7 @@
               class=""
               id="file"
               @change="handleFileUpload()"
-             required />
+               required />
           </div>
           <input
             type="submit"
@@ -162,11 +162,14 @@
         </form>
       </main>
       <div v-show="paystack_part" class="payment p-5 bg-light-accent">
-         <div>
-              <h1>Proceed to Pay</h1>
+         <div class="text-center">
+             <img src="@/assets/img/brand_assets/logo_horizontal_dark.png" width="100" class="text-center mb-4" alt="">
+              <h1 class="font-weight-bold mb-4 text-center">Proceed to <br>
+                  make payment
+              </h1>
           <paystack
             :amount="200 * 100"
-            class="btn bg-main text-white font-weight-bold text-center"
+            class="btn bg-darker text-white font-weight-bold text-center w-50"
             :email="form_field.email"
             :paystackkey="PUBLIC_KEY"
             :reference="reference"
