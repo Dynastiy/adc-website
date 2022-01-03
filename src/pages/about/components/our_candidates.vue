@@ -10,9 +10,9 @@
           <h5 class="font-weight-bold text-main">Favor Ayodele</h5>
           <hr />
           <p class="font-weight-bold">Presidential Aspirant</p>
-          <button class="btn bg-main text-white font-weight-bold small">
+          <!-- <button class="btn bg-main text-white font-weight-bold small">
             View More
-          </button>
+          </button> -->
         </div>
       </div>
 
@@ -22,9 +22,9 @@
           <h5 class="font-weight-bold text-main">Professor Kingsley Chiedu Moghalu</h5>
           <hr />
           <p class="font-weight-bold">Presidential Aspirant</p>
-          <button class="btn bg-main text-white font-weight-bold small">
+          <!-- <button class="btn bg-main text-white font-weight-bold small">
             View More
-          </button>
+          </button> -->
         </div>
       </div>
 
@@ -34,9 +34,9 @@
           <h5 class="font-weight-bold text-main">Akachukwu Nwankpo</h5>
           <hr />
           <p class="font-weight-bold">Gubernatorial Aspirant</p>
-          <button class="btn bg-main text-white font-weight-bold small">
+          <!-- <button class="btn bg-main text-white font-weight-bold small">
             View More
-          </button>
+          </button> -->
         </div>
       </div>
     </div>

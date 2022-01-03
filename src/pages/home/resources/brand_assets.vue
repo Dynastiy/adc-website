@@ -11,54 +11,54 @@
 
     <div class="content">
       <div class="assets__container">
-        <div class="asset__card p-3">
+        <div class="asset__card p-3 shadow-lg">
           <img
             src="@/assets/img/brand_assets/logo_horizontal_dark.png"
             alt=""
             width="150"
           />
           <p class="font-weight-bold mt-2">Horizontal Logo with Dark text</p>
-          <div class="asset__download bg-darker p-3">
+          <!-- <div class="asset__download bg-darker p-3">
             <p class="font-weight-bold text-white">Want to Use this Item?</p>
             <a href="https://wallsdesk.com/wp-content/uploads/2017/01/Pictures-of-Dublin-.jpg" download> Download
             </a>
-          </div>
+          </div> -->
         </div>
-        <div class="asset__card p-3">
+        <div class="asset__card p-3 shadow-lg">
           <img
             src="@/assets/img/brand_assets/logo_horizontal_white.png"
             alt=""
             width="150"
           />
           <p class="font-weight-bold mt-2">Horizontal Logo with White text</p>
-          <div class="asset__download bg-darker p-3">
+          <!-- <div class="asset__download bg-darker p-3">
             <p class="font-weight-bold text-white">Want to Use this Item?</p>
             <button class="btn btn-light font-weight-bold">Download</button>
-          </div>
+          </div> -->
         </div>
-        <div class="asset__card p-3">
+        <div class="asset__card p-3 shadow-lg">
           <img
             src="@/assets/img/brand_assets/logo_vertical_dark.png"
             alt=""
             width="40"
           />
           <p class="font-weight-bold mt-2">Vertical Logo with Dark text</p>
-          <div class="asset__download bg-darker p-3">
+          <!-- <div class="asset__download bg-darker p-3">
             <p class="font-weight-bold text-white">Want to Use this Item?</p>
             <button class="btn btn-light font-weight-bold">Download</button>
-          </div>
+          </div> -->
         </div>
-        <div class="asset__card p-3">
+        <div class="asset__card p-3 shadow-lg">
           <img
             src="@/assets/img/brand_assets/logo_vertical_white.png"
             alt=""
             width="40"
           />
           <p class="font-weight-bold mt-2">Vertical Logo with White text</p>
-          <div class="asset__download bg-darker p-3">
+          <!-- <div class="asset__download bg-darker p-3">
             <p class="font-weight-bold text-white">Want to Use this Item?</p>
             <button class="btn btn-light font-weight-bold">Download</button>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
