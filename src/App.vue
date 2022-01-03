@@ -1,19 +1,17 @@
 <template>
   <div id="app">
     <router-view />
-    <app-footer v-if="currentRouteName !== 'Login' || currentRouteName != 'Dashboard' || currentRouteName != 'Forum' || currentRouteName != 'eCard' || currentRouteName !== 'Home'   "  />
   </div>
 </template>
 
 <script>
-  import appFooter from "@/components/appFooter";
+  // import appFooter from "@/components/appFooter";
   export default {
-    components: { appFooter },
+    // components: { appFooter },
     data() {
       return {};
     },
     created(){
-      console.log(this.currentRouteName);
     },
     computed: {
       currentRouteName() {

@@ -16,13 +16,13 @@
 </template>
 
 <script>
-  import AppHeader from "../../components/appHeader.vue";
-  import priorities from "../../assets/js/priorities";
+  import AppHeader from "../../../components/appHeader.vue";
+  // import priorities from "../../assets/js/priorities";
   export default {
     components: { AppHeader },
     data() {
       return {
-        priorities: priorities,
+        // priorities: priorities,
       }
     },
   };
@@ -30,7 +30,7 @@
 
 <style scoped>
   .activity-header {
-      background: url(../../assets/img/gallery/8.jpeg);
+      background: url(../../../assets/img/gallery/8.jpeg);
        background-position:bottom;
        background-attachment: fixed;
     background-repeat: no-repeat;

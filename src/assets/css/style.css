@@ -136,59 +136,6 @@
     display: none;
 }
 
-@media (max-width: 1024px) {
-    .header-content {
-        padding: 0 20px 0 20px;
-    }
-    .logo {
-        margin-top: 30px;
-    }
-    .request-links {
-        justify-content: end;
-    }
-    .top-links {
-        width: 25%;
-    }
-}
-
-@media (max-width: 768px) {
-    .request-links {
-        display: none !important;
-    }
-    #bars {
-        color: #ffffff;
-        display: block;
-        padding-top: 40px;
-    }
-    .logo {
-        margin-top: 30px;
-    }
-    /* .navigations {
-        position: absolute;
-        display: block;
-        width: 100%;
-        top: 0%;
-        background-color: #224f5a;
-        left: -100%;
-        text-align: center;
-        line-height: 13vh;
-        z-index: 111;
-    }
-    .navigations a:hover {
-        background-color: #06191d;
-        font-size: 25px;
-        display: block;
-    }
-    #check:checked~.navigations {
-        left: 0;
-        transition: .4s;
-    } */
-    /* .request-links {
-        display: grid;
-        grid-template-columns: auto auto auto;
-    } */
-}
-
 .welcome-text h1 {
     font-size: 4rem;
     font-weight: bold;
@@ -525,7 +472,7 @@
     margin-left: 250px;
     background-color: #e5e5e572;
     padding: 2rem 2rem;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 
@@ -540,15 +487,13 @@
     }
     .dash {
         margin-left: 0px;
+        padding: 2rem 1rem;
     }
-}
-
-
-/* For smaller screens */
-
-@media (max-width: 990px) {
+    .content {
+        padding: 2rem 1rem;
+    }
     .carousel-caption h1 {
-        margin-top: 2.5rem;
+        font-size: 3rem;
     }
     .headerss {
         font-size: 3rem;

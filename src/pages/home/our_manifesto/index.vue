@@ -475,7 +475,7 @@
 </template>
 
 <script>
-  import AppHeader from "../../components/appHeader.vue";
+  import AppHeader from "../../../components/appHeader.vue";
 
   export default {
     components: { AppHeader },
@@ -487,7 +487,7 @@
 
 <style scoped>
   .header {
-    background: url(../../assets/img/handshake.jpg);
+    background: url(../../../assets/img/handshake.jpg);
     background-position: bottom;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -524,7 +524,7 @@ transition: 0.3s;
 cursor: pointer;
 } */
   .cardinal_commitments {
-    background-image: url(../../assets/img/cardinal-bg.svg);
+    background-image: url(../../../assets/img/cardinal-bg.svg);
     background-position: center;
     background-attachment: fixed;
     padding: 5rem 10rem;

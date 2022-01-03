@@ -40,8 +40,8 @@
 </template>
 
 <script>
-  import AppHeader from "../../components/appHeader.vue";
-  import priorities from "../../assets/js/priorities";
+  import AppHeader from "../../../components/appHeader.vue";
+  import priorities from "@/assets/js/priorities";
   export default {
     components: { AppHeader },
     data() {
@@ -54,7 +54,7 @@
 
 <style scoped>
 .header{
-  background: url(../../assets/img/priorities.jpg);
+  background: url(../../../assets/img/priorities.jpg);
        background-position:bottom;
        background-attachment: fixed;
     background-repeat: no-repeat;

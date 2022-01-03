@@ -113,6 +113,20 @@ import swal from 'sweetalert'
           this.loading = false;
         }
       },
+      beforeCreate(){
+         if (!this.$store.getters.isLoggedIn) {
+           this.$router.push("/login")
+         }
+         else{
+            swal({
+          title: "Welcome Back!",
+          text: "You are already logged in",
+          icon: "success",
+          // button: "Go Home!",
+        });
+            this.$router.push('/dashboard/home')
+         }
+      }
     },
   };
 </script>

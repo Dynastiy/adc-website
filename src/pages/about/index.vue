@@ -37,13 +37,15 @@
     <div class="content-tab">
       <router-view/>
     </div>
+    <app-footer/>
   </div>
 </template>
 
 <script>
+ import appFooter from "@/components/appFooter";
   import AppHeader from "../../components/appHeader.vue";
   export default {
-    components: { AppHeader },
+    components: { AppHeader, appFooter },
     data() {
       return {};
     },
@@ -107,7 +109,7 @@
   }
   @media (max-width : 990px){
     .content-tab {
-      padding: 2rem;
+      padding: 2rem 1rem;
     }
   }
 </style>

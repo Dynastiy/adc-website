@@ -1,6 +1,6 @@
 <template>
   <div class="mobile__nav">
-    <div class="mobile_nav_links">
+    <!-- <div class="mobile_nav_links">
       <div class="bg-main">
         <router-link to="/join_adc">JOIN ADC</router-link>
       </div>
@@ -10,7 +10,7 @@
       <div class="bg-orange">
         <router-link to="/donate">DONATE</router-link>
       </div>
-    </div>
+    </div> -->
     <!-- <div class="d-flex justify-content-between align-items-center content mb-5">
       <div class="">
         <router-link to="/"

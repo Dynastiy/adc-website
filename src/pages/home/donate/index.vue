@@ -109,7 +109,7 @@
 </template>
 
 <script>
-  import simpleNav from "../../components/simplified_nav.vue";
+  import simpleNav from "../../../components/simplified_nav.vue";
   import { FormWizard, TabContent } from "vue-form-wizard";
   import "vue-form-wizard/dist/vue-form-wizard.min.css";
 

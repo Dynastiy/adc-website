@@ -66,7 +66,7 @@
 </template>
 
 <script>
-  import AppHeader from "../../components/appHeader.vue";
+  import AppHeader from "../../../components/appHeader.vue";
   //   import priorities from "../../assets/js/priorities";
   export default {
     components: { AppHeader },
@@ -80,7 +80,7 @@
 
 <style scoped>
   .header {
-    background: url(../../assets/img/image2.jpg);
+    background: url(../../../assets/img/image2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

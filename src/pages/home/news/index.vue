@@ -39,7 +39,7 @@
 
 <script>
   import axios from "axios";
-  import AppHeader from "../../components/appHeader.vue";
+  import AppHeader from "../../../components/appHeader.vue";
   export default {
     components: { AppHeader },
     data() {
@@ -68,7 +68,7 @@
 
 <style scoped>
   .header {
-    background: url(../../assets/img/newsbg.jpg);
+    background: url(../../../assets/img/newsbg.jpg);
     background-position: bottom;
     background-attachment: fixed;
     background-repeat: no-repeat;

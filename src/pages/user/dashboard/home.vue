@@ -2,9 +2,9 @@
   <div class="dash">
     <h5 class="font-weight-bold text-darker">Dashboard</h5>
 
-    <div>
+    <div class="">
       <div class="">
-        <h3 class="font-weight-bold mt-5 mb-5">
+        <h3 class="font-weight-bold mt-3 mb-4">
           Welcome
           <span class="text-darker"
             >{{ user.first_name }} {{ user.last_name }}</span
@@ -15,8 +15,8 @@
       <div class="mt-4 user">
         <div class="item1 bg-darker text-white p-3 rounded">
           <h6 class="font-weight-bold">Personal Details</h6>
-          <hr class="bg-accent" />
-          <img :src="user.profile_picture" alt="" width="300" />
+          <hr class="bg-accent mt-4" />
+          <img :src=user.profile_picture alt="" width="300" />
           <ul>
             <li>
               <span class="text-accent">Name:</span> {{ user.first_name }}
@@ -34,10 +34,10 @@
         </div>
         <div class="bg-darker forum text-white p-3 rounded">
           <h6 class="font-weight-bold">Pay Dues</h6>
-          <hr class="bg-accent" />
+          <hr class="bg-accent mt-4" />
           <div>
             <div class="d-flex justify-content-between my-3">
-              <h6>Monthly Payment</h6>
+              <h6>Monthly Payment <br> <small class="text-accent"> &#8358;1000 </small></h6>
               <paystack
                 :amount="1000 * 100"
                 class="btn bg-accent text-dark px-4 py-1 font-weight-bold"
@@ -51,7 +51,8 @@
               </paystack>
             </div>
             <div class="d-flex justify-content-between mb-3">
-              <h6>Quarterly Payment</h6>
+              <h6>Quarterly Payment <br> <small class="text-accent"> &#8358;3000 </small> </h6>
+               
               <paystack
                 :amount="3000 * 100"
                 class="btn bg-accent text-dark px-4 py-1 font-weight-bold"
@@ -65,7 +66,8 @@
               </paystack>
             </div>
             <div class="d-flex justify-content-between">
-              <h6>Yearly Payment</h6>
+              <h6>Yearly Payment <br> <small class="text-accent"> &#8358;12000 </small></h6>
+               
               <paystack
                 :amount="12000 * 100"
                 class="btn bg-accent text-dark px-4 py-1 font-weight-bold"
@@ -82,7 +84,7 @@
         </div>
         <div class="bg-darker text-white p-3 rounded">
           <h6 class="font-weight-bold">Resources</h6>
-          <hr class="bg-accent">
+          <hr class="bg-accent mt-4">
            <div>
             <div class="d-flex justify-content-between my-3">
               <h6>Handbook</h6>

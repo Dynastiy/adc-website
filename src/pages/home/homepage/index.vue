@@ -1,5 +1,9 @@
 <template>
   <div id="appRoot">
+    <!-- <div class="welcome" v-show="showUsername">
+        <p class="text-dark">Welcome back {{ username.first_name }} </p>
+        <small class="font-weight-bold">Enjoy the view</small>
+    </div> -->
     <div class="">
       <div class="header-area">
         <mobile-nav  />
@@ -73,6 +77,7 @@
           </div>
         </div>
       </div>
+
       <div class="welcome-text">
         <div
           id="carouselExampleCaptions"
@@ -322,12 +327,12 @@
 <script>
 import axios from 'axios'
 // import news from '../assets/js/news'
-  import mobileNav from "../components/mobile_nav.vue";
+  import mobileNav from "../../../components/mobile_nav.vue";
   import paystack from "vue-paystack";
-  import aboutus from "../components/about_us.vue";
-  import coreValues from "../components/core.vue";
+  import aboutus from "../../../components/about_us.vue";
+  import coreValues from "../../../components/core.vue";
   // import VueRssFeed from "vue-rss-feed"
-  import carouselArea from "../components/carousel.vue";
+  import carouselArea from "../../../components/carousel.vue";
   export default {
     components: {
       mobileNav,
@@ -339,8 +344,11 @@ import axios from 'axios'
     },
     data() {
       return {
+        username: '',
+        showUsername: true,
         slides: 5,
         news:'',
+        baseUrl: 'https://api.adc.org.ng/api/',
         // feedUrl: "https://politics.einnews.com/rss/cZWEClscooCkMFvs",
         name: "",
         limit: 4,
@@ -351,6 +359,24 @@ import axios from 'axios'
     },
 
     methods: {
+      async showUser(){
+        if (!this.$store.getters.isLoggedIn) {
+         this.showUsername = false
+        } 
+        else{
+          this.showUsername = true
+        }
+      },
+       async getUser() {
+        const token = this.$store.getters.isLoggedIn;
+        // GET request using axios with set headers
+        const headers = { Authorization: "Bearer" + " " + token };
+        let res = await axios.get(this.baseUrl + "auth/profile", {
+          headers,
+        });
+        console.log(res.data.data);
+        this.username = res.data.data;
+      },
       async getNews(){
         try {
           let res = await axios.get("https://v1.nocodeapi.com/nsik/medium/qVuZIRwQxfTKcidN")
@@ -402,7 +428,8 @@ import axios from 'axios'
       };
     },
     async created(){
-      this.getNews()
+      this.getNews();
+      this.getUser()
     },
     computed: {
       reference() {
@@ -580,10 +607,10 @@ import axios from 'axios'
     }
     .carousel-caption h1 {
       line-height: 2.5rem;
-      font-size: 3rem;
+      font-size: 2rem;
     }
     .nigeria {
-      font-size: 3rem !important;
+      font-size: 2rem !important;
     }
   }
 </style>

@@ -37,9 +37,10 @@
                <p class="small font-weight-bold">Person with Disability</p>
              </div>
            </div>
+          <router-link to="/registration_form">
            <button class=" mt-4 btn bg-darker btn-choose">
              Choose
-           </button>
+           </button></router-link>
          </div>
          <div class="shadow-lg rounded card__item p-4 ">
            <div class="card_item_header d-flex">
@@ -66,9 +67,10 @@
                <p class="small font-weight-bold">Persons without Disability</p>
              </div>
            </div>
+           <router-link to="/reg_form">
            <button class=" mt-4 btn bg-darker btn-choose">
              Choose
-           </button>
+           </button></router-link>
          </div>
         <div class="shadow-lg rounded card__item p-4 ">
            <div class="card_item_header d-flex">
@@ -106,12 +108,29 @@
 </template>
 
 <script>
-  import SimplifiedNav from "../../components/simplified_nav.vue";
+import swal from 'sweetalert'
+  import SimplifiedNav from "../../../components/simplified_nav.vue";
   export default {
     components: { SimplifiedNav },
     data() {
       return {};
     },
+    methods:{
+      renewMembership(){
+       if (!this.$store.getters.isLoggedIn) {
+              swal({
+          title: "Oops!",
+          text: "You are not logged in",
+          icon: "error",
+          // button: "Go Home!",
+        });
+            this.$router.push('/login');
+        } 
+        else{
+          this.$router.push('/dashboard/home')
+        }
+      }
+    }
   };
 </script>
 
