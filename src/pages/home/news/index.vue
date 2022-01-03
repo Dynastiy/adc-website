@@ -92,7 +92,5 @@
     .news-container div {
       margin-bottom: 15px;
     }
-    .content {
-    }
   }
 </style>

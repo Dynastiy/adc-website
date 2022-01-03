@@ -252,7 +252,7 @@
       },
       async getStates() {
         let res = await axios.get(
-          "http://locationsng-api.herokuapp.com/api/v1/states"
+          "https://locationsng-api.herokuapp.com/api/v1/states"
         );
         console.log(res.data);
         this.states = res.data;
