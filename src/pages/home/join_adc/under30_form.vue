@@ -131,14 +131,14 @@
                required />
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail1">Reffered by</label>
+            <label for="exampleInputEmail1">Referred by</label>
             <input
               v-model="form_field.referral"
               type="text"
               class="form-control"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
-              placeholder="Name of Refferer"
+              placeholder="Referred by"
                required />
           </div>
           <div class="text-center form-group my-5">
@@ -235,7 +235,7 @@
         console.log("You closed checkout page");
         swal({
           title: "Cancelled!",
-          text: "Please Pay to create account",
+          text: "You are not registered yet",
           icon: "warning",
           button: "Go Home!",
         });
