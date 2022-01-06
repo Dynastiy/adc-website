@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div class=" bg-light-accent"> 
     <simplified-nav />
     <div class="content-tab container">
       <h1 class="font-weight-bold text-darker mb-2 mt-5">Join ADC</h1>
       <hr class="mb-4">
       <p class="font-weight-bold text-darker larger-text w-75 mb-5"> 
-        We’ve come a long way together. And our
+        We’ve come a long way together and our
         supporters made everything possible. <pre></pre> Membership is the best way to
         protect what we’ve achieved together and keep our progress going. You
         started it, now be part of it!
@@ -18,7 +18,7 @@
                <ion-icon name="person"></ion-icon>
              </div>
              <div>
-               <p class="font-weight-bold">Category 1</p>
+               <p class="font-weight-bold">Youths &amp; Persons with disabilities</p>
               <small>Ages 18 to 30</small>
              </div>
            </div>
@@ -44,7 +44,7 @@
          </div>
          <div class="shadow-lg rounded card__item p-4 ">
            <div class="card_item_header d-flex">
-             <div class="icon__header d-flex align-items-center justify-content-center p-2 mr-3">
+             <div class="icon__header d-flex p-2 mr-3">
                <ion-icon name="person"></ion-icon>
              </div>
              <div>
@@ -143,20 +143,20 @@ import swal from 'sweetalert'
 }
 .icon__header {
   border-radius: 1rem;
-  background: #989d9e60;
+  /* background: #989d9e60; */
 }
 .icon__header ion-icon {
   font-size: 32px;
   color: #000;
+  background: #989d9e60;
+  padding: 10px;
+  border-radius: 20px;
 }
 .card_list_item ion-icon {
   color: #989d9e60;
 }
 .reg__cards p{
   margin: 0;
-}
-.content-tab {
-  /* padding: 2rem 8rem; */
 }
 .below_30 {
     /* background:#effff6; */

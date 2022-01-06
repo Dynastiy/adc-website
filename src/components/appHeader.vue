@@ -119,7 +119,8 @@ import mobileNav from './mobile_nav.vue'
 <style>
 .where-we-stand {
     background: #224f5a;
-    margin-top: -1rem;
+    position: absolute;
+    margin-top: -1.4rem;
     opacity: 0;
   }
   .where-we-stand a {

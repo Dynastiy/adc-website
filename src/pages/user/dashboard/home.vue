@@ -16,7 +16,7 @@
         <div class="item1 bg-darker text-white p-3 rounded">
           <h6 class="font-weight-bold">Personal Details</h6>
           <hr class="bg-accent mt-4" />
-          <img :src=user.profile_picture alt="" width="300" />
+          <img :src=user.profile_picture alt="" />
           <ul>
             <li>
               <span class="text-accent">Name:</span> {{ user.first_name }}
@@ -127,8 +127,8 @@
         let res = await axios.get(this.baseUrl + "auth/profile", {
           headers,
         });
-        console.log(res.data.data);
-        this.user = res.data.data;
+        console.log(res.data);
+        this.user = res.data;
       },
       async getForum() {
         this.loading = true;
