@@ -27,14 +27,14 @@
           <div class="">
             <ul class="list-unstyled">
               <li class="mb-3">
-                <router-link to="/login"
-                  >LOGIN
+                <a href="https://paystack.shop/adc-shop">
+                  >ADC SHOP
                   <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
-                </router-link>
+                </a>
               </li>
               <li>
                 <router-link to="/resources"
-                  >RESOURCES
+                  >ADC RESOURCES
                   <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i
                 ></router-link>
               </li>
@@ -61,6 +61,12 @@
                     <li><router-link to="/our_manifesto">Our Manifesto</router-link></li>
                     <hr />
                     <li><router-link to="/our_priorities">Our Priorities</router-link></li>
+                    <hr>
+                    <li><router-link to="/adc_objectives">ADC Objectives</router-link></li>
+                    <hr />
+                    <li><router-link to="/cardinal_commitments">Cardinal Commitments</router-link></li>
+                    <hr>
+                    <li><router-link to="/aims_of_the_party">Aims of the Party</router-link></li>
                   </ul>
                 </div>
               </li>
@@ -68,7 +74,7 @@
                 <a href="https://adc-dn.org/">ADC Diaspora</a>
               </li>
               <li>
-                <a href="https://paystack.shop/adc-shop">Shop</a>
+                <router-link to="/login">Login</router-link>
               </li>
               <li>
                 <router-link to="/news">News</router-link>

@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .text-orange {
     color: #ff7300 !important;
 }
@@ -287,21 +291,22 @@
     /* width: 35px; */
     /* height: 35px; */
     text-align: center;
-    padding: 15px;
+    padding: 10px;
 }
 
 .about-us div h2 {
-    padding: 15px 0 15px 0;
+    padding: 8px 0 8px 0;
 }
 
 .about-us div p {
-    font-size: 12px;
-    word-spacing: 1px;
-    line-height: 15px
+    font-size: 14.5px;
+    font-weight: 400;
+    /* word-spacing: 1px; */
+    /* line-height: 15px */
 }
 
 .about-us div {
-    padding: 25px;
+    padding: 12px;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 12px 0px;
 }
 

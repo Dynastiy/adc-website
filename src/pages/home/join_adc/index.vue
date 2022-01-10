@@ -34,7 +34,7 @@
                <div class="mr-2">
                  <ion-icon name="checkmark-circle"></ion-icon>
                </div>
-               <p class="small font-weight-bold">Person with Disability</p>
+               <p class="small font-weight-bold">Persons with Disability</p>
              </div>
            </div>
           <router-link to="/registration_form">
@@ -48,7 +48,7 @@
                <ion-icon name="person"></ion-icon>
              </div>
              <div>
-               <p class="font-weight-bold"> Category 2</p>
+               <p class="font-weight-bold"> Adults</p>
               <small>Ages 30 and Above</small>
              </div>
            </div>
@@ -78,7 +78,7 @@
                <ion-icon name="person"></ion-icon>
              </div>
              <div>
-               <p class="font-weight-bold"> Category 3</p>
+               <p class="font-weight-bold">Existing Users</p>
               <small>Already Registered</small>
              </div>
            </div>
