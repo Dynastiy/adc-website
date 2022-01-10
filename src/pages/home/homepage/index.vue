@@ -1,9 +1,5 @@
 <template>
   <div id="appRoot">
-    <!-- <div class="welcome" v-show="showUsername">
-        <p class="text-dark">Welcome back {{ username.first_name }} </p>
-        <small class="font-weight-bold">Enjoy the view</small>
-    </div> -->
     <div class="">
       <div class="header-area">
         <mobile-nav  />
@@ -28,7 +24,7 @@
             <ul class="list-unstyled">
               <li class="mb-3">
                 <a href="https://paystack.shop/adc-shop">
-                  >ADC SHOP
+                  ADC SHOP
                   <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
                 </a>
               </li>

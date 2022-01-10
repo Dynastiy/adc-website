@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="sticky-top">
     <div class="request-links">
       <div class="top-links bg-main">
         <router-link to="/join_adc">JOIN ADC</router-link>
@@ -23,18 +23,24 @@
           <li>
             <router-link to="/about">About</router-link>
           </li>
-          <li>
-                <a href="javascript:void(0)" id="where_we_stand_trigger"
-                  >Where we Stand <ion-icon name="arrow-dropdown"></ion-icon> </a
-                >
-                <div class="where-we-stand" id="where_we_stand">
-                  <ul>
-                    <li><router-link to="/our_manifesto">Our Manifesto</router-link></li>
-                    <hr />
-                    <li><router-link to="/our_priorities">Our Priorities</router-link></li>
-                  </ul>
-                </div>
-              </li>
+         <li class="dropdown">
+              <a
+                class="dropdown-toggle"
+                href="#"
+                id="dropdownId"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Where we Stand</a
+              >
+              <div class="dropdown-menu bg-dark" aria-labelledby="dropdownId">
+                <router-link to="/our_manifesto" class="dropdown-item" >Our Manifesto</router-link>
+                <router-link to="/our_priorities" class="dropdown-item" >Our Priorities</router-link>
+                <router-link to="/adc_objectives" class="dropdown-item" >ADC Objectives</router-link>
+                <router-link to="/cardinal_commitments" class="dropdown-item" >Cardinal Commitments</router-link>
+                <router-link to="/aims_of_the_party" class="dropdown-item" >Aims of the Party</router-link>
+              </div>
+            </li>
           <li>
             <a href="https://adc-dn.org/">ADC Diaspora</a>
           </li>
@@ -62,13 +68,15 @@
       </div>
     </div>
 
-
+<!-- Sticky Nav component  -->
+<!-- <simplified/> -->
 <!-- Mobile Navigation Component -->
 <mobile-nav/>
   </div>
 </template>
 
 <script>
+// import simplified from './simplified_nav.vue'
 import mobileNav from './mobile_nav.vue'
   export default {
     components: {
@@ -118,27 +126,23 @@ import mobileNav from './mobile_nav.vue'
 </script>
 
 <style>
-.where-we-stand {
+/* .where-we-stand {
     background: #224f5a;
     position: absolute;
     margin-top: -1.4rem;
     opacity: 0;
-  }
+  } */
   .where-we-stand a {
-    color: #fff !important;
+    /* color: #fff !important; */
     /* pa
   dding: 1rem; */
   }
   .where-we-stand a:hover {
-    color: #00a54f !important;
-    transition: 1s ease-in-out;
+    /* color: #00a54f !important; */
+    /* transition: 1s ease-in-out; */
   }
   hr {
     margin: 0;
-  }
-  .navigations .where-we-stand li {
-    line-height: normal !important;
-    padding: 1rem;
   }
   .take-action-overlay {
     min-height: 100vh;
@@ -186,6 +190,7 @@ import mobileNav from './mobile_nav.vue'
   font-size: 64px;
   color: #fff;
 }
+
 @media (max-width: 990px){
   .logo-navs {
     display: none !important;

@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <header class="simplified-nav shadow-sm sticky-top bg-white">
+  <div class="sticky-top">
+    <header class="simplified-nav shadow-sm bg-white">
       <div class="navbar navbar-expand-sm navbar-light  shadow-lg">
         <router-link to="/" class="navbar-brand">
           <span class="logo-spread">

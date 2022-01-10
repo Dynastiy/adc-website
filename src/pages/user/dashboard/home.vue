@@ -16,7 +16,7 @@
         <div class="item1 bg-darker text-white p-3 rounded">
           <h6 class="font-weight-bold">Personal Details</h6>
           <hr class="bg-accent mt-4" />
-          <img :src=user.profile_picture alt="" />
+          <img :src= user.profile_picture alt="Image Here" width="50%^" />
           <ul>
             <li>
               <span class="text-accent">Name:</span> {{ user.first_name }}

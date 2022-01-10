@@ -50,12 +50,6 @@ const items = [{
         avatar: require("@/assets/img/party_officials/High_Chief_Anayo_Arinze.jpg")
     },
 
-    {
-        id: 10,
-        name: "Hon. Ilesanmi Omolayo Joel ",
-        position: 'Ekiti State Chairman',
-        avatar: require("@/assets/img/party_officials/Hon_Ilesanmi_Omolayo_Joel.jpg")
-    },
 
     {
         id: 10,

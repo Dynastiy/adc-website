@@ -5,137 +5,143 @@
          avatar: require("@/assets/img/party_officials/Alhaji_Musa_Hassan.jpg")
      },
      {
+        id: 10,
+        name: "Hon. Ilesanmi Omolayo Joel ",
+        position: 'Ekiti State Chairman',
+        avatar: require("@/assets/img/party_officials/Hon_Ilesanmi_Omolayo_Joel.jpg")
+    },
+     {
          id: 6,
          name: "Barr Fubara A Iyagba",
          position: 'BOT Member, Rivers State',
          avatar: require("@/assets/img/party_officials/Barr_Fubara_A_Iyagba.jpg")
      },
-     {
-         id: 10,
-         name: "Null",
-         position: 'Null',
-         avatar: require("@/assets/img/party_officials/_.jpg")
-     },
+    //  {
+    //      id: 10,
+    //      name: "Null",
+    //      position: 'Null',
+    //      avatar: require("@/assets/img/party_officials/_.jpg")
+    //  },
      {
          id: 11,
          name: "Dr Alex Ebipua Konyan",
          position: 'Bayelsa State Chairman',
          avatar: require("@/assets/img/party_officials/Dr_Alex_Ebipua_Konyan.jpg")
      },
-     {
-         id: 10,
-         name: "Null",
-         position: 'Null',
-         avatar: require("@/assets/img/party_officials/DSC_0235.jpg")
-     },
-     {
-         id: 10,
-         name: "Null",
-         position: 'Null',
-         avatar: require("@/assets/img/party_officials/DSC_0260.jpg")
-     },
-     {
-         id: 10,
-         name: "Null",
-         position: 'Null',
-         avatar: require("@/assets/img/party_officials/DSC_0269.jpg")
-     },
-     {
-         id: 10,
-         name: "Null",
-         position: 'Null',
-         avatar: require("@/assets/img/party_officials/DSC_0275.jpg")
-     },
-     {
-         id: 10,
-         name: "Null",
-         position: 'Null',
-         avatar: require("@/assets/img/party_officials/DSC_0280.jpg")
-     },
-     {
-         id: 10,
-         name: "Null",
-         position: 'Null',
-         avatar: require("@/assets/img/party_officials/DSC_0284.jpg")
-     },
-     {
-         id: 10,
-         name: "Null",
-         position: 'Null',
-         avatar: require("@/assets/img/party_officials/DSC_0288.jpg")
-     },
-     {
-         id: 10,
-         name: "Null",
-         position: 'Null',
-         avatar: require("@/assets/img/party_officials/DSC_0293.jpg")
-     },
-     {
-         id: 10,
-         name: "Null",
-         position: 'Null',
-         avatar: require("@/assets/img/party_officials/DSC_0300.jpg")
-     },
-     {
-         id: 10,
-         name: "Null",
-         position: 'Null',
-         avatar: require("@/assets/img/party_officials/DSC_0315.jpg")
-     },
-     {
-         id: 10,
-         name: "Null",
-         position: 'Null',
-         avatar: require("@/assets/img/party_officials/DSC_0328.jpg")
-     },
-     {
-         id: 10,
-         name: "Null",
-         position: 'Null',
-         avatar: require("@/assets/img/party_officials/DSC_0349.jpg")
-     },
-     {
-         id: 10,
-         name: "Null",
-         position: 'Null',
-         avatar: require("@/assets/img/party_officials/DSC_0388.jpg")
-     },
-     {
-         id: 10,
-         name: "Null",
-         position: 'Null',
-         avatar: require("@/assets/img/party_officials/DSC_0349.jpg")
-     },
-     {
-         id: 10,
-         name: "Null",
-         position: 'Null',
-         avatar: require("@/assets/img/party_officials/DSC_0388.jpg")
-     },
-     {
-         id: 10,
-         name: "Null",
-         position: 'Null',
-         avatar: require("@/assets/img/party_officials/DSC_0400.jpg")
-     },
-     {
-         id: 10,
-         name: "Null",
-         position: 'Null',
-         avatar: require("@/assets/img/party_officials/DSC_0413.jpg")
-     },
-     {
-         id: 10,
-         name: "Null",
-         position: 'Null',
-         avatar: require("@/assets/img/party_officials/DSC_0417.jpg")
-     },
-     {
-         id: 10,
-         name: "Null",
-         position: 'Null',
-         avatar: require("@/assets/img/party_officials/DSC_0438.jpg")
-     },
+    //  {
+    //      id: 10,
+    //      name: "Null",
+    //      position: 'Null',
+    //      avatar: require("@/assets/img/party_officials/DSC_0235.jpg")
+    //  },
+    //  {
+    //      id: 10,
+    //      name: "Null",
+    //      position: 'Null',
+    //      avatar: require("@/assets/img/party_officials/DSC_0260.jpg")
+    //  },
+    //  {
+    //      id: 10,
+    //      name: "Null",
+    //      position: 'Null',
+    //      avatar: require("@/assets/img/party_officials/DSC_0269.jpg")
+    //  },
+    //  {
+    //      id: 10,
+    //      name: "Null",
+    //      position: 'Null',
+    //      avatar: require("@/assets/img/party_officials/DSC_0275.jpg")
+    //  },
+    //  {
+    //      id: 10,
+    //      name: "Null",
+    //      position: 'Null',
+    //      avatar: require("@/assets/img/party_officials/DSC_0280.jpg")
+    //  },
+    //  {
+    //      id: 10,
+    //      name: "Null",
+    //      position: 'Null',
+    //      avatar: require("@/assets/img/party_officials/DSC_0284.jpg")
+    //  },
+    //  {
+    //      id: 10,
+    //      name: "Null",
+    //      position: 'Null',
+    //      avatar: require("@/assets/img/party_officials/DSC_0288.jpg")
+    //  },
+    //  {
+    //      id: 10,
+    //      name: "Null",
+    //      position: 'Null',
+    //      avatar: require("@/assets/img/party_officials/DSC_0293.jpg")
+    //  },
+    //  {
+    //      id: 10,
+    //      name: "Null",
+    //      position: 'Null',
+    //      avatar: require("@/assets/img/party_officials/DSC_0300.jpg")
+    //  },
+    //  {
+    //      id: 10,
+    //      name: "Null",
+    //      position: 'Null',
+    //      avatar: require("@/assets/img/party_officials/DSC_0315.jpg")
+    //  },
+    //  {
+    //      id: 10,
+    //      name: "Null",
+    //      position: 'Null',
+    //      avatar: require("@/assets/img/party_officials/DSC_0328.jpg")
+    //  },
+    //  {
+    //      id: 10,
+    //      name: "Null",
+    //      position: 'Null',
+    //      avatar: require("@/assets/img/party_officials/DSC_0349.jpg")
+    //  },
+    //  {
+    //      id: 10,
+    //      name: "Null",
+    //      position: 'Null',
+    //      avatar: require("@/assets/img/party_officials/DSC_0388.jpg")
+    //  },
+    //  {
+    //      id: 10,
+    //      name: "Null",
+    //      position: 'Null',
+    //      avatar: require("@/assets/img/party_officials/DSC_0349.jpg")
+    //  },
+    //  {
+    //      id: 10,
+    //      name: "Null",
+    //      position: 'Null',
+    //      avatar: require("@/assets/img/party_officials/DSC_0388.jpg")
+    //  },
+    //  {
+    //      id: 10,
+    //      name: "Null",
+    //      position: 'Null',
+    //      avatar: require("@/assets/img/party_officials/DSC_0400.jpg")
+    //  },
+    //  {
+    //      id: 10,
+    //      name: "Null",
+    //      position: 'Null',
+    //      avatar: require("@/assets/img/party_officials/DSC_0413.jpg")
+    //  },
+    //  {
+    //      id: 10,
+    //      name: "Null",
+    //      position: 'Null',
+    //      avatar: require("@/assets/img/party_officials/DSC_0417.jpg")
+    //  },
+    //  {
+    //      id: 10,
+    //      name: "Null",
+    //      position: 'Null',
+    //      avatar: require("@/assets/img/party_officials/DSC_0438.jpg")
+    //  },
      {
          id: 10,
          name: "Dr. Charles Idowu Omidiji",
