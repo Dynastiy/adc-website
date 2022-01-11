@@ -1,5 +1,5 @@
 <template>
-  <div class="mobile__nav">
+  <div class="mobile__nav sticky-top">
     <!-- <div class="mobile_nav_links">
       <div class="bg-main">
         <router-link to="/join_adc">JOIN ADC</router-link>

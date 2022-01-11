@@ -2,18 +2,85 @@
   <div id="appRoot">
     <div class="">
       <div class="header-area">
-        <mobile-nav  />
-        <div class="request-links">
-          <div class="top-links bg-main">
-            <router-link to="/join_adc">JOIN ADC</router-link>
+        <mobile-nav />
+        <div class="" id="navbar-main">
+          <div class="request-links">
+            <div class="top-links bg-main">
+              <router-link to="/join_adc">JOIN ADC</router-link>
+            </div>
+            <div
+              class="top-links bg-darker"
+              id="take-action"
+              @click="openDialog"
+            >
+              <a href="javascipt:void(0)">TAKE ACTION</a>
+            </div>
+            <div class="top-links bg-orange">
+              <router-link to="/donate">DONATE</router-link>
+            </div>
           </div>
-          <div class="top-links bg-darker" id="take-action" @click="openDialog">
-            <a href="javascipt:void(0)">TAKE ACTION</a>
-          </div>
-          <div class="top-links bg-orange">
-            <router-link to="/donate">DONATE</router-link>
+
+          <div class="header-content">
+            <div class="logo-navs content pt-0">
+              <div class="logo">
+                <router-link to="/"
+                  ><img src="@/assets/img/logo.png" alt="logo" width="180"
+                /></router-link>
+              </div>
+
+              <div class="nav-area">
+                <ul class="list-unstyled">
+                  <li>
+                    <router-link to="/about">About</router-link>
+                  </li>
+                  <li class="dropdown">
+                    <a
+                      class="dropdown-toggle"
+                      href="#"
+                      id="dropdownId"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Where we Stand</a
+                    >
+                    <div
+                      class="dropdown-menu bg-darker"
+                      aria-labelledby="dropdownId"
+                    >
+                      <router-link to="/our_manifesto" class="dropdown-item"
+                        >Our Manifesto</router-link
+                      >
+                      <router-link to="/our_priorities" class="dropdown-item"
+                        >Our Priorities</router-link
+                      >
+                      <router-link to="/adc_objectives" class="dropdown-item"
+                        >ADC Objectives</router-link
+                      >
+                      <router-link
+                        to="/cardinal_commitments"
+                        class="dropdown-item"
+                        >Cardinal Commitments</router-link
+                      >
+                      <router-link to="/aims_of_the_party" class="dropdown-item"
+                        >Aims of the Party</router-link
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <a href="https://adc-dn.org/">ADC Diaspora</a>
+                  </li>
+                  <li><router-link to="/login">Login</router-link></li>
+                  <li>
+                    <router-link to="/news">News</router-link>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
+
+        <simplified-nav id="simplified2"/>
+
         <!-- overlay -->
         <div class="take-action-overlay bg-darker" id="take-action-overlay">
           <div class="close" @click="closeDialog">
@@ -35,47 +102,6 @@
                 ></router-link>
               </li>
             </ul>
-          </div>
-        </div>
-        <div class="header-content">
-          <div class="logo-navs content pt-0">
-            <div class="logo">
-              <router-link to="/"
-                ><img src="@/assets/img/logo.png" alt="logo" width="180"
-              /></router-link>
-            </div>
-            <div class="navigations">
-              <li>
-                <router-link to="/about">About</router-link>
-              </li>
-              <li>
-                <a href="javascript:void(0)" id="where_we_stand_trigger"
-                  >Where we Stand  <ion-icon name="arrow-dropdown"></ion-icon></a
-                >
-                <div class="where-we-stand" id="where_we_stand">
-                  <ul>
-                    <li><router-link to="/our_manifesto">Our Manifesto</router-link></li>
-                    <hr />
-                    <li><router-link to="/our_priorities">Our Priorities</router-link></li>
-                    <hr>
-                    <li><router-link to="/adc_objectives">ADC Objectives</router-link></li>
-                    <hr />
-                    <li><router-link to="/cardinal_commitments">Cardinal Commitments</router-link></li>
-                    <hr>
-                    <li><router-link to="/aims_of_the_party">Aims of the Party</router-link></li>
-                  </ul>
-                </div>
-              </li>
-              <li>
-                <a href="https://adc-dn.org/">ADC Diaspora</a>
-              </li>
-              <li>
-                <router-link to="/login">Login</router-link>
-              </li>
-              <li>
-                <router-link to="/news">News</router-link>
-              </li>
-            </div>
           </div>
         </div>
       </div>
@@ -109,7 +135,8 @@
               />
               <div class="carousel-caption d-md-flex">
                 <h1>
-                  Agriculture is our <br /><span class="nigeria">National</span> Asset 
+                  Agriculture is our <br /><span class="nigeria">National</span>
+                  Asset
                 </h1>
               </div>
             </div>
@@ -121,7 +148,7 @@
               />
               <div class="carousel-caption d-md-flex">
                 <h1>
-                 Solar power electricity <br />
+                  Solar power electricity <br />
                   is <span class="nigeria">an option</span>
                 </h1>
               </div>
@@ -160,8 +187,9 @@
               />
               <div class="carousel-caption d-md-flex">
                 <h1>
-                  Technology advancement 
-                  throughout<span class="nigeria"> our Nation</span>
+                  Technology advancement throughout<span class="nigeria">
+                    our Nation</span
+                  >
                 </h1>
               </div>
             </div>
@@ -178,7 +206,7 @@
                 </h1>
               </div>
             </div>
-             <div class="carousel-item" data-interval="3000">
+            <div class="carousel-item" data-interval="3000">
               <img
                 src="@/assets/img/image9.jpg"
                 class="d-block w-100"
@@ -186,7 +214,7 @@
               />
               <div class="carousel-caption d-md-flex">
                 <h1>
-                 Hope after hardship<br />
+                  Hope after hardship<br />
                   for our <span class="nigeria">Nation</span>
                 </h1>
               </div>
@@ -292,29 +320,35 @@
     <div class="news-category content">
       <h1 class="core-values-text">News</h1>
       <div class="news-container">
-        <div class="shadow-sm bg-white" v-for="(news_item, index) in news" :key="index">
-            <!-- <img :src="news_item.enclosure.link" width="100%" height="30%" alt="img" class="handshake-img" /> -->
+        <div
+          class="shadow-sm bg-white"
+          v-for="(news_item, index) in news"
+          :key="index"
+        >
+          <!-- <img :src="news_item.enclosure.link" width="100%" height="30%" alt="img" class="handshake-img" /> -->
 
-            <div class="news-content">
-              <p class="news-date p-1"> {{ news_item.pubDate }} </p>
-              <div class="p-3">
-                <h5 class="font-weight-bold text-uppercase">
-                  {{ news_item.title }}
-                </h5>
-                <p>
-                  {{ news_item.contentSnippet }}
-                </p>
-                <a :href="news_item.guid" class="text-orange small font-weight-bold"
-                  >View More</a
-                >
-              </div>
+          <div class="news-content">
+            <p class="news-date p-1">{{ news_item.pubDate }}</p>
+            <div class="p-3">
+              <h5 class="font-weight-bold text-uppercase">
+                {{ news_item.title }}
+              </h5>
+              <p>
+                {{ news_item.contentSnippet }}
+              </p>
+              <a
+                :href="news_item.guid"
+                class="text-orange small font-weight-bold"
+                >View More</a
+              >
             </div>
           </div>
+        </div>
         <!-- <VueRssFeed :feedUrl="feedUrl" :name="name" :limit="limit"/> -->
-    </div>
-    <div class="text-right font-weight-bold mt-4">
-            <router-link to="/news" class="text-orange">View All</router-link>
-          </div>
+      </div>
+      <div class="text-right font-weight-bold mt-4">
+        <router-link to="/news" class="text-orange">View All</router-link>
+      </div>
     </div>
 
     <div class="gallery">
@@ -327,10 +361,11 @@
 </template>
 
 <script>
-import axios from 'axios'
-// import news from '../assets/js/news'
+  import axios from "axios";
+  // import news from '../assets/js/news'
   import mobileNav from "../../../components/mobile_nav.vue";
   import paystack from "vue-paystack";
+  import simplifiedNav from '../../../components/simplified_nav.vue';
   import aboutus from "../../../components/about_us.vue";
   import coreValues from "../../../components/core.vue";
   // import VueRssFeed from "vue-rss-feed"
@@ -340,17 +375,18 @@ import axios from 'axios'
       mobileNav,
       paystack,
       aboutus,
+      simplifiedNav,
       coreValues,
       // VueRssFeed,
       carouselArea,
     },
     data() {
       return {
-        username: '',
+        username: "",
         showUsername: true,
         slides: 5,
-        news:'',
-        baseUrl: 'https://api.adc.org.ng/api/',
+        news: "",
+        baseUrl: "https://api.adc.org.ng/api/",
         // feedUrl: "https://politics.einnews.com/rss/cZWEClscooCkMFvs",
         name: "",
         limit: 4,
@@ -361,36 +397,20 @@ import axios from 'axios'
     },
 
     methods: {
-      async showUser(){
-        if (!this.$store.getters.isLoggedIn) {
-         this.showUsername = false
-        } 
-        else{
-          this.showUsername = true
-        }
-      },
-       async getUser() {
-        const token = this.$store.getters.isLoggedIn;
-        // GET request using axios with set headers
-        const headers = { Authorization: "Bearer" + " " + token };
-        let res = await axios.get(this.baseUrl + "auth/profile", {
-          headers,
-        });
-        console.log(res.data.data);
-        this.username = res.data.data;
-      },
-      async getNews(){
+      async getNews() {
         try {
-          let res = await axios.get("https://v1.nocodeapi.com/nsik/medium/qVuZIRwQxfTKcidN")
-          console.log(res.data)
-          let newsStuffs = res.data
-          this.news = newsStuffs.slice(0,4)
+          let res = await axios.get(
+            "https://v1.nocodeapi.com/nsik/medium/qVuZIRwQxfTKcidN"
+          );
+          console.log(res.data);
+          let newsStuffs = res.data;
+          this.news = newsStuffs.slice(0, 4);
         } catch (error) {
-          console.log(error)
+          console.log(error);
         }
       },
       processPayment: () => {
-        window.alert("Payment recieved");
+        window.alert("Payment received");
       },
       close: () => {
         console.log("You closed checkout page");
@@ -405,33 +425,25 @@ import axios from 'axios'
       },
     },
     mounted() {
-      const drop_toggle = document.getElementById("where_we_stand_trigger");
-      const drop_drawer = document.getElementById("where_we_stand");
-      document.onclick = function (e) {
-        if (
-          e.target.id !== "where_we_stand_trigger" &&
-          e.target.id !== "where_we_stand"
-        ) {
-          // drop_drawer.classList.remove("active");
-          drop_drawer.style.transition = "0.3s";
-          drop_drawer.style.opacity = "0";
+       window.onscroll = function() {myFunction()};
+      var navbar = document.getElementById("navbar-main");
+      var simplified = document.getElementById("simplified2")
+      var sticky = simplified.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          simplified.classList.add("sticky2")
+          navbar.style.display = 'none';
+          simplified.style.display = "block"
+        } else {
+          simplified.classList.remove("sticky2");
+          navbar.style.display = "block";
+          simplified.style.display = "none"
         }
-      };
-      drop_toggle.onclick = function () {
-        // drop_drawer.classList.toggle("active");
-        if (drop_drawer.style.opacity === "1") {
-          drop_drawer.style.transition = "0.3s";
-          drop_drawer.style.opacity = "0";
-        }
-        else{
-          drop_drawer.style.transition= '0.3s';
-        drop_drawer.style.opacity = '1'
-        }
-      };
+      }
     },
-    async created(){
+    async created() {
       this.getNews();
-      this.getUser()
     },
     computed: {
       reference() {
@@ -455,20 +467,17 @@ import axios from 'axios'
 </script>
 
 <style>
-  .where-we-stand {
-    background: #224f5a;
-    margin-top: -1rem;
-    opacity: 0;
-  }
-  .where-we-stand a {
-    color: #fff !important;
-    /* pa
-  dding: 1rem; */
-  }
-  .where-we-stand a:hover {
-    color: #00a54f !important;
-    transition: 1s ease-in-out;
-  }
+#simplified2 {
+  display: none;
+}
+.sticky2 {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky2 + .content {
+  padding-top: 60px;
+}
   hr {
     margin: 0;
   }
@@ -613,6 +622,9 @@ import axios from 'axios'
     }
     .nigeria {
       font-size: 2rem !important;
+    }
+    #simplified2, .sticky {
+      display: none,
     }
   }
 </style>

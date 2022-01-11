@@ -1,6 +1,7 @@
 <template>
-  <div class="sticky-top">
-    <div class="request-links">
+  <div class="">
+    <div id="navbar">
+      <div class="request-links">
       <div class="top-links bg-main">
         <router-link to="/join_adc">JOIN ADC</router-link>
       </div>
@@ -12,18 +13,20 @@
       </div>
     </div>
 
-   
     <div class="header-content">
       <div class="logo-navs content pt-0">
         <div class="logo">
-          <router-link to="/"><img src="@/assets/img/logo.png" alt="logo" width="180"/></router-link>
+          <router-link to="/"
+            ><img src="@/assets/img/logo.png" alt="logo" width="180"
+          /></router-link>
         </div>
 
-        <div class="navigations">
-          <li>
-            <router-link to="/about">About</router-link>
-          </li>
-         <li class="dropdown">
+        <div class="nav-area">
+          <ul class="list-unstyled">
+            <li>
+              <router-link to="/about">About</router-link>
+            </li>
+            <li class="dropdown">
               <a
                 class="dropdown-toggle"
                 href="#"
@@ -33,26 +36,38 @@
                 aria-expanded="false"
                 >Where we Stand</a
               >
-              <div class="dropdown-menu bg-dark" aria-labelledby="dropdownId">
-                <router-link to="/our_manifesto" class="dropdown-item" >Our Manifesto</router-link>
-                <router-link to="/our_priorities" class="dropdown-item" >Our Priorities</router-link>
-                <router-link to="/adc_objectives" class="dropdown-item" >ADC Objectives</router-link>
-                <router-link to="/cardinal_commitments" class="dropdown-item" >Cardinal Commitments</router-link>
-                <router-link to="/aims_of_the_party" class="dropdown-item" >Aims of the Party</router-link>
+              <div class="dropdown-menu bg-darker" aria-labelledby="dropdownId">
+                <router-link to="/our_manifesto" class="dropdown-item"
+                  >Our Manifesto</router-link
+                >
+                <router-link to="/our_priorities" class="dropdown-item"
+                  >Our Priorities</router-link
+                >
+                <router-link to="/adc_objectives" class="dropdown-item"
+                  >ADC Objectives</router-link
+                >
+                <router-link to="/cardinal_commitments" class="dropdown-item"
+                  >Cardinal Commitments</router-link
+                >
+                <router-link to="/aims_of_the_party" class="dropdown-item"
+                  >Aims of the Party</router-link
+                >
               </div>
             </li>
-          <li>
-            <a href="https://adc-dn.org/">ADC Diaspora</a>
-          </li>
-          <li ><router-link to="/login">Login</router-link></li>
-          <li>
-            <router-link to="/news">News</router-link>
-          </li>
+            <li>
+              <a href="https://adc-dn.org/">ADC Diaspora</a>
+            </li>
+            <li><router-link to="/login">Login</router-link></li>
+            <li>
+              <router-link to="/news">News</router-link>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
+    </div>
 
-     <div class="take-action-overlay bg-darker" id="take-action-overlay">
+    <div class="take-action-overlay bg-darker" id="take-action-overlay">
       <div class="close" @click="closeDialog">
         <ion-icon name="close"></ion-icon>
         <!-- <p class="text-white dialog-close"  >X</p> -->
@@ -62,25 +77,30 @@
           <li>
             <a href="https://paystack.shop/adc-shop">Shop</a>
           </li>
-          
-          <li><router-link to="/resources">RESOURCES  <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></router-link></li>
+
+          <li>
+            <router-link to="/resources"
+              >RESOURCES
+              <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i
+            ></router-link>
+          </li>
         </ul>
       </div>
     </div>
 
-<!-- Sticky Nav component  -->
-<!-- <simplified/> -->
-<!-- Mobile Navigation Component -->
-<mobile-nav/>
+    <!-- Sticky Nav component  -->
+    <simplified id="simplified"/>
+    <!-- Mobile Navigation Component -->
+    <mobile-nav />
   </div>
 </template>
 
 <script>
-// import simplified from './simplified_nav.vue'
-import mobileNav from './mobile_nav.vue'
+  import simplified from './simplified_nav.vue'
+  import mobileNav from "./mobile_nav.vue";
   export default {
     components: {
-      mobileNav
+      mobileNav, simplified
     },
     data() {
       return {
@@ -98,6 +118,23 @@ import mobileNav from './mobile_nav.vue'
       },
     },
     mounted() {
+      window.onscroll = function() {myFunction()};
+      var navbar = document.getElementById("navbar");
+      var simplified = document.getElementById("simplified")
+      var sticky = simplified.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          simplified.classList.add("sticky")
+          navbar.style.display = 'none';
+          simplified.style.display = "block"
+        } else {
+          simplified.classList.remove("sticky");
+          navbar.style.display = "block";
+          simplified.style.display = "none"
+        }
+      }
+
       const drop_toggle = document.getElementById("where_we_stand_trigger");
       const drop_drawer = document.getElementById("where_we_stand");
       document.onclick = function (e) {
@@ -115,10 +152,9 @@ import mobileNav from './mobile_nav.vue'
         if (drop_drawer.style.opacity === "1") {
           drop_drawer.style.transition = "0.3s";
           drop_drawer.style.opacity = "0";
-        }
-        else{
-          drop_drawer.style.transition= '0.3s';
-        drop_drawer.style.opacity = '1'
+        } else {
+          drop_drawer.style.transition = "0.3s";
+          drop_drawer.style.opacity = "1";
         }
       };
     },
@@ -126,12 +162,17 @@ import mobileNav from './mobile_nav.vue'
 </script>
 
 <style>
-/* .where-we-stand {
-    background: #224f5a;
-    position: absolute;
-    margin-top: -1.4rem;
-    opacity: 0;
-  } */
+#simplified {
+  display: none;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
   .where-we-stand a {
     /* color: #fff !important; */
     /* pa
@@ -152,7 +193,7 @@ import mobileNav from './mobile_nav.vue'
     z-index: 9999999;
     /* display: none; */
     left: 5000px;
-    transition: .6s;
+    transition: 0.6s;
   }
   .take-action-overlay.active {
     display: flex;
@@ -160,14 +201,13 @@ import mobileNav from './mobile_nav.vue'
     justify-content: center;
     transition: 2s;
     left: 0px;
-    transition: .6s;
+    transition: 0.6s;
   }
   .take-action-overlay a {
     color: #fff;
     font-size: 1.3rem;
     font-weight: bold;
     margin-bottom: 2rem;
-    
   }
   .take-action-overlay a:hover {
     text-decoration: none;
@@ -175,25 +215,40 @@ import mobileNav from './mobile_nav.vue'
     transition: 2s;
   }
   .close {
-      position: absolute;
-      top: 3%;
-      right: 3%;
+    position: absolute;
+    top: 3%;
+    right: 3%;
   }
   .dialog-close {
-      font-size: 4rem;
-      font-weight: lighter;
+    font-size: 4rem;
+    font-weight: lighter;
   }
   .dialog-close:hover {
-      cursor: pointer;
+    cursor: pointer;
   }
   .close ion-icon {
-  font-size: 64px;
-  color: #fff;
-}
-
-@media (max-width: 990px){
-  .logo-navs {
-    display: none !important;
+    font-size: 64px;
+    color: #fff;
   }
-}
+  .nav-area ul{
+    display: flex;
+    gap: 40px;
+    align-items:center;
+    margin-top: 1rem;
+  }
+  .nav-area a {
+    color: #fff;
+    font-weight: bold;
+  }
+  .nav-area a:hover {
+    text-decoration: none;
+  }
+  .nav-area a .router-linnk-exact-active {
+    color:#ff7300;
+  }
+  @media (max-width: 990px) {
+    .logo-navs {
+      display: none !important;
+    }
+  }
 </style>
