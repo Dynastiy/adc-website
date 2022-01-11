@@ -1,45 +1,5 @@
 <template>
   <div class="mobile__nav sticky-top">
-    <!-- <div class="mobile_nav_links">
-      <div class="bg-main">
-        <router-link to="/join_adc">JOIN ADC</router-link>
-      </div>
-      <div class="bg-darker" id="take-action">
-        <a href="javascipt:void(0)">TAKE ACTION</a>
-      </div>
-      <div class="bg-orange">
-        <router-link to="/donate">DONATE</router-link>
-      </div>
-    </div> -->
-    <!-- <div class="d-flex justify-content-between align-items-center content mb-5">
-      <div class="">
-        <router-link to="/"
-          ><img src="@/assets/img/logo2.png" alt="logo" width="50"
-        /></router-link>
-      </div>
-      <div id="bar">
-        <ion-icon name="list" id="bar"></ion-icon>
-      </div>
-    </div>
-    <div class="mobile-navigation" id="side-bar">
-      <ul>
-          <li>
-        <router-link to="/about">About</router-link>
-      </li>
-      <li>
-        <a href="#">Where we Stand</a>
-      </li>
-      <li>
-        <a href="https://adc-dn.org/">ADC Diaspora</a>
-      </li>
-      <li>
-        <a href="#">Shop</a>
-      </li>
-      <li>
-        <router-link to="/news">News</router-link>
-      </li>
-      </ul>
-    </div> -->
   
  <nav class="navbar navbar-expand-sm navbar-light bg-light shadow-lg" id="mobile-nav">
   <router-link to="/" class="navbar-brand" >
@@ -148,18 +108,6 @@
 <script>
   export default {
     mounted() {
-      const menu_toggle = document.getElementById("bar");
-      const app_drawer = document.getElementById("side-bar");
-      document.onclick = function (e) {
-        if (e.target.id !== "bar" && e.target.id !== "side-bar") {
-          app_drawer.classList.remove("active");
-          // menu_toggle.style.opacity = '1'
-        }
-      };
-      menu_toggle.onclick = function () {
-        app_drawer.classList.toggle("active");
-        // menu_toggle.style.opacity = '0'
-      };
-    },
+    }
   };
 </script>

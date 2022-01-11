@@ -17,6 +17,22 @@
 </template>
 
 <style scoped>
+ .nav-area ul{
+    display: flex;
+    gap: 40px;
+    align-items:center;
+    margin-top: 1rem;
+  }
+  .nav-area a {
+    color: #fff;
+    font-weight: bold;
+  }
+  .nav-area a:hover {
+    text-decoration: none;
+  }
+  .nav-area a .router-linnk-exact-active {
+    color:#ff7300;
+  }
 hr {
     width: 100px;
     background-color: #000;

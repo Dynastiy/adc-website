@@ -281,6 +281,7 @@ html {
 .donate {
     background: url(../img/image6.jpg);
     background-color: rgba(0, 0, 0, 0.7);
+    background-size: cover;
     background-blend-mode: overlay;
     background-position: center;
 }

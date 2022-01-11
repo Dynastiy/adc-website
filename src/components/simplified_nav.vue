@@ -64,9 +64,9 @@
               </router-link>
             </li>
             <li class="nav-item bg-darker py-1 px-4" @click="openDialog2">
-              <router-link to="/join_adc" class="nav-link text-white"
+              <a href="javascript:void(0)" class="nav-link text-white"
                 >TAKE ACTION
-              </router-link>
+              </a>
             </li>
             <li class="nav-item bg-orange py-1 px-4">
               <router-link to="/donate" class="nav-link text-white"
@@ -87,7 +87,14 @@
       <div>
         <ul class="list-unstyled">
           <li>
-            <a href="https://paystack.shop/adc-shop">Shop</a>
+            <a href="https://paystack.shop/adc-shop">ADC SHOP
+            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i
+            ></a>
+          </li>
+           <li>
+            <a href="https://paystack.shop/adc-shop">VOLUNTEER
+            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i
+            ></a>
           </li>
 
           <li>
@@ -118,32 +125,12 @@
       },
     },
     mounted() {
-      // When the user scrolls the page, execute myFunction
-      window.onscroll = function () {
-        myFunction();
-      };
-
-      // Get the navbar
-      var navbar = document.getElementById("navbar");
-
-      // Get Replacement Nav Bar 
-      
-      // Get the offset position of the navbar
-      var sticky = navbar.offsetTop;
-
-      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-      function myFunction() {
-        if (window.pageYOffset >= sticky) {
-          navbar.classList.add("sticky");
-        } else {
-          navbar.classList.remove("sticky");
-        }
-      }
+     
     },
   };
 </script>
 
-<style scoped>
+<style>
 .take-action-overlay {
     min-height: 100vh;
     position: fixed;

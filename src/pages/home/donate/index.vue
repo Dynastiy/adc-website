@@ -6,85 +6,69 @@
         <div class="bg-white donate-div">
           <h2 class="font-weight-bold text-center pt-4">Donate</h2>
           <div>
-            <form-wizard
-              v-if="form_wizard"
-              @on-complete="onComplete"
-              back-button-text="Back"
-              next-button-text="Next"
-              finish-button-text="Continue"
-              shape="tab"
-              title=""
-              subtitle=""
-              color="#00a54f"
-            >
-              <tab-content title="">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name=""
-                    id=""
-                    aria-describedby="helpId"
-                    placeholder="Enter Amount"
-                    v-model="amount"
-                    required
-                  />
-                </div>
-              </tab-content>
-              <tab-content title="">
-                <h4 class="font-weight-bold mb-3">Personal Details</h4>
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control mb-4"
-                    name=""
-                    id=""
-                    aria-describedby="helpId"
-                    v-model="first_name"
-                    placeholder="First Name"
-                    required
-                  />
-                  <input
-                    type="text"
-                    class="form-control mb-4"
-                    name=""
-                    id=""
-                    aria-describedby="helpId"
-                    placeholder="Last Name"
-                    v-model="last_name"
-                    required
-                  />
-                  <input
-                    type="text"
-                    class="form-control mb-4"
-                    name=""
-                    id=""
-                    aria-describedby="helpId"
-                    placeholder="Email Address"
-                    v-model="email"
-                    required
-                  />
-                  <input
-                    type="text"
-                    class="form-control mb-4"
-                    name=""
-                    id=""
-                    aria-describedby="helpId"
-                    placeholder="Phone Number"
-                    required
-                  />
-                  <input
-                    type="text"
-                    class="form-control mb-4"
-                    name=""
-                    id=""
-                    aria-describedby="helpId"
-                    placeholder="Address"
-                    required
-                  />
-                </div>
-              </tab-content>
-            </form-wizard>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                name=""
+                id=""
+                aria-describedby="helpId"
+                placeholder="Enter Amount"
+                v-model="amount"
+                required
+              />
+            </div>
+            <h4 class="font-weight-bold mb-3">Personal Details</h4>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control mb-4"
+                name=""
+                id=""
+                aria-describedby="helpId"
+                v-model="first_name"
+                placeholder="First Name"
+                required
+              />
+              <input
+                type="text"
+                class="form-control mb-4"
+                name=""
+                id=""
+                aria-describedby="helpId"
+                placeholder="Last Name"
+                v-model="last_name"
+                required
+              />
+              <input
+                type="text"
+                class="form-control mb-4"
+                name=""
+                id=""
+                aria-describedby="helpId"
+                placeholder="Email Address"
+                v-model="email"
+                required
+              />
+              <input
+                type="text"
+                class="form-control mb-4"
+                name=""
+                id=""
+                aria-describedby="helpId"
+                placeholder="Phone Number"
+                required
+              />
+              <input
+                type="text"
+                class="form-control mb-4"
+                name=""
+                id=""
+                aria-describedby="helpId"
+                placeholder="Address"
+                required
+              />
+            </div>
             <div class="text-center p-3" v-if="!form_wizard">
               <h3 class="font-weight-bold">Proceed to make Payment</h3>
               <p>{{ first_name }} {{ last_name }}</p>
@@ -108,16 +92,17 @@
   </div>
 </template>
 
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
 <script>
   import simpleNav from "../../../components/simplified_nav.vue";
-  import { FormWizard, TabContent } from "vue-form-wizard";
+  // import { FormWizard, TabContent } from "vue-form-wizard";
   import "vue-form-wizard/dist/vue-form-wizard.min.css";
 
   import paystack from "vue-paystack";
-  import swal from 'sweetalert';
+  import swal from "sweetalert";
 
   export default {
-    components: { simpleNav, FormWizard, paystack, TabContent },
+    components: { simpleNav, paystack },
     data() {
       return {
         form_wizard: true,
@@ -134,7 +119,7 @@
         this.form_wizard = false;
       },
       processPayment() {
-        this.form_wizard = true
+        this.form_wizard = true;
         window.alert("Payment recieved");
         swal({
           title: "Done!",
@@ -144,7 +129,7 @@
         });
       },
       close() {
-        this.form_wizard = true
+        this.form_wizard = true;
         console.log("You closed checkout page");
         swal({
           title: "Cancelled!",
@@ -176,14 +161,7 @@
 </script>
 
 <style scoped>
-  .vue-step-wizard {
-    width: 100% !important;
-    background: #fff;
-  }
-  .stepTitle .active {
-    background-color: #00a54f !important;
-    height: 0.2rem !important;
-  }
+  @import url("https://unpkg.com/element-ui/lib/theme-chalk/index.css");
   .donate-div {
     width: 45%;
   }

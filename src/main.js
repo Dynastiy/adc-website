@@ -5,6 +5,10 @@ import store from './store'
 // import 'animate.css';
 import VueHtmlToPaper from 'vue-html-to-paper';
 
+import VueTelInput from 'vue-tel-input'
+
+Vue.use(VueTelInput)
+
 import Carousel3d from 'vue-carousel-3d';
 
 import VueRssFeed from "vue-rss-feed";

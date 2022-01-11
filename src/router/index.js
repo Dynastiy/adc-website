@@ -61,6 +61,7 @@ const routes = [{
                 component: () =>
                     import ( /* webpackChunkName: "about" */ '../pages/home/join_adc/registration_form.vue')
             },
+
             {
                 path: '/redirect',
                 name: 'redirection',
@@ -71,13 +72,13 @@ const routes = [{
                     import ( /* webpackChunkName: "about" */ '../pages/home/join_adc/redirect.vue')
             },
             {
-                path: '/our_priorities',
-                name: 'Our Priorities',
+                path: '/aims_of_the_party',
+                name: 'Aims',
                 // route level code-splitting
                 // this generates a separate chunk (about.[hash].js) for this route
                 // which is lazy-loaded when the route is visited.
                 component: () =>
-                    import ( /* webpackChunkName: "about" */ '../pages/home/our_priorities/index.vue')
+                    import ( /* webpackChunkName: "about" */ '../pages/home/where_we_stand/aims/index.vue')
             },
             {
                 path: '/our_manifesto',
@@ -86,7 +87,34 @@ const routes = [{
                 // this generates a separate chunk (about.[hash].js) for this route
                 // which is lazy-loaded when the route is visited.
                 component: () =>
-                    import ( /* webpackChunkName: "about" */ '../pages/home/our_manifesto/index.vue')
+                    import ( /* webpackChunkName: "about" */ '../pages/home/where_we_stand/our_manifesto/index.vue')
+            },
+            {
+                path: '/our_priorities',
+                name: 'Our Priorities',
+                // route level code-splitting
+                // this generates a separate chunk (about.[hash].js) for this route
+                // which is lazy-loaded when the route is visited.
+                component: () =>
+                    import ( /* webpackChunkName: "about" */ '../pages/home/where_we_stand/our_priorities/index.vue')
+            },
+            {
+                path: '/adc_objectives',
+                name: 'ADC Objectives',
+                // route level code-splitting
+                // this generates a separate chunk (about.[hash].js) for this route
+                // which is lazy-loaded when the route is visited.
+                component: () =>
+                    import ( /* webpackChunkName: "about" */ '../pages/home/where_we_stand/adc_objectives/index.vue')
+            },
+            {
+                path: '/cardinal_commitments',
+                name: 'Cardinal Commitments',
+                // route level code-splitting
+                // this generates a separate chunk (about.[hash].js) for this route
+                // which is lazy-loaded when the route is visited.
+                component: () =>
+                    import ( /* webpackChunkName: "about" */ '../pages/home/where_we_stand/cardinal_commitments/index.vue')
             },
             {
                 path: '/resources',

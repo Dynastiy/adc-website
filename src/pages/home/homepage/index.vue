@@ -96,6 +96,11 @@
                 </a>
               </li>
               <li>
+            <a href="https://paystack.shop/adc-shop">VOLUNTEER
+            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i
+            ></a>
+          </li>
+              <li>
                 <router-link to="/resources"
                   >ADC RESOURCES
                   <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i
@@ -467,6 +472,22 @@
 </script>
 
 <style>
+.nav-area ul{
+    display: flex;
+    gap: 40px;
+    align-items:center;
+    margin-top: 1rem;
+  }
+  .nav-area a {
+    color: #fff;
+    font-weight: bold;
+  }
+  .nav-area a:hover {
+    text-decoration: none;
+  }
+  .nav-area a .router-linnk-exact-active {
+    color:#ff7300;
+  }
 #simplified2 {
   display: none;
 }

@@ -1,8 +1,6 @@
 <template>
   <div>
-    <div>
-      <simplified-nav />
-    </div>
+    <simplified-nav />
     <div class="pt-5 bg-light-accent pb-5">
       <main
         class="content container w-50 bg-white shadow-lg p-5 bg-light-accent rounded"
@@ -33,32 +31,49 @@
               />
             </div>
           </div>
-          <div class="form-group row">
-            <div class="col">
-              <label for="exampleInputEmail1">Email address</label>
-              <input
-                v-model="form_field.email"
-                type="email"
-                class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-                placeholder="xyz@gmail.com"
-                required
-              />
-            </div>
-            <div class="col">
-              <label for="exampleInputEmail1">Phone Number</label>
-              <input
-                v-model="form_field.phone_number"
-                type="text"
-                class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-                placeholder="Phone Number"
-                required
-              />
-            </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input
+              v-model="form_field.email"
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="xyz@gmail.com"
+              required
+            />
           </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Phone Number</label>
+            <div class="row">
+              <div class="col-5">
+                <select id="mySelect" class="custom-select form-control" v-model="selected_country">
+                  <option value="0" selected>  Choose... </option>
+                  <option
+                    v-for="(country_num, index) in country_nums"
+                    :key="index"
+                    :value="country_num.phonecode"
+                    class="text-capitalize"
+                  >
+                    {{ country_num.nicename }} ({{ country_num.phonecode }})
+                  </option>
+                </select>
+              </div>
+              <div class="col">
+                <input
+                  v-model="phone_number"
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Phone Number"
+                  required
+                />
+              </div>
+            </div>
+             
+          </div>
+
           <div class="form-group">
             <label for="exampleInputPassword1">Password</label>
             <input
@@ -231,11 +246,13 @@
   import paystack from "vue-paystack";
   import swal from "sweetalert";
   import SimplifiedNav from "../../../components/simplified_nav.vue";
+  import countries from "@/assets/js/countries.js";
   import axios from "axios";
   export default {
     components: { SimplifiedNav, paystack },
     data() {
       return {
+        country_nums: countries,
         lga: false,
         ward: false,
         paystack_part: false,
@@ -245,6 +262,8 @@
         states: "",
         lgas: "",
         selState: "",
+        selected_country:'',
+        phone_number: '',
         form_field: {
           first_name: "",
           last_name: "",
@@ -262,6 +281,12 @@
       };
     },
     methods: {
+      getNum(){
+        var priceOptions = document.getElementById("mySelect");
+      var selOption = priceOptions.options[priceOptions.selectedIndex].value;
+      this.selected_country = selOption;
+        
+      },
       createUser() {
         swal({
           title: "Done!",
@@ -339,7 +364,7 @@
           formData.append("last_name", this.form_field.last_name);
           formData.append("email", this.form_field.email);
           formData.append("password", this.form_field.password);
-          formData.append("phone_number", this.form_field.phone_number);
+          formData.append("phone_number", this.phone_number+this.selected_country);
           formData.append("dob", this.form_field.dob);
           formData.append("gender", this.form_field.gender);
           formData.append("state", this.form_field.state);
@@ -424,6 +449,9 @@
     font-weight: bold;
   }
   input::placeholder {
+    font-size: 0.8rem !important;
+  }
+  option {
     font-size: 0.8rem !important;
   }
   .payment {

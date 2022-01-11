@@ -75,9 +75,15 @@
       <div>
         <ul class="list-unstyled">
           <li>
-            <a href="https://paystack.shop/adc-shop">Shop</a>
+            <a href="https://paystack.shop/adc-shop">ADC SHOP
+            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+            </a>
           </li>
-
+        <li>
+            <a href="https://paystack.shop/adc-shop">VOLUNTEER
+            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i
+            ></a>
+          </li>
           <li>
             <router-link to="/resources"
               >RESOURCES

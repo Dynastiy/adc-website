@@ -9,26 +9,26 @@
       </div>
     </div>
 
-    <div class="content">
-      <div class="priorities__container">
-        <div class="priorities__content">
+    <div class="content bg-light-accent">
+      <div class="priorities__container ">
+        <div class="priorities__content ">
           <div
-            class="card-content shadow d-flex align-items-start"
+            class="card-content shadow  bg-white"
             v-for="(priority, index) in priorities"
             :key="index">
-            <div
+            <!-- <div
               class="left_icon"
               :style="{ 'background-color': `${priority.color}` }"
             >
               <h2 class="font-weight-bold">
                 {{ priority.id }}
               </h2>
-            </div>
+            </div> -->
             <div class="right__content ml-2">
-              <h5 class="font-weight-bold card-title">
+              <h5 class="font-weight-bold card-title text-darker">
                 {{ priority.title }}
               </h5>
-              <p class="small card-text">
+              <p class="card-text">
                 {{ priority.description }}
               </p>
             </div>
@@ -40,7 +40,7 @@
 </template>
 
 <script>
-  import AppHeader from "../../../components/appHeader.vue";
+  import AppHeader from "../../../../components/appHeader.vue";
   import priorities from "@/assets/js/priorities";
   export default {
     components: { AppHeader },
@@ -53,8 +53,11 @@
 </script>
 
 <style scoped>
+.right__content p {
+  font-size: 0.9rem;
+}
 .header{
-  background: url(../../../assets/img/priorities.jpg);
+  background: url(../../../../assets/img/priorities.jpg);
        background-position:bottom;
        background-attachment: fixed;
     background-repeat: no-repeat;
