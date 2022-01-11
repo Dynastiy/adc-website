@@ -5,12 +5,12 @@
       <h1 class="font-weight-bold text-darker mb-2 mt-5">Join ADC</h1>
       <hr class="mb-4">
       <p class="font-weight-bold text-darker larger-text w-75 mb-5"> 
-        We’ve come a long way together and our
-        supporters made everything possible. <pre></pre> Membership is the best way to
-        protect what we’ve achieved together and keep our progress going. You
+        We havefa-flip-horizontal come a long way together and our
+        supporters made everything possible. Membership is the best way to
+        protect what we have achieved together and keep our progress going. You
         started it, now be part of it!
       </p>
-      <h2 class="font-weight-bold mt-5 text-darker mb-5 text-center" >Choose a Membership Rate</h2>
+      <h2 class="font-weight-bold mt-5 text-darker mb-5 text-center" >Choose a Membership</h2>
      <div class="reg__cards rounded pb-5">
          <div class="shadow-lg rounded card__item p-4 ">
            <div class="card_item_header d-flex">
@@ -18,8 +18,8 @@
                <ion-icon name="person"></ion-icon>
              </div>
              <div>
-               <p class="font-weight-bold">Youths &amp; Persons with disabilities</p>
-              <small>Ages 18 to 30</small>
+               <p class="font-weight-bold">Youths &amp; Persons with Disability</p>
+              <small>Ages 18 to 35</small>
              </div>
            </div>
            <hr class="mt-4 mb-4">
@@ -49,7 +49,7 @@
              </div>
              <div>
                <p class="font-weight-bold"> Adults</p>
-              <small>Ages 30 and Above</small>
+              <small>Ages 35 and Above</small>
              </div>
            </div>
            <hr class="mt-4 mb-4">
@@ -78,7 +78,7 @@
                <ion-icon name="person"></ion-icon>
              </div>
              <div>
-               <p class="font-weight-bold">Existing Users</p>
+               <p class="font-weight-bold">Renew Membership</p>
               <small>Already Registered</small>
              </div>
            </div>
