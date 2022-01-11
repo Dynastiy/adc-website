@@ -3,9 +3,9 @@
     <simple-nav />
     <div class="content donate">
       <div class="row">
-        <div class="bg-white donate-div">
-          <h2 class="font-weight-bold text-center pt-4">Donate</h2>
-          <div>
+        <div class="donate-div">
+          <h2 class="font-weight-bold text-center py-3 text-orange">Donate</h2>
+          <form action="">
             <div class="form-group">
               <input
                 type="text"
@@ -13,36 +13,38 @@
                 name=""
                 id=""
                 aria-describedby="helpId"
-                placeholder="Enter Amount"
+                placeholder="Enter Amount in Naira"
                 v-model="amount"
                 required
               />
             </div>
-            <h4 class="font-weight-bold mb-3">Personal Details</h4>
-            <div class="form-group">
-              <input
+            <h4 class="font-weight-bold text-orange mb-3">Personal Details</h4>
+            <div class="form-group row">
+              <div class="col">
+                <input
                 type="text"
-                class="form-control mb-4"
-                name=""
-                id=""
+                class="form-control"
                 aria-describedby="helpId"
                 v-model="first_name"
                 placeholder="First Name"
                 required
               />
-              <input
+              </div>
+              <div class="col">
+                <input
                 type="text"
-                class="form-control mb-4"
-                name=""
-                id=""
+                class="form-control"
                 aria-describedby="helpId"
                 placeholder="Last Name"
                 v-model="last_name"
                 required
               />
+              </div>
+            </div>
+            <div class="form-group">
               <input
                 type="text"
-                class="form-control mb-4"
+                class="form-control"
                 name=""
                 id=""
                 aria-describedby="helpId"
@@ -50,51 +52,63 @@
                 v-model="email"
                 required
               />
-              <input
-                type="text"
-                class="form-control mb-4"
-                name=""
-                id=""
-                aria-describedby="helpId"
-                placeholder="Phone Number"
-                required
-              />
-              <input
-                type="text"
-                class="form-control mb-4"
-                name=""
-                id=""
-                aria-describedby="helpId"
-                placeholder="Address"
-                required
-              />
             </div>
-            <div class="text-center p-3" v-if="!form_wizard">
-              <h3 class="font-weight-bold">Proceed to make Payment</h3>
-              <p>{{ first_name }} {{ last_name }}</p>
-              <p>{{ amount }}</p>
-              <paystack
-                :amount="amount * 100"
-                class="btn bg-main text-white font-weight-bold"
-                :email="email"
-                :paystackkey="PUBLIC_KEY"
-                :reference="reference"
-                :callback="processPayment"
-                :close="close"
-              >
-                Make Payment
-              </paystack>
+            <div class="row form-group">
+              <div class="col-5">
+                <select
+                  id="mySelect"
+                  class="custom-select form-control"
+                  v-model="selected_country"
+                >
+                  <option value="0" selected > Choose... </option>
+                  <option
+                    v-for="(country_num, index) in country_nums"
+                    :key="index"
+                    :value="country_num.phonecode"
+                    class="text-capitalize"
+                  >
+                    {{ country_num.nicename }} ({{ country_num.phonecode }})
+                  </option>
+                </select>
+              </div>
+              <div class="col">
+                <input
+                  v-model="phone_number"
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Phone Number"
+                  required
+                />
+              </div>
             </div>
-          </div>
-        </div>
+          <div class="text-center mt-5">
+            <paystack
+              :amount="amount * 100"
+              type="submit"
+              class="btn bg-orange text-white font-weight-bold px-3 py-2 "
+              :email="email"
+              :paystackkey="PUBLIC_KEY"
+              :reference="reference"
+              :callback="processPayment"
+              :close="close"
+            >
+              Make Payment
+            </paystack>
+            </div>       
+          
+          </form>
       </div>
     </div>
+  </div>
   </div>
 </template>
 
 <script src="https://unpkg.com/element-ui/lib/index.js"></script>
 <script>
   import simpleNav from "../../../components/simplified_nav.vue";
+  import countries from '@/assets/js/countries.js'
   // import { FormWizard, TabContent } from "vue-form-wizard";
   import "vue-form-wizard/dist/vue-form-wizard.min.css";
 
@@ -105,11 +119,11 @@
     components: { simpleNav, paystack },
     data() {
       return {
+        country_nums: countries,
         form_wizard: true,
         amount: "",
-
-        first_name: " ",
-        last_name: "",
+        first_name: null,
+        last_name: null,
         email: "",
         PUBLIC_KEY: "pk_live_6c2684fe83cd844c750932b184a1bbe26f380912",
       };
@@ -164,17 +178,22 @@
   @import url("https://unpkg.com/element-ui/lib/theme-chalk/index.css");
   .donate-div {
     width: 45%;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1rem 3rem;
+    border-radius: 10px;
   }
   .donate .form-control {
     border-radius: 0 !important;
     outline: none;
+    padding: 1.5rem 0.5rem !important;
+    border-radius: 5px !important;
   }
   .donate .form-control:focus {
     border: 1px solid #ced4da !important;
     box-shadow: none;
   }
   .donate .form-control::placeholder {
-    color: #ced4da;
+    color: #999;
     font-size: 0.8rem;
   }
   @media screen and (max-width: 990px) {
