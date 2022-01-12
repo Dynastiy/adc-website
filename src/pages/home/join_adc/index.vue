@@ -10,7 +10,7 @@
         protect what we have achieved together and keep our progress going. You
         started it, now be part of it!
       </p>
-      <h2 class="font-weight-bold mt-5 text-darker mb-5 text-center" >Choose a Membership</h2>
+      <h2 class="font-weight-bold mt-5 text-darker mb-5 text-center" >Choose Membership</h2>
      <div class="reg__cards rounded pb-5">
          <div class="shadow-lg rounded card__item p-4 ">
            <div class="card_item_header d-flex">
@@ -30,12 +30,12 @@
                </div>
                <p class="small font-weight-bold">Above 18, but below 35</p>
              </div>
-             <div class="card_list_item d-flex mt-4">
+             <!-- <div class="card_list_item d-flex mt-4">
                <div class="mr-2">
                  <ion-icon name="checkmark-circle"></ion-icon>
                </div>
                <p class="small font-weight-bold">Persons with Disability</p>
-             </div>
+             </div> -->
            </div>
           <router-link to="/registration_form">
            <button class=" mt-4 btn bg-darker btn-choose">
