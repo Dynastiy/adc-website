@@ -16,7 +16,7 @@
         <form @submit.prevent="login" method="POST" novalidate="novalidate">
           <div class="form-group">
             <label for="exampleInputEmail1" class="font-weight-bold"
-              >Email address</label
+              >Email or Phone Number</label
             >
             <input
               v-model="email"

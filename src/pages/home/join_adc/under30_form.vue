@@ -161,7 +161,7 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail1">Person who invited you</label>
+            <label for="exampleInputEmail1">Person who introduced you to ADC</label>
             <div class="row">
               <div class="col">
                 <input

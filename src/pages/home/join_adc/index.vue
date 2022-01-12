@@ -5,7 +5,7 @@
       <h1 class="font-weight-bold text-darker mb-2 mt-5">Join ADC</h1>
       <hr class="mb-4">
       <p class="font-weight-bold text-darker larger-text w-75 mb-5"> 
-        We havefa-flip-horizontal come a long way together and our
+        We have come a long way together and our
         supporters made everything possible. Membership is the best way to
         protect what we have achieved together and keep our progress going. You
         started it, now be part of it!
@@ -28,7 +28,7 @@
                <div class="mr-2">
                  <ion-icon name="checkmark-circle"></ion-icon>
                </div>
-               <p class="small font-weight-bold">Above 18, but below 30</p>
+               <p class="small font-weight-bold">Above 18, but below 35</p>
              </div>
              <div class="card_list_item d-flex mt-4">
                <div class="mr-2">
@@ -58,7 +58,7 @@
                <div class="mr-2">
                  <ion-icon name="checkmark-circle"></ion-icon>
                </div>
-               <p class="small font-weight-bold">Persons above 30 years</p>
+               <p class="small font-weight-bold">Persons above 35 years</p>
              </div>
              <div class="card_list_item d-flex mt-4">
                <div class="mr-2">
