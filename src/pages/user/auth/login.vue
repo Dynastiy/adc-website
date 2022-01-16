@@ -37,6 +37,9 @@
               id="exampleInputPassword1"
             />
           </div>
+          <div class="text-right mb-3">
+            <router-link class="text-danger small font-weight-bold" to="/reset_password">Reset Password</router-link>
+            </div>
           <button type="submit" class="btn bg-darker w-100 small-btn-text">
             LOGIN
           </button>
@@ -46,7 +49,7 @@
         <router-link class="text-dark font-weight-bold" to="/"
           >Back to Home page</router-link
         >
-        <router-link class="text-danger" to="/reset_password">Reset Password</router-link>
+
       </div>
     </div>
 

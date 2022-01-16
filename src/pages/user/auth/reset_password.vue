@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="login-page">
-    <div class="login-box shadow-lg rounded pt-4 pb-4">
+    <div class="login-box shadow-lg rounded pt-4 pb-2">
       <!-- <div class="text-center">
           <img src="@/assets/img/brand_assets/logo_vertical_dark.png" alt=""  srcset="" width="50" />
       </div> -->
@@ -30,11 +30,12 @@
           <button type="submit" class="btn bg-darker w-100 small-btn-text">RESET PASSWORD</button>
         </form>
       </div>
-    </div>
-    <div class="text-center my-3 homepage" >
+       <div class="text-center my-2 homepage" >
           <router-link class="text-dark font-weight-bold" to="/login">Back to Login page</router-link>
         </div>
+    </div>
   </div>
+ 
   </div>
 </template>
 
@@ -62,7 +63,7 @@ import axios from 'axios';
             password: this.password,
 
           };
-          let res = await axios.post(this.baseUrl + "auth/password/update/", payload
+          let res = await axios.post(this.baseUrl + "auth/password/update", payload
           );
           console.log(res);
                 } 
