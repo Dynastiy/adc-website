@@ -18,11 +18,6 @@
             >
           </li>
           <li class="tab__item">
-            <router-link to="/about/obasanjos_message"
-              >obasanjo's message</router-link
-            >
-          </li>
-          <li class="tab__item">
             <router-link to="/about/our_candidates">our candidates</router-link>
           </li>
           <li class="tab__item">

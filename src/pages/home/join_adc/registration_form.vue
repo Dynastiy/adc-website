@@ -114,7 +114,7 @@
             <div class="form-group col">
               <label for="inputState">State</label>
               <select
-                id="mySelect"
+                id="mySelect2"
                 class="custom-select"
                 @change="getState()"
                 v-model="form_field.state"
@@ -161,7 +161,7 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail1">Person who intoduced you to ADC</label>
+            <label for="exampleInputEmail1">Person who introduced you to ADC</label>
             <div class="row">
               <div class="col">
                 <input
@@ -312,7 +312,7 @@
         console.log(this.form_field.image);
       },
       getState() {
-        var priceOptions = document.getElementById("mySelect");
+        var priceOptions = document.getElementById("mySelect2");
         var selOption = priceOptions.options[priceOptions.selectedIndex].value;
         console.log(selOption);
         this.selState = selOption;

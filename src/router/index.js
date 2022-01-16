@@ -44,7 +44,7 @@ const routes = [{
                     import ( /* webpackChunkName: "about" */ '../pages/home/join_adc/index.vue')
             },
             {
-                path: '/reg_form',
+                path: '/registration_form',
                 name: 'registration-under30',
                 // route level code-splitting
                 // this generates a separate chunk (about.[hash].js) for this route
@@ -53,7 +53,7 @@ const routes = [{
                     import ( /* webpackChunkName: "about" */ '../pages/home/join_adc/under30_form.vue')
             },
             {
-                path: '/registration_form',
+                path: '/reg_form',
                 name: 'registration',
                 // route level code-splitting
                 // this generates a separate chunk (about.[hash].js) for this route
@@ -115,6 +115,15 @@ const routes = [{
                 // which is lazy-loaded when the route is visited.
                 component: () =>
                     import ( /* webpackChunkName: "about" */ '../pages/home/where_we_stand/cardinal_commitments/index.vue')
+            },
+            {
+                path: '/volunteer',
+                name: 'volunteer',
+                // route level code-splitting
+                // this generates a separate chunk (about.[hash].js) for this route
+                // which is lazy-loaded when the route is visited.
+                component: () =>
+                    import ( /* webpackChunkName: "about" */ '../pages/home/volunteer/index.vue')
             },
             {
                 path: '/resources',

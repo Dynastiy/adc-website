@@ -46,7 +46,7 @@
         <router-link class="text-dark font-weight-bold" to="/"
           >Back to Home page</router-link
         >
-        <!-- <router-link class="text-danger" to="/reset_password">Reset Password</router-link> -->
+        <router-link class="text-danger" to="/reset_password">Reset Password</router-link>
       </div>
     </div>
 

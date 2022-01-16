@@ -13,7 +13,7 @@
       <div class="priorities__container ">
         <div class="priorities__content ">
           <div
-            class="card-content shadow  bg-white"
+            class="card-content shadow  bg-white" style="border-radius: 10px"
             v-for="(priority, index) in priorities"
             :key="index">
             <!-- <div

@@ -13,7 +13,7 @@
               id="take-action"
               @click="openDialog"
             >
-              <a href="javascipt:void(0)">TAKE ACTION</a>
+              <a href="javascript:void(0)">TAKE ACTION</a>
             </div>
             <div class="top-links bg-orange">
               <router-link to="/donate">DONATE</router-link>
@@ -82,7 +82,7 @@
         <simplified-nav id="simplified2"/>
 
         <!-- overlay -->
-        <div class="take-action-overlay bg-darker" id="take-action-overlay">
+        <div class="take-action-overlay bg-darker" id="take-action-overlay1">
           <div class="close" @click="closeDialog">
             <ion-icon name="close"></ion-icon>
             <!-- <p class="text-white dialog-close"  >X</p> -->
@@ -95,10 +95,15 @@
                   <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
                 </a>
               </li>
-              <li>
-            <a href="https://paystack.shop/adc-shop">VOLUNTEER
+              <li class="mb-3">
+           <router-link to="/volunteer">VOLUNTEER
             <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i
-            ></a>
+            ></router-link>
+          </li>
+          <li class="mb-3">
+           <router-link to="/testimonials">TESTIMONIALS
+            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i
+            ></router-link>
           </li>
               <li>
                 <router-link to="/resources"
@@ -421,11 +426,11 @@
         console.log("You closed checkout page");
       },
       openDialog() {
-        const overlay = document.getElementById("take-action-overlay");
+        const overlay = document.getElementById("take-action-overlay1");
         overlay.classList.add("active");
       },
       closeDialog() {
-        const overlay = document.getElementById("take-action-overlay");
+        const overlay = document.getElementById("take-action-overlay1");
         overlay.classList.remove("active");
       },
     },

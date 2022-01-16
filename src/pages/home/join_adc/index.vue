@@ -30,12 +30,12 @@
                </div>
                <p class="small font-weight-bold">Above 18, but below 35</p>
              </div>
-             <!-- <div class="card_list_item d-flex mt-4">
+             <div class="card_list_item d-flex mt-4">
                <div class="mr-2">
                  <ion-icon name="checkmark-circle"></ion-icon>
                </div>
                <p class="small font-weight-bold">Persons with Disability</p>
-             </div> -->
+             </div>
            </div>
           <router-link to="/registration_form">
            <button class=" mt-4 btn bg-darker btn-choose">
@@ -60,12 +60,12 @@
                </div>
                <p class="small font-weight-bold">Persons above 35 years</p>
              </div>
-             <div class="card_list_item d-flex mt-4">
+             <!-- <div class="card_list_item d-flex mt-4">
                <div class="mr-2">
                  <ion-icon name="checkmark-circle"></ion-icon>
                </div>
                <p class="small font-weight-bold">Persons without Disability</p>
-             </div>
+             </div> -->
            </div>
            <router-link to="/reg_form">
            <button class=" mt-4 btn bg-darker btn-choose">

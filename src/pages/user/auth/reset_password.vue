@@ -62,7 +62,7 @@ import axios from 'axios';
             password: this.password,
 
           };
-          let res = await axios.post(this.baseUrl + "auth/password/update_password", payload
+          let res = await axios.post(this.baseUrl + "auth/password/update", payload
           );
           console.log(res);
                 } 

@@ -5,8 +5,8 @@
       <div class="top-links bg-main">
         <router-link to="/join_adc">JOIN ADC</router-link>
       </div>
-      <div class="top-links bg-darker" id="take-action" @click="openDialog">
-        <a href="javascipt:void(0)">TAKE ACTION</a>
+      <div class="top-links bg-darker" id="take-action" @click="openDialog1">
+        <a href="javascript:void(0)">TAKE ACTION</a>
       </div>
       <div class="top-links bg-orange">
         <router-link to="/donate">DONATE</router-link>
@@ -73,24 +73,30 @@
         <!-- <p class="text-white dialog-close"  >X</p> -->
       </div>
       <div>
-        <ul class="list-unstyled">
-          <li>
-            <a href="https://paystack.shop/adc-shop">ADC SHOP
-            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
-            </a>
-          </li>
-        <li>
-            <a href="https://paystack.shop/adc-shop">VOLUNTEER
+         <ul class="list-unstyled">
+              <li class="mb-3">
+                <a href="https://paystack.shop/adc-shop">
+                  ADC SHOP
+                  <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="mb-3">
+           <router-link to="/volunteer">VOLUNTEER
             <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i
-            ></a>
-          </li>
-          <li>
-            <router-link to="/resources"
-              >RESOURCES
-              <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i
             ></router-link>
           </li>
-        </ul>
+          <li class="mb-3">
+           <router-link to="/testimonials">TESTIMONIALS
+            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i
+            ></router-link>
+          </li>
+              <li>
+                <router-link to="/resources"
+                  >ADC RESOURCES
+                  <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i
+                ></router-link>
+              </li>
+            </ul>
       </div>
     </div>
 
@@ -114,7 +120,7 @@
       };
     },
     methods: {
-      openDialog() {
+      openDialog1() {
         const overlay = document.getElementById("take-action-overlay");
         overlay.classList.add("active");
       },

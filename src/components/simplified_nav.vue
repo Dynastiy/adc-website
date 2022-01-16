@@ -85,25 +85,30 @@
         <!-- <p class="text-white dialog-close"  >X</p> -->
       </div>
       <div>
-        <ul class="list-unstyled">
-          <li>
-            <a href="https://paystack.shop/adc-shop">ADC SHOP
+         <ul class="list-unstyled">
+              <li class="mb-3">
+                <a href="https://paystack.shop/adc-shop">
+                  ADC SHOP
+                  <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="mb-3">
+           <router-link to="/volunteer">VOLUNTEER
             <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i
-            ></a>
-          </li>
-           <li>
-            <a href="https://paystack.shop/adc-shop">VOLUNTEER
-            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i
-            ></a>
-          </li>
-
-          <li>
-            <router-link to="/resources"
-              >RESOURCES
-              <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i
             ></router-link>
           </li>
-        </ul>
+          <li class="mb-3">
+           <router-link to="/testimonials">TESTIMONIALS
+            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i
+            ></router-link>
+          </li>
+              <li>
+                <router-link to="/resources"
+                  >ADC RESOURCES
+                  <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i
+                ></router-link>
+              </li>
+            </ul>
       </div>
     </div>
   </div>

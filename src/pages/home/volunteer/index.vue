@@ -6,7 +6,7 @@
         class="content container w-50 bg-white shadow-lg p-5 bg-light-accent rounded"
       >
         <h1 class="text-center text-darker font-weight-bold mb-5">
-          Registration Form
+          Volunteer with Us
         </h1>
         <form @submit.prevent="valForm" method="POST">
           <div class="row form-group">
@@ -71,93 +71,11 @@
                 />
               </div>
             </div>
-             
-          </div>
-
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input
-              v-model="form_field.password"
-              placeholder="Password"
-              type="password"
-              class="form-control"
-              id="exampleInputPassword1"
-              required
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="exampleInputEmail1">Date of Birth</label>
-            <input
-              v-model="form_field.dob"
-              type="date"
-              class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-              placeholder="Date of Birth"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="inputState">Gender</label>
-            <select
-              id="inputState"
-              v-model="form_field.disability"
-              class="form-control"
-            >
-              <option value="None">Choose</option>
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
-            </select>
           </div>
           <div class="row">
             <div class="form-group col">
-              <label for="inputState">Disability?</label>
-              <select
-                id="mySelect1"
-                class="custom-select"
-                v-model="form_field.disability"
-                @change="getDisability()"
-              >
-                <option value="true">
-                  Yes
-                </option>
-                <option value="false">
-                 No
-                </option>
-              </select>
-            </div>
-            <div class="form-group col" v-show="disability">
-              <label for="inputState">Disability </label> <small class="text-danger">* Please Specify</small>
-              <input
-                  v-model="form_field.disability_name"
-                  type="text"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="State Disability"
-                  required
-                />
-            </div>
-          </div>
-          <div class="row">
-            <div class="form-group col">
-              <label for="inputState">State</label>
-              <select
-                id="mySelect2"
-                class="custom-select"
-                @change="getState()"
-                v-model="form_field.state"
-              >
-                <option
-                  v-for="(state_name, index) in states"
-                  :key="index"
-                  :value="state_name.name"
-                  class="text-capitalize"
-                >
-                  {{ state_name.name }}
-                </option>
-              </select>
+              <label for="inputState">What skill would you like to volunteer?</label>
+            
             </div>
             <div class="form-group col" v-show="lga">
               <label for="inputState">Local Government</label>
@@ -177,57 +95,14 @@
                 </option>
               </select>
             </div>
-            <div class="form-group col" v-show="ward">
-              <label for="inputState">Ward</label>
-              <input
-                v-model="form_field.ward"
-                type="text"
-                class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-                placeholder="Ward"
-                required
-              />
-            </div>
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail1">Person who introduced you to ADC</label>
-            <div class="row">
-              <div class="col">
-                <input
-                  v-model="form_field.referral"
-                  type="text"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="First Name"
-                  required
-                />
-              </div>
-              <div class="col">
-                <input
-                  v-model="form_field.referral"
-                  type="text"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="Last Name"
-                  required
-                />
-              </div>
-            </div>
-          </div>
-          <div class="text-center form-group my-5">
-            <label class="small-text font-weight-bold" for=""
-              >Upload Photo</label
-            >
-            <br />
-            <input
-              type="file"
-              name=""
-              class=""
-              id="file"
-              @change="handleFileUpload()"
+            <label for="exampleInputPassword1">Address</label>
+            <textarea
+              v-model="form_field.password"
+              placeholder="Address"
+              class="form-control"
+              id="exampleInputPassword1"
               required
             />
           </div>
@@ -238,31 +113,6 @@
           />
         </form>
       </main>
-      <div v-show="paystack_part" class="payment p-5 bg-light-accent">
-        <div class="text-center">
-          <img
-            src="@/assets/img/brand_assets/logo_horizontal_dark.png"
-            width="100"
-            class="text-center mb-4"
-            alt=""
-          />
-          <h1 class="font-weight-bold mb-4 text-center">
-            Proceed to <br />
-            make payment
-          </h1>
-          <paystack
-            :amount="200 * 100"
-            class="btn bg-darker text-white font-weight-bold text-center w-50"
-            :email="form_field.email"
-            :paystackkey="PUBLIC_KEY"
-            :reference="reference"
-            :callback="register"
-            :close="close"
-          >
-            Pay
-          </paystack>
-        </div>
-      </div>
       <div class="loading" v-if="loading">
         <div class="spinner-border m-5" role="status">
           <span class="sr-only">Loading...</span>
@@ -273,17 +123,16 @@
 </template>
 
 <script>
-  import paystack from "vue-paystack";
+  // import paystack from "vue-paystack";
   import swal from "sweetalert";
   import SimplifiedNav from "../../../components/simplified_nav.vue";
   import countries from "@/assets/js/countries.js";
   import axios from "axios";
   export default {
-    components: { SimplifiedNav, paystack },
+    components: { SimplifiedNav },
     data() {
       return {
         country_nums: countries,
-        disability: false,
         lga: false,
         ward: false,
         paystack_part: false,
@@ -302,8 +151,6 @@
           password: "",
           phone_number: "",
           dob: "",
-           disability_name:"",
-          disability:"",
           gender: "",
           state: "",
           lga: "",
@@ -345,21 +192,12 @@
         console.log(this.form_field.image);
       },
       getState() {
-        var priceOptions = document.getElementById("mySelect2");
+        var priceOptions = document.getElementById("mySelect");
         var selOption = priceOptions.options[priceOptions.selectedIndex].value;
         console.log(selOption);
         this.selState = selOption;
         this.getlgas();
         this.lga = true;
-      },
-      getDisability() {
-        var priceOptions = document.getElementById("mySelect1");
-        var selOption = priceOptions.options[priceOptions.selectedIndex].value;
-        console.log(selOption);
-        if(selOption === "true")
-        {
-          this.disability = true;
-        }
       },
       getLga() {
         this.ward = true;
@@ -413,8 +251,6 @@
           formData.append("lga", this.form_field.lga);
           formData.append("ward", this.form_field.ward);
           formData.append("referral", this.form_field.referral);
-          formData.append("disability", this.form_field.disability);
-          formData.append("disability_name", this.form_field.disability_name);
           formData.append("image", this.form_field.image);
           let res = await axios.post(this.baseUrl + "auth/register", formData);
           console.log(res);
@@ -430,8 +266,6 @@
           this.form_field.ward = "";
           this.form_field.referral = "";
           this.form_field.image = "";
-          this.form_field.disability_name ="";
-          this.form_field.disability =""
           this.loading = false;
           swal({
             title: "Done!",
@@ -455,8 +289,6 @@
             this.form_field.ward = "";
             this.form_field.referral = "";
             this.form_field.image = "";
-             this.form_field.disability_name ="";
-          this.form_field.disability =""
             this.loading = false;
           } else {
             this.form_field.first_name = "";
@@ -471,8 +303,6 @@
             this.form_field.ward = "";
             this.form_field.referral = "";
             this.form_field.image = "";
-             this.form_field.disability_name ="";
-          this.form_field.disability =""
             this.loading = false;
           }
         }
