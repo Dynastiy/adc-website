@@ -237,8 +237,8 @@
               />
               <div class="carousel-caption d-md-flex">
                 <h1>
-                  Empowering women through<br />
-                  commerce and <span class="nigeria">industry</span>
+                  Empowering women <br/> through 
+                  commerce <br/> and <span class="nigeria">industry</span>
                 </h1>
               </div>
             </div>
@@ -267,12 +267,14 @@
     <div class="search-support">
       <div class="support">
         <i class="fa fa-angle-down" aria-hidden="true" id="angle-icon"></i>
+        <!-- <ion-icon name="arrow-down"></ion-icon> -->
         <div class="support-campaign bg-main">
           <h5 class="font-weight-bold">Support Our Campaign</h5>
           <div class="price-buttons">
             <paystack
               :amount="500 * 100"
               :email="email"
+              class="btn__white"
               :paystackkey="PUBLIC_KEY"
               :reference="reference"
               :callback="processPayment"
@@ -283,6 +285,7 @@
             <paystack
               :amount="1000 * 100"
               :email="email"
+              class="btn__white"
               :paystackkey="PUBLIC_KEY"
               :reference="reference2"
               :callback="processPayment"
@@ -291,7 +294,7 @@
               N1000
             </paystack>
 
-            <router-link to="/donate"><button>Other</button></router-link>
+            <router-link to="/donate" ><button class="btn__white">Other</button></router-link>
           </div>
         </div>
       </div>
@@ -477,6 +480,9 @@
 </script>
 
 <style>
+.btn__white{
+  background: #fff ;
+}
 .nav-area ul{
     display: flex;
     gap: 40px;

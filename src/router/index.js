@@ -72,6 +72,24 @@ const routes = [{
                     import ( /* webpackChunkName: "about" */ '../pages/home/join_adc/redirect.vue')
             },
             {
+                path: '/testimonials',
+                name: 'testimonials',
+                // route level code-splitting
+                // this generates a separate chunk (about.[hash].js) for this route
+                // which is lazy-loaded when the route is visited.
+                component: () =>
+                    import ( /* webpackChunkName: "about" */ '../pages/home/testimonials/index.vue')
+            },
+            {
+                path: '/testimonials/ex_presidents_advice',
+                name: 'obasanjo',
+                // route level code-splitting
+                // this generates a separate chunk (about.[hash].js) for this route
+                // which is lazy-loaded when the route is visited.
+                component: () =>
+                    import ( /* webpackChunkName: "about" */ '../pages/home/testimonials/obasanjos_message.vue')
+            },
+            {
                 path: '/aims_of_the_party',
                 name: 'Aims',
                 // route level code-splitting
@@ -236,15 +254,6 @@ const routes = [{
                     import ( /* webpackChunkName: "about" */ '../pages/about/components/contact_us.vue'),
             },
             {
-                path: '/about/obasanjos_message',
-                name: 'Obasanjo',
-                // route level code-splitting
-                // this generates a separate chunk (about.[hash].js) for this route
-                // which is lazy-loaded when the route is visited.
-                component: () =>
-                    import ( /* webpackChunkName: "about" */ '../pages/about/components/obasanjos_message.vue'),
-            },
-            {
                 path: '/about/our_candidates',
                 name: 'Candidates',
                 // route level code-splitting
@@ -279,9 +288,9 @@ const routes = [{
 const router = new VueRouter({
     mode: 'history',
     base: process.env.BASE_URL,
-    // scrollBehavior() {
-    //     return window.scrollTo({ top: 0, behavior: 'smooth' });
-    // },
+    scrollBehavior() {
+        return window.scrollTo({ top: 0, behavior: 'smooth' });
+    },
     routes
 })
 

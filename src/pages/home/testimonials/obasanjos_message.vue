@@ -1,5 +1,7 @@
 <template>
   <div>
+    <app-header />
+      <div class="content container">
     <div class="row">
       <div class="col-md-5">
         <img src="@/assets/img/obj.jpg" alt="" width="100%" />
@@ -39,11 +41,14 @@ Once again, I congratulate all members of Coalition for Nigeria Movement, all th
  <span class="text-orange small">May 10, 2018</span> </p>
       </div>
     </div>
+      </div>
   </div>
 </template>
-
 <script>
+import AppHeader from "../../../components/simplified_nav.vue";
+
   export default {
+    components: { AppHeader },
     data() {
       return {};
     },

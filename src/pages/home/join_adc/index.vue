@@ -12,14 +12,14 @@
       </p>
       <h2 class="font-weight-bold mt-5 text-darker mb-5 text-center" >Choose Membership</h2>
      <div class="reg__cards rounded pb-5">
-         <div class="shadow-lg rounded card__item p-4 ">
-           <div class="card_item_header d-flex">
-             <div class="icon__header d-flex align-items-center justify-content-center p-2 mr-3">
+         <div class="shadow-lg rounded bg-white card__item p-4 ">
+           <div class="card_item_header">
+             <!-- <div class="icon__header d-flex align-items-center justify-content-center p-2 mr-3">
                <ion-icon name="person"></ion-icon>
-             </div>
+             </div> -->
              <div>
-               <p class="font-weight-bold">Youths &amp; Persons with Disability</p>
-              <small>Ages 18 to 35</small>
+               <h3 class="font-weight-bold">Youths &amp; Persons with Disability</h3>
+              <p>Ages 18 to 35</p>
              </div>
            </div>
            <hr class="mt-4 mb-4">
@@ -42,14 +42,14 @@
              Choose
            </button></router-link>
          </div>
-         <div class="shadow-lg rounded card__item p-4 ">
-           <div class="card_item_header d-flex">
-             <div class="icon__header d-flex p-2 mr-3">
+         <div class="shadow-lg rounded bg-white card__item p-4 ">
+           <div class="card_item_header">
+             <!-- <div class="icon__header d-flex p-2 mr-3">
                <ion-icon name="person"></ion-icon>
-             </div>
+             </div> -->
              <div>
-               <p class="font-weight-bold"> Adults</p>
-              <small>Ages 35 and Above</small>
+               <h3 class="font-weight-bold"> Adults</h3>
+              <p>Ages 35 and Above</p>
              </div>
            </div>
            <hr class="mt-4 mb-4">
@@ -72,14 +72,14 @@
              Choose
            </button></router-link>
          </div>
-        <div class="shadow-lg rounded card__item p-4 ">
+        <div class="shadow-lg rounded bg-white card__item p-4 ">
            <div class="card_item_header d-flex">
-             <div class="icon__header d-flex align-items-center justify-content-center p-2 mr-3">
+             <!-- <div class="icon__header d-flex align-items-center justify-content-center p-2 mr-3">
                <ion-icon name="person"></ion-icon>
-             </div>
+             </div> -->
              <div>
-               <p class="font-weight-bold">Renew Membership</p>
-              <small>Already Registered</small>
+               <h3 class="font-weight-bold">Renew Membership</h3>
+              <p>Already Registered</p>
              </div>
            </div>
            <hr class="mt-4 mb-4">
@@ -140,6 +140,11 @@ import swal from 'sweetalert'
   font-weight: bold;
   border-radius: 20px;
   width: 100%;
+}
+.btn-choose:hover {
+  background: #ff7300 !important;
+  color: #3ee987;
+  transition: 0.4s;
 }
 .icon__header {
   border-radius: 1rem;

@@ -15,7 +15,7 @@
             <h3 class="text-white font-weight-bold">
               Handshake
             </h3>
-              <p class="w-50">
+              <p class="text-center">
                   Warm acceptance and affinity of people
               </p>
           </div>
@@ -33,7 +33,7 @@
             <h3 class="text-white font-weight-bold">
               Patriotism
             </h3>
-              <p class="w-50">
+              <p class="text-center">
                   Belief in country remains our#1.
               </p>
           </div>
@@ -51,7 +51,7 @@
             <h3 class="text-white font-weight-bold">
               Leadership
             </h3>
-              <p class="w-70">
+              <p class="text-center">
                   Leadership gives direction. We believe that effective transformational leadership with knowledge-driven protocols is the elixir to our nation-building enterprise.
               </p>
           </div>
@@ -69,7 +69,7 @@
             <h3 class="text-white font-weight-bold">
               Equity
             </h3>
-              <p class="w-50">
+              <p class="text-center">
                   To be fair and just in dealing with people and each other; this enriches our diversity and fosters unity.
               </p>
           </div>
@@ -86,7 +86,7 @@
               <h3 class="text-white font-weight-bold">
               Inclusion
             </h3>
-              <p class="w-50">
+              <p class="text-center">
                   Bringing everyone onboard gives us more strength, viability and stability.
               </p>
           </div>
@@ -104,7 +104,7 @@
               <h3 class="text-white font-weight-bold">
               Knowledge
             </h3>
-              <p class="w-50">
+              <p class="text-center">
                   Knowledge and its proper application powers the modern organization and society.
               </p>
           </div>
@@ -122,7 +122,7 @@
               <h3 class="text-white font-weight-bold">
               Transparency
             </h3>
-              <p class="w-100">
+              <p class="text-center">
                   Ours is Radical Transparency; this creates a convivial atmosphere for teamwork, cooperation, and collaboration; persons to devote time and efforts to constructive work.
               </p>
           </div>
@@ -140,7 +140,7 @@
               <h3 class="text-white font-weight-bold">
               Accountability
             </h3>
-              <p class="w-50">
+              <p class="text-center">
                   We believe that leaders owe the people a good audit of their stewardship to qualify as true leader.
               </p>
           </div>
@@ -158,7 +158,7 @@
               <h3 class="text-white font-weight-bold">
               Diversity
             </h3>
-              <p class="w-75">
+              <p class="text-center">
                   Drawing from variety and multiple sources enhance decision making, quality of leadership and endurance.
               </p>
           </div>
@@ -180,6 +180,12 @@ return{
 </script>
 
 <style scoped>
+.card-back p {
+  font-size: 1.1rem
+}
+/* .card-back h3 {
+  color: #ff7300 !important;
+} */
 .flip-card{
     transform-style: preserve-3d;
   transition: .5s .3s;

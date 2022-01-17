@@ -13,21 +13,18 @@
       <div class="priorities__container ">
         <div class="priorities__content ">
           <div
-            class="card-content shadow  bg-white" style="border-radius: 10px"
+            class="card-content shadow  bg-white"
             v-for="(priority, index) in priorities"
             :key="index">
-            <!-- <div
-              class="left_icon"
+            <div
+              class="p-2"
               :style="{ 'background-color': `${priority.color}` }"
             >
-              <h2 class="font-weight-bold">
-                {{ priority.id }}
-              </h2>
-            </div> -->
-            <div class="right__content ml-2">
-              <h5 class="font-weight-bold card-title text-darker">
+               <h5 class="font-weight-bold text-center card-title text-white text-uppercase">
                 {{ priority.title }}
               </h5>
+            </div>
+            <div class="right__content p-4">
               <p class="card-text">
                 {{ priority.description }}
               </p>
@@ -54,7 +51,10 @@
 
 <style scoped>
 .right__content p {
-  font-size: 0.9rem;
+  font-size: 1rem;
+}
+.priorities__container{
+  padding: 2rem 8rem;
 }
 .header{
   background: url(../../../../assets/img/priorities.jpg);
@@ -67,12 +67,12 @@
 }
   .priorities__content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
   }
   .card-content {
     background-color: transparent;
-    padding: 1rem;
+    /* padding: 1rem; */
   }
   .card-content:hover {
       transform: scale(1.1);

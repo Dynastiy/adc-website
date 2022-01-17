@@ -165,7 +165,7 @@
             <div class="row">
               <div class="col">
                 <input
-                  v-model="form_field.referral"
+                  v-model="form_field.referral_firstname"
                   type="text"
                   class="form-control"
                   id="exampleInputEmail1"
@@ -176,7 +176,7 @@
               </div>
               <div class="col">
                 <input
-                  v-model="form_field.referral"
+                  v-model="form_field.referral_lastname"
                   type="text"
                   class="form-control"
                   id="exampleInputEmail1"

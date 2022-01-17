@@ -6,7 +6,7 @@
           <h4 class="font-weight-bold mb-3">
             OUR MISSION
           </h4>
-          <p>
+          <p class="large__text">
             To reengineer a political party system that is free from domination
             by wheeler-dealer political elites, money- bags and “god-fathers
             through transparency and accountability; as well as propagate
@@ -20,7 +20,7 @@
           <h4 class="font-weight-bold mb-3">
             OUR VISION
           </h4>
-          <p>
+          <p class="large__text">
             To consolidate Nigeria's democracy beyond (flawed) elections,
             political rhetorics and theatrics, and usher in super power economy,
             just and resilient institutions, systems, and processes for a more
@@ -36,7 +36,7 @@
           <h4 class="font-weight-bold mb-3 mt-3">
             OUR MANIFESTO
           </h4>
-          <p>
+          <p class="large__text">
             To consolidate Nigeria's democracy beyond (flawed) elections,
             political rhetorics and theatrics, and usher in super power economy,
             just and resilient institutions, systems, and processes for a more
@@ -63,6 +63,9 @@ return{
   color: #fff !important;
   transition: 1s;
 } */
+.large__text{
+  font-size: 1.02rem !important;
+}
 .our-mission-div .fa {
   color: #ff7300
 }

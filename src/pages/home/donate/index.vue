@@ -73,7 +73,6 @@
               </div>
               <div class="col">
                 <input
-                  v-model="phone_number"
                   type="text"
                   class="form-control"
                   id="exampleInputEmail1"
@@ -120,6 +119,7 @@
     data() {
       return {
         country_nums: countries,
+        selected_country: '',
         form_wizard: true,
         amount: "",
         first_name: null,

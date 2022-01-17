@@ -1,33 +1,24 @@
 <template>
-  <div class="sticky-top">
-    <header class="simplified-nav shadow-sm">
-      <div class="navbar navbar-expand-sm navbar-light bg-white shadow-lg">
-        <router-link to="/" class="navbar-brand">
+  <div class="sticky-top pl-5 shadow-lg bg-white">
+    <header class="simplified-nav ">
+      <div class="logo__nav">
+        <router-link to="/" class="">
           <span class="logo-spread">
             <img src="@/assets/img/logo-spread.png" width="140" />
           </span>
         </router-link>
-        <button
-          class="navbar-toggler d-lg-none"
-          type="button"
-          data-toggle="collapse"
-          data-target="#collapsibleNavId"
-          aria-controls="collapsibleNavId"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-          <ul class="navbar-nav ml-auto align-items-center font-weight-bold">
-            <li class="nav-item">
-              <router-link to="/about" class="nav-link text-dark"
+      </div>
+      <div class="menu__options ">
+        <div class="menu__items">
+          <ul class="list-unstyled menu font-weight-bold">
+            <li class="">
+              <router-link to="/about" class=" text-dark"
                 >About Us
               </router-link>
             </li>
-            <li class="nav-item dropdown">
+            <li class=" dropdown">
               <a
-                class="nav-link text-dark dropdown-toggle"
+                class=" text-dark dropdown-toggle"
                 href="#"
                 id="dropdownId"
                 data-toggle="dropdown"
@@ -36,44 +27,50 @@
                 >Where we Stand</a
               >
               <div class="dropdown-menu bg-darker" aria-labelledby="dropdownId">
-                <a class="dropdown-item text-white" href="#">Our Manifesto</a>
-                <a class="dropdown-item text-white" href="#">Our Priorities</a>
-                <a class="dropdown-item text-white" href="#">ADC Objectives</a>
-                <a class="dropdown-item text-white" href="#">Cardinal Commitments</a>
-                <a class="dropdown-item text-white" href="#">Aims of the Party</a>
+                <router-link to="/our_manifesto" class="dropdown-item text-white"
+                  >Our Manifesto</router-link
+                >
+                <router-link to="/our_priorities" class="dropdown-item text-white"
+                  >Our Priorities</router-link
+                >
+                <router-link to="/adc_objectives" class="dropdown-item text-white"
+                  >ADC Objectives</router-link
+                >
+                <router-link to="/cardinal_commitments" class="dropdown-item text-white"
+                  >Cardinal Commitments</router-link
+                >
+                <router-link to="/aims_of_the_party" class="dropdown-item text-white"
+                  >Aims of the Party</router-link
+                >
               </div>
             </li>
-            <li class="nav-item">
-              <a href="https://adc-dn.org/" class="nav-link text-dark"
+            <li class="">
+              <a href="https://adc-dn.org/" class=" text-dark"
                 >ADC in Diaspora
               </a>
             </li>
-            <li class="nav-item">
-              <router-link to="/login" class="nav-link text-dark"
+            <li class="">
+              <router-link to="/login" class=" text-dark"
                 >Login
               </router-link>
             </li>
-            <li class="nav-item">
-              <router-link to="/news" class="nav-link text-dark"
+            <li class=" mr-3">
+              <router-link to="/news" class=" text-dark"
                 >News
               </router-link>
             </li>
-            <li class="nav-item bg-main py-1 px-4">
-              <router-link to="/join_adc" class="nav-link text-white"
+          </ul>
+        </div>
+        <div class="card__links">
+              <router-link to="/join_adc" class=" text-white btn bg-main btn22"
                 >JOIN ADC
               </router-link>
-            </li>
-            <li class="nav-item bg-darker py-1 px-4" @click="openDialog2">
-              <a href="javascript:void(0)" class="nav-link text-white"
+              <a href="javascript:void(0)" @click="openDialog2" class="btn bg-darker text-white btn22"
                 >TAKE ACTION
               </a>
-            </li>
-            <li class="nav-item bg-orange py-1 px-4">
-              <router-link to="/donate" class="nav-link text-white"
+              <router-link to="/donate" class="text-white btn bg-orange btn22"
                 >DONATE</router-link
               >
-            </li>
-          </ul>
         </div>
       </div>
     </header>
@@ -111,11 +108,14 @@
             </ul>
       </div>
     </div>
+    <mobile-nav />
   </div>
 </template>
 
 <script>
+ import mobileNav from "./mobile_nav.vue";
   export default {
+    components:{mobileNav},
     data() {
       return {};
     },
@@ -136,6 +136,39 @@
 </script>
 
 <style>
+.simplified-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.simplified-nav .dropdown-item:hover {
+  background:#ff7300 ;
+}
+.simplified-nav a:hover {
+  text-decoration: none;
+  color: #3ee987  !important;
+}
+.menu li  {
+  font-size: 0.9rem;
+}
+.menu__options ul {
+  margin-bottom: 0 !important;
+  display: flex;
+  /* width: 50% */
+  gap: 10px;
+}
+.menu__options {
+  display: flex;
+  align-items: center
+}
+.top-card {
+    font-weight: bold;
+}
+.btn22 {
+  border-radius: 0px !important;
+  padding: 0.7rem 3.2rem;
+  font-weight: bold;
+}
 .take-action-overlay {
     min-height: 100vh;
     position: fixed;
@@ -200,5 +233,10 @@
   /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
   .sticky + .content {
     padding-top: 60px;
+  }
+  @media (max-width:990px){
+    .simplified-nav {
+      display: none;
+    }
   }
 </style>

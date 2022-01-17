@@ -9,7 +9,10 @@
               <li><a href="https://adc-dn.org/">ADC in Diaspora</a></li>
               <li><router-link to="/our_priorities">Our Priorities</router-link></li>
               <li><router-link to="/our_manifesto">Our Manifesto</router-link></li>
-              <li><router-link to="/shop">Shop</router-link></li>
+              <li><a href="https://paystack.shop/adc-shop">
+                  Shop
+                  
+                </a></li>
               <li><router-link to="/news">News</router-link></li>
               <li><router-link to="/about/state_chapters">State Chapters</router-link></li>
               <li><router-link to="/about/our_candidates">Our Candidates</router-link></li>
@@ -93,9 +96,9 @@
         </div>
       </div>
       <div class="copyright">
-        <p>
-          <small>©Copyright 2021 African Democratic Congress</small>
-        </p>
+        
+          <p class="font-weight-bold">©Copyright 2021 African Democratic Congress</p>
+        
       </div>
     </footer>
   </div>
@@ -136,7 +139,8 @@
   }
   .links a {
     color: #fff;
-    font-size: 0.9rem;
+    font-size: 1.16rem;
+    line-height: 0.7rem;
   }
   .links a:hover {
     color: #3ee987;
@@ -157,7 +161,9 @@
     padding-left: 0;
   }
   .copyright {
-    background: #009541;
+    background: #3ee987;
+    color: #000;
+    font-weight: bold;
     padding: 0.8rem;
     text-align: center;
   }
