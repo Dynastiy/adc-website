@@ -7,7 +7,7 @@
       <div class="cards">
         <router-link to="/about/party_structure"><div class="party">Party Structure</div></router-link>
          <router-link to="/about/chairmans_message"> <div class="chairman">Chairman's Message</div></router-link>
-        <router-link to="/about/obasanjos_message"><div class="obasanjo">Obasanjo's Message</div></router-link>
+        <!-- <router-link to="/about/obasanjos_message"><div class="obasanjo">Obasanjo's Message</div></router-link> -->
         <router-link to="/about/our_candidates"><div class="candidates">Our Candidates</div></router-link>
         <router-link to="/about/state_chapters"> <div class="states">State Chapters</div></router-link>
         <router-link to="/about/contact_us"><div class="contact">Contact Us</div></router-link>

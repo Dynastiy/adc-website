@@ -158,8 +158,9 @@
               />
               <div class="carousel-caption d-md-flex">
                 <h1>
-                  Solar power electricity <br />
-                  is <span class="nigeria">an option</span>
+                  Renewable energy <br />
+                  is <span class="nigeria">an undebateable</span> <br/>
+                  solution.
                 </h1>
               </div>
             </div>
@@ -171,7 +172,8 @@
               />
               <div class="carousel-caption d-md-flex">
                 <h1>
-                  Children formal education<br />
+                  Formal education<br />
+                  for Children <br/>
                   is a <span class="nigeria">priority </span>
                 </h1>
               </div>
@@ -182,12 +184,12 @@
                 class="d-block w-100"
                 alt="Image Here"
               />
-              <div class="carousel-caption d-md-flex">
+              <!-- <div class="carousel-caption d-md-flex">
                 <h1>
                   Agriculture development<br />
                   is a <span class="nigeria">major initiative </span>
                 </h1>
-              </div>
+              </div> -->
             </div>
             <div class="carousel-item" data-interval="3000">
               <img
@@ -197,7 +199,7 @@
               />
               <div class="carousel-caption d-md-flex">
                 <h1>
-                  Technology advancement throughout<span class="nigeria">
+                  Focus on Technology <br/> advancement throughout<span class="nigeria"> <br/>
                     our Nation</span
                   >
                 </h1>

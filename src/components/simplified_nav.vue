@@ -139,7 +139,7 @@
 .simplified-nav {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .simplified-nav .dropdown-item:hover {
   background:#ff7300 ;
@@ -155,7 +155,7 @@
   margin-bottom: 0 !important;
   display: flex;
   /* width: 50% */
-  gap: 10px;
+  gap: 20px;
 }
 .menu__options {
   display: flex;

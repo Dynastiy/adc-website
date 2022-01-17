@@ -16,13 +16,16 @@
             class="card-content shadow  bg-white"
             v-for="(priority, index) in priorities"
             :key="index">
+            <div>
+              <img :src="priority.avatar" alt="Image Here" srcset="" width="100%">
+            </div>
             <div
               class="p-2"
               :style="{ 'background-color': `${priority.color}` }"
             >
-               <h4 class="font-weight-bold text-center m-0 card-title text-white text-uppercase">
+               <h5 class="font-weight-bold text-center m-0 card-title text-white text-uppercase">
                 {{ priority.title }}
-              </h4>
+              </h5>
             </div>
             <div class="right__content p-4">
               <p class="card-text">
@@ -51,7 +54,7 @@
 
 <style scoped>
 .right__content p {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .priorities__container{
   padding: 2rem 8rem;
@@ -67,8 +70,8 @@
 }
   .priorities__content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
   }
   .card-content {
     background-color: transparent;

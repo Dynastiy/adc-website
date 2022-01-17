@@ -29,7 +29,7 @@
         </ul>
       </div>
     </div>
-    <div class="content-tab">
+    <div class="content-tab bg-light-accent">
       <router-view/>
     </div>
     <app-footer/>
