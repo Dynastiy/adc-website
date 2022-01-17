@@ -80,8 +80,8 @@
           <div class="col-md-2 ml-auto">
             <h3>contact</h3>
             <ul class="list-unstyled links">
-              <li><a href="#">info@adc.com.ng</a></li>
-              <li><a href="#">+234 812 9855 556</a></li>
+              <li> <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@adc.com.ng">info@adc.com.ng</a></li>
+              <li> <i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+234 812 9855 556">+234 812 9855 556</a></li>
               <li>
                 <a href="#"
                   >ADC Global Campus and World headquarters. 4 Lusaka St., Wuse
@@ -120,6 +120,9 @@
     background: #224f5a;
     color: #fff;
   }
+  .footer-14398 ul li {
+    padding: 0.2rem 0;
+  }
   .footer-site-logo {
     color: #fff;
     font-size: 26px;
@@ -135,12 +138,12 @@
     text-transform: uppercase;
   }
   .links li {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
   }
   .links a {
     color: #fff;
     font-size: 1.16rem;
-    line-height: 0.7rem;
+    line-height: 0.5rem;
   }
   .links a:hover {
     color: #3ee987;
@@ -154,7 +157,7 @@
   .link-menu a {
     color: #fff;
     display: inline-block;
-    padding: 10px;
+    padding: 5px;
   }
 
   .link-menu a .nav-left li :first-child a {
