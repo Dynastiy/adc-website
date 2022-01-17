@@ -20,9 +20,9 @@
               class="p-2"
               :style="{ 'background-color': `${priority.color}` }"
             >
-               <h5 class="font-weight-bold text-center card-title text-white text-uppercase">
+               <h4 class="font-weight-bold text-center m-0 card-title text-white text-uppercase">
                 {{ priority.title }}
-              </h5>
+              </h4>
             </div>
             <div class="right__content p-4">
               <p class="card-text">
