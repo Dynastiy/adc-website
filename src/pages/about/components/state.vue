@@ -8,7 +8,7 @@
             <h6 class="font-weight-bold card-title mt-3"> {{item.name}} State </h6>
             <p class="small text-orange font-weight-bold text-capitalize"> {{ item.chairman }} </p>
             <!-- <a href="javascript:void(0)" class="text-right text-main small"></a> -->
-            <!-- <router-link :to="'/about/state_chapters/'+item.id "> View State </router-link> -->
+            <router-link :to="'/about/state_chapters/'+item.id "> View State </router-link>
           </div>
         </div>
       </div>
@@ -18,11 +18,11 @@
 </template>
 
 <script>
-import {states} from '@/assets/js/states/index.js';
+import {getUserbyId} from '@/assets/js/states/index.js';
   export default {
     data() {
       return {
-          states: states
+          state: getUserbyId
       };
     },
    methods:{

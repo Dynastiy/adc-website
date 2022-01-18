@@ -1,7 +1,7 @@
 <template>
-  <div class="sticky-top pl-5 shadow-lg bg-white">
+  <div class="sticky-top shadow-lg bg-white">
     <header class="simplified-nav ">
-      <div class="logo__nav">
+      <div class="logo__nav pl-5 ">
         <router-link to="/" class="">
           <span class="logo-spread">
             <img src="@/assets/img/logo-spread.png" width="140" />

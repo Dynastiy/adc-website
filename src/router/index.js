@@ -280,6 +280,15 @@ const routes = [{
                 component: () =>
                     import ( /* webpackChunkName: "about" */ '../pages/about/components/state_chapters.vue'),
             },
+            {
+                path: '/about/state_chapters',
+                name: 'State Chapters',
+                // route level code-splitting
+                // this generates a separate chunk (about.[hash].js) for this route
+                // which is lazy-loaded when the route is visited.
+                component: () =>
+                    import ( /* webpackChunkName: "about" */ '../pages/about/components/state_chapters.vue'),
+            },
         ]
     },
 

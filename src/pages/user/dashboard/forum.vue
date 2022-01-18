@@ -76,18 +76,20 @@
       >
         <div class="d-flex align-items-center justify-content-between mb-3">
           <div class="d-flex align-items-center">
-            <img
-              src="https://cdn1.iconfinder.com/data/icons/interface-elements-vii-1/512/Person-256.png"
+            <img v-if="forum.user"
+              :src="forum.user.profile_picture"
               alt=""
               width="25"
               height="25"
               class="mr-3 rounded-circle"
             />
-            <h5 class="font-weight-bold text-darker m-0">Name of Poster</h5>
+            <h5 class="font-weight-bold text-darker m-0" v-if="forum.user"> {{forum.user.first_name}} {{forum.user.last_name}} <br>
+            <small class="small text-muted" v-if="forum.user"> {{forum.user.email}} </small> </h5>
+            
           </div>
-          <p class="text-muted small m-0">12 December, 2021</p>
+          <!-- <p class="text-muted small m-0"> {{forum.user.created_at}} </p> -->
         </div>
-        <p class="small text-muted">
+        <p class="">
           {{ forum.content }}
         </p>
         <hr />
@@ -151,12 +153,12 @@
     async created() {
       this.getForum();
     },
-    //  computed: {
-    //     isLoggedIn: function() {
-    //       return this.$store.getters.isLoggedIn;
-    //     }
-    //   },
+    
   };
 </script>
 
-<style scoped></style>
+<style scoped>
+small{
+  font-size: 0.8rem;
+}
+  </style>

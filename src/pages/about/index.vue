@@ -104,7 +104,7 @@
   }
   @media (max-width : 990px){
     .content-tab {
-      padding: 2rem 1rem;
+      padding: 2rem 1rem !important;
     }
   }
 </style>

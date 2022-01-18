@@ -134,7 +134,6 @@
             <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="7"></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active" data-interval="3000">
@@ -160,7 +159,7 @@
                 <h1>
                   Renewable energy <br />
                   is <span class="nigeria">an undebateable</span> <br/>
-                  solution.
+                  solution
                 </h1>
               </div>
             </div>
@@ -178,19 +177,19 @@
                 </h1>
               </div>
             </div>
-            <div class="carousel-item" data-interval="3000">
+            <!-- <div class="carousel-item" data-interval="3000">
               <img
                 src="@/assets/img/image1.jpg"
                 class="d-block w-100"
                 alt="Image Here"
               />
-              <!-- <div class="carousel-caption d-md-flex">
+              <div class="carousel-caption d-md-flex">
                 <h1>
                   Agriculture development<br />
                   is a <span class="nigeria">major initiative </span>
                 </h1>
-              </div> -->
-            </div>
+              </div>
+            </div> -->
             <div class="carousel-item" data-interval="3000">
               <img
                 src="@/assets/img/image2.jpg"
@@ -661,6 +660,9 @@
   }
 
   @media (max-width: 990px) {
+    .carousel-caption {
+    top: 13%
+  }
     .carousel img {
       height: 400px;
     }
@@ -679,10 +681,11 @@
     }
     .carousel-caption h1 {
       line-height: 2.5rem;
-      font-size: 2rem;
+      font-size: 3rem;
+      /* width: 75%; */
     }
     .nigeria {
-      font-size: 2rem !important;
+      font-size: 3rem !important;
     }
     #simplified2, .sticky {
       display: none,

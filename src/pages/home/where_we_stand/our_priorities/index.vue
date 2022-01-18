@@ -77,10 +77,10 @@
     background-color: transparent;
     /* padding: 1rem; */
   }
-  .card-content:hover {
+  /* .card-content:hover {
       transform: scale(1.1);
       transition: 0.4s;
-  }
+  } */
   .left_icon {
     /* padding: 0.3rem; */
     width: 3rem;
@@ -94,6 +94,9 @@
     color: #fff;
   }
   @media (max-width: 990px){
+    .priorities__container{
+      padding: 2rem 1rem;
+    }
       .priorities__content {
           display: unset;
       }

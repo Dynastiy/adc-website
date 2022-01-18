@@ -16,13 +16,17 @@
         <div class="item1 bg-darker text-white p-3 rounded">
           <h6 class="font-weight-bold">Personal Details</h6>
           <hr class="bg-accent mt-4" />
-          <img :src= user.profile_picture alt="Image Here" width="50%^" />
+          <img :src= user.profile_picture alt="Image Here"
+          width="100"
+              height="100"
+              class="rounded-circle" />
           <ul>
             <li>
               <span class="text-accent">Name:</span> {{ user.first_name }}
               {{ user.last_name }}
             </li>
             <li><span class="text-accent">Email: </span>{{ user.email }}</li>
+             <li><span class="text-accent">Phone Number: </span>{{ user.phone_number }}</li>
             <li><span class="text-accent">Gender:</span> {{ user.gender }}</li>
             <li><span class="text-accent">State:</span> {{ user.state }}</li>
             <li>
@@ -88,11 +92,11 @@
            <div>
             <div class="d-flex justify-content-between my-3">
               <h6>Handbook</h6>
-                <button class="btn bg-accent py-1 font-weight-bold px-4">DOWNLOAD</button>
+                <button class="btn bg-accent py-1 font-weight-bold px-4" @click="showInfo">DOWNLOAD</button>
             </div>
             <div class="d-flex justify-content-between">
               <h6>Constitution</h6>
-              <button class="btn bg-accent py-1 font-weight-bold px-4">DOWNLOAD</button>
+              <a href="@/assets/docs/ADC_constitution.docx" download=""><button class="btn bg-accent py-1 font-weight-bold px-4" >DOWNLOAD</button></a>
             </div>
           </div>
         </div>
@@ -162,6 +166,14 @@
           button: "Go Home!",
         });
       },
+      showInfo(){
+        swal({
+            title: "Error!",
+            text: "Not Available yet",
+            icon: "error",
+            button: "Go Back!",
+          });
+      }
     },
     async created() {
       this.getUser();

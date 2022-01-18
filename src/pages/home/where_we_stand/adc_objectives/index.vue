@@ -11,81 +11,59 @@
    
     <!-- ADC Objectives -->
     <div class="Adc_objectives bg-light-accent">
-      <div class="content container">
+      <div class="content container w-50">
         <div class="sub_Adc_objectives">
           <!-- objective one -->
           <div class="objective_one_to_ten">
-            <!-- <i
-                class="fa fa-check big_circle_tick_Right"
-                aria-hidden="true"
-              ></i> -->
             <p>
               Maintain and preserve the integrity, unity and sovereignty of the
               Federal Republic of Nigeria as one indivisible political entity
             </p>
           </div>
+          <hr class="bg-orange">
           <!-- objective two -->
           <div class="objective_one_to_ten">
-            <!-- <i
-                class="fa fa-check big_circle_tick_Right"
-                aria-hidden="true"
-              ></i> -->
             <p>
               Promote national integration and harmonious co-existence of the
               diverse communities of our society.
             </p>
           </div>
+          <hr class="bg-orange">
           <!-- objective three -->
           <div class="objective_one_to_ten">
-            <!-- <i
-                class="fa fa-check big_circle_tick_Right"
-                aria-hidden="true"
-              ></i> -->
             <p>
               Ensure genuine restoration, permanent entrenchment and practice of
               democracy, the rule of law, equity and social justice.
             </p>
           </div>
+          <hr class="bg-orange">
           <!-- objective four -->
           <div class="objective_one_to_ten">
-            <!-- <i
-                class="fa fa-check big_circle_tick_Right"
-                aria-hidden="true"
-              ></i> -->
             <p>
               Ensure meritocracy, where only competent, dedicated, patriotic and
               credible candidates are sponsored for elective offices at all
               levels of governance.
             </p>
           </div>
+          <hr class="bg-orange">
           <!-- objective five -->
           <div class="objective_one_to_ten">
-            <!-- <i
-                class="fa fa-check big_circle_tick_Right"
-                aria-hidden="true"
-              ></i> -->
             <p>
               Uphold the independence of the judiciary, promote free press, as
               well as uphold the freedom of speech and of association.
             </p>
           </div>
+          <hr class="bg-orange">
           <!-- objective six -->
           <div class="objective_one_to_ten">
-            <!-- <i
-                class="fa fa-check big_circle_tick_Right"
-                aria-hidden="true"
-              ></i> -->
             <p>
               Build an egalitarian society founded on the principles of freedom,
               equality and justice.
             </p>
           </div>
+          <hr class="bg-orange">
           <!-- objective seven -->
           <div class="objective_one_to_ten">
-            <!-- <i
-                class="fa fa-check big_circle_tick_Right"
-                aria-hidden="true"
-              ></i> -->
             <p>
               Ensure that the programs of the Party at all levels conform at all
               times with the fundamental objectives, and directive principles of
@@ -94,35 +72,26 @@
               Ethic, Aims and Objectives of the Constitution of the Party.
             </p>
           </div>
+          <hr class="bg-orange">
           <!-- objective eight -->
           <div class="objective_one_to_ten">
-            <!-- <i
-                class="fa fa-check big_circle_tick_Right"
-                aria-hidden="true"
-              ></i> -->
             <p>
               Promote mutual respect for and understanding of the religious,
               traditional and cultural heritage of the various communities of
               our nation.
             </p>
           </div>
+          <hr class="bg-orange">
           <!-- objective nine -->
           <div class="objective_one_to_ten">
-            <!-- <i
-                class="fa fa-check big_circle_tick_Right"
-                aria-hidden="true"
-              ></i> -->
             <p>
               Build, promote, sustain and consolidate political, economic and
               social dignity, independence and self- respect for all Nigerians.
             </p>
           </div>
+          <hr class="bg-orange">
           <!-- objective ten -->
           <div class="objective_one_to_ten" id="objective_ten">
-            <!-- <i
-                class="fa fa-check big_circle_tick_Right"
-                aria-hidden="true"
-              ></i> -->
             <p>
               Eradicate illiteracy and celebration of mediocrity in our society
               and promote learning and research, science and technology,
@@ -198,21 +167,25 @@
     font-size: 5rem;
   }
   .sub_Adc_objectives {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
-    text-align: center;
+    text-align: center; */
     
+  }
+  .Co-operation_And_Partnerships p {
+    font-size: 1.03rem;
   }
   .objective_one_to_ten {
     padding: 1rem;
     /* background-color: #fff; */
-    background: rgba(255, 255, 255, 0.5);
+    /* background: rgba(100, 92, 92, 0.5); */
     /* border-radius: 10px; */
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 1.1rem;
     vertical-align: middle;
     /* backdrop-filter: blur(5px); */
-    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1); */
     /* border-top: 1px solid rgba(255, 255, 255, 0.2); */
     /* border-left: 1px solid rgba(255, 255, 255, 0.2); */
     /* box-shadow: 0px 0px 3px 0px rgba(225, 225, 225, 0.2); */

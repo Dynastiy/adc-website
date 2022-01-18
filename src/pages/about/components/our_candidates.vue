@@ -21,7 +21,8 @@
       <div class="image-area" v-for="candidate of candidates" :key="candidate.id">
 		<div class="img-wrapper">
 			<img :src="candidate.avatar" alt="Aspirant">
-			<h3 class="font-weight-bold"> {{ candidate.name }} <br> <span class="small small-mt-0 text-orange"> {{ candidate.aspiration }} </span> </h3>
+			<h6 class="font-weight-bold card-title"> {{ candidate.name }} <br> <span class="small small-mt-0 font-weigh-bold text-orange"> {{ candidate.aspiration }} </span>
+			<br> <a :href="candidate.website" class="text-white small text-lowercase"> {{ candidate.website }} </a> </h6>
       
 			<ul>
 				<li><a :href="candidate.twitter"> <i class="fa fa-twitter" aria-hidden="true"></i> </a></li>
@@ -101,7 +102,7 @@ import candidates from '@/assets/js/candidates.js'
 	transform: scale(1.1);
 }
 
-.img-wrapper h3
+.img-wrapper h6
 {
 	background: #224f5a;
 	/* font-family: Poppins; */
@@ -109,16 +110,17 @@ import candidates from '@/assets/js/candidates.js'
 	text-align: center;
 	text-transform: uppercase;
 	margin: 0;
+	line-height: 20px;
 	padding: 8px 0;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
 	transform: perspective(400px) rotateY(90deg);
 	transform-origin: right;
-	transition: 1s;
+	transition: 0.4s;
 }
 
-.img-wrapper:hover h3
+.img-wrapper:hover h6
 {
 	transform: perspective(400px) rotateY(0deg);
 }
@@ -153,22 +155,26 @@ import candidates from '@/assets/js/candidates.js'
 
 .img-wrapper:hover ul li:nth-child(1)
 {
-	transition-delay: .2s;
+	transition-delay: .1s;
 }
 
 .img-wrapper:hover ul li:nth-child(2)
 {
-	transition-delay: .6s;
+	transition-delay: .2s;
 }
 
 .img-wrapper:hover ul li:nth-child(3)
 {
-	transition-delay: .8s;
+	transition-delay: .4s;
 }
 
 .img-wrapper:hover ul li:nth-child(4)
 {
-	transition-delay: 1s;
+	transition-delay: .6s;
+}
+.img-wrapper:hover ul li:nth-child(5)
+{
+	transition-delay: .8s;
 }
 
 .img-wrapper ul li a

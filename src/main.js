@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 // import 'animate.css';
 import VueHtmlToPaper from 'vue-html-to-paper';
+import {states }from './assets/js/states'
 
 import VueTelInput from 'vue-tel-input'
 
@@ -28,5 +29,6 @@ Vue.config.productionTip = false
 new Vue({
     router,
     store,
+    states,
     render: h => h(App)
 }).$mount('#app')

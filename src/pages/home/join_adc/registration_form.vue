@@ -3,7 +3,7 @@
     <simplified-nav />
     <div class="pt-5 bg-light-accent pb-5">
       <main
-        class="content container w-50 bg-white shadow-lg p-5 bg-light-accent rounded"
+        class="content form__container container w-50 bg-white shadow-lg p-5 bg-light-accent rounded"
       >
         <h1 class="text-center text-darker font-weight-bold mb-5">
           Registration Form
@@ -482,6 +482,9 @@
   @media (max-width: 990px) {
     .content {
       padding: 2rem !important;
+    }
+    .form__container {
+      width: 85% !important;
     }
   }
 </style>

@@ -96,7 +96,7 @@ import swal from 'sweetalert'
           
             swal({
             title: "Error!",
-            text: "We couldn't verify your login details.",
+            text: "Email or phone number or password incorrect",
             icon: "error",
             button: "Go Back!",
           });

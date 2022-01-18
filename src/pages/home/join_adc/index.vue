@@ -196,5 +196,8 @@ import swal from 'sweetalert'
     .reg__cards div {
       margin-bottom: 20px;
     }
+    .content-tab.container {
+      padding: 0.2rem 2rem;
+    }
   }
 </style>
