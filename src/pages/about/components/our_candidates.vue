@@ -224,5 +224,12 @@ import candidates from '@/assets/js/candidates.js'
     .aspirants div {
       margin-bottom: 30px;
     }
+	.image-area
+{
+	top: -25% !important;
+	/* left: 50%;
+	transform: translate(-50%, -50%); */
+	position: relative;
+}
   }
 </style>
