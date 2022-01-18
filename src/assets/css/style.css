@@ -258,7 +258,7 @@ label{
 #arrow-icon {
     color: #ffffff;
     border-radius: 0;
-    background-color: #00a54f;
+    /* background-color: #00a54f; */
     /* padding: 11px 15px 12.5px 15px; */
     /* float: right; */
 }

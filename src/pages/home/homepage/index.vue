@@ -301,9 +301,9 @@
         </div>
       </div>
       <div class="search">
-        <h3 class="search-text">Find State Chairperson</h3>
+        <h3 class="search-text">Find Your State Chairperson</h3>
 
-        <div class="input-group mb-3">
+        <div class="input-group mb-3 shadow-lg">
           <div class="input-group-prepend">
             <span class="input-group-text" id="search-icon"
               ><i class="fa fa-search" aria-hidden="true"></i
@@ -314,15 +314,19 @@
             class="form-control"
             aria-label="State Chairperson"
             placeholder="Search State"
+            v-model="searchQuery"
           />
-          <div class="input-group-append">
-            <span class="input-group-text" id="arrow-icon">
+          <div class="input-group-append ">
+            <span class="input-group-text bg-darker" id="arrow-icon">
               <i class="fa fa-arrow-right" aria-hidden="true"></i
             ></span>
           </div>
         </div>
       </div>
     </div>
+<div v-if="ress">
+  <div  v-for="r of resultQuery" :key="r.id">{{r.title}} result</div>
+</div>
 
     <!-- <hero-text/> -->
 
@@ -389,6 +393,7 @@
     components: {
       mobileNav,
       paystack,
+
       aboutus,
       simplifiedNav,
       coreValues,
@@ -397,6 +402,15 @@
     },
     data() {
       return {
+        searchQuery: null,
+        ress: false,
+      resources: [
+        { id: 1, title: "javascript for dummies" },
+        { id: 2, title: "vue for dummies" },
+        { id: 3, title: "dos for dummies" },
+        { id: 4, title: "windows for dummies" },
+        { id: 5, title: "html for dummies" }
+      ],
         username: "",
         showUsername: true,
         slides: 5,
@@ -477,6 +491,19 @@
           text += possible.charAt(Math.floor(Math.random() * possible.length));
         return text;
       },
+      resultQuery() {
+      if (this.searchQuery) {
+        return this.resources.filter(item => {
+          return this.searchQuery
+            .toLowerCase()
+            .split(" ")
+            .every(v => item.title.toLowerCase().includes(v));
+            
+        });
+      } else {
+        return this.resources;
+      }
+    }
     },
   };
 </script>

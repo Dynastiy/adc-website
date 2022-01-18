@@ -1,10 +1,9 @@
 <template>
   <div>
-    <div class="row">
+    <div class="row bg-white p-3">
       <div class="col-md-4 shadow-sm px-5 py-5">
         <h2 class="font-weight-bold text-main">Contact Us</h2>
-        <h6 class="text-main mb-3">We'd love to hear from you</h6>
-        <div>
+        <div class="">
           <div class="d-flex align-items-center mb-3">
             <ion-icon size="large" name="pin"></ion-icon>
             <p class="small mb-0 ml-2">
@@ -67,7 +66,7 @@
               rows="3"
             ></textarea>
           </div>
-          <button class="bg-main  text-white w-100 btn">SEND</button>
+          <button class="bg-darker text-white w-100 btn font-weight-bold">SEND</button>
         </form>
       </div>
     </div>
@@ -75,6 +74,10 @@
 </template>
 
 <style scoped>
+label {
+  font-size: 1.02rem !important;
+  /* font-weight: bold; */
+}
 .form-control:focus {
     border: 1px solid #ced4da !important;
     box-shadow: none;
