@@ -329,9 +329,9 @@
 
     <!-- <hero-text/> -->
 
-    <div class="content">
-      <aboutus />
-
+    
+      <aboutus  />
+<div class="content">
       <core-values />
     </div>
 
@@ -661,7 +661,7 @@
 
   @media (max-width: 990px) {
     .carousel-caption {
-    top: 13%
+    top: 25%
   }
     .carousel img {
       height: 400px;
@@ -682,6 +682,8 @@
     .carousel-caption h1 {
       line-height: 2.5rem;
       font-size: 3rem;
+      letter-spacing: -3px;
+      text-transform:initial;
       /* width: 75%; */
     }
     .nigeria {

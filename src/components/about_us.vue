@@ -1,7 +1,8 @@
 <template>
-    <div>
-        <div class="about-us">
-        <div class="our-mission-div rounded-lg animate__animated animate__backInLeft">
+    <div class="">
+      <div class=" bg-light-accent mt-5">
+        <div class="about-us content">
+        <div class="our-mission-div rounded bg-white animate__animated animate__backInLeft">
           <i class="fa fa-compass fa-4x" aria-hidden="true"></i>
           <h4 class="font-weight-bold mb-3">
             OUR MISSION
@@ -15,7 +16,7 @@
           </p>
         </div>
 
-        <div class="our-vision-div rounded animate__animated animate__backInUp">
+        <div class="our-vision-div rounded bg-white animate__animated animate__backInUp">
           <i class="fa fa-eye fa-4x" aria-hidden="true"></i>
           <h4 class="font-weight-bold mb-3">
             OUR VISION
@@ -28,11 +29,8 @@
           </p>
         </div>
 
-        <div class="our-manifesto-div rounded animate__animated animate__backInRight">
-          <i
-            class="fa fa-file-o  fa-4x"
-            aria-hidden="true"
-          ></i>
+        <div class="our-manifesto-div rounded bg-white animate__animated animate__backInRight">
+         <img src="@/assets/img/icons/manifesto.svg" alt="" width="10%" srcset="">
           <h4 class="font-weight-bold mb-3 mt-3">
             OUR MANIFESTO
           </h4>
@@ -44,6 +42,7 @@
           </p>
         </div>
       </div>
+    </div>
     </div>
 </template>
 

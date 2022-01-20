@@ -1,5 +1,5 @@
 <template>
-  <div class="sticky-top shadow-lg bg-white">
+  <div class="sticky-top shadow-lg bg-white simp-nav">
     <header class="simplified-nav ">
       <div class="logo__nav pl-5 ">
         <router-link to="/" class="">

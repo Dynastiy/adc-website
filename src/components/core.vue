@@ -11,11 +11,11 @@
                 <img src="@/assets/img/icons/Handshake.svg"  alt="">
               </div>
           </div>
-          <div class="card-back">
-            <h3 class="text-white font-weight-bold">
+          <div class="card-back text-center">
+            <h3 class="text-accent font-weight-bold">
               Handshake
             </h3>
-              <p class="text-center">
+              <p class="">
                   Warm acceptance and affinity of people
               </p>
           </div>
@@ -29,11 +29,11 @@
                 <img src="@/assets/img/icons/Patriotism.svg"  alt="">
               </div>
           </div>
-          <div class="card-back">
-            <h3 class="text-white font-weight-bold">
+          <div class="card-back text-center">
+            <h3 class="text-accent font-weight-bold">
               Patriotism
             </h3>
-              <p class="text-center">
+              <p class="">
                   Belief in country remains our#1.
               </p>
           </div>
@@ -47,11 +47,11 @@
                  <img src="@/assets/img/icons/Leadership.svg"  alt="">
                </div>
           </div>
-          <div class="card-back">
-            <h3 class="text-white font-weight-bold">
+          <div class="card-back text-center">
+            <h3 class="text-accent font-weight-bold">
               Leadership
             </h3>
-              <p class="text-center">
+              <p class="">
                   Leadership gives direction. We believe that effective transformational leadership with knowledge-driven protocols is the elixir to our nation-building enterprise.
               </p>
           </div>
@@ -65,11 +65,11 @@
                 <img src="@/assets/img/icons/Equity.svg"  alt="">
               </div>
           </div>
-          <div class="card-back">
-            <h3 class="text-white font-weight-bold">
+          <div class="card-back text-center">
+            <h3 class="text-accent font-weight-bold">
               Equity
             </h3>
-              <p class="text-center">
+              <p class="">
                   To be fair and just in dealing with people and each other; this enriches our diversity and fosters unity.
               </p>
           </div>
@@ -82,11 +82,11 @@
               <div class="text-right">
                 <img src="@/assets/img/icons/Inclusion.svg"  alt=""> </div>         
               </div>
-          <div class="card-back">
-              <h3 class="text-white font-weight-bold">
+          <div class="card-back text-center">
+              <h3 class="text-accent font-weight-bold">
               Inclusion
             </h3>
-              <p class="text-center">
+              <p class="">
                   Bringing everyone onboard gives us more strength, viability and stability.
               </p>
           </div>
@@ -100,11 +100,11 @@
                 <img src="@/assets/img/icons/Knowledge.svg"  alt="">
               </div>
           </div>
-          <div class="card-back">
-              <h3 class="text-white font-weight-bold">
+          <div class="card-back text-center">
+              <h3 class="text-accent font-weight-bold">
               Knowledge
             </h3>
-              <p class="text-center">
+              <p class="">
                   Knowledge and its proper application powers the modern organization and society.
               </p>
           </div>
@@ -118,11 +118,11 @@
                 <img src="@/assets/img/icons/Transparency.svg"  alt="">
               </div>
           </div>
-          <div class="card-back">
-              <h3 class="text-white font-weight-bold">
+          <div class="card-back text-center">
+              <h3 class="text-accent font-weight-bold">
               Transparency
             </h3>
-              <p class="text-center">
+              <p class="">
                   Ours is Radical Transparency; this creates a convivial atmosphere for teamwork, cooperation, and collaboration; persons to devote time and efforts to constructive work.
               </p>
           </div>
@@ -136,11 +136,11 @@
                 <img src="@/assets/img/icons/Accountability.svg"  alt="">
               </div>
           </div>
-          <div class="card-back">
-              <h3 class="text-white font-weight-bold">
+          <div class="card-back text-center">
+              <h3 class="text-accent font-weight-bold">
               Accountability
             </h3>
-              <p class="text-center">
+              <p class="">
                   We believe that leaders owe the people a good audit of their stewardship to qualify as true leader.
               </p>
           </div>
@@ -154,11 +154,11 @@
                 <img src="@/assets/img/icons/Diversity.svg"  alt="">
               </div>
           </div>
-          <div class="card-back">
-              <h3 class="text-white font-weight-bold">
+          <div class="card-back text-center">
+              <h3 class="text-accent font-weight-bold">
               Diversity
             </h3>
-              <p class="text-center">
+              <p class="">
                   Drawing from variety and multiple sources enhance decision making, quality of leadership and endurance.
               </p>
           </div>

@@ -21,12 +21,12 @@
       <div class="image-area" v-for="candidate of candidates" :key="candidate.id">
 		<div class="img-wrapper">
 			<img :src="candidate.avatar" alt="Aspirant">
-			<h6 class="font-weight-bold card-title"> {{ candidate.name }} <br> <span class="small small-mt-0 font-weigh-bold text-orange"> {{ candidate.aspiration }} </span>
-			<br> <a :href="candidate.website" class="text-white small text-lowercase"> {{ candidate.website }} </a> </h6>
+			<h6 class="font-weight-bold card-title text-capitalize"> {{ candidate.name }} <br> <span class="small small-mt-0 font-weigh-bold text-orange"> {{ candidate.aspiration }} </span>
+			<br> <a :href="candidate.href" class="text-white small text-lowercase"> {{ candidate.website }} </a> </h6>
       
 			<ul>
 				<li><a :href="candidate.twitter"> <i class="fa fa-twitter" aria-hidden="true"></i> </a></li>
-				<li><a :href="candidate.website"> <i class="fa fa-internet-explorer" aria-hidden="true"></i> </a> </li>
+				<li><a :href="candidate.href"> <img src="@/assets/img/icons/website.svg" class="immg" alt="" > </a> </li>
 				<li><a :href="candidate.instagram"> <i class="fa fa-instagram" aria-hidden="true"></i> </a></li>
 				<li><a :href="candidate.email"> <i class="fa fa-envelope" aria-hidden="true"></i></a></li>
 				<li><a :href="candidate.facebook">  <i class="fa fa-facebook" aria-hidden="true"></i> </a></li>
@@ -51,6 +51,10 @@ import candidates from '@/assets/js/candidates.js'
 </script>
 
 <style scoped>
+.immg {
+	width: 18px !important;
+	height: 18px !important;
+}
 .small-mt-0 {
 	margin-top: -50px !important;
 }
