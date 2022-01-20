@@ -72,10 +72,56 @@
               </div>
             </div>
           </div>
-          <div class="row">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Age</label>
+           <select
+                id="mySelect2"
+                class="custom-select"
+                v-model="form_field.state"
+              >
+                <option
+                  class="text-capitalize"
+                  v-for="(n, i) in 65"
+                  :key="i"
+                >
+                  {{ n + 17 }}
+                </option>
+              </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Country</label>
+           <select id="mySelect3" class="custom-select form-control">
+                  <option value="0" selected>  Choose... </option>
+                  <option
+                    v-for="(country_num, index) in country_nums"
+                    :key="index"
+                    :value="country_num.nicename"
+                    class="text-capitalize"
+                    @change="getCountry()"
+                  >
+                    {{ country_num.nicename }}
+                  </option>
+                </select>
+          </div>
+          
+            <div class="row" v-if="nigeria">
             <div class="form-group col">
-              <label for="inputState">What skill would you like to volunteer?</label>
-            
+              <label for="inputState">State</label>
+              <select
+                id="mySelect2"
+                class="custom-select"
+                @change="getState()"
+                v-model="form_field.state"
+              >
+                <option
+                  v-for="(state_name, index) in states"
+                  :key="index"
+                  :value="state_name.name"
+                  class="text-capitalize"
+                >
+                  {{ state_name.name }}
+                </option>
+              </select>
             </div>
             <div class="form-group col" v-show="lga">
               <label for="inputState">Local Government</label>
@@ -83,7 +129,6 @@
                 id="mySelect"
                 class="custom-select"
                 v-model="form_field.lga"
-                @change="getLga()"
               >
                 <option
                   v-for="(lga_name, index) in lgas"
@@ -95,6 +140,7 @@
                 </option>
               </select>
             </div>
+
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Address</label>
@@ -134,6 +180,7 @@
       return {
         country_nums: countries,
         lga: false,
+        nigeria: false,
         ward: false,
         paystack_part: false,
         PUBLIC_KEY: "pk_live_6c2684fe83cd844c750932b184a1bbe26f380912",
@@ -144,6 +191,7 @@
         selState: "",
         selected_country:'',
         phone_number: '',
+        ages: [],
         form_field: {
           first_name: "",
           last_name: "",
@@ -161,10 +209,20 @@
       };
     },
     methods: {
+     
       getNum(){
         var priceOptions = document.getElementById("mySelect");
       var selOption = priceOptions.options[priceOptions.selectedIndex].value;
       this.selected_country = selOption;
+        
+      },
+      getCountry(){
+        var priceOptions = document.getElementById("mySelect3");
+        var selOption = priceOptions.options[priceOptions.selectedIndex].value;
+        console.log(selOption);
+          if (selOption == "nigeria"){
+            this.nigeria = true
+          }
         
       },
       createUser() {
@@ -192,16 +250,14 @@
         console.log(this.form_field.image);
       },
       getState() {
-        var priceOptions = document.getElementById("mySelect");
+        var priceOptions = document.getElementById("mySelect2");
         var selOption = priceOptions.options[priceOptions.selectedIndex].value;
         console.log(selOption);
         this.selState = selOption;
         this.getlgas();
         this.lga = true;
       },
-      getLga() {
-        this.ward = true;
-      },
+      
       async getStates() {
         let res = await axios.get(
           "https://locationsng-api.herokuapp.com/api/v1/states"
