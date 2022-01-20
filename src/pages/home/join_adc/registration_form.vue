@@ -1,7 +1,7 @@
 <template>
   <div>
     <simplified-nav />
-    <div class="pt-5 bg-light-accent pb-5">
+    <div class="pt-5 form_regg pb-5">
       <main
         class="content form__container container w-50 bg-white shadow-lg p-5 bg-light-accent rounded"
       >
@@ -445,6 +445,25 @@
 </script>
 
 <style scoped>
+.form_regg {
+  background: url('../../../../src/assets/img/handshake.jpg');
+  background-color:rgba(0, 0, 0, 0.8);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+.form-control, select {
+  border: none !important;
+}
+input:focus {
+  /* box-shadow: none !important; */
+  box-shadow: 0px 0px 2px 1px #224f5a !important;
+}
+
+  label {
+    font-weight: bold;
+    color: #224f5a !important;
+  }
   label {
     font-weight: bold;
   }

@@ -1,13 +1,15 @@
 <template>
   <div>
     <simplified-nav />
+    <div class="top-area d-flex align-items-center justify-content-center">
+      <h1 class="text-center text-accent headerss font-weight-bold">
+          Volunteer with Us
+        </h1>
+    </div>
     <div class="pt-5 bg-light-accent pb-5">
       <main
         class="content container form__container w-50 bg-white shadow-lg p-5 bg-light-accent rounded"
       >
-        <h1 class="text-center text-darker font-weight-bold mb-5">
-          Volunteer with Us
-        </h1>
         <form @submit.prevent="valForm" method="POST">
           <div class="row form-group">
             <div class="col">
@@ -381,6 +383,28 @@
 </script>
 
 <style scoped>
+.top-area {
+  background: url("../../../../src/assets/img/image6.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: overlay;
+  height: 20rem;
+}
+.form-control, select {
+  border: none !important;
+}
+input:focus {
+  /* box-shadow: none !important; */
+  box-shadow: 0px 0px 2px 1px #224f5a !important;
+}
+
+  label {
+    font-weight: bold;
+    color: #224f5a !important;
+  }
   label {
     font-weight: bold;
   }

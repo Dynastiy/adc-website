@@ -1,16 +1,22 @@
 <template>
   <div class=" bg-light-accent"> 
     <simplified-nav />
-    <div class="content-tab container">
-      <h1 class="font-weight-bold text-darker mb-2 mt-5">Join ADC</h1>
-      <hr class="mb-4">
+    <div class="join-header d-flex align-items-center justify-content-center">
+       <div class="text-center">
+         <h1 class="font-weight-bold headerss text-accent">Join ADC</h1>
+         <!-- <i class="fa fa-angle-down fa-3x" aria-hidden="true"></i> -->
+       </div>
+       
+    </div>
+    <div class="content-tab container mt-5">
+     
       <p class="font-weight-bold text-darker larger-text w-75 mb-5"> 
         We have come a long way together and our
         supporters made everything possible. Membership is the best way to
         protect what we have achieved together and keep our progress going. You
         started it, now be part of it!
       </p>
-      <h2 class="font-weight-bold mt-5 text-darker mb-5 text-center" >Choose Membership</h2>
+      <h1 class="font-weight-bold mt-5 text-darker mb-5 text-center" >Choose Membership</h1>
      <div class="reg__cards rounded pb-5">
          <div class="shadow-lg rounded bg-white card__item p-4 ">
            <div class="card_item_header">
@@ -135,6 +141,16 @@ import swal from 'sweetalert'
 </script>
 
 <style>
+.join-header {
+  background: url("../../../../src/assets/img/adc17.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: overlay;
+  height: 20rem;
+}
 .btn-choose {
   color: #fff;
   font-weight: bold;
@@ -172,7 +188,7 @@ import swal from 'sweetalert'
     font-weight: 900;
 }
 .larger-text{
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 .reg__cards {
     display: grid;
