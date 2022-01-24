@@ -189,20 +189,16 @@
               </div>
             </div>
           </div>
-          <div class="text-center form-group my-5">
-            <label class="small-text font-weight-bold" for=""
-              >Upload Photo</label
-            >
-            <br />
-            <input
-              type="file"
-              name=""
-              class=""
-              id="file"
-              @change="handleFileUpload()"
-              required
-            />
-          </div>
+          <div class="center">
+            <div class="form-input">
+              <div class="preview">
+                <img id="file-ip-1-preview">
+              </div>
+              <label for="file-ip-1">Upload Image</label>
+              <input type="file" id="file-ip-1" accept="image/*" @change="showPreview($event);">
+              
+            </div>
+          </div> 
           <input
             type="submit"
             value="SUBMIT"
@@ -338,6 +334,17 @@
         console.log(res.data);
         this.lgas = res.data;
       },
+       showPreview($event){
+        var input = event.target;
+        this.form_field.image = input.files[0];
+        console.log(this.form_field.image);
+  if($event.target.files.length > 0){
+    var src = URL.createObjectURL(event.target.files[0]);
+    var preview = document.getElementById("file-ip-1-preview");
+    preview.src = src;
+    preview.style.display = "block";
+  }
+      },
       valForm() {
         // if () {
         //      swal({
@@ -460,6 +467,48 @@
 input:focus {
   /* box-shadow: none !important; */
   box-shadow: 0px 0px 2px 1px #224f5a !important;
+}
+.center {
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+}
+.form-input {
+  /* background:#fff;
+  box-shadow: -3px -3px 7px rgba(0, 0, 0, 0.1),
+              3px 3px 7px rgba(0, 0, 0, 0.1); */
+}
+.form-input input {
+  display:none;
+
+}
+.form-input label {
+  display:block;
+  /* width:45%; */
+  /* height:45px; */
+  /* margin-left: 25%; */
+  padding: 0.3rem 1rem;
+  /* line-height:20px; */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align:center;
+  background:#224f5a;
+
+  color:#fff !important;
+  font-size:14px;
+  /* font-family:"Open Sans",sans-serif; */
+  /* text-transform:Uppercase; */
+  font-weight:600;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.form-input img {
+  width:50%;
+  display:none;
+  margin-bottom:20px;
 }
 
   label {

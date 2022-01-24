@@ -220,7 +220,17 @@
               </div>
             </div>
           </div>
-          <div class="text-center form-group my-5">
+          <div class="center">
+            <div class="form-input">
+              <div class="preview">
+                <img id="file-ip-1-preview">
+              </div>
+              <label for="file-ip-1">Upload Image</label>
+              <input type="file" id="file-ip-1" accept="image/*" @change="showPreview($event);">
+              
+            </div>
+          </div> 
+          <!-- <div class="text-center form-group my-5">
             <label class="small-text font-weight-bold" for=""
               >Upload Photo</label
             >
@@ -233,7 +243,7 @@
               @change="handleFileUpload()"
               required
             />
-          </div>
+          </div> -->
           <input
             type="submit"
             value="SUBMIT"
@@ -323,6 +333,17 @@
       this.selected_country = selOption;
         
       },
+      showPreview($event){
+        var input = event.target;
+        this.form_field.image = input.files[0];
+        console.log(this.form_field.image);
+  if($event.target.files.length > 0){
+    var src = URL.createObjectURL(event.target.files[0]);
+    var preview = document.getElementById("file-ip-1-preview");
+    preview.src = src;
+    preview.style.display = "block";
+  }
+      },
       createUser() {
         swal({
           title: "Done!",
@@ -341,12 +362,7 @@
           button: "Go Home!",
         });
       },
-      handleFileUpload() {
-        // this.form_field.image = this.$refs.file.files[0];
-        var input = event.target;
-        this.form_field.image = input.files[0];
-        console.log(this.form_field.image);
-      },
+      
       getState() {
         var priceOptions = document.getElementById("mySelect2");
         var selOption = priceOptions.options[priceOptions.selectedIndex].value;
@@ -551,6 +567,50 @@ input:focus {
     align-items: center;
     height: 100vh;
   }
+  .center {
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+}
+.form-input {
+  /* background:#fff;
+  box-shadow: -3px -3px 7px rgba(0, 0, 0, 0.1),
+              3px 3px 7px rgba(0, 0, 0, 0.1); */
+}
+.form-input input {
+  display:none;
+
+}
+.form-input label {
+  display:block;
+  /* width:45%; */
+  /* height:45px; */
+  /* margin-left: 25%; */
+  padding: 0.3rem 1rem;
+  /* line-height:20px; */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align:center;
+  background:#224f5a;
+
+  color:#fff !important;
+  font-size:14px;
+  /* font-family:"Open Sans",sans-serif; */
+  /* text-transform:Uppercase; */
+  font-weight:600;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.form-input img {
+  width:50%;
+  display:none;
+  margin-bottom:20px;
+}
+
+
   @media (max-width: 990px) {
     .content {
       padding: 2rem !important;
