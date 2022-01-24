@@ -108,7 +108,7 @@ import candidates from '@/assets/js/candidates.js'
 
 .img-wrapper h6
 {
-	background: #224f5a;
+	background: #06191d;
 	/* font-family: Poppins; */
 	color: #fff;
 	text-align: center;
@@ -142,7 +142,7 @@ import candidates from '@/assets/js/candidates.js'
 
 .img-wrapper ul li
 {
-	background:#224f5a;
+	background:#06191d;
 	height: 40px;
 	width: 40px;
 	text-align: center;
