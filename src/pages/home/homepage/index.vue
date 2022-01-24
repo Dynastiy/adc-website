@@ -53,21 +53,15 @@
                       <router-link to="/our_priorities" class="dropdown-item"
                         >Our Priorities</router-link
                       >
-                      <router-link to="/adc_objectives" class="dropdown-item"
-                        >ADC Objectives</router-link
-                      >
                       <router-link
                         to="/cardinal_commitments"
                         class="dropdown-item"
                         >Cardinal Commitments</router-link
                       >
-                      <router-link to="/aims_of_the_party" class="dropdown-item"
-                        >Aims of the Party</router-link
-                      >
                     </div>
                   </li>
                   <li>
-                    <a href="https://adc-dn.org/">ADC Diaspora</a>
+                    <a target="_blank" href="https://adc-dn.org/">ADC Diaspora</a>
                   </li>
                   <li><router-link to="/login">Login</router-link></li>
                   <li>
@@ -90,7 +84,7 @@
           <div class="">
             <ul class="list-unstyled">
               <li class="mb-3">
-                <a href="https://paystack.shop/adc-shop">
+                <a href="https://paystack.shop/adc-shop" target="_blank">
                   ADC SHOP
                   <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
                 </a>
@@ -588,7 +582,7 @@
   }
   .carousel-indicators {
     position: absolute;
-    bottom: 40%;
+    bottom: 25%;
     /* width: 100%; */
     left: 80%;
     /* background-color: red; */
@@ -597,8 +591,8 @@
   }
   .carousel-indicators li {
     /* background-color: red; */
-    width: 7px;
-    height: 7px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
   }
   .header-area {

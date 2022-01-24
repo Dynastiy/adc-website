@@ -28,5 +28,8 @@
   #app {
     font-family: Work Sans, sans-serif;
   }
-
+  * {
+    margin: 0;
+    padding: 0;
+  }
 </style>

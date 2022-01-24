@@ -17,6 +17,7 @@
                 v-model="amount"
                 required
               />
+              
             </div>
             <h4 class="font-weight-bold text-orange mb-3">Personal Details</h4>
             <div class="form-group row">
@@ -56,18 +57,17 @@
             <div class="row form-group">
               <div class="col-5">
                 <select
-                  id="mySelect"
+                  id="mySelect11"
                   class="custom-select form-control"
-                  v-model="selected_country"
+                  v-model="selected_country2"
                 >
-                  <option value="0" selected > Choose... </option>
+                  <option value=""> --- </option>
                   <option
-                    v-for="(country_num, index) in country_nums"
+                    v-for="(idCount, index) in country_nums"
                     :key="index"
-                    :value="country_num.phonecode"
-                    class="text-capitalize"
+                    :value="idCount.phonecode"
                   >
-                    {{ country_num.nicename }} ({{ country_num.phonecode }})
+                    {{ idCount.nicename }} ({{ idCount.phonecode }})
                   </option>
                 </select>
               </div>
@@ -119,7 +119,7 @@
     data() {
       return {
         country_nums: countries,
-        selected_country: '',
+        selected_country2: null,
         form_wizard: true,
         amount: "",
         first_name: null,

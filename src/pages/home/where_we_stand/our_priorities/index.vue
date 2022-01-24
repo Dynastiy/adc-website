@@ -23,7 +23,7 @@
               class="p-2"
               :style="{ 'background-color': `${priority.color}` }"
             >
-               <h5 class="font-weight-bold text-center m-0 card-title text-white text-uppercase">
+               <h5 class="font-weight-bold text-center m-0 card-title text-white text-capitalize">
                 {{ priority.title }}
               </h5>
             </div>
@@ -76,6 +76,11 @@
   .card-content {
     background-color: transparent;
     /* padding: 1rem; */
+  }
+  .priorities__content img{
+    width:100%;
+  height:10rem;
+  object-fit:cover;
   }
   /* .card-content:hover {
       transform: scale(1.1);

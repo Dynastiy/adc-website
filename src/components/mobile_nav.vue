@@ -64,7 +64,7 @@
               >
             </li>
             <li class="nav-item">
-              <a href="https://adc-dn.org/" class="nav-link text-dark"
+              <a href="https://adc-dn.org/" target="_blank" class="nav-link text-dark"
                 >ADC in Diaspora
               </a>
             </li>
@@ -91,7 +91,7 @@
       <div>
          <ul class="list-unstyled">
               <li class="mb-3">
-                <a href="https://paystack.shop/adc-shop">
+                <a href="https://paystack.shop/adc-shop" target="_blank">
                   ADC SHOP
                   <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
                 </a>

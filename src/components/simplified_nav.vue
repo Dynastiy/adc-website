@@ -33,19 +33,13 @@
                 <router-link to="/our_priorities" class="dropdown-item text-white"
                   >Our Priorities</router-link
                 >
-                <router-link to="/adc_objectives" class="dropdown-item text-white"
-                  >ADC Objectives</router-link
-                >
                 <router-link to="/cardinal_commitments" class="dropdown-item text-white"
                   >Cardinal Commitments</router-link
-                >
-                <router-link to="/aims_of_the_party" class="dropdown-item text-white"
-                  >Aims of the Party</router-link
                 >
               </div>
             </li>
             <li class="">
-              <a href="https://adc-dn.org/" class=" text-dark"
+              <a href="https://adc-dn.org/" target="_blank" class=" text-dark"
                 >ADC in Diaspora
               </a>
             </li>
@@ -84,7 +78,7 @@
       <div>
          <ul class="list-unstyled">
               <li class="mb-3">
-                <a href="https://paystack.shop/adc-shop">
+                <a href="https://paystack.shop/adc-shop" target="_blank">
                   ADC SHOP
                   <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
                 </a>

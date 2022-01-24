@@ -3,8 +3,8 @@
       <div class=" bg-light-accent mt-5">
         <div class="about-us content">
         <div class="our-mission-div rounded bg-white animate__animated animate__backInLeft">
-          <i class="fa fa-compass fa-4x" aria-hidden="true"></i>
-          <h4 class="font-weight-bold mb-3">
+          <img src="@/assets/img/icons/mission.svg" alt="" width="50px" height="50px" srcset="">
+          <h4 class="font-weight-bold">
             OUR MISSION
           </h4>
           <p class="large__text">
@@ -12,33 +12,33 @@
             by wheeler-dealer political elites, money- bags and “god-fathers
             through transparency and accountability; as well as propagate
             inclusion and diversity of values for Women, Youths, Diaspora
-            Network and Persons with Disabilities (PWDs).
+            Network and Persons with Disabilities (PWDs)
           </p>
         </div>
 
         <div class="our-vision-div rounded bg-white animate__animated animate__backInUp">
-          <i class="fa fa-eye fa-4x" aria-hidden="true"></i>
-          <h4 class="font-weight-bold mb-3">
+          <img src="@/assets/img/icons/vision.svg" alt="" width="50px" height="50px" srcset="">
+          <h4 class="font-weight-bold">
             OUR VISION
           </h4>
           <p class="large__text">
             To consolidate Nigeria's democracy beyond (flawed) elections,
             political rhetorics and theatrics, and usher in super power economy,
             just and resilient institutions, systems, and processes for a more
-            egalitarian society: '23+20 ADC Strategic compass.
+            egalitarian society: '23+20 ADC Strategic compass
           </p>
         </div>
 
         <div class="our-manifesto-div rounded bg-white animate__animated animate__backInRight">
-         <img src="@/assets/img/icons/manifesto.svg" alt="" width="10%" srcset="">
-          <h4 class="font-weight-bold mb-3 mt-3">
+         <img src="@/assets/img/icons/manifesto.svg" alt="" width="50px" height="50px" srcset="">
+          <h4 class="font-weight-bold">
             OUR MANIFESTO
           </h4>
           <p class="large__text">
             To consolidate Nigeria's democracy beyond (flawed) elections,
             political rhetorics and theatrics, and usher in super power economy,
             just and resilient institutions, systems, and processes for a more
-            egalitarian society: '23+20 ADC Strategic compass.
+            egalitarian society: '23+20 ADC Strategic compass
           </p>
         </div>
       </div>
@@ -73,6 +73,13 @@ return{
 }
 .our-manifesto-div .fa {
   color: #224f5a;
+}
+.our-manifesto-div h4, .our-mission-div h4, .our-vision-div h4{
+  margin: 1rem 0;
+  font-weight: 900 !important;
+}
+.our-manifesto-div , .our-mission-div , .our-vision-div {
+  padding: 2rem;
 }
 /* .our-vision-div:hover {
   background: #00a54f;

@@ -7,7 +7,7 @@ const items = [{
     },
     {
         id: "2",
-        title: "Power supply for all Nigerians",
+        title: "Power supply",
         avatar: require("@/assets/img/priorities/power.jpg"),
         color: "#00a54f",
         description: "ADC will create a $30 Billion power generating opportunity with 23,220 MW of power in the first 2 years by encouraging all 774 local governments to generate 30 MW."
@@ -56,7 +56,7 @@ const items = [{
     },
     {
         id: "12",
-        title: "YOUTH and Persons living with disabilities.",
+        title: "Youths and Persons living with disabilities.",
         avatar: require("@/assets/img/priorities/diability.jpg"),
         description: "By ADC's definition, a youth is anyone who is between 18 and 40 years of age. The basic requirement of this category of Nigerians is economic empowerment through skills acquisition and gainful employment.",
         color: " #224f5a"

@@ -49,8 +49,8 @@
             <label for="exampleInputEmail1">Phone Number</label>
             <div class="row">
               <div class="col-5">
-                <select id="mySelect" class="custom-select form-control" v-model="selected_country">
-                  <option value="0" selected>  Choose... </option>
+                <select id="mySelect8" class="custom-select form-control" v-model="selected_country">
+                  <option value=""> --- </option>
                   <option
                     v-for="(country_num, index) in country_nums"
                     :key="index"
@@ -77,31 +77,29 @@
           <div class="form-group">
             <label for="exampleInputEmail1">Age</label>
            <select
-                id="mySelect2"
+                id="mySelect-age"
                 class="custom-select"
                 v-model="form_field.state"
               >
-                <option
-                  class="text-capitalize"
-                  v-for="(n, i) in 65"
-                  :key="i"
-                >
-                  {{ n + 17 }}
-                </option>
+                 <option value=""> --- </option>
+                <option value="">18-24</option>
+                <option value="">25-39</option>
+                <option value="">40-59</option>
+                <option value="">60+</option>
               </select>
           </div>
           <div class="form-group">
             <label for="exampleInputEmail1">Country</label>
-           <select id="mySelect3" class="custom-select form-control">
-                  <option value="0" selected>  Choose... </option>
+           <select id="mySelect5" class="custom-select form-control" @change="getCountry2()">
+                  <!-- <option value="0">  Choose... </option> -->
+                   <option value="0"> --- </option>
                   <option
-                    v-for="(country_num, index) in country_nums"
-                    :key="index"
-                    :value="country_num.nicename"
+                    v-for="country in country_list"
+                    :key="country.Country"
+                    :value="country.Country"
                     class="text-capitalize"
-                    @change="getCountry()"
                   >
-                    {{ country_num.nicename }}
+                    {{ country.Country }}
                   </option>
                 </select>
           </div>
@@ -110,7 +108,7 @@
             <div class="form-group col">
               <label for="inputState">State</label>
               <select
-                id="mySelect2"
+                id="mySelect0"
                 class="custom-select"
                 @change="getState()"
                 v-model="form_field.state"
@@ -132,6 +130,7 @@
                 class="custom-select"
                 v-model="form_field.lga"
               >
+              <option value="0"> --- </option>
                 <option
                   v-for="(lga_name, index) in lgas"
                   :key="index"
@@ -145,15 +144,113 @@
 
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Address</label>
-            <textarea
-              v-model="form_field.password"
-              placeholder="Address"
+              <label for="">Employment Status</label>
+              <select
+                id="mySelect-status"
+                class="custom-select"
+                v-model="form_field.state"
+              >
+                <option value=""> --- </option>
+                <option value=""> Unemployed </option>
+                <option value=""> Employed </option>
+                <option value=""> Freelance Worker </option>
+                <option value=""> Entreprenuer </option>
+                <option value=""> Intern/Apprentice </option>
+              </select>
+            </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Skills</label>
+            <input
+              v-model="form_field.email"
+              type="email"
               class="form-control"
-              id="exampleInputPassword1"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Current Skills (Separate by a comma)"
               required
             />
           </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Why do you want to volunteer?</label>
+            <input
+              v-model="form_field.email"
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter your reason for volunteering"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Where would you like to volunteer?</label>
+            <input
+              v-model="form_field.email"
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter what skill you would like to volunteer"
+              required
+            />
+          </div>
+           <div class="form-group">
+              <label for="">Department</label>
+              <select
+                id="mySelect-status"
+                class="custom-select"
+                v-model="form_field.state"
+              >
+                <option value=""> --- </option>
+                <option value=""> Volunteer Supervisors (Local Governments) </option>
+                <option value=""> Media team </option>
+                <option value=""> Strategy team </option>
+                <option value=""> Policy Formulation team </option>
+                <option value=""> Mobilization and Outreach team </option>
+                <option value=""> Polisters and feedback team </option>
+              </select>
+            </div>
+             <div class="form-group">
+              <label for="">Day of the week you will be available</label>
+              <select
+                id="mySelect-status"
+                class="custom-select"
+                v-model="form_field.state"
+              >
+                <option value=""> --- </option>
+                <option value=""> Sunday </option>
+                <option value=""> Monday </option>
+                <option value=""> Tuesday </option>
+                <option value=""> Wednesday </option>
+                <option value=""> Thursday </option>
+                <option value=""> Friday </option>
+                <option value=""> Saturday </option>
+              </select>
+            </div>
+             <div class="form-group">
+            <label for="exampleInputEmail1">What nigerian language do you speak?</label>
+            <input
+              v-model="form_field.email"
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter the nigerian language you speak"
+              required
+            />
+          </div>
+           <div class="form-group">
+              <label for="">Do you have a PVC?</label>
+              <select
+                id="mySelect-status"
+                class="custom-select"
+                v-model="form_field.state"
+              >
+                <option value=""> --- </option>
+                <option value=""> Yes </option>
+                <option value=""> No </option>
+              </select>
+            </div>
           <input
             type="submit"
             value="SUBMIT"
@@ -181,6 +278,7 @@
     data() {
       return {
         country_nums: countries,
+        country_list: [],
         lga: false,
         nigeria: false,
         ward: false,
@@ -211,21 +309,27 @@
       };
     },
     methods: {
-     
       getNum(){
         var priceOptions = document.getElementById("mySelect");
       var selOption = priceOptions.options[priceOptions.selectedIndex].value;
       this.selected_country = selOption;
         
       },
-      getCountry(){
-        var priceOptions = document.getElementById("mySelect3");
-        var selOption = priceOptions.options[priceOptions.selectedIndex].value;
+      async listCountry() {
+        let res = await  axios.get("https://api.covid19api.com/summary")
+        console.log(res.data.Countries);
+        this.country_list = res.data.Countries
+      },
+      getCountry2(){
+        var countryOptions = document.getElementById("mySelect5");
+        var selOption = countryOptions.options[countryOptions.selectedIndex].value;
         console.log(selOption);
-          if (selOption == "nigeria"){
+          if (selOption == "Nigeria"){
             this.nigeria = true
           }
-        
+          else{
+            this.nigeria = false
+          }
       },
       createUser() {
         swal({
@@ -252,7 +356,7 @@
         console.log(this.form_field.image);
       },
       getState() {
-        var priceOptions = document.getElementById("mySelect2");
+        var priceOptions = document.getElementById("mySelect0");
         var selOption = priceOptions.options[priceOptions.selectedIndex].value;
         console.log(selOption);
         this.selState = selOption;
@@ -368,6 +472,7 @@
     },
     async created() {
       this.getStates();
+      this.listCountry();
     },
     computed: {
       reference() {
@@ -389,7 +494,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: overlay;
   height: 20rem;
 }

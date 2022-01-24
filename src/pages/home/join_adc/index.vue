@@ -28,7 +28,7 @@
               <p>Ages 18 to 35</p>
              </div>
            </div>
-           <hr class="mt-4 mb-4">
+           <hr class="">
            <div class="card_list">
              <div class="card_list_item d-flex mt-4">
                <div class="mr-2">
@@ -58,7 +58,7 @@
               <p>Ages 35 and Above</p>
              </div>
            </div>
-           <hr class="mt-4 mb-4">
+           <hr class="">
            <div class="card_list">
              <div class="card_list_item d-flex mt-4">
                <div class="mr-2">
@@ -88,7 +88,7 @@
               <p>Already Registered</p>
              </div>
            </div>
-           <hr class="mt-4 mb-4">
+           <hr class="">
            <div class="card_list">
              <div class="card_list_item d-flex mt-4">
                <div class="mr-2">
@@ -147,9 +147,13 @@ import swal from 'sweetalert'
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: overlay;
   height: 20rem;
+}
+.card__item {
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
 }
 .btn-choose {
   color: #fff;
@@ -158,8 +162,9 @@ import swal from 'sweetalert'
   width: 100%;
 }
 .btn-choose:hover {
-  background: #ff7300 !important;
-  color: #3ee987;
+  background-color: #fff !important;
+  color: #224f5a ;
+  border: 2px solid #224f5a !important;
   transition: 0.4s;
 }
 .icon__header {
@@ -183,6 +188,9 @@ import swal from 'sweetalert'
     /* background:#effff6; */
     border-radius: 5px;
     width: 100%;
+}
+hr {
+  margin: 0;
 }
 .content h1 {
     font-weight: 900;
@@ -214,6 +222,9 @@ import swal from 'sweetalert'
     }
     .content-tab.container {
       padding: 0.2rem 2rem;
+    }
+    .larger-text {
+      width: 100% !important;
     }
   }
 </style>

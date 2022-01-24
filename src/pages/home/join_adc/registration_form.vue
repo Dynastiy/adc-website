@@ -48,7 +48,7 @@
             <div class="row">
               <div class="col-5">
                 <select id="mySelect" class="custom-select form-control" v-model="selected_country">
-                  <option value="0" selected>  Choose... </option>
+                  <option value=""> --- </option>
                   <option
                     v-for="(country_num, index) in country_nums"
                     :key="index"
@@ -105,7 +105,7 @@
               v-model="form_field.gender"
               class="form-control"
             >
-              <option value="None">Choose</option>
+              <option value=""> --- </option>
               <option value="Male">Male</option>
               <option value="Female">Female</option>
             </select>
@@ -119,6 +119,7 @@
                 @change="getState()"
                 v-model="form_field.state"
               >
+              <option value=""> --- </option>
                 <option
                   v-for="(state_name, index) in states"
                   :key="index"
@@ -137,6 +138,7 @@
                 v-model="form_field.lga"
                 @change="getLga()"
               >
+              <option value=""> --- </option>
                 <option
                   v-for="(lga_name, index) in lgas"
                   :key="index"

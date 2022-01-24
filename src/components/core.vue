@@ -34,7 +34,7 @@
               Patriotism
             </h3>
               <p class="">
-                  Belief in country remains our#1.
+                  Belief in country remains our #1
               </p>
           </div>
         </div>
@@ -52,7 +52,7 @@
               Leadership
             </h3>
               <p class="">
-                  Leadership gives direction. We believe that effective transformational leadership with knowledge-driven protocols is the elixir to our nation-building enterprise.
+                  Leadership gives direction. We believe that effective transformational leadership with knowledge-driven protocols is the elixir to our nation-building enterprise
               </p>
           </div>
         </div>
@@ -70,7 +70,7 @@
               Equity
             </h3>
               <p class="">
-                  To be fair and just in dealing with people and each other; this enriches our diversity and fosters unity.
+                  To be fair and just in dealing with people and each other; this enriches our diversity and fosters unity
               </p>
           </div>
         </div>
@@ -87,7 +87,7 @@
               Inclusion
             </h3>
               <p class="">
-                  Bringing everyone onboard gives us more strength, viability and stability.
+                  Bringing everyone onboard gives us more strength, viability and stability
               </p>
           </div>
         </div>
@@ -105,7 +105,7 @@
               Knowledge
             </h3>
               <p class="">
-                  Knowledge and its proper application powers the modern organization and society.
+                  Knowledge and its proper application powers the modern organization and society
               </p>
           </div>
         </div>
@@ -123,7 +123,7 @@
               Transparency
             </h3>
               <p class="">
-                  Ours is Radical Transparency; this creates a convivial atmosphere for teamwork, cooperation, and collaboration; persons to devote time and efforts to constructive work.
+                  Ours is Radical Transparency; this creates a convivial atmosphere for teamwork, cooperation, and collaboration; persons to devote time and efforts to constructive work
               </p>
           </div>
         </div>
@@ -141,7 +141,7 @@
               Accountability
             </h3>
               <p class="">
-                  We believe that leaders owe the people a good audit of their stewardship to qualify as true leader.
+                  We believe that leaders owe the people a good audit of their stewardship to qualify as true leader
               </p>
           </div>
         </div>
@@ -159,7 +159,7 @@
               Diversity
             </h3>
               <p class="">
-                  Drawing from variety and multiple sources enhance decision making, quality of leadership and endurance.
+                  Drawing from variety and multiple sources enhance decision making, quality of leadership and endurance
               </p>
           </div>
         </div>

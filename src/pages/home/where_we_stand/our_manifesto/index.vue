@@ -9,70 +9,43 @@
       </div>
     </div>
     <div class="bg-light-accent">
-    <div class="content container ">
+    <div class="content container d-lg-flex align-items-center">
       <blockquote class="blockquote">
         <p>At ADC, it is about Intense and Intentional Leadership – an activity
-          that identifies challenges, <br />
+          that identifies challenges, 
           gets the people to see the realities in these challenges, collectively
-          evolve adaptive or <br />
+          evolve adaptive or 
           technical solutions to these problems with a view to a ensuring
-          Excellent living conditions for <br />
-          all Nigerian. <br /><br />
+          Excellent living conditions for 
+          all Nigerian. 
           Leadership is the key word here that the ADC is going to be driven by,
-          noting that moving a <br />
+          noting that moving a 
           people from ‘Good to Great’ takes a process. Sadly, Nigeria has over
-          the years adopted a <br />
+          the years adopted a 
           culture of mediocrity occasioned by our ‘clan’ mentality or
-          man-know-man syndrome. You <br />
+          man-know-man syndrome. You 
           have to know somebody somewhere for things to happen to or for you.
-          Leadership must <br />
+          Leadership must 
           inspire all our activities henceforth, it may sound scary to some, who
-          are used to doing things <br />
+          are used to doing things 
           the old way but nobody should be afraid as every body will be groomed
-          and taught the new <br />
-          way of doing things. The better way.</p>
+          and taught the new 
+          way of doing things the better way</p>
         </blockquote>
-<!-- <br />
-<blockquote class="otro-blockquote">
-  Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn't really do it, they just saw something. It seemed obvious to them after a while. That's because they were able to connect experiences they've had and synthesize new things.
-  <span>Steve Jobs</span>
-</blockquote> -->
-      <!-- <div class="manifesto d-md-flex d-block justify-content-center mb-3">
-        <div>
-          <img
-            src="@/assets/img/open__quote.svg"
-            class="d-none d-md-block"
-            alt=""
-            srcset=""
-          />
-        </div>
-        <p class="text-center font-weight-bold mx-3">
-          At ADC, it is about Intense and Intentional Leadership – an activity
-          that identifies challenges, <br />
-          gets the people to see the realities in these challenges, collectively
-          evolve adaptive or <br />
-          technical solutions to these problems with a view to a ensuring
-          Excellent living conditions for <br />
-          all Nigerian. <br /><br />
-          Leadership is the key word here that the ADC is going to be driven by,
-          noting that moving a <br />
-          people from ‘Good to Great’ takes a process. Sadly, Nigeria has over
-          the years adopted a <br />
-          culture of mediocrity occasioned by our ‘clan’ mentality or
-          man-know-man syndrome. You <br />
-          have to know somebody somewhere for things to happen to or for you.
-          Leadership must <br />
-          inspire all our activities henceforth, it may sound scary to some, who
-          are used to doing things <br />
-          the old way but nobody should be afraid as every body will be groomed
-          and taught the new <br />
-          way of doing things. The better way.
-        </p>
-        <div class="align-self-end">
-          <img src="@/assets/img/close__quote.svg" class="d-none d-md-block" alt="" srcset="" />
-        </div>
-      </div> -->
+<div>
+   <base target="_blank"/>
+<ul>
+  <li><a href=""><img src="@/assets/img/image4.jpg" alt=""></a></li>
+  <li><a href=""><img src="@/assets/img/image3.jpg" alt=""></a></li>
+  <li><a href=""><img src="@/assets/img/image8.jpg" alt=""></a></li>
+  <li><a href=""><img src="@/assets/img/image2.jpg" alt=""></a></li>
+  <li><a href=""><img src="@/assets/img/image6.jpg" alt=""></a></li>
+  <li><a href=""><img src="@/assets/img/image9.jpg" alt=""></a></li>
+  </ul>
+</div>
     </div>
+
+   
     </div>
   </div>
 </template>
@@ -95,25 +68,16 @@
 }
 .blockquote p {
     /* font-family: "Utopia-italic"; */
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    /* text-align: center; */
 }
-
-/*blockquote p::before {
-    content: "\f095"; 
-    font-family: FontAwesome;
-   display: inline-block;
-   padding-right: 6px;
-   vertical-align: middle;
-  font-size: 180px;
- }*/
 
 .blockquote:before {
   position: absolute;
   font-family: 'FontAwesome';
-  top: 0;
-  
+  top: -8%;
+  left: -5%;
   content:"\f10d";
   font-size: 200px;
   color: #ff73001c;
@@ -126,7 +90,7 @@
     left: 50%;
     margin-left: -100px;
     position: absolute;
-    border-bottom: 3px solid #ff7300;
+    border-bottom: 3px solid #ff73001c;
     height: 3px;
     width: 200px;
 }
@@ -197,81 +161,141 @@
     /* border-left: 1px solid rgba(255, 255, 255, 0.2); */
     box-shadow: 0px 0px 3px 0px rgba(225, 225, 225, 0.2);
   }
-  /* .objective_one_to_ten:hover {
-background-color: #224f5a;
-box-shadow: 0px 0px 5px 8px rgba(255, 255, 255, 0.225);
-color: #fff;
-transition: 0.3s;
-cursor: pointer;
-} */
-  .cardinal_commitments {
-    background-image: url(../../../../assets/img/cardinal-bg.svg);
-    background-position: center;
-    background-attachment: fixed;
-    padding: 5rem 10rem;
-  }
-  .commitment_one_to_seven {
-    color: #fff;
-    display: flex;
-    align-items: flex-start;
-  }
-  .commitment_one_to_seven .fa,
-  .aim_one_to_sixteen .fa {
-    margin-top: 5px;
-    margin-right: 1rem;
-  }
-  .commitment_one_to_seven p {
-    width: 60%;
-  }
-  .larger-text {
+   .larger-text {
     font-size: 3.2rem;
   }
   .row {
     padding: 0;
     margin: 0;
   }
-  .Co-operation_And_Partnerships {
-    background: linear-gradient(0deg, #effff6 50%, #fff 50%);
-    /* display: flex;
-    gap: 20px; */
-  }
-  .Co-operation_And_Partnerships_grid {
-    background: linear-gradient(0deg, #effff6 50%, #fff 50%);
-    display: flex;
-    gap: 20px;
-  }
-  .Co-operation_And_Partnerships_grid div {
-    padding: 1.5rem;
-    width: 100%;
-    border-radius: 10px;
-    font-weight: bold;
-    color: #fff;
-    font-size: 0.8rem;
-  }
-  .Co-operation_And_Partnerships_grid div ion-icon {
-    font-size: 32px;
-  }
+  ul {
+  width:70vmin;
+  height:70vmin;
+  position:relative;
+}
+
+li { 
+  /*
+    |a|d|a|
+    -------  -           
+    |/   \|  | 0.5h
+    |\   /|  ^          
+    ------- 
+    |  w  |
+  
+    a = 0.5h/tan60 = 0.28867513459h
+    d = 0.5h/sin60 = 0.57735026919h
+    w = a + d + a  = 1.15470053838h
+  
+    [zoom out]
+  
+        |a|_d_|         _____    _
+        /|     \       /     \   |
+  ang=60_|      \__d__/       \  | h     
+       \        /     \       /  |
+        \_____|/|      \_____/  _|
+              a     
+       |--------|
+           w
+  */
+  --h: calc(100% / 3);
+  --w: calc(1.15470053838 * var(--h));
+  --a: calc(0.28867513459 * var(--h));
+  --d: calc(0.57735026919 * var(--h));
+  height:var(--h);
+  width:var(--w);
+  position:absolute;
+}
+
+img {
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  /* 
+  
+   [clip-path coordinates]
+  
+    --A-F--
+   B|/   \|E    coord.
+    |\   /|       A(a/w, 0)
+    --C-D--       B(0, 50%)
+                  C(a/w, 100%)
+                  D(100% - a/w, 100%)
+                  E(100%, 50%)
+                  F(100% - a/w, 0)
+                where a/w = 0.24999999999
+  */
+  --aw:24.99999999999%;
+  clip-path:polygon(
+    var(--aw) 0,
+    0 50%,
+    var(--aw) 100%,
+    calc(100% - var(--aw)) 100%,
+    100% 50%,
+    calc(100% - var(--aw)) 0
+  );
+}
+
+li:nth-of-type(1) {
+  left:calc(50% - var(--a) - var(--d) * 0.5);
+  top:0;
+}
+li:nth-of-type(2) {
+  left:calc(50% - var(--a) * 2 - var(--d) * 1.5);
+  top:calc(var(--h) * 0.5);
+}
+li:nth-of-type(3) {
+  left:calc(50% - var(--a) * 2 - var(--d) * 1.5);
+  top:calc(var(--h) * 1.5);
+}
+li:nth-of-type(4) {
+  left:calc(50% - var(--a) - var(--d) * 0.5);
+  top:calc(var(--h) * 2);
+}
+li:nth-of-type(5) {
+  left:calc(50% + var(--d) * 0.5);
+  top:calc(var(--h) * 0.5);
+}
+li:nth-of-type(6) {
+  left:calc(50% + var(--d) * 0.5);
+  top:calc(var(--h) * 1.5);
+}
+
+
+
+/* 
+style 
+*/
+
+ul {
+  filter:drop-shadow(0 0 10px hsla(0,0%,0%,0.3));
+}
+
+li:hover {
+  filter:drop-shadow(0 0 10px powderblue);
+  z-index:10;
+}
+
+/*
+anim
+*/
+
+ul {
+  animation:r 4s forwards;
+} @keyframes r {
+  from {transform:rotate(180deg)}
+  to {transform:rotate(0)}
+}
+
+li {
+  animation:ir 4s forwards;
+} @keyframes ir {
+  from {transform:rotate(-360deg)}
+  to {transform:rotate(0)}
+}
 
   @media (max-width: 990px) {
-    .Co-operation_And_Partnerships_grid {
-      display: unset;
-      background: none;
-    }
-    .Co-operation_And_Partnerships {
-      padding: 2rem 4rem;
-    }
-    .Co-operation_And_Partnerships_grid div {
-      margin-bottom: 20px;
-    }
-    .sub_Adc_objectives {
-      display: unset;
-    }
-    .sub_Adc_objectives div {
-      margin-bottom: 20px;
-    }
-   .cardinal_commitments{
-     padding: 1rem 1rem;
-   }
    .larger-text {
      font-size: 2.3rem;
    }

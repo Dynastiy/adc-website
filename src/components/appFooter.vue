@@ -6,10 +6,10 @@
           <div class="col-md-3 ml-auto">
             <h3>quicklinks</h3>
             <ul class="list-unstyled links">
-              <li><a href="https://adc-dn.org/">ADC in Diaspora</a></li>
+              <li><a href="https://adc-dn.org/" target="_blank">ADC in Diaspora</a></li>
               <li><router-link to="/our_priorities">Our Priorities</router-link></li>
               <li><router-link to="/our_manifesto">Our Manifesto</router-link></li>
-              <li><a href="https://paystack.shop/adc-shop">
+              <li><a href="https://paystack.shop/adc-shop" target="_blank">
                   Shop
                   
                 </a></li>
@@ -80,7 +80,7 @@
           <div class="col-md-2 ml-auto">
             <h3>contact</h3>
             <ul class="list-unstyled links">
-              <li> <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@adc.com.ng">info@adc.com.ng</a></li>
+              <li> <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@adc.com.ng">admin@adc.com.ng</a></li>
               <li> <i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+234 812 9855 556">+234 812 9855 556</a></li>
               <li>
                 <a href="#"
@@ -88,9 +88,9 @@
                   zone 6, Abuja, FCT.</a
                 >
               </li>
-              <li><a href="https://facebook.com/ADCnig"> <i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
-              <li><a href="https://twitter.com/ADCNig"> <i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
-              <li><a href="https://instagram.com/adc_nig"> <i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+              <li><a href="https://facebook.com/ADCnig" target="_blank"> <i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+              <li><a href="https://twitter.com/ADCNig" target="_blank"> <i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+              <li><a href="https://instagram.com/adc_nig" target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
             </ul>
           </div>
         </div>
