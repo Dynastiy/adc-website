@@ -3,13 +3,13 @@
     <div class="login-box shadow-lg rounded pt-4">
       <div class="text-center">
         <img
-          src="@/assets/img/brand_assets/logo_vertical_dark.png"
+          src="@/assets/img/brand_assets/logo_horizontal_dark.png"
           alt=""
           srcset=""
-          width="50"
+          width="120"
         />
       </div>
-      <h6 class="mt-3 font-weight-bold text-center mb-\3">
+      <h6 class="mt-4 font-weight-bold text-center mb-\3">
         Enter details to Login
       </h6>
       <div class="px-4">
