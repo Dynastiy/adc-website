@@ -138,8 +138,8 @@
               />
               <div class="carousel-caption d-md-flex">
                 <h1>
-                  Agriculture is our <br /><span class="nigeria">National</span>
-                  Asset
+                  Agriculture is our <br /><span class="nigeria">national</span>
+                  asset
                 </h1>
               </div>
             </div>
@@ -166,7 +166,7 @@
               <div class="carousel-caption d-md-flex">
                 <h1>
                   Formal education<br />
-                  for Children <br/>
+                  for children <br/>
                   is a <span class="nigeria">priority </span>
                 </h1>
               </div>
@@ -192,8 +192,8 @@
               />
               <div class="carousel-caption d-md-flex">
                 <h1>
-                  Focus on Technology <br/> advancement throughout<span class="nigeria"> <br/>
-                    our Nation</span
+                  Focus on technology <br/> advancement throughout<span class="nigeria"> <br/>
+                    our nation</span
                   >
                 </h1>
               </div>
@@ -220,7 +220,7 @@
               <div class="carousel-caption d-md-flex">
                 <h1>
                   Hope after hardship<br />
-                  for our <span class="nigeria">Nation</span>
+                  for our <span class="nigeria">nation</span>
                 </h1>
               </div>
             </div>
