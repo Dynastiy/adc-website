@@ -58,8 +58,7 @@
               <div class="col-5">
                 <select
                   id="mySelect11"
-                  class="custom-select form-control"
-                  v-model="selected_country2"
+                  class="custom-select"
                 >
                   <option value=""> --- </option>
                   <option
@@ -103,8 +102,6 @@
   </div>
   </div>
 </template>
-
-<script src="https://unpkg.com/element-ui/lib/index.js"></script>
 <script>
   import simpleNav from "../../../components/simplified_nav.vue";
   import countries from '@/assets/js/countries.js'
