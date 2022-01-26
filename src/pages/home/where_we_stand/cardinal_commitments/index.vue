@@ -12,24 +12,24 @@
    
     <!-- Cardinal Commitments Section -->
     <div class="cardinal_commitments bg-light-accent">
-      <div class="content row">
-        <div class="col-md-6 mr-auto">
+      <div class="content container">
+        <div class="">
           <h5
             class="font-weight-bold text-darker animate__animated animate__backInUp"
           >
             AFRICAN DEMOCRATIC CONGRESS
           </h5>
-          <h1
-            class="larger-text w-75 text-orange font-weight-bold animate__animated animate__backInUp"
+          <h3
+            class="larger-text mb-4 text-orange font-weight-bold animate__animated animate__backInUp"
           >
             Our Cardinal Commitments
-          </h1>
+          </h3>
         </div>
         <!-- Lists of Commitments -->
-        <div class="col-md-6">
+        <div class="commitment_section">
           <!-- commitment one -->
           <div class="commitment_one_to_seven">
-            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+            <!-- <i class="fa fa-check-square-o" aria-hidden="true"></i> -->
             <p>
               Building a New Nigeria where the Dignity of every Nigerian, home
               and abroad will be restored and defended.
@@ -37,43 +37,43 @@
           </div>
           <!-- commitment two -->
           <div class="commitment_one_to_seven">
-            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+            <!-- <i class="fa fa-check-square-o" aria-hidden="true"></i> -->
             <p>
-              The welfare of women, youths and persons <br />
+              The welfare of women, youths and persons 
               living with disabilities and the vulnerable.
             </p>
           </div>
           <!-- commitment three -->
           <div class="commitment_one_to_seven">
-            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+            <!-- <i class="fa fa-check-square-o" aria-hidden="true"></i> -->
             <p>
               True federalism through restructuring.
             </p>
           </div>
           <!-- commitment four -->
           <div class="commitment_one_to_seven">
-            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+            <!-- <i class="fa fa-check-square-o" aria-hidden="true"></i> -->
             <p>
               Public probity and accountability.
             </p>
           </div>
           <!-- commitment five -->
           <div class="commitment_one_to_seven">
-            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+            <!-- <i class="fa fa-check-square-o" aria-hidden="true"></i> -->
             <p>
               Wealth creation and economic prosperity.
             </p>
           </div>
           <!-- commitment six -->
           <div class="commitment_one_to_seven">
-            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+            <!-- <i class="fa fa-check-square-o" aria-hidden="true"></i> -->
             <p>
               Justice and Security of all lives and property.
             </p>
           </div>
           <!-- commitment seven -->
           <div class="commitment_one_to_seven">
-            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+            <!-- <i class="fa fa-check-square-o" aria-hidden="true"></i> -->
             <p>
               Social and physical development of the country.
             </p>
@@ -115,12 +115,29 @@
     grid-gap: 20px;
     text-align: center;
   }
+  .commitment_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    /* justify-content: space-between; */
+  }
+  .commitment_section div{
+        background: #00000019;
+        padding: 0.8rem;
+        border-bottom: 0.1rem solid #ff7300;
+        text-align: center;
+  }
+  .commitment_section div:hover {
+    border-bottom: 0.3rem solid #ff7300;
+    transition: 0.2s;
+    color: #ff7300;
+  }
   .objective_one_to_ten {
     padding: 1rem;
     /* background-color: #fff; */
     background: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
-    font-weight: bold;
+    /* font-weight: bold; */
     vertical-align: middle;
     backdrop-filter: blur(5px);
     /* border-top: 1px solid rgba(255, 255, 255, 0.2); */
@@ -143,8 +160,8 @@ cursor: pointer;
   .commitment_one_to_seven {
     color: #000;
     font-weight: bold;
-    display: flex;
-    align-items: flex-start;
+    /* display: flex; */
+    /* align-items: flex-start; */
   }
   .commitment_one_to_seven .fa,
   .aim_one_to_sixteen .fa {
@@ -152,7 +169,7 @@ cursor: pointer;
     margin-right: 1rem;
   }
   .commitment_one_to_seven p {
-    width: 60%;
+    /* width: 60%; */
   }
   .larger-text {
     font-size: 3.2rem;
