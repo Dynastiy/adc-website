@@ -294,27 +294,7 @@
         </div>
       </div>
       <div class="search">
-        <h3 class="search-text">Find Your State Chairperson</h3>
-
-        <div class="input-group mb-3 shadow-lg">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="search-icon"
-              ><i class="fa fa-search" aria-hidden="true"></i
-            ></span>
-          </div>
-          <input
-            type="text"
-            class="form-control"
-            aria-label="State Chairperson"
-            placeholder="Search State"
-            v-model="searchQuery"
-          />
-          <div class="input-group-append ">
-            <span class="input-group-text bg-darker" id="arrow-icon">
-              <i class="fa fa-arrow-right" aria-hidden="true"></i
-            ></span>
-          </div>
-        </div>
+        <search-area/>
       </div>
     </div>
 <div v-if="ress">
@@ -375,6 +355,7 @@
 <script>
   import axios from "axios";
   // import news from '../assets/js/news'
+  import searchArea from '@/components/search.vue'
   import mobileNav from "../../../components/mobile_nav.vue";
   import paystack from "vue-paystack";
   import simplifiedNav from '../../../components/simplified_nav.vue';
@@ -382,11 +363,12 @@
   import coreValues from "../../../components/core.vue";
   // import VueRssFeed from "vue-rss-feed"
   import carouselArea from "../../../components/carousel.vue";
+// import Search from '../../../components/search.vue';
   export default {
     components: {
       mobileNav,
       paystack,
-
+  searchArea,
       aboutus,
       simplifiedNav,
       coreValues,

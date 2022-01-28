@@ -194,7 +194,7 @@
               <div class="preview">
                 <img id="file-ip-1-preview">
               </div>
-              <label for="file-ip-1">Upload Image</label>
+              <label for="file-ip-1">Upload Passport Photo</label>
               <input type="file" id="file-ip-1" accept="image/*" @change="showPreview($event);">
               
             </div>
