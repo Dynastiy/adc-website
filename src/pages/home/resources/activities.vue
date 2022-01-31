@@ -11,7 +11,7 @@
 
     <div class="activities__content bg-light-accent">
      <div class="activities container">
-       <div class="activity shadow-sm d-flex" v-for="activity in activities" :key="activity.id">
+       <div class="activity shadow-sm  d-flex" v-for="activity in activities" :key="activity.id">
          <div class="date bg-darker">
            <div class="text-center">
               <h6> {{activity.month}} </h6>

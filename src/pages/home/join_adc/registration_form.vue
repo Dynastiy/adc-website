@@ -418,6 +418,7 @@
             icon: "success",
             button: "Go Home!",
           });
+          sessionStorage.setItem('username',this.form_field.first_name + "" + this.form_field.last_name)
           this.$router.push("/redirect");
         } catch (error) {
           console.log(error.response);
