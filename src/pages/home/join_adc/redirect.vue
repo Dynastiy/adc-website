@@ -11,13 +11,12 @@
                         /></div>
                     <h3>Now you are a registered member!</h3> <pre></pre>
                     <p>
-                        [Name], welcome to the African Democratic Congress! <pre></pre>
-                        By registering with the ADC, you are taking action to help grow the most progressive and inclusive movement in 
-                        Nigerian politics - at a crucial time for our party. <pre></pre>
-                        Nigerians like you from every part of our country are stepping up to keep Nigeria moving forward. Thank you for your leadrship, [name]. <pre></pre>
-                        There are a number of ways you can make an immediate contibution to our movement, and help ensure our party can continue building a strong 
-                        middle class, growing the economy, keeping our communities safe and protecting our environment. <br>
-                        Find the one (or more!) that works for you.
+                        
+                        By registering with the ADC, you are taking action as a Nation Builder to join up with the TRIBE (like minded people) to help grow the most progressive and inclusive movement in Nigerian politics – at a crucial time for our party.
+<pre></pre>
+Nigerians like you from every part of our country are stepping up to keep Nigeria moving forward. Our common goal is to work together and deliver a better Nigeria for all Nigerians. Thank you for your leadership, [Name].
+<pre></pre>
+There are a number of ways you can make an immediate contribution to our movement, and help ensure our party can continue building a strong middle class, growing the economy, keeping our communities safe and protecting our environment. Find the one (or more!) that works for you. Speak to the person that invited you or any member of our leadership team including me for a range of team activities you can be involved in to support ADC's nation building transformation initiative.
                         <pre></pre>
                         <pre></pre>
                         <b>Kola Akinwale</b><br>

@@ -62,8 +62,8 @@ const items = [{
 },
 {
     id: "9",
-    date: "APR",
-    month: "FEB to",
+    date: "",
+    month: "FEB\nto\nAPR",
     description: "State Congresses",
     venue: "",
     range: "February to April",
