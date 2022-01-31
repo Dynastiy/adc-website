@@ -573,8 +573,8 @@
   }
   .carousel-indicators li {
     /* background-color: red; */
-    width: 15px;
-    height: 15px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
   }
   .header-area {
