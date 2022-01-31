@@ -8,8 +8,8 @@
         </h2>
       </div>
     </div>
-    <div class="bg-light-accent">
-      <div class="content container ">
+    <div class="bg-light-accent manifesto__container">
+      <div class="manifesto__content container pt-5">
         <!-- <blockquote class="blockquote col-md-6"> -->
           <p class="">
             At ADC, it is about Intense and Intentional Leadership – an activity
@@ -29,18 +29,18 @@
           </p>
         <!-- </blockquote> -->
         <div class="manifesto-images ">
-          <div class="animate__animated animate__delay-1s animate__fadeInLeft">
-            <img src="@/assets/img/image4.jpg" alt="" />
-          </div>
-          <div class="animate__animated animate__delay-2s animate__fadeInUp">
-            <img src="@/assets/img/image3.jpg" alt="" />
-          </div>
-          <div class="animate__animated animate__delay-3s animate__fadeInDown">
-            <img src="@/assets/img/image8.jpg" alt="" />
-          </div>
-          <div class="animate__animated animate__delay-4s animate__fadeInRight">
-            <img src="@/assets/img/image2.jpg" alt="" />
-          </div>
+          
+            <img src="@/assets/img/image4.jpg" class="image1 animate__animated animate__delay-1s animate__fadeInLeft" alt="" />
+          
+          
+            <img src="@/assets/img/image3.jpg" class="image2 animate__animated animate__delay-2s animate__fadeInUp" alt="" />
+          
+          
+            <img src="@/assets/img/image8.jpg" class="image3 animate__animated animate__delay-3s animate__fadeInDown" alt="" />
+          
+          
+            <img src="@/assets/img/image2.jpg" class="image4 animate__animated animate__delay-4s animate__fadeInRight" alt="" />
+          
         </div>
       </div>
     </div>
@@ -59,6 +59,15 @@ export default {
 </script>
 
 <style scoped>
+.manifesto__container {
+  padding: 2rem 8rem;
+}
+.manifesto__content{
+  
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 4rem
+}
 .blockquote {
   padding: 60px 80px 40px;
   position: relative;
@@ -80,25 +89,41 @@ export default {
   color: #ff73001c;
 }
 .manifesto-images {
-  display: grid;
-  grid-template-columns: auto auto;
+  position: relative;
 }
-.manifesto-images img {
-  width: 100%;
-  height: 30rem;
-  object-fit: cover;
-  border-radius: 1px;
+.manifesto-images .image1{
+  position: absolute;
+  width: 20rem;
+  height: 13rem;
+  top: -5%;
+  z-index: 1;
+  /* righ: 0%; */
 }
-.manifesto-images div:nth-child(1),
-.manifesto-images div:nth-child(4) {
-  margin-left: -3rem;
-  margin-top: -2rem;
+.manifesto-images .image2{
+  position: absolute;
+  right: 0%;
+  width: 20rem;
+  height: 13rem;
 }
+.manifesto-images .image3{
+  position: absolute;
+  bottom: 10%;
+  left: -5%;
+  width: 21rem;
+  z-index: 999;
+  height: 14rem;
+}
+.manifesto-images .image4{
+  position: absolute;
+  bottom: 0%;
+  right: 5%;
+  width: 22rem;
+  height: 18rem;
+}
+
 .blockquote::after {
   content: "";
   top: 20px;
-  /* left: 50%; */
-  /* margin-left: -100px; */
   position: absolute;
   border-bottom: 3px solid #ff73001c;
   height: 3px;
@@ -182,5 +207,23 @@ export default {
   .larger-text {
     font-size: 2.3rem;
   }
+  .manifesto__content{
+    display: unset;
+    padding: 2rem !important;
+  }
+  .manifesto-images .image1, .manifesto-images .image2, .manifesto-images .image3, .manifesto-images .image4 {
+    position: unset;
+    width: 100%;
+    height: 10rem;
+  }
+  .manifesto-images {
+    position: unset;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  .manifesto__container {
+ padding: 2rem; 
+}
 }
 </style>

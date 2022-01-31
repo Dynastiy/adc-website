@@ -491,11 +491,6 @@ input:focus {
   justify-content:center;
 
 }
-.form-input {
-  /* background:#fff;
-  box-shadow: -3px -3px 7px rgba(0, 0, 0, 0.1),
-              3px 3px 7px rgba(0, 0, 0, 0.1); */
-}
 .form-input input {
   display:none;
 

@@ -10,7 +10,7 @@
       <main
         class="content container form__container w-50 bg-white shadow-lg p-5 bg-light-accent rounded"
       >
-        <form @submit.prevent="valForm" method="POST">
+        <form @submit.prevent="register" method="POST">
           <div class="row form-group">
             <div class="col">
               <label for="exampleInputEmail1">First Name</label>
@@ -19,7 +19,7 @@
                 type="text"
                 class="form-control"
                 placeholder="John"
-                required
+                
               />
             </div>
             <div class="col">
@@ -29,7 +29,7 @@
                 type="text"
                 class="form-control"
                 placeholder="Doe"
-                required
+                
               />
             </div>
           </div>
@@ -42,7 +42,7 @@
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
               placeholder="xyz@gmail.com"
-              required
+              
             />
           </div>
           <div class="form-group">
@@ -73,7 +73,7 @@
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                   placeholder="Phone Number"
-                  required
+                  
                 />
               </div>
             </div>
@@ -174,7 +174,7 @@
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
               placeholder="Current Skills (Separate by a comma)"
-              required
+              
             />
           </div>
           <div class="form-group">
@@ -188,7 +188,7 @@
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
               placeholder="Enter your reason for volunteering"
-              required
+              
             />
           </div>
           <div class="form-group">
@@ -202,7 +202,7 @@
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
               placeholder="Enter what skill you would like to volunteer"
-              required
+              
             />
           </div>
           <div class="form-group">
@@ -231,24 +231,10 @@
                 type="checkbox"
                 class="mr-2"
                 id="exampleInputEmail1"
-                required
+                
               />
               <label for=""> {{ dayy.name }} </label>
             </div>
-            <!-- <select
-                id="mySelect-status"
-                class="custom-select"
-                v-model="form_field.state"
-              >
-                <option value=""> --- </option>
-                <option value=""> Sunday </option>
-                <option value=""> Monday </option>
-                <option value=""> Tuesday </option>
-                <option value=""> Wednesday </option>
-                <option value=""> Thursday </option>
-                <option value=""> Friday </option>
-                <option value=""> Saturday </option>
-              </select> -->
           </div>
           <div class="form-group">
             <label for="exampleInputEmail1"
@@ -261,7 +247,7 @@
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
               placeholder="Enter the nigerian language you speak"
-              required
+              
             />
           </div>
           <div class="form-group">
@@ -412,28 +398,8 @@ export default {
         console.log(res.data.data);
         this.lgas = res.data.data;
       },
-    valForm() {
-      // if () {
-      //      swal({
-      //     title: "Error!",
-      //     text: "An error occured",
-      //     icon: "warning",
-      //     button: "Try Again!",
-      //   });
-
-      // } else {
-      this.paystack_part = true;
-
-      // }
-    },
     async register() {
       try {
-        swal({
-          title: "Done!",
-          text: "Payment Received!",
-          icon: "success",
-          button: "Go Home!",
-        });
         this.loading = true;
         let formData = new FormData();
         formData.append("first_name", this.form_field.first_name);
@@ -442,7 +408,7 @@ export default {
         formData.append("password", this.form_field.password);
         formData.append(
           "phone_number",
-          this.phone_number + this.selected_country
+          this.phone_number
         );
         formData.append("dob", this.form_field.dob);
         formData.append("gender", this.form_field.gender);
@@ -451,7 +417,7 @@ export default {
         formData.append("ward", this.form_field.ward);
         formData.append("referral", this.form_field.referral);
         formData.append("image", this.form_field.image);
-        let res = await axios.post(this.baseUrl + "auth/register", formData);
+        let res = await axios.post(this.baseUrl + "volunteers/users/add", formData);
         console.log(res);
         this.form_field.first_name = "";
         this.form_field.last_name = "";
