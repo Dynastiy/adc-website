@@ -90,6 +90,21 @@
     background: #fff;
   }
   @media (max-width: 990px){
-      
+      .activities{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .activities__content {
+        padding: 2rem;
+      }
+      .date h6 {
+        font-size: 0.8rem;
+  }
+  .date h1 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
   }
 </style>
