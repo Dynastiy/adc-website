@@ -52,6 +52,7 @@
                   <option
                     v-for="(country_num, index) in country_nums"
                     :key="index"
+                    @change='createNumber'
                     :value="country_num.phonecode"
                     class="text-capitalize"
                   >
@@ -68,6 +69,7 @@
                   aria-describedby="emailHelp"
                   placeholder="Phone Number"
                   required
+                  @change='createNumber'
                 />
               </div>
             </div>
@@ -176,6 +178,7 @@
                   aria-describedby="emailHelp"
                   placeholder="First Name"
                   required
+                  @change='concatFunction'
                 />
               </div>
               <div class="col">
@@ -187,6 +190,7 @@
                   aria-describedby="emailHelp"
                   placeholder="Last Name"
                   required
+                  @change='concatFunction'
                 />
               </div>
             </div>
@@ -209,6 +213,9 @@
         </form>
       </main>
       <div v-show="paystack_part" class="payment p-5 bg-light-accent">
+        <div>
+          <!-- <button><ion-icon name="arrow-back"></ion-icon> </button> -->
+        </div>
         <div class="text-center">
           <img
             src="@/assets/img/brand_assets/logo_horizontal_dark.png"
@@ -231,6 +238,7 @@
           >
             Pay
           </paystack>
+          
         </div>
       </div>
       <div class="loading" v-if="loading">
@@ -283,10 +291,10 @@
       };
     },
     methods: {
-      createReferral(){
-        this.form_field.referral = this.referral_firstname + this.referral_lastname
+      concatFunction(){
+        this.form_field.referral = this.referral_firstname + " " + this.referral_lastname
       },
-      createPhone(){
+      createNumber(){
         this.form_field.phone_number = this.selected_country + this.phone_number
       },
       
@@ -366,8 +374,8 @@
         //   });
 
         // } else {
-        // this.paystack_part = true;
-      console.log(this.form_field);
+        this.paystack_part = true;
+      // console.log(this.form_field);
         // }
       },
       async register() {

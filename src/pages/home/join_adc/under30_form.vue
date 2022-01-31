@@ -53,6 +53,7 @@
                     v-for="(country_num, index) in country_nums"
                     :key="index"
                     :value="country_num.phonecode"
+                    @change='createNumber'
                     class="text-capitalize"
                   >
                     {{ country_num.nicename }} ({{ country_num.phonecode }})
@@ -68,6 +69,7 @@
                   aria-describedby="emailHelp"
                   placeholder="Phone Number"
                   required
+                  @change='createNumber'
                 />
               </div>
             </div>
@@ -198,24 +200,26 @@
             <div class="row">
               <div class="col">
                 <input
-                  v-model="form_field.referral"
+                  v-model="referral_firstname"
                   type="text"
                   class="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                   placeholder="First Name"
                   required
+                  @change='concatFunction'
                 />
               </div>
               <div class="col">
                 <input
-                  v-model="form_field.referral"
+                  v-model="referral_lastname"
                   type="text"
                   class="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                   placeholder="Last Name"
                   required
+                  @change='concatFunction'
                 />
               </div>
             </div>
@@ -274,6 +278,9 @@
           >
             Pay
           </paystack>
+          <div class="mt-5">
+            <i class="fa fa-arrow-left fa-2x" @click="paystack_part = !paystack_part" title="Go Back" aria-hidden="true"></i>
+          </div>
         </div>
       </div>
       <div class="loading" v-if="loading">
@@ -329,6 +336,12 @@
       };
     },
     methods: {
+      concatFunction(){
+        this.form_field.referral = this.referral_firstname + " " + this.referral_lastname
+      },
+      createNumber(){
+        this.form_field.phone_number = this.selected_country + this.phone_number
+      },
       getNum(){
         var priceOptions = document.getElementById("mySelect");
       var selOption = priceOptions.options[priceOptions.selectedIndex].value;
@@ -373,6 +386,9 @@
         this.getlgas();
         this.lga = true;
       },
+      getLga() {
+        this.ward = true;
+      },
       getDisability() {
         var priceOptions = document.getElementById("mySelect1");
         var selOption = priceOptions.options[priceOptions.selectedIndex].value;
@@ -410,6 +426,7 @@
 
         // } else {
         this.paystack_part = true;
+        // console.log(this.form_field);
 
         // }
       },
