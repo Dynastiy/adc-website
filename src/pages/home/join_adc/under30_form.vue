@@ -120,6 +120,7 @@
                 class="custom-select"
                 v-model="form_field.disability"
                 @change="getDisability()"
+                required
               >
               <option value=""> --- </option>
                 <option value="true">
@@ -139,7 +140,6 @@
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                   placeholder="State Disability"
-                  required
                 />
             </div>
           </div>
@@ -337,10 +337,10 @@
     },
     methods: {
       concatFunction(){
-        this.form_field.referral = this.referral_firstname + " " + this.referral_lastname
+        this.form_field.referral = this.referral_firstname + " " + this.referral_lastname;
       },
       createNumber(){
-        this.form_field.phone_number = this.selected_country + this.phone_number
+        this.form_field.phone_number = this.selected_country + this.phone_number;
       },
       getNum(){
         var priceOptions = document.getElementById("mySelect");
@@ -444,13 +444,13 @@
           formData.append("last_name", this.form_field.last_name);
           formData.append("email", this.form_field.email);
           formData.append("password", this.form_field.password);
-          formData.append("phone_number", this.phone_number+this.selected_country);
+          formData.append("phone_number", this.form_field.phone_number);
           formData.append("dob", this.form_field.dob);
           formData.append("gender", this.form_field.gender);
           formData.append("state", this.form_field.state);
           formData.append("lga", this.form_field.lga);
           formData.append("ward", this.form_field.ward);
-          formData.append("referral", this.referrral_firstname + "" + this.referral_lastname);
+          formData.append("referral", this.form_field.referral);
           formData.append("disability", this.form_field.disability);
           formData.append("disability_name", this.form_field.disability_name);
           formData.append("image", this.form_field.image);
@@ -589,11 +589,6 @@ input:focus {
   align-items:center;
   justify-content:center;
 
-}
-.form-input {
-  /* background:#fff;
-  box-shadow: -3px -3px 7px rgba(0, 0, 0, 0.1),
-              3px 3px 7px rgba(0, 0, 0, 0.1); */
 }
 .form-input input {
   display:none;

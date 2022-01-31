@@ -213,9 +213,6 @@
         </form>
       </main>
       <div v-show="paystack_part" class="payment p-5 bg-light-accent">
-        <div>
-          <!-- <button><ion-icon name="arrow-back"></ion-icon> </button> -->
-        </div>
         <div class="text-center">
           <img
             src="@/assets/img/brand_assets/logo_horizontal_dark.png"
@@ -292,10 +289,10 @@
     },
     methods: {
       concatFunction(){
-        this.form_field.referral = this.referral_firstname + " " + this.referral_lastname
+        this.form_field.referral = this.referral_firstname + " " + this.referral_lastname;
       },
       createNumber(){
-        this.form_field.phone_number = this.selected_country + this.phone_number
+        this.form_field.phone_number = this.selected_country + this.phone_number;
       },
       
       getNum(){
