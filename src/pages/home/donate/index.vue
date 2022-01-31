@@ -5,7 +5,7 @@
       <div class="row">
         <div class="donate-div">
           <h2 class="font-weight-bold text-center py-3 text-orange">Donate</h2>
-          <form action="">
+          <div>
             <div class="form-group">
               <input
                 type="text"
@@ -58,7 +58,7 @@
               <div class="col-5">
                 <select
                   id="mySelect11"
-                  class="custom-select"
+                  class="custom-select form-control"
                 >
                   <option value=""> --- </option>
                   <option
@@ -96,7 +96,7 @@
             </paystack>
             </div>       
           
-          </form>
+          </div>
       </div>
     </div>
   </div>
@@ -172,7 +172,6 @@
 </script>
 
 <style scoped>
-  @import url("https://unpkg.com/element-ui/lib/theme-chalk/index.css");
   .donate-div {
     width: 45%;
     background: rgba(255, 255, 255, 0.2);
@@ -182,7 +181,7 @@
   .donate .form-control {
     border-radius: 0 !important;
     outline: none;
-    padding: 1.5rem 0.5rem !important;
+    /* padding: 1.5rem 0.5rem !important; */
     border-radius: 5px !important;
   }
   .donate .form-control:focus {

@@ -102,10 +102,10 @@
             <label for="inputState">Gender</label>
             <select
               id="inputState"
-              v-model="form_field.disability"
+              v-model="form_field.gender"
               class="form-control"
             >
-              <option value="None">Choose</option>
+              <option value=""> --- </option>
               <option value="Male">Male</option>
               <option value="Female">Female</option>
             </select>
@@ -307,6 +307,8 @@
         lgas: "",
         selState: "",
         selected_country:'',
+        referral_firstname: '',
+        referral_lastname: '',
         phone_number: '',
         form_field: {
           first_name: "",
@@ -431,7 +433,7 @@
           formData.append("state", this.form_field.state);
           formData.append("lga", this.form_field.lga);
           formData.append("ward", this.form_field.ward);
-          formData.append("referral", this.form_field.referral);
+          formData.append("referral", this.referrral_firstname + "" + this.referral_lastname);
           formData.append("disability", this.form_field.disability);
           formData.append("disability_name", this.form_field.disability_name);
           formData.append("image", this.form_field.image);

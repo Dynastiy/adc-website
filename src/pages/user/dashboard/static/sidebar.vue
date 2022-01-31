@@ -10,6 +10,17 @@
           </a>
         </li>
         <li>
+          <a href="javascript:void(0)" class="logo text-center mb-4">
+            <span class="logo-spread">
+              <img :src="user.profile_picture" width="140" class="mb-3" />
+            </span>
+            <br>
+            <span>
+              Unique ID: ADC/{{ user.id }}
+            </span>
+          </a>
+        </li>
+        <li>
           <router-link to="/dashboard/home">
             <span class="mr-2">
               <ion-icon name="menu"></ion-icon>
@@ -67,12 +78,33 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
+  data(){
+    return{
+      baseUrl: "https://api.adc.org.ng/api/",
+user: {}
+    }
+  },
   methods: {
     logout(){
       this.$store.dispatch('logout');
       this.$router.push("/login")
-    }
+    },
+    async getUser() {
+        this.loading = true;
+        const token = this.$store.getters.isLoggedIn;
+        // GET request using axios with set headers
+        const headers = { Authorization: "Bearer" + " " + token };
+        let res = await axios.get(this.baseUrl + "auth/profile", {
+          headers,
+        });
+        console.log(res.data);
+        this.user = res.data;
+      },
+  },
+  async created(){
+    this.getUser()
   }
 }
 </script>

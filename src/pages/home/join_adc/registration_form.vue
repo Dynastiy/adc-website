@@ -169,7 +169,7 @@
             <div class="row">
               <div class="col">
                 <input
-                  v-model="form_field.referral_firstname"
+                  v-model="referral_firstname"
                   type="text"
                   class="form-control"
                   id="exampleInputEmail1"
@@ -180,7 +180,7 @@
               </div>
               <div class="col">
                 <input
-                  v-model="form_field.referral_lastname"
+                  v-model="referral_lastname"
                   type="text"
                   class="form-control"
                   id="exampleInputEmail1"
@@ -264,6 +264,8 @@
         selState: "",
         selected_country:'',
         phone_number: '',
+        referral_firstname: '',
+        referral_lastname: '',
         form_field: {
           first_name: "",
           last_name: "",
@@ -281,6 +283,13 @@
       };
     },
     methods: {
+      createReferral(){
+        this.form_field.referral = this.referral_firstname + this.referral_lastname
+      },
+      createPhone(){
+        this.form_field.phone_number = this.selected_country + this.phone_number
+      },
+      
       getNum(){
         var priceOptions = document.getElementById("mySelect");
       var selOption = priceOptions.options[priceOptions.selectedIndex].value;
@@ -357,8 +366,8 @@
         //   });
 
         // } else {
-        this.paystack_part = true;
-
+        // this.paystack_part = true;
+      console.log(this.form_field);
         // }
       },
       async register() {
@@ -375,7 +384,7 @@
           formData.append("last_name", this.form_field.last_name);
           formData.append("email", this.form_field.email);
           formData.append("password", this.form_field.password);
-          formData.append("phone_number", this.phone_number+this.selected_country);
+          formData.append("phone_number", this.phone_number);
           formData.append("dob", this.form_field.dob);
           formData.append("gender", this.form_field.gender);
           formData.append("state", this.form_field.state);
