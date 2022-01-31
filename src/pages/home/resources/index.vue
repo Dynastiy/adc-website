@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-light-accent">
     <div class="header">
       <app-header />
       <div class="content">
@@ -11,26 +11,26 @@
 
     <div class="content">
       <div class="resources-cards">
-          <div class="resource-card shadow p-4">
+          <div class="resource-card shadow p-4 ">
               <h4 class="card-title font-weight-bold">Voter Registration</h4>
               <p class="card-text">As a New Voter, you can Pre-Register online, or as a Registered Voter, you can Review your Voter Registration, Request to Update your Information or Transfer your Voter Registration to another Polling Unit.</p>
-              <a href="https://cvr.inecnigeria.org/"><button class="btn bg-main text-white font-weight-bold">Click to Continue</button></a>
+              <a href="https://cvr.inecnigeria.org/" target="_blank"><button class="btn bg-main text-white font-weight-bold">Click to Continue</button></a>
           </div>
-          <div class="resource-card shadow p-4">
+          <div class="resource-card shadow p-4 ">
               <h4 class="card-title font-weight-bold">Polling Units</h4>
               <p class="card-text">At a polling unit, a citizen can either register to vote or vote. It is advisable to select a Polling Unit close to your area of residence due to the restricted movement on election days.</p>
-              <a href="https://www.inecnigeria.org/elections/polling-units/"><button class="btn bg-main text-white font-weight-bold">Click to Continue</button></a>
+              <a href="https://www.inecnigeria.org/elections/polling-units/" target="_blank"><button class="btn bg-main text-white font-weight-bold">Click to Continue</button></a>
           </div>
-          <div class="resource-card shadow p-4">
+          <div class="resource-card shadow p-4 ">
               <h4 class="card-title font-weight-bold">Our Activities</h4>
               <p class="card-text">Stay up to date with our activities and programs</p>
               <router-link to="/resources/our_activities"><button class="btn bg-main text-white font-weight-bold">View Activities</button></router-link>
           </div>
-          <div class="resource-card shadow p-4">
+          <!-- <div class="resource-card shadow p-4">
               <h4 class="card-title font-weight-bold">Brand Assets</h4>
               <p class="card-text">View and Download our brand assets.</p>
               <router-link to="/resources/brand_assets"><button class="btn bg-main text-white font-weight-bold">View Brand Assets</button></router-link>
-          </div>
+          </div> -->
       </div>
     </div>
   </div>
@@ -59,6 +59,7 @@
   }
   .resource-card {
       margin-bottom: 20px;
+      background: #fff;
   }
   .resource-card:hover {
       background-color:#224f5a ;
