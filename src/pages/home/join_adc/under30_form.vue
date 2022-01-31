@@ -154,7 +154,7 @@
                 <option
                   v-for="(state_name, index) in states"
                   :key="index"
-                  :value="state_name.name"
+                  :value="state_name.alias"
                   class="text-capitalize"
                 >
                   {{ state_name.name }}
@@ -176,7 +176,7 @@
                   :value="lga_name.name"
                   class="text-capitalize"
                 >
-                  {{ lga_name }}
+                  {{ lga_name.name }}
                 </option>
               </select>
             </div>
@@ -383,22 +383,19 @@
           this.disability = false
         }
       },
-      getLga() {
-        this.ward = true;
-      },
-      async getStates() {
+       async getStates() {
         let res = await axios.get(
-          "https://locationsng-api.herokuapp.com/api/v1/states"
+          "https://locus.fkkas.com/api/states"
         );
-        console.log(res.data);
-        this.states = res.data;
+        console.log(res.data.data);
+        this.states = res.data.data;
       },
       async getlgas() {
         let res = await axios.get(
-          `https://locationsng-api.herokuapp.com/api/v1/states/${this.selState}/lgas`
+          `https://locus.fkkas.com/api/regions/${this.selState}`
         );
-        console.log(res.data);
-        this.lgas = res.data;
+        console.log(res.data.data);
+        this.lgas = res.data.data;
       },
       valForm() {
         // if () {

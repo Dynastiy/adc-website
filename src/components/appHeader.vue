@@ -141,28 +141,7 @@
         }
       }
 
-      const drop_toggle = document.getElementById("where_we_stand_trigger");
-      const drop_drawer = document.getElementById("where_we_stand");
-      document.onclick = function (e) {
-        if (
-          e.target.id !== "where_we_stand_trigger" &&
-          e.target.id !== "where_we_stand"
-        ) {
-          // drop_drawer.classList.remove("active");
-          drop_drawer.style.transition = "0.3s";
-          drop_drawer.style.opacity = "0";
-        }
-      };
-      drop_toggle.onclick = function () {
-        // drop_drawer.classList.toggle("active");
-        if (drop_drawer.style.opacity === "1") {
-          drop_drawer.style.transition = "0.3s";
-          drop_drawer.style.opacity = "0";
-        } else {
-          drop_drawer.style.transition = "0.3s";
-          drop_drawer.style.opacity = "1";
-        }
-      };
+    
     },
   };
 </script>

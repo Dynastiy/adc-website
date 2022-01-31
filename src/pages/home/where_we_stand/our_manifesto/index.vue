@@ -9,9 +9,9 @@
       </div>
     </div>
     <div class="bg-light-accent">
-      <div class="content container d-flex align-items-center justify-content-center">
-        <blockquote class="blockquote col-md-6">
-          <p>
+      <div class="content container ">
+        <!-- <blockquote class="blockquote col-md-6"> -->
+          <p class="">
             At ADC, it is about Intense and Intentional Leadership – an activity
             that identifies challenges, gets the people to see the realities in
             these challenges, collectively evolve adaptive or technical
@@ -27,8 +27,8 @@
             as every body will be groomed and taught the new way of doing things
             the better way
           </p>
-        </blockquote>
-        <div class="manifesto-images col-md-6">
+        <!-- </blockquote> -->
+        <div class="manifesto-images ">
           <div class="animate__animated animate__delay-1s animate__fadeInLeft">
             <img src="@/assets/img/image4.jpg" alt="" />
           </div>
@@ -85,6 +85,8 @@ export default {
 }
 .manifesto-images img {
   width: 100%;
+  height: 30rem;
+  object-fit: cover;
   border-radius: 1px;
 }
 .manifesto-images div:nth-child(1),

@@ -51,8 +51,9 @@
       async getNews() {
         try {
           let res = await axios.get(
-            "https://v1.nocodeapi.com/nsik/medium/qVuZIRwQxfTKcidN"
+            "https://v1.nocodeapi.com/nsik/medium/GueToYjPblfeASgQ"
           );
+          console.log(res);
           this.news = res.data;
           console.log(this.news);
         } catch (error) {
