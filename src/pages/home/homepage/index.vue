@@ -640,7 +640,7 @@
     top: 25%
   }
     .carousel img {
-      height: 400px;
+      height: 500px;
     }
     .news-container {
       display: unset;
@@ -650,7 +650,7 @@
       /* display: unset !important; */
     }
     .carousel-indicators {
-      bottom: 20%;
+      bottom: 4%;
     }
     .logo-navs {
       display: none !important;
@@ -660,7 +660,7 @@
       font-size: 3rem;
       letter-spacing: -3px;
       text-transform:initial;
-      /* width: 75%; */
+      width: 30%;
     }
     .nigeria {
       font-size: 3rem !important;
