@@ -5,9 +5,9 @@
       <div class="text-center" v-for="(item, i) in states" :key="i">
         <div class="shadow-sm py-2 bg-white rounded-lg">
           <div class="card_body">
-            <h6 class="font-weight-bold card-title mt-3"> {{item.name}} State </h6>
+            <h6 class="font-weight-bold card-title mt-3"> {{item.name}} </h6>
             <p class="small text-orange font-weight-bold text-capitalize"> {{ item.chairman }} </p>
-            <h6 class="font-weight-bold card-title mt-3"> {{item.phone}} State </h6>
+            <h6 class="font-weight-bold card-title mt-3"> {{item.phone}} </h6>
           </div>
         </div>
       </div>

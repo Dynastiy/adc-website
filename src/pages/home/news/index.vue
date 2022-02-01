@@ -28,7 +28,7 @@
             <p>
               {{ news_item.contentSnippet }}
             </p>
-            <a :href="news_item.guid" class="text-orange small font-weight-bold"
+            <a :href="news_item.link" class="text-orange small font-weight-bold"
               >View More</a
             >
           </div>
@@ -47,6 +47,7 @@
     data() {
       return {
         news: "",
+        feedUrl: "https://rss.app/feeds/hBShOpOCBnULXzDT.xml"
       };
     },
     methods: {
