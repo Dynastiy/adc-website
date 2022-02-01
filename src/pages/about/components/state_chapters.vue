@@ -7,8 +7,7 @@
           <div class="card_body">
             <h6 class="font-weight-bold card-title mt-3"> {{item.name}} State </h6>
             <p class="small text-orange font-weight-bold text-capitalize"> {{ item.chairman }} </p>
-            <!-- <a href="javascript:void(0)" class="text-right text-main small"></a> -->
-            <!-- <router-link :to="'/about/state_chapters/'+item.id "> View State </router-link> -->
+            <h6 class="font-weight-bold card-title mt-3"> {{item.phone}} State </h6>
           </div>
         </div>
       </div>

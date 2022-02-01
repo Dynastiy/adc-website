@@ -10,7 +10,8 @@
     </div>
 
     <!-- Main News Content  -->
-    <div class="news-container container content">
+   <div class="news-container">
+      <div class=" container">
       <div
         class="shadow-sm bg-white"
         v-for="(news_item, index) in news"
@@ -19,7 +20,7 @@
         <!-- <img :src="news_item.enclosure.link" width="100%" height="30%" alt="img" class="handshake-img" /> -->
 
         <div class="news-content">
-          <p class="news-date p-1">{{ news_item.pubDate }}</p>
+          <p class="news-date p-1">{{ news_item.pubDate | formatDate }}</p>
           <div class="p-3">
             <h5 class="font-weight-bold text-uppercase">
               {{ news_item.title }}
@@ -34,6 +35,7 @@
         </div>
       </div>
     </div>
+   </div>
   </div>
 </template>
 
@@ -51,7 +53,7 @@
       async getNews() {
         try {
           let res = await axios.get(
-            "https://v1.nocodeapi.com/nsik/medium/GueToYjPblfeASgQ"
+            "https://v1.nocodeapi.com/lizzy/medium/fFRmDLgGxupAJbEJ"
           );
           console.log(res);
           this.news = res.data;
@@ -88,7 +90,7 @@
   @media (max-width: 990px) {
     .news-container {
       display: unset;
-      padding: 1rem 3rem;
+      padding: 2rem;
     }
     .news-container div {
       margin-bottom: 15px;

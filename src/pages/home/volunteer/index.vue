@@ -59,6 +59,7 @@
                     v-for="(country_num, index) in country_nums"
                     :key="index"
                     :value="country_num.phonecode"
+                    @change="createNumber"
                     class="text-capitalize"
                   >
                     {{ country_num.nicename }} ({{ country_num.phonecode }})
@@ -68,6 +69,7 @@
               <div class="col">
                 <input
                   v-model="phone_number"
+                  @change="createNumber"
                   type="text"
                   class="form-control"
                   id="exampleInputEmail1"
@@ -83,7 +85,7 @@
             <select
               id="mySelect-age"
               class="custom-select"
-              v-model="form_field.state"
+              v-model="form_field.age"
             >
               <option value="">---</option>
               <option value="">18-24</option>
@@ -98,6 +100,7 @@
               id="mySelect5"
               class="custom-select form-control"
               @change="getCountry2()"
+              v-model="form_field.address"
             >
               <option value="0">  --- </option>
               <option value="1"> Nigeria </option>
@@ -136,7 +139,7 @@
               <select
                 id="mySelect"
                 class="custom-select"
-                v-model="form_field.lga"
+                v-model="form_field.city"
               >
                 <option value="0">---</option>
                 <option
@@ -155,7 +158,7 @@
             <select
               id="mySelect-status"
               class="custom-select"
-              v-model="form_field.state"
+              v-model="form_field.occupation"
             >
               <option value="">---</option>
               <option value="">Unemployed</option>
@@ -168,7 +171,7 @@
           <div class="form-group">
             <label for="exampleInputEmail1">Skills</label>
             <input
-              v-model="form_field.email"
+              v-model="form_field.skills"
               type="email"
               class="form-control"
               id="exampleInputEmail1"
@@ -182,7 +185,7 @@
               >Why do you want to volunteer?</label
             >
             <input
-              v-model="form_field.email"
+              v-model="form_field.volunteering_for"
               type="email"
               class="form-control"
               id="exampleInputEmail1"
@@ -196,7 +199,7 @@
               >Where would you like to volunteer?</label
             >
             <input
-              v-model="form_field.email"
+              v-model="form_field.where_to_help"
               type="email"
               class="form-control"
               id="exampleInputEmail1"
@@ -210,7 +213,7 @@
             <select
               id="mySelect-status"
               class="custom-select"
-              v-model="form_field.state"
+              v-model="form_field.department"
             >
               <option value="">---</option>
               <option value="">
@@ -227,7 +230,7 @@
             <label for="">Day of the week you will be available</label>
             <div v-for="(dayy, index) in dayss" :key="index">
               <input
-                v-model="form_field.email"
+                v-model="form_field.day_of_week"
                 type="checkbox"
                 class="mr-2"
                 id="exampleInputEmail1"
@@ -241,7 +244,7 @@
               >What Nigerian language do you speak?</label
             >
             <input
-              v-model="form_field.email"
+              v-model="form_field.language"
               type="email"
               class="form-control"
               id="exampleInputEmail1"
@@ -255,7 +258,7 @@
             <select
               id="mySelect-status"
               class="custom-select"
-              v-model="form_field.state"
+              v-model="form_field.pvc"
             >
               <option value="">---</option>
               <option value="">Yes</option>
@@ -317,19 +320,28 @@ export default {
         first_name: "",
         last_name: "",
         email: "",
-        password: "",
-        phone_number: "",
-        dob: "",
-        gender: "",
-        state: "",
-        lga: "",
-        ward: "",
-        referral: "",
-        image: null,
+        phone: "",
+        age: '',
+  volunteering_for: "",
+  address: '',
+  city: '',
+  state: '',
+  zip_code: '',
+  skills: '',
+  heard_from: '',
+  where_to_help: '',
+  department: '',
+  day_of_week: '',
+  time_of_day: '',
+  language: '',
+  pvc: ''
       },
     };
   },
   methods: {
+    createNumber(){
+        this.form_field.phone = this.selected_country + this.phone_number;
+      },
     getNum() {
       var priceOptions = document.getElementById("mySelect");
       var selOption = priceOptions.options[priceOptions.selectedIndex].value;
@@ -351,30 +363,7 @@ export default {
         this.nigeria = false;
       }
     },
-    createUser() {
-      swal({
-        title: "Done!",
-        text: "Payment Received!",
-        icon: "success",
-        button: "Go Home!",
-      });
-      this.register();
-    },
-    close() {
-      console.log("You closed checkout page");
-      swal({
-        title: "Cancelled!",
-        text: "Please Pay to create account",
-        icon: "warning",
-        button: "Go Home!",
-      });
-    },
-    handleFileUpload() {
-      // this.form_field.image = this.$refs.file.files[0];
-      var input = event.target;
-      this.form_field.image = input.files[0];
-      console.log(this.form_field.image);
-    },
+    
     getState() {
       var priceOptions = document.getElementById("mySelect0");
       var selOption = priceOptions.options[priceOptions.selectedIndex].value;
@@ -405,32 +394,42 @@ export default {
         formData.append("first_name", this.form_field.first_name);
         formData.append("last_name", this.form_field.last_name);
         formData.append("email", this.form_field.email);
-        formData.append("password", this.form_field.password);
-        formData.append(
-          "phone_number",
-          this.phone_number
-        );
-        formData.append("dob", this.form_field.dob);
-        formData.append("gender", this.form_field.gender);
+        formData.append("phone", this.form_field.phone);
+        formData.append("age", this.form_field.age);
+        formData.append("volunteering_for", this.form_field.volunteering_for);
+        formData.append("address", this.form_field.address);
+        formData.append("city", this.form_field.city);
         formData.append("state", this.form_field.state);
-        formData.append("lga", this.form_field.lga);
-        formData.append("ward", this.form_field.ward);
-        formData.append("referral", this.form_field.referral);
-        formData.append("image", this.form_field.image);
-        let res = await axios.post(this.baseUrl + "volunteers/users/add", formData);
+        formData.append("zip_code", this.form_field.zip_code);
+        formData.append("skills", this.form_field.skills);
+        formData.append("heard_from", this.form_field.heard_from);
+        formData.append("where_to_help", this.form_field.where_to_help);
+        formData.append("department", this.form_field.department);
+        formData.append("department", this.form_field.department);
+        formData.append("day_of_week", this.form_field.day_of_week);
+        formData.append("time_of_day", this.form_field.time_of_day);
+        formData.append("language", this.form_field.language);
+        formData.append("pvc", this.form_field.pvc);
+        let res = await axios.post(this.baseUrl + "volunteer/users/add", formData);
         console.log(res);
-        this.form_field.first_name = "";
-        this.form_field.last_name = "";
-        this.form_field.email = "";
-        this.form_field.password = "";
-        this.form_field.phone_number = "";
-        this.form_field.dob = "";
-        this.form_field.gender = "";
-        this.form_field.state = "";
-        this.form_field.lga = "";
-        this.form_field.ward = "";
-        this.form_field.referral = "";
-        this.form_field.image = "";
+        this.first_name= "",
+        this.last_name= "",
+        this.email= "",
+        this.phone= "",
+        this.age= '',
+  this.volunteering_for= "",
+  this.address= '',
+  this.city= '',
+  this.state= '',
+  this.zip_code= '',
+  this.skills= '',
+  this.heard_from= '',
+  this.where_to_help= '',
+  this.department= '',
+  this.day_of_week= '',
+  this.time_of_day= '',
+  this.language= '',
+  this.pvc= ''
         this.loading = false;
         swal({
           title: "Done!",
@@ -442,32 +441,44 @@ export default {
       } catch (error) {
         console.log(error.response);
         if (error.response.status == 422 || error.response.status === "") {
-          this.form_field.first_name = "";
-          this.form_field.last_name = "";
-          this.form_field.email = "";
-          this.form_field.password = "";
-          this.form_field.phone_number = "";
-          this.form_field.dob = "";
-          this.form_field.gender = "";
-          this.form_field.state = "";
-          this.form_field.lga = "";
-          this.form_field.ward = "";
-          this.form_field.referral = "";
-          this.form_field.image = "";
+         this.first_name= "",
+        this.last_name= "",
+        this.email= "",
+        this.phone= "",
+        this.age= '',
+  this.volunteering_for= "",
+  this.address= '',
+  this.city= '',
+  this.state= '',
+  this.zip_code= '',
+  this.skills= '',
+  this.heard_from= '',
+  this.where_to_help= '',
+  this.department= '',
+  this.day_of_week= '',
+  this.time_of_day= '',
+  this.language= '',
+  this.pvc= ''
           this.loading = false;
         } else {
-          this.form_field.first_name = "";
-          this.form_field.last_name = "";
-          this.form_field.email = "";
-          this.form_field.password = "";
-          this.form_field.phone_number = "";
-          this.form_field.dob = "";
-          this.form_field.gender = "";
-          this.form_field.state = "";
-          this.form_field.lga = "";
-          this.form_field.ward = "";
-          this.form_field.referral = "";
-          this.form_field.image = "";
+         this.first_name= "",
+        this.last_name= "",
+        this.email= "",
+        this.phone= "",
+        this.age= '',
+  this.volunteering_for= "",
+  this.address= '',
+  this.city= '',
+  this.state= '',
+  this.zip_code= '',
+  this.skills= '',
+  this.heard_from= '',
+  this.where_to_help= '',
+  this.department= '',
+  this.day_of_week= '',
+  this.time_of_day= '',
+  this.language= '',
+  this.pvc= ''
           this.loading = false;
         }
       }
@@ -477,16 +488,7 @@ export default {
     this.getStates();
     this.listCountry();
   },
-  computed: {
-    reference() {
-      let text = "";
-      let possible =
-        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-      for (let i = 0; i < 10; i++)
-        text += possible.charAt(Math.floor(Math.random() * possible.length));
-      return text;
-    },
-  },
+ 
 };
 </script>
 

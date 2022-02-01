@@ -8,6 +8,14 @@ import {states }from './assets/js/states'
 
 import VueTelInput from 'vue-tel-input'
 
+import moment from 'moment';
+
+Vue.filter('formatDate', function(value) {
+    if (value) {
+        return moment(String(value)).format('MMMM DD YYYY')
+    }
+});
+
 Vue.use(VueTelInput)
 
 import Carousel3d from 'vue-carousel-3d';
