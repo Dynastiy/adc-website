@@ -10,8 +10,8 @@
     </div>
 
     <!-- Main News Content  -->
-   <div class="news-container">
-      <div class=" container">
+   <div class="news__container">
+      <div class="news-container container">
       <div
         class="shadow-sm bg-white"
         v-for="(news_item, index) in news"
@@ -79,6 +79,9 @@
     background-color: #000000d9;
     background-blend-mode: overlay;
   }
+  .news__container{
+
+  }
   .header .content h2 {
     text-shadow: 0px 2px rgba(0, 0, 0, 0.8);
   }
@@ -88,7 +91,7 @@
     grid-gap: 15px;
   }
   @media (max-width: 990px) {
-    .news-container {
+    .news__container {
       display: unset;
       padding: 2rem;
     }
