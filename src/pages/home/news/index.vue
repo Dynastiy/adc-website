@@ -92,8 +92,11 @@
   }
   @media (max-width: 990px) {
     .news__container {
-      display: unset;
+      /* display: unset; */
       padding: 2rem;
+    }
+    .news-container {
+      display: unset;
     }
     .news-container div {
       margin-bottom: 15px;
