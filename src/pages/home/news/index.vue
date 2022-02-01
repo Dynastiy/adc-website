@@ -10,7 +10,7 @@
     </div>
 
     <!-- Main News Content  -->
-   <div class="news__container">
+   <div class="news__container bg-light-accent">
       <div class="news-container container">
       <div
         class="shadow-sm bg-white"
@@ -80,7 +80,7 @@
     background-blend-mode: overlay;
   }
   .news__container{
-
+    padding: 2rem 6rem;
   }
   .header .content h2 {
     text-shadow: 0px 2px rgba(0, 0, 0, 0.8);
