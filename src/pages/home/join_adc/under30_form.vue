@@ -63,7 +63,7 @@
               <div class="col">
                 <input
                   v-model="phone_number"
-                  type="text"
+                  type="phone"
                   class="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"

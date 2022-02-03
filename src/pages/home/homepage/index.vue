@@ -312,12 +312,11 @@
     <div class="news-category content">
       <h1 class="core-values-text">News</h1>
       <div class="news-container">
-        <div
+        <!-- <div
           class="shadow-sm bg-white"
           v-for="(news_item, index) in news"
           :key="index"
         >
-          <!-- <img :src="news_item.enclosure.link" width="100%" height="30%" alt="img" class="handshake-img" /> -->
 
           <div class="news-content">
             <p class="news-date p-1">{{ news_item.pubDate | formatDate }}</p>
@@ -335,8 +334,8 @@
               >
             </div>
           </div>
-        </div>
-        <!-- <VueRssFeed :feedUrl="feedUrl" :name="name" :limit="limit"/> -->
+        </div> -->
+        <VueRssFeed :feedUrl="feedUrl" :name="name" :limit="4"/>
       </div>
       <div class="text-right font-weight-bold mt-4">
         <router-link to="/news" class="text-orange">View All</router-link>
@@ -361,7 +360,7 @@
   import simplifiedNav from '../../../components/simplified_nav.vue';
   import aboutus from "../../../components/about_us.vue";
   import coreValues from "../../../components/core.vue";
-  // import VueRssFeed from "vue-rss-feed"
+  import VueRssFeed from "vue-rss-feed"
   import carouselArea from "../../../components/carousel.vue";
 // import Search from '../../../components/search.vue';
   export default {
@@ -372,11 +371,12 @@
       aboutus,
       simplifiedNav,
       coreValues,
-      // VueRssFeed,
+      VueRssFeed,
       carouselArea,
     },
     data() {
       return {
+        feedUrl: "https://rss.app/feeds/hBShOpOCBnULXzDT.xml",
         searchQuery: null,
         ress: false,
       resources: [
@@ -533,10 +533,7 @@
   .gallery {
     height: 500px;
   }
-  .feed .articles-container {
-    display: flex !important;
-    /* grid-template-columns: 1fr 1fr; */
-  }
+  
   .carousel img {
     object-fit: cover;
     opacity: 0.3;

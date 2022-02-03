@@ -11,14 +11,12 @@
 
     <!-- Main News Content  -->
    <div class="news__container bg-light-accent">
-      <div class="news-container container">
+      <!-- <div class="news-container container">
       <div
         class="shadow-sm bg-white"
         v-for="(news_item, index) in news"
         :key="index"
       >
-        <!-- <img :src="news_item.enclosure.link" width="100%" height="30%" alt="img" class="handshake-img" /> -->
-
         <div class="news-content">
           <p class="news-date p-1">{{ news_item.pubDate | formatDate }}</p>
           <div class="p-3">
@@ -34,7 +32,8 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
+    <VueRssFeed :feedUrl="feedUrl" :name="name" :limit="limit"/>
    </div>
   </div>
 </template>
@@ -42,8 +41,9 @@
 <script>
   import axios from "axios";
   import AppHeader from "../../../components/appHeader.vue";
+  import VueRssFeed from "vue-rss-feed"
   export default {
-    components: { AppHeader },
+    components: { AppHeader, VueRssFeed },
     data() {
       return {
         news: "",

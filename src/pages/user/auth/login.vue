@@ -1,7 +1,7 @@
 <template>
 <div>
   <marquee behavior="" direction="" class="bg-danger text-white p-2 font-weight-bold">
-      Please if this is your first time to log in on this rebranded website, please, reset your password
+      Please if you are an existing registered ADC member and this is your first time to login to this new website, kindly Reset Password.
     </marquee>
   <div class="login-page">
     <div class="login-box shadow-lg rounded pt-4">
@@ -13,7 +13,7 @@
           width="120"
         />
       </div>
-      <h6 class="mt-4 font-weight-bold text-center mb-\3">
+      <h6 class="mt-4 font-weight-bold text-center mb-3">
         Enter details to Login
       </h6>
       <div class="px-4">
@@ -91,9 +91,9 @@ import swal from 'sweetalert'
           this.$router.push("/dashboard/home");
           swal({
             title: "Welcome!",
-            text: "Logged in Successfully",
+            text: "Login Successful ",
             icon: "success",
-            button: "Go Home!",
+            button: "Go to Dashboard",
           });
         } catch (error) {
           console.log(error.response);

@@ -71,7 +71,7 @@ import axios from 'axios';
           console.log(res);
           swal({
             title: "Hooray!",
-            text: "Reset Password successful! Please, Login",
+            text: "Reset Password successful! Please go to Login.",
             icon: "success",
             button: "Login Page!",
           });

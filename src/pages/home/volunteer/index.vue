@@ -70,7 +70,7 @@
                 <input
                   v-model="phone_number"
                   @change="createNumber"
-                  type="text"
+                  type="phone"
                   class="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
@@ -88,22 +88,22 @@
               v-model="form_field.age"
             >
               <option value="">---</option>
-              <option value="">18-24</option>
-              <option value="">25-39</option>
-              <option value="">40-59</option>
-              <option value="">60+</option>
+              <option value="18-24">18-24</option>
+              <option value="25-39">25-39</option>
+              <option value="40-59">40-59</option>
+              <option value="60+">60+</option>
             </select>
           </div>
           <div class="form-group">
             <label for="exampleInputEmail1">Country</label>
             <select
               id="mySelect5"
-              class="custom-select form-control"
+              class="custom-select"
               @change="getCountry2()"
               v-model="form_field.address"
             >
-              <option value="0">  --- </option>
-              <option value="1"> Nigeria </option>
+              <option value="">  --- </option>
+              <option value="Nigeria"> Nigeria </option>
               <option
                 v-for="country in country_list"
                 :key="country.Country"
@@ -141,7 +141,7 @@
                 class="custom-select"
                 v-model="form_field.city"
               >
-                <option value="0">---</option>
+                <option value="">---</option>
                 <option
                   v-for="(lga_name, index) in lgas"
                   :key="index"
@@ -161,11 +161,11 @@
               v-model="form_field.occupation"
             >
               <option value="">---</option>
-              <option value="">Unemployed</option>
-              <option value="">Employed</option>
-              <option value="">Freelance Worker</option>
-              <option value="">Entreprenuer</option>
-              <option value="">Intern/Apprentice</option>
+              <option value="Unemployed">Unemployed</option>
+              <option value="Employed">Employed</option>
+              <option value="Freelance Worker">Freelance Worker</option>
+              <option value="Entrepreneur">Entreprenuer</option>
+              <option value="Intern/Apprentice">Intern/Apprentice</option>
             </select>
           </div>
           <div class="form-group">
@@ -216,27 +216,52 @@
               v-model="form_field.department"
             >
               <option value="">---</option>
-              <option value="">
+              <option value="Volunteer Supervisors (Local Governments)">
                 Volunteer Supervisors (Local Governments)
               </option>
-              <option value="">Media team</option>
-              <option value="">Strategy team</option>
-              <option value="">Policy Formulation team</option>
-              <option value="">Mobilization and Outreach team</option>
-              <option value="">Pollsters and Feedback team</option>
+              <option value="Media team">Media team</option>
+              <option value="Strategy team">Strategy team</option>
+              <option value="Policy Formulation team">Policy Formulation team</option>
+              <option value="Mobilization and Outreach team">Mobilization and Outreach team</option>
+              <option value="Pollsters and Feedback team">Pollsters and Feedback team</option>
             </select>
           </div>
           <div class="form-group">
             <label for="">Day of the week you will be available</label>
-            <div v-for="(dayy, index) in dayss" :key="index">
-              <input
-                v-model="form_field.day_of_week"
-                type="checkbox"
-                class="mr-2"
-                id="exampleInputEmail1"
-                
-              />
-              <label for=""> {{ dayy.name }} </label>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr)">
+              <div>
+                <input type="checkbox" id="Monday" value="Monday" v-model="day_of_week">
+                <label for="Monday"  class="ml-2">Monday</label>
+              </div>
+              <div>
+                <input type="checkbox" id="Tuesday" value="Tuesday" v-model="day_of_week">
+                <label for="Tuesday" class="ml-2">Tuesday</label>
+              </div>
+              <div>
+                <input type="checkbox" id="Wednesday" value="Wednesday" v-model="day_of_week">
+                <label for="Wednesday" class="ml-2">Wednesday</label>
+              </div>
+              <div>
+                <input type="checkbox" id="Thursday" value="Thursday" v-model="day_of_week">
+                <label for="Thursday" class="ml-2">Thursday</label>
+              </div>
+              <div>
+                <input type="checkbox" id="Friday" value="Friday" v-model="day_of_week">
+                <label for="Friday" class="ml-2">Friday</label>
+              </div>
+              <div>
+                <input type="checkbox" id="Saturday" value="Saturday" v-model="day_of_week">
+                <label for="Saturday" class="ml-2">Saturday</label>
+              </div>
+              <div>
+                <input type="checkbox" id="Sunday" value="Sunday" v-model="checkedNames">
+                <label for="Sunday" class="ml-2">Sunday</label>
+              </div>
+              <div>
+                <input type="checkbox" id="All-Days" value="All Days" v-model="checkedNames">
+                <label for="All Days" class="ml-2">All Days</label>
+              </div>
+              
             </div>
           </div>
           <div class="form-group">
@@ -261,8 +286,8 @@
               v-model="form_field.pvc"
             >
               <option value="">---</option>
-              <option value="">Yes</option>
-              <option value="">No</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
             </select>
           </div>
           <input
@@ -305,7 +330,7 @@ export default {
       selState: "",
       selected_country: "",
       phone_number: "",
-      ages: [],
+      ages: '',
       dayss: [
         { name: "Sunday" },
         { name: "Monday" },
@@ -331,7 +356,7 @@ export default {
   heard_from: '',
   where_to_help: '',
   department: '',
-  day_of_week: '',
+  day_of_week: [],
   time_of_day: '',
   language: '',
   pvc: ''
