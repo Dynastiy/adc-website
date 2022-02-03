@@ -1,10 +1,10 @@
 <template>
   <div>
+    <div class="loader" v-if="loading">
+        <h5 class="text-white">Resetting...  <span class="text-warning font-weight-bold"> Please Wait</span> </h5>
+    </div>
     <div class="login-page">
     <div class="login-box shadow-lg rounded pt-4 pb-2">
-      <!-- <div class="text-center">
-          <img src="@/assets/img/brand_assets/logo_vertical_dark.png" alt=""  srcset="" width="50" />
-      </div> -->
       <h6 class="mt-3 font-weight-bold text-center mb-3 pb-4">New Password Details</h6>
       <div class="px-4">
         <form @submit.prevent="resetPassword" method="POST" novalidate="novalidate">
@@ -41,6 +41,7 @@
 
 <script>
 // import helpers from '@/services/helper.js';
+import swal from 'sweetalert'
 import axios from 'axios';
   export default {
     data() {
@@ -49,6 +50,7 @@ import axios from 'axios';
         email: '',
         password:'',
         baseUrl: "https://api.adc.org.ng/api/",
+        loading: false
       };
     },
      methods:{
@@ -58,6 +60,7 @@ import axios from 'axios';
             try {
                 //  const token = this.$store.getters.isLoggedIn;
           // POST request using axios with set headers
+          this.loading = true;
           let payload = {
             email: this.email,
             password: this.password,
@@ -66,6 +69,15 @@ import axios from 'axios';
           let res = await axios.post(this.baseUrl + "auth/password/update", payload
           );
           console.log(res);
+          swal({
+            title: "Hooray!",
+            text: "Reset Password successful! Please, Login",
+            icon: "success",
+            button: "Login Page!",
+          });
+          this.email = '';
+            this.password = '';
+            this.$router.push("/login");
                 } 
                 catch (error) {
                 console.log(error.response)
@@ -81,6 +93,7 @@ import axios from 'axios';
             }
                 finally {
                   // this.submitted = false
+                  this.loading = false;
                     }
         },
      }
@@ -105,5 +118,13 @@ label{
       border: 1px solid rgba(0, 0, 0, 0.1);
       
   }
-  
-</style>>
+  .loader {
+    min-height: 100vh;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>

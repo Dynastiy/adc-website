@@ -158,15 +158,6 @@
 .sticky + .content {
   padding-top: 60px;
 }
-  .where-we-stand a {
-    /* color: #fff !important; */
-    /* pa
-  dding: 1rem; */
-  }
-  .where-we-stand a:hover {
-    /* color: #00a54f !important; */
-    /* transition: 1s ease-in-out; */
-  }
   hr {
     margin: 0;
   }

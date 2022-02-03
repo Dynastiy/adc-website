@@ -1,4 +1,8 @@
 <template>
+<div>
+  <marquee behavior="" direction="" class="bg-danger text-white p-2 font-weight-bold">
+      Please if this is your first time to log in on this rebranded website, please, reset your password
+    </marquee>
   <div class="login-page">
     <div class="login-box shadow-lg rounded pt-4">
       <div class="text-center">
@@ -57,6 +61,7 @@
       <img src="@/assets/img/loading.gif" alt="" srcset="" />
     </div>
   </div>
+</div>
 </template>
 
 <script>
@@ -161,5 +166,5 @@ import swal from 'sweetalert'
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }</style
->>
+  }
+  </style>
