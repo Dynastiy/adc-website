@@ -342,12 +342,12 @@
       </div>
     </div> -->
 
-    <div class="gallery">
+    <!-- <div class="gallery">
       <h1 class="core-values-text mt-4">Gallery</h1>
       <div class="gallery">
         <carousel-area />
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -361,7 +361,7 @@
   import aboutus from "../../../components/about_us.vue";
   import coreValues from "../../../components/core.vue";
   // import VueRssFeed from "vue-rss-feed"
-  import carouselArea from "../../../components/carousel.vue";
+  // import carouselArea from "../../../components/carousel.vue";
 // import Search from '../../../components/search.vue';
   export default {
     components: {
@@ -372,7 +372,7 @@
       simplifiedNav,
       coreValues,
       // VueRssFeed,
-      carouselArea,
+      // carouselArea,
     },
     data() {
       return {
