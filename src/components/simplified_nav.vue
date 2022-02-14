@@ -43,16 +43,16 @@
                 >ADC in Diaspora
               </a>
             </li>
-            <li class="">
+            <li class="mr-3">
               <router-link to="/login" class=" text-dark"
                 >Login
               </router-link>
             </li>
-            <li class=" mr-3">
+            <!-- <li class=" mr-3">
               <router-link to="/news" class=" text-dark"
                 >News
               </router-link>
-            </li>
+            </li> -->
           </ul>
         </div>
         <div class="card__links">

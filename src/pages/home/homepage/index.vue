@@ -64,9 +64,9 @@
                     <a target="_blank" href="https://adc-dn.org/">ADC Diaspora</a>
                   </li>
                   <li><router-link to="/login">Login</router-link></li>
-                  <li>
+                  <!-- <li>
                     <router-link to="/news">News</router-link>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
             </div>
@@ -309,9 +309,9 @@
       <core-values />
     </div>
 
-    <div class="news-category content">
+    <!-- <div class="news-category content">
       <h1 class="core-values-text">News</h1>
-      <div class="news-container">
+      <div class="news-container"> -->
         <!-- <div
           class="shadow-sm bg-white"
           v-for="(news_item, index) in news"
@@ -335,12 +335,12 @@
             </div>
           </div>
         </div> -->
-        <VueRssFeed :feedUrl="feedUrl" :name="name" :limit="4"/>
+        <!-- <VueRssFeed :feedUrl="feedUrl" :name="name" :limit="4"/>
       </div>
       <div class="text-right font-weight-bold mt-4">
         <router-link to="/news" class="text-orange">View All</router-link>
       </div>
-    </div>
+    </div> -->
 
     <div class="gallery">
       <h1 class="core-values-text mt-4">Gallery</h1>
@@ -360,7 +360,7 @@
   import simplifiedNav from '../../../components/simplified_nav.vue';
   import aboutus from "../../../components/about_us.vue";
   import coreValues from "../../../components/core.vue";
-  import VueRssFeed from "vue-rss-feed"
+  // import VueRssFeed from "vue-rss-feed"
   import carouselArea from "../../../components/carousel.vue";
 // import Search from '../../../components/search.vue';
   export default {
@@ -371,7 +371,7 @@
       aboutus,
       simplifiedNav,
       coreValues,
-      VueRssFeed,
+      // VueRssFeed,
       carouselArea,
     },
     data() {
@@ -530,9 +530,9 @@
   grid-row-start: 1;
   grid-row-end: 3;
 } */
-  .gallery {
+  /* .gallery {
     height: 500px;
-  }
+  } */
   
   .carousel img {
     object-fit: cover;

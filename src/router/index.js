@@ -53,7 +53,7 @@ const routes = [{
                     import ( /* webpackChunkName: "about" */ '../pages/home/join_adc/under30_form.vue')
             },
             {
-                path: '/reg_form',
+                path: '/register',
                 name: 'registration',
                 // route level code-splitting
                 // this generates a separate chunk (about.[hash].js) for this route

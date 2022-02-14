@@ -73,7 +73,7 @@
                <p class="small font-weight-bold">Persons without Disability</p>
              </div> -->
            </div>
-           <router-link to="/reg_form">
+           <router-link to="/register">
            <button class=" mt-4 btn bg-darker btn-choose">
              Choose
            </button></router-link>

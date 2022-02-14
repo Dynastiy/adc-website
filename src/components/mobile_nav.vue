@@ -68,11 +68,11 @@
                 >ADC in Diaspora
               </a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <router-link to="/news" class="nav-link text-dark"
                 >News
               </router-link>
-            </li>
+            </li> -->
             <li class="nav-item">
               <router-link to="/login" class="nav-link text-dark"
                 >Login

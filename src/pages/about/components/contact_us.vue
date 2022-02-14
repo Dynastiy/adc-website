@@ -1,35 +1,43 @@
 <template>
   <div>
-    <div class="row bg-white p-3">
-      <div class="col-md-4 shadow-sm px-5 py-5">
-        <h2 class="font-weight-bold text-main">Contact Us</h2>
-        <div class="">
-          <div class="d-flex align-items-center mb-3">
-            <ion-icon size="large" name="pin"></ion-icon>
-            <p class="small mb-0 ml-2">
-              ADC Global Campus and World headquarters. 4 Lusaka st, Wuse zone
-              6, Abuja, FCT.
+    <div class="p-3">
+      <div class=" px-5 py-5">
+        <h2 class="font-weight-bold text-darker text-center mb-4">Contact Us</h2>
+        <hr class="mb-4">
+        <div class="contact__content">
+          <div class="text-center mb-3 shadow-lg bg-white p-3">
+            <div class="icon">
+              <ion-icon name="pin"></ion-icon>
+            </div>
+            <h4 class="text-darker">ADDRESS</h4>
+            <p class=" mb-0">
+              ADC Global Campus <br> and World headquarters.  <br> 4 Lusaka St, Wuse zone
+              6, <br> Abuja, FCT.
             </p>
           </div>
 
-          <div class="d-flex align-items-center mb-3">
-            <ion-icon name="call"></ion-icon>
-            <p class="small mb-0 ml-2">
-              +234 812 9855 556
+           <div class="text-center shadow-lg mb-3 bg-white p-3">
+            <div class="icon">
+              <ion-icon name="mail"></ion-icon>
+            </div>
+            <h4 class="text-darker">EMAIL</h4>
+            <p class=" mb-0">
+              <a href="mailto:admin@adc.org.ng">admin@adc.org.ng</a>
             </p>
           </div>
 
-          <div class="d-flex align-items-center">
-            <ion-icon name="mail"></ion-icon>
-            <p class="small mb-0 ml-2">
-              admin@adc.org.ng
+          <div class="text-center mb-3 shadow-lg bg-white p-3">
+            <div class="icon">
+              <ion-icon name="call"></ion-icon>
+            </div>
+            <h4 class="text-darker">PHONE</h4>
+            <p class=" mb-0">
+              <a href="tel:+234 812 9855 556">0812 9855 556</a>
             </p>
           </div>
-
-          <p></p>
         </div>
       </div>
-      <div class="col-md-8">
+      <!-- <div class="col-md-8">
         <form>
           <div class="form-group">
             <label for="exampleFormControlInput1">Name</label>
@@ -68,12 +76,23 @@
           </div>
           <button class="bg-darker text-white w-100 btn font-weight-bold">SEND</button>
         </form>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
 
 <style scoped>
+ @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+ h4 {
+   font-family: "Fjalla One", sans-serif;
+   font-weight: bold;
+   font-size: 1.2rem;
+ }
+ .contact__content{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 20px
+ }
 label {
   font-size: 1.02rem !important;
   /* font-weight: bold; */
@@ -89,9 +108,35 @@ label {
   label, .form-control::placeholder {
       font-size: 0.8rem;
   }
-  ion-icon {
-      color: #00a54f  !important; 
-    /* font-size: 16px; */
+  .icon {
+    width: 70px;
+    height: 70px;
+    background: #effff6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  .icon ion-icon {
+      color: #ff7300; 
+    font-size: 48px;
     /* margin-right: 10px; */
+}
+a {
+ color: #000; 
+}
+a:hover {
+  color: #ff7300;
+  text-decoration: none;
+}
+
+@media (max-width: 990px){
+  .contact__content{
+   display: grid;
+   grid-template-columns: auto;
+   grid-gap: 20px
+ }
 }
     </style>

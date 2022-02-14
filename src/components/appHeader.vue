@@ -52,9 +52,9 @@
               <a href="https://adc-dn.org/" target="_blank">ADC Diaspora</a>
             </li>
             <li><router-link to="/login">Login</router-link></li>
-            <li>
+            <!-- <li>
               <router-link to="/news">News</router-link>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>

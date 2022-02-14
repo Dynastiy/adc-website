@@ -172,38 +172,38 @@
             <label for="exampleInputEmail1">Skills</label>
             <input
               v-model="form_field.skills"
-              type="email"
+              type="text"
               class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
+              id="exampleInputtext1"
+              aria-describedby="textHelp"
               placeholder="Current Skills (Separate by a comma)"
               
             />
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail1"
+            <label for="exampleInputtext1"
               >Why do you want to volunteer?</label
             >
             <input
               v-model="form_field.volunteering_for"
-              type="email"
+              type="text"
               class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
+              id="exampleInputtext1"
+              aria-describedby="textHelp"
               placeholder="Enter your reason for volunteering"
               
             />
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail1"
+            <label for="exampleInputtext1"
               >Where would you like to volunteer?</label
             >
             <input
               v-model="form_field.where_to_help"
-              type="email"
+              type="text"
               class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
+              id="exampleInputtext1"
+              aria-describedby="textHelp"
               placeholder="Enter what skill you would like to volunteer"
               
             />
@@ -265,15 +265,15 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail1"
+            <label for="exampleInputtext1"
               >What Nigerian language do you speak?</label
             >
             <input
               v-model="form_field.language"
-              type="email"
+              type="text"
               class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
+              id="exampleInputtext1"
+              aria-describedby="textHelp"
               placeholder="Enter the nigerian language you speak"
               
             />
