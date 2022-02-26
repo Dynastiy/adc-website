@@ -40,6 +40,7 @@
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
               placeholder="xyz@gmail.com"
+              @blur="checkEmail"
               required
             />
           </div>
@@ -63,12 +64,13 @@
               <div class="col">
                 <input
                   v-model="phone_number"
-                  type="phone"
+                   type="tel"
                   class="form-control"
                   id="exampleInputEmail1"
                   placeholder="Phone Number"
                   required
                   @change='createNumber'
+                  @blur="checkNumber"
                 />
               </div>
             </div>
@@ -287,6 +289,34 @@
       };
     },
     methods: {
+       async checkEmail(){
+          try {
+            let res = await axios.get('https://api.adc.org.ng/api/auth/email/check/'+this.form_field.email);
+            this.msg = res.data.data
+           swal({
+          title: "Error!",
+          text: this.msg,
+          icon: "warning",
+          button: "Use different email!",
+        });
+          } catch (error) {
+            console.log(error)
+          }
+      },
+      async checkNumber(){
+          try {
+            let res = await axios.get('https://api.adc.org.ng/api/auth/phone/check/'+this.form_field.phone_number);
+            this.msg = res.data.data
+           swal({
+          title: "Error!",
+          text: this.msg,
+          icon: "warning",
+          button: "Use different Phone Number!",
+        });
+          } catch (error) {
+            console.log(error)
+          }
+      },
       concatFunction(){
         this.form_field.referral = this.referral_firstname + " " + this.referral_lastname;
       },
@@ -361,18 +391,7 @@
   }
       },
       valForm() {
-        // if () {
-        //      swal({
-        //     title: "Error!",
-        //     text: "An error occured",
-        //     icon: "warning",
-        //     button: "Try Again!",
-        //   });
-
-        // } else {
         this.paystack_part = true;
-      // console.log(this.form_field);
-        // }
       },
       async register() {
         try {

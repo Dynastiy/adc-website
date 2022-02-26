@@ -10,6 +10,9 @@ import VueTelInput from 'vue-tel-input'
 
 import moment from 'moment';
 
+
+Vue.config.ignoredElements = [/^ion-/]
+
 Vue.filter('formatDate', function(value) {
     if (value) {
         return moment(String(value)).format('MMMM DD YYYY')

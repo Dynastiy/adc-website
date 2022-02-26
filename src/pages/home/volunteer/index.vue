@@ -70,7 +70,8 @@
                 <input
                   v-model="phone_number"
                   @change="createNumber"
-                  type="phone"
+                   type="tel"
+              pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                   class="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"

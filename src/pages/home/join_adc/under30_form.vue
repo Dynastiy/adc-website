@@ -32,12 +32,13 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
+            <label for="email-address">Email address</label>
             <input
               v-model="form_field.email"
               type="email"
+              @blur="checkEmail"
               class="form-control"
-              id="exampleInputEmail1"
+              id="email-address"
               aria-describedby="emailHelp"
               placeholder="xyz@gmail.com"
               required
@@ -63,12 +64,13 @@
               <div class="col">
                 <input
                   v-model="phone_number"
-                  type="phone"
+                  type="tel"
                   class="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                   placeholder="Phone Number"
                   required
+                  @blur="checkNumber"
                   @change='createNumber'
                 />
               </div>
@@ -313,10 +315,12 @@
         states: "",
         lgas: "",
         selState: "",
+        info: '',
         selected_country:'',
         referral_firstname: '',
         referral_lastname: '',
         phone_number: '',
+        msg: '',
         form_field: {
           first_name: "",
           last_name: "",
@@ -324,7 +328,7 @@
           password: "",
           phone_number: "",
           dob: "",
-           disability_name:"",
+           disability_name: null,
           disability:"",
           gender: "",
           state: "",
@@ -336,6 +340,34 @@
       };
     },
     methods: {
+      async checkEmail(){
+          try {
+            let res = await axios.get('https://api.adc.org.ng/api/auth/email/check/'+this.form_field.email);
+            this.msg = res.data.data
+           swal({
+          title: "Error!",
+          text: this.msg,
+          icon: "warning",
+          button: "Use different email!",
+        });
+          } catch (error) {
+            console.log(error)
+          }
+      },
+      async checkNumber(){
+          try {
+            let res = await axios.get('https://api.adc.org.ng/api/auth/phone/check/'+this.form_field.phone_number);
+            this.msg = res.data.data
+           swal({
+          title: "Error!",
+          text: this.msg,
+          icon: "warning",
+          button: "Use different Phone Number!",
+        });
+          } catch (error) {
+            console.log(error)
+          }
+      },
       concatFunction(){
         this.form_field.referral = this.referral_firstname + " " + this.referral_lastname;
       },
@@ -416,19 +448,9 @@
         this.lgas = res.data.data;
       },
       valForm() {
-        // if () {
-        //      swal({
-        //     title: "Error!",
-        //     text: "An error occured",
-        //     icon: "warning",
-        //     button: "Try Again!",
-        //   });
-
-        // } else {
-        this.paystack_part = true;
-        // console.log(this.form_field);
-
-        // }
+          this.checkEmail();
+          this.checkNumber();
+          this.paystack_part = true;
       },
       async register() {
         try {
